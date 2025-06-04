@@ -1,0 +1,206 @@
+\documentclass[12pt, a4paper]{article}
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx} % Make sure this is here for images
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{listings} % Added for code/JSON display
+\usepackage[scaled=0.85]{beramono} % Added for a nicer monospaced font
+
+% --- Font Configuration ---
+% --- Color Definitions ---
+\definecolor{primary}{RGB}{0,51,102}
+\definecolor{secondary}{RGB}{102,102,153}
+\definecolor{accent}{RGB}{204,0,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{codeblue}{rgb}{0,0,0.9}
+\definecolor{codegreen}{rgb}{0.1,0.6,0.1} % Darker green for comments
+
+% --- Page Geometry ---
+\geometry{
+  a4paper,
+  left=2.5cm,
+  right=2.5cm,
+  top=2.5cm,
+  bottom=2.5cm,
+  headheight=15pt
+}
+% --- Header/Footer Setup ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Rapport de Stage - Semaine 3 - Jour 5}
+\fancyhead[R]{\small Zakaria el Khaldi}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+% --- Title Formatting ---
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{primary}}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{secondary}}
+  {\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{accent}}
+  {\thesubsubsection}{1em}{}
+% --- List Formatting ---
+\setlist[itemize]{leftmargin=*, nosep}
+\setlist[enumerate]{leftmargin=*, nosep}
+% --- Hyperlink Setup ---
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=secondary,
+  citecolor=accent
+}
+
+% --- Listings Setup for JSON ---
+\lstdefinestyle{json}{
+    language=json,
+    basicstyle=\ttfamily\footnotesize,
+    numbers=left,
+    numberstyle=\tiny\color{codegray},
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{white!95!black}, % Very light gray background
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=tb, % Top and bottom frame
+    framextopmargin=3pt,
+    framexbottommargin=3pt,
+    rulecolor=\color{black!30!white},
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    stringstyle=\color{codepurple},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{codeblue}, % For true, false, null
+    morestring=[b]",
+    literate=
+     *{0}{{{\color{codeblue}0}}}{1}
+      {1}{{{\color{codeblue}1}}}{1}
+      {2}{{{\color{codeblue}2}}}{1}
+      {3}{{{\color{codeblue}3}}}{1}
+      {4}{{{\color{codeblue}4}}}{1}
+      {5}{{{\color{codeblue}5}}}{1}
+      {6}{{{\color{codeblue}6}}}{1}
+      {7}{{{\color{codeblue}7}}}{1}
+      {8}{{{\color{codeblue}8}}}{1}
+      {9}{{{\color{codeblue}9}}}{1}
+      {:}{{{\color{black}:}}}{1}
+      {\{}{{{\color{black}{\{}}}}{1}
+      {\}}{{{\color{black}{\}}}}}{1}
+      {[}{{{\color{black}{[}}}}{1}
+      {]}{{{\color{black}{]}}}}{1}
+      {,}{{{\color{black}{,}}}}{1},
+}
+
+
+% --- Title Page Information ---
+\title{\Huge\bfseries\color{primary} Rapport de Stage \\ 
+      \Large Semaine 3 - Jour 5 : Évaluation des Stratégies de Nettoyage et Optimisation du Traitement LLM}
+\author{\Large Zakaria el Khaldi}
+\date{\large Le 24 mai 2025} % Date of report submission
+
+% --- Document Start ---
+\begin{document}
+% --- Cover Page ---
+\begin{titlepage}
+  \centering
+  \vspace*{\stretch{0.5}}
+  {\Huge\bfseries\color{primary} Rapport de Stage \par}
+  \vspace{1cm}
+  {\Large\itshape Semaine 3 - Jour 5 : Évaluation des Stratégies de Nettoyage de Données et Conception d'un Pipeline LLM Optimisé\par}
+  \vspace{2cm}
+  
+  \vspace{2cm}
+  {\Large Zakaria el Khaldi\par}
+  \vfill
+  {\large Le 23 mai 2025\par} % Date of activity day
+  \vspace*{\stretch{1}}
+\end{titlepage}
+
+% --- Table of Contents ---
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+% --- Introduction ---
+\section{Introduction}
+\thispagestyle{fancy}
+Ce rapport détaille les activités du cinquième jour de la troisième semaine de stage. La veille, un agent IA basé sur un Modèle de Langage Large (LLM) unique avait été lancé pour traiter le nettoyage des données des cours. La journée d'aujourd'hui a été consacrée à l'évaluation des résultats de ce traitement, à l'expérimentation de diverses approches de nettoyage, et à la conception d'une stratégie optimisée pour l'utilisation des LLM. L'objectif principal est d'obtenir des données parfaitement nettoyées pour permettre la finalisation du traitement JSON et le déploiement de l'application.
+
+% --- Day's Accomplishments ---
+\section{Activités du Jour (Vendredi 23 Mai 2025)}
+
+\subsection{Évaluation des Résultats du Traitement LLM Initial}
+La première tâche de la journée a été d'analyser les résultats du script de l'agent IA lancé la veille.
+\begin{itemize}
+    \item L'agent IA utilisant un seul LLM a effectivement réussi à séparer le texte explicatif du code avec une précision notablement supérieure aux méthodes algorithmiques testées précédemment.
+    \item Cependant, comme anticipé, le temps de traitement pour l'ensemble des données s'est avéré très long (environ 15 heures), confirmant que cette approche mono-LLM, bien qu'efficace en termes de qualité, n'était pas optimale en termes de célérité.
+\end{itemize}
+
+\subsection{Expérimentations Comparatives : Approches Programmatiques vs. LLM}
+Afin de valider définitivement le choix technologique, des expérimentations et des benchmarks supplémentaires ont été conduits :
+\begin{itemize}
+    \item \textbf{Approches Programmatiques (Expressions Régulières, Algorithmes Heuristiques) :}
+    \begin{itemize}
+        \item \textit{Avantages :} Très rapides en termes d'exécution.
+        \item \textit{Inconvénients :} Malgré des raffinements, la précision n'a jamais atteint un niveau satisfaisant (autour de 80\% au mieux), avec de nombreux cas limites non gérés correctement. La complexité pour couvrir tous les cas rendait cette voie impraticable pour garantir une qualité de données de 100\%.
+    \end{itemize}
+    \item \textbf{Approches Basées sur les LLM :}
+    \begin{itemize}
+        \item \textit{Avantages :} Précision significativement plus élevée, capable de comprendre le contexte et de distinguer efficacement les différents types de contenu.
+        \item \textit{Inconvénients :} Lenteur d'exécution due aux appels API et aux limites de débit des fournisseurs.
+    \end{itemize}
+\end{itemize}
+Après ces analyses, la conviction s'est renforcée : l'utilisation des LLM est la seule voie viable pour garantir un nettoyage approfondi et fiable des données, malgré le défi de la performance.
+
+\subsection{Conception d'une Stratégie d'Optimisation pour le Traitement LLM}
+Face au constat que les LLM offrent la meilleure qualité mais souffrent de lenteur, l'effort s'est concentré sur l'optimisation du processus de traitement LLM :
+\begin{itemize}
+    \item \textbf{Utilisation de Multiples Fournisseurs d'API LLM :} Plutôt que de dépendre d'un seul fournisseur, la stratégie adoptée consiste à utiliser plusieurs API LLM de manière concurrente.
+    \item \textbf{Traitement Asynchrone :} Les requêtes vers ces différentes API seront effectuées de manière asynchrone.
+    \begin{itemize}
+        \item \textit{Objectif :} Réduire la latence globale. En distribuant la charge, il est espéré de passer d'une latence perçue d'environ 15 secondes par requête à une cadence effective de traitement d'une "unité de contenu" toutes les 2-3 secondes.
+        \item \textit{Bénéfice supplémentaire :} Amélioration du taux de génération global des données nettoyées et mitigation des risques liés à la panne ou à la saturation d'un unique fournisseur.
+    \end{itemize}
+    \item \textbf{Gestion des Requêtes Asynchrones :} La stratégie envisagée est de segmenter les données et d'assigner statiquement chaque segment à un fournisseur/modèle LLM spécifique ou à un pool de workers, simplifiant la gestion de la concurrence.
+\end{itemize}
+
+\subsection{Lancement du Pipeline de Nettoyage Optimisé}
+Sur la base de cette nouvelle stratégie, un pipeline de traitement a été développé et configuré.
+\begin{itemize}
+    \item Le temps de traitement estimé pour l'ensemble des données avec cette architecture multi-LLM asynchrone est d'environ 7 à 8 heures.
+    \item Le script a été lancé en fin de journée pour s'exécuter pendant la nuit.
+    \item Les résultats de ce traitement seront analysés dès demain matin.
+\end{itemize}
+
+\subsection{Planification pour Demain (Samedi 24 Mai 2025)} % Updated day and date
+La journée de demain sera axée sur la concrétisation des efforts de nettoyage des données :
+\begin{itemize}
+  \item \textbf{Vérification des résultats du pipeline LLM optimisé :} Évaluation matinale de l'exhaustivité et de la qualité du traitement des données effectué pendant la nuit. S'assurer que 100\% des données sont traitées comme attendu.
+  \item \textbf{Finalisation du traitement JSON :} Si les données sont entièrement et correctement nettoyées, procéder à la régulation et à la finalisation des scripts de traitement JSON pour structurer les données définitives.
+  \item \textbf{Déploiement de l'application sur Vercel :} Avec des données propres et structurées, l'étape suivante sera le déploiement de la version actuelle de l'application sur la plateforme Vercel pour tests et validation en environnement de production simulé.
+  \item \textbf{Plan d'urgence :} Si le traitement des données n'est pas complet ou présente des erreurs significatives, la priorité sera de déboguer le pipeline LLM, d'effectuer des ajustements et potentiellement de relancer le traitement sur les segments problématiques.
+  \item \textbf{Tâches secondaires (si le temps le permet) :} Si les étapes précédentes se déroulent sans accroc et rapidement, une avance pourra être prise sur le stylage de la section des détails des cours ou sur l'intégration de l'éditeur de code.
+\end{itemize}
+
+\section{Conclusion}
+Cette cinquième journée a marqué un tournant dans la stratégie de nettoyage des données. Les expérimentations ont confirmé la supériorité qualitative des LLM, et la réponse au défi de la lenteur a été la conception d'un pipeline de traitement multi-LLM asynchrone. Le lancement de ce pipeline en fin de journée laisse espérer disposer de données propres et prêtes à l'intégration dès demain. L'objectif pour la journée suivante est clair : valider ce traitement, finaliser la structuration des données et, si tout se passe bien, procéder au déploiement de l'application.
+
+\end{document}

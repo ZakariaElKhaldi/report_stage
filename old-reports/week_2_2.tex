@@ -1,0 +1,340 @@
+\documentclass[12pt, a4paper]{article}
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx} % Make sure this is here for images
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{listings} % Added for code/JSON display
+\usepackage[scaled=0.85]{beramono} % Added for a nicer monospaced font
+
+% --- Font Configuration ---
+% --- Color Definitions ---
+\definecolor{primary}{RGB}{0,51,102}
+\definecolor{secondary}{RGB}{102,102,153}
+\definecolor{accent}{RGB}{204,0,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{codeblue}{rgb}{0,0,0.9}
+\definecolor{codegreen}{rgb}{0.1,0.6,0.1} % Darker green for comments
+
+% --- Page Geometry ---
+\geometry{
+  a4paper,
+  left=2.5cm,
+  right=2.5cm,
+  top=2.5cm,
+  bottom=2.5cm,
+  headheight=15pt
+}
+% --- Header/Footer Setup ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Rapport de Stage - Semaine 2}
+\fancyhead[R]{\small Zakaria el Khaldi}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+% --- Title Formatting ---
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{primary}}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{secondary}}
+  {\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{accent}}
+  {\thesubsubsection}{1em}{}
+% --- List Formatting ---
+\setlist[itemize]{leftmargin=*, nosep}
+\setlist[enumerate]{leftmargin=*, nosep}
+% --- Hyperlink Setup ---
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=secondary,
+  citecolor=accent
+}
+
+% --- Listings Setup for JSON ---
+\lstdefinestyle{json}{
+    language=json,
+    basicstyle=\ttfamily\footnotesize,
+    numbers=left,
+    numberstyle=\tiny\color{codegray},
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{white!95!black}, % Very light gray background
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=tb, % Top and bottom frame
+    framextopmargin=3pt,
+    framexbottommargin=3pt,
+    rulecolor=\color{black!30!white},
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    stringstyle=\color{codepurple},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{codeblue}, % For true, false, null
+    morestring=[b]",
+    literate=
+     *{0}{{{\color{codeblue}0}}}{1}
+      {1}{{{\color{codeblue}1}}}{1}
+      {2}{{{\color{codeblue}2}}}{1}
+      {3}{{{\color{codeblue}3}}}{1}
+      {4}{{{\color{codeblue}4}}}{1}
+      {5}{{{\color{codeblue}5}}}{1}
+      {6}{{{\color{codeblue}6}}}{1}
+      {7}{{{\color{codeblue}7}}}{1}
+      {8}{{{\color{codeblue}8}}}{1}
+      {9}{{{\color{codeblue}9}}}{1}
+      {:}{{{\color{black}:}}}{1}
+      {\{}{{{\color{black}{\{}}}}{1}
+      {\}}{{{\color{black}{\}}}}}{1}
+      {[}{{{\color{black}{[}}}}{1}
+      {]}{{{\color{black}{]}}}}{1}
+      {,}{{{\color{black}{,}}}}{1},
+}
+
+
+% --- Title Page Information ---
+% Note: The title here is for the main document metadata, distinct from titlepage content
+\title{\Huge\bfseries\color{primary} Rapport de Stage \\ 
+      \Large Semaine 2 : Analyse et Nettoyage des Données Scrappées}
+\author{\Large Zakaria el Khaldi}
+\date{\large Le 17 mai 2025} % Date of report submission / end of week
+
+% --- Document Start ---
+\begin{document}
+% --- Cover Page ---
+\begin{titlepage}
+  \centering
+  \vspace*{\stretch{0.5}}
+  {\Huge\bfseries\color{primary} Rapport de Stage \par}
+  \vspace{1cm}
+  {\Large\itshape Semaine 2 : Analyse et Nettoyage des Données Scrappées\par} % Updated title
+  \vspace{2cm}
+  
+  \vspace{2cm}
+  {\Large Zakaria el Khaldi\par}
+  \vfill
+  {\large Le 17 mai 2025\par} % This date can be the start of the week or a fixed date.
+  \vspace*{\stretch{1}}
+\end{titlepage}
+
+% --- Table of Contents ---
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+% --- Introduction ---
+\section{Introduction}
+\thispagestyle{fancy}
+Ce rapport détaille les travaux réalisés durant la deuxième semaine de stage. Après une première semaine axée sur la mise en place des outils de scraping et la collecte initiale de données, cette deuxième semaine a été consacrée à l'analyse approfondie de la qualité des données obtenues et au développement de scripts pour leur nettoyage. L'objectif principal était de s'assurer que les données soient propres, cohérentes et exploitables pour les étapes ultérieures du projet, notamment l'analyse et l'intégration dans une base de données ou un modèle.
+
+% --- Week 2 Accomplishments ---
+\section{Bilan de la Semaine 2}
+
+\subsection{Analyse de la Qualité des Données Scrappées}
+
+La première tâche de cette semaine a consisté à analyser les données collectées précédemment. Cette analyse visait à identifier les problèmes de qualité et les incohérences. Les principaux points examinés ont été :
+\begin{itemize}
+  \item \textbf{Complétude :} Vérification des champs manquants ou des valeurs nulles.
+  \item \textbf{Cohérence :} S'assurer que les données respectent des formats attendus (par exemple, les dates, les prix).
+  \item \textbf{Exactitude :} Évaluation préliminaire de la plausibilité des données.
+  \item \textbf{Doublons :} Identification des entrées redondantes.
+  \item \textbf{Pertinence :} Suppression des données non pertinentes ou du bruit collecté lors du scraping.
+\end{itemize}
+Cette phase a permis de dresser un bilan des imperfections des données brutes et de définir les étapes nécessaires pour leur amélioration.
+
+\subsection{Développement d'un Script de Nettoyage}
+
+Suite à l'analyse, un script (par exemple, en Python avec la librairie Pandas) a été développé pour automatiser le processus de nettoyage des données. Les fonctionnalités clés du script incluent :
+\begin{itemize}
+  \item Gestion des valeurs manquantes (suppression des lignes/colonnes ou imputation).
+  \item Standardisation des formats de données (ex: normalisation des chaînes de caractères, conversion des types de données).
+  \item Suppression des doublons.
+  \item Correction des erreurs typographiques ou des incohérences identifiées.
+  \item Suppression des espaces superflus ou des caractères spéciaux indésirables.
+\end{itemize}
+Ce script permettra un traitement efficace et reproductible des futures collectes de données.
+
+\subsection{Exemple de Données Avant et Après Nettoyage}
+Pour illustrer l'impact du script de nettoyage, voici un exemple simplifié de la structure des données JSON avant et après traitement.
+
+\subsubsection*{Données JSON Avant Nettoyage}
+\begin{lstlisting}[style=json, caption=Extrait de données brutes avant nettoyage, label=lst:json_before]
+{
+  "id": "7cb0c414-a729-4057-9e0a-fa104f70268c",
+  "title": "Basic Data Types",
+  "url": "https://www.w3schools.com/go/go_data_types.php",
+  "pages": [
+    {
+      "id": "1cd32ef5-9b93-4f23-b889-56d3292ba634",
+      "title": "Go Data Types",
+      "url": "https://www.w3schools.com/go/go_data_types.php",
+      "content": "Go Data Types\n\u276e Previous\nNext \u276f\nGo Data Types\nData type is an important concept in programming. Data type specifies the size and type of variable values.\nGo is statically typed, meaning that once a variable type is defined, it can only store data of that type.\nGo has three basic data types:\nbool\n: represents a boolean value and is either true or false\nNumeric\n: represents integer types, floating point values, \n  and complex types\nstring\n: represents a string value\nExample\nThis example shows some of the different data types in Go:\npackage main\nimport (\"fmt\")\nfunc main() {\nvar a bool = true\n// Boolean\nvar b int = 5\n// Integer\nvar c float32 = 3.14\n// Floating point number\nvar d string = \"Hi!\"\n// String\nfmt.Println(\"Boolean: \", a)\nfmt.Println(\"Integer: \", b)\nfmt.Println(\"Float:   \u00a0\u00a0\", c)\nfmt.Println(\"String: \u00a0\", d)\n}\nTry it Yourself \u00bb\nGo Exercises\nTest Yourself With Exercises\nExercise:\nAdd the correct data type for the following variables:\npackage main   \nimport (\"fmt\")\nfunc main() {\n  var myNum\n= 90\n  var myWord\n= \"Hello\"\n  var myBool\n= true\n}\nSubmit Answer \u00bb\nStart the Exercise\n\u276e Previous\nNext \u276f\n\u2605\n+1\nTrack your progress - it's free!\nLog in\nSign Up",
+      "examples": [
+        {
+          "id": "d1bc771c-6402-4dc2-ad9d-c93336dcfca9",
+          "title": "Example",
+          "code": "package main\nimport (\"fmt\")\nfunc main() {\nvar a bool = true\n// Boolean\nvar b int = 5\n// Integer\nvar c float32 = 3.14\n// Floating point number\nvar d string = \"Hi!\"\n// String\nfmt.Println(\"Boolean: \", a)\nfmt.Println(\"Integer: \", b)\nfmt.Println(\"Float:   \u00a0\u00a0\", c)\nfmt.Println(\"String: \u00a0\", d)\n}",
+          "language": "java"
+        }
+      ],
+      "meta": {}
+    }
+  ]
+}
+\end{lstlisting}
+
+\subsubsection*{Données JSON Après Nettoyage}
+\begin{lstlisting}[style=json, caption=Extrait de données après application du script de nettoyage, label=lst:json_after]
+{
+  "id": "1cd32ef5-9b93-4f23-b889-56d3292ba634",
+  "title": "Go Data Types",
+  "slug": "go-data-types",
+  "metadata": {
+    "description": "Learn about Go Data Types with clear explanations and practical examples.",
+    "keywords": [
+      "go",
+      "data",
+      "types",
+      "type",
+      "string",
+      "main",
+      "println",
+      "represents",
+      "boolean",
+      "true",
+      "integer"
+    ],
+    "difficulty": "intermediate",
+    "prerequisites": [
+      "Go Basics"
+    ],
+    "estimated_time": 5,
+    "category": "LearnGo",
+    "subcategory": "Basic Data Types"
+  },
+  "content_sections": [
+    {
+      "type": "introduction",
+      "title": "Introduction",
+      "content": "Go Data Types",
+      "order": 1,
+      "code": null,
+      "language": null,
+      "explanation": null
+    },
+    {
+      "type": "concept",
+      "title": "Details",
+      "content": "Go Data Types\nData type is an important concept in programming. Data type specifies the size and type of variable values.\nGo is statically typed, meaning that once a variable type is defined, it can only store data of that type.\nGo has three basic data types:\nbool\n: represents a boolean value and is either true or false\nNumeric\n: represents integer types, floating point values, \n  and complex types\nstring\n: represents a string value\nExample\nThis example shows some of the different data types in Go:\npackage main\nimport (\"fmt\")\nfunc main() {\nvar a bool = true\n// Boolean\nvar b int = 5\n// Integer\nvar c float32 = 3.14\n// Floating point number\nvar d string = \"Hi!\"\n// String\nfmt.Println(\"Boolean: \", a)\nfmt.Println(\"Integer: \", b)\nfmt.Println(\"Float:   \u00a0\u00a0\", c)\nfmt.Println(\"String: \u00a0\", d)\n}\n\nGo Exercises\nTest Yourself With Exercises\nExercise:\nAdd the correct data type for the following variables:\npackage main   \nimport (\"fmt\")\nfunc main() {\n  var myNum\n= 90\n  var myWord\n= \"Hello\"\n  var myBool\n= true\n}\nSubmit Answer \u00bb\nStart the Exercise\n\n\u2605\n+1",
+      "order": 2,
+      "code": null,
+      "language": null,
+      "explanation": null
+    },
+    {
+      "type": "code_example",
+      "title": "Example",
+      "content": "",
+      "order": 3,
+      "code": "package main\nimport (\"fmt\")\nfunc main() {\nvar a bool = true\n// Boolean\nvar b int = 5\n// Integer\nvar c float32 = 3.14\n// Floating point number\nvar d string = \"Hi!\"\n// String\nfmt.Println(\"Boolean: \", a)\nfmt.Println(\"Integer: \", b)\nfmt.Println(\"Float:   \u00a0\u00a0\", c)\nfmt.Println(\"String: \u00a0\", d)\n}",
+      "language": "java",
+      "explanation": "Example of example"
+    }
+  ],
+  "practice_exercises": [
+    {
+      "title": "Complete the Code 1",
+      "description": "Fill in the missing line to make this code work.",
+      "difficulty": "medium",
+      "starter_code": "package main\nimport (\"fmt\")\nfunc main() {\nvar a bool = true\n// Boolean\nvar b int = 5\n// Integer\nvar c float32 = 3.14\n// Floating point number\nvar d string = \"Hi!\"\n// String\nfmt.Println(\"Boolean: \", a)\nfmt.Println(\"Integer: \", b)\n# TODO: Complete this line\nfmt.Println(\"String: \u00a0\", d)\n}",
+      "solution": "package main\nimport (\"fmt\")\nfunc main() {\nvar a bool = true\n// Boolean\nvar b int = 5\n// Integer\nvar c float32 = 3.14\n// Floating point number\nvar d string = \"Hi!\"\n// String\nfmt.Println(\"Boolean: \", a)\nfmt.Println(\"Integer: \", b)\nfmt.Println(\"Float:   \u00a0\u00a0\", c)\nfmt.Println(\"String: \u00a0\", d)\n}"
+    },
+    {
+      "title": "Practice Exercise",
+      "description": "Create an example that applies the concepts from this tutorial.",
+      "difficulty": "medium",
+      "starter_code": "# Add your code here",
+      "solution": "# Example solution would go here"
+    }
+  ],
+  "related_topics": [
+    {
+      "id": "8aac9370-e0dd-4b37-bc28-48ee6a96faf6",
+      "title": "Go Best Practices",
+      "relationship": "related_topic"
+    },
+    {
+      "id": "ebb9c2eb-73e8-4bab-a10a-48f8259831b9",
+      "title": "Go Common Pitfalls and How to Avoid Them",
+      "relationship": "suggested_reading"
+    },
+    {
+      "id": "3d519de6-d3af-48d0-a83c-f5adede1eb43",
+      "title": "Go Fundamentals",
+      "relationship": "prerequisite"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What is Go Data Types\n\nGo Data Types\nData type?",
+      "options": [
+        "statically typed",
+        "None of the above.",
+        "an important concept in programming",
+        "None of the above."
+      ],
+      "correct_answer": 2,
+      "explanation": "The correct definition of Go Data Types\n\nGo Data Types\nData type is 'an important concept in programming'."
+    },
+    {
+      "question": "What is Go?",
+      "options": [
+        "None of the above.",
+        "an important concept in programming",
+        "statically typed",
+        "None of the above."
+      ],
+      "correct_answer": 2,
+      "explanation": "The correct definition of Go is 'statically typed'."
+    }
+  ],
+  "summary": "This tutorial covers Go Data Types concepts and techniques. You'll learn how to use Go Data Types effectively, including key principles, common patterns, and practical examples. By the end of this tutorial, you'll have a solid understanding of Go Data Types and how to apply it in your projects."
+}
+\end{lstlisting}
+\textit{Note : Les exemples ci-dessus sont illustratifs. Les transformations réelles dépendent des spécificités des données collectées.}
+
+\subsection{Tâches en Cours et Prochaines Étapes}
+
+Actuellement, le travail se concentre sur l'identification de nouvelles sources de données pertinentes pour le projet. Cela implique :
+\begin{itemize}
+    \item La recherche active de sites web contenant les informations désirées.
+    \item L'évaluation de la faisabilité du scraping pour chaque site identifié (structure du site, protections anti-scraping, etc.).
+    \item L'analyse de la qualité et de la richesse des données potentiellement extractibles.
+\end{itemize}
+Une fois cette phase de recherche terminée, la prochaine étape consistera à développer ou adapter les scripts de scraping pour ces nouvelles sources, une par une, en appliquant ensuite le script de nettoyage pour assurer la qualité des données intégrées.
+
+\section{Conclusion}
+Ces deux premières semaines de stage ont été très productives, jetant des bases solides pour le projet. D'importantes avancées ont été réalisées tant sur le plan du développement frontend, avec la création de la page d'accueil, la structuration du projet et l'implémentation de composants UI/UX, que sur la gestion des données via l'analyse et le nettoyage des informations scrappées. L'effort actuel se concentre sur l'acquisition de contenu pour la section gratuite, une étape clé pour enrichir l'offre du projet.
+% You might want to add a conclusion section
+% \section{Conclusion}
+% ...
+
+\end{document}
