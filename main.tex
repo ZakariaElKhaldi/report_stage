@@ -18,6 +18,8 @@
 \usepackage{fancyhdr}
 \usepackage{listings}
 \usepackage[scaled=0.85]{beramono}
+\usepackage{tikz}
+\usepackage{afterpage}
 
 % --- Font Configuration ---
 
@@ -114,43 +116,78 @@
 
 % --- Cover Page ---
 \begin{titlepage}
-  \centering
-  \IfFileExists{images/logo_entreprise.png}{
-    \includegraphics[width=0.4\textwidth]{images/logo_entreprise.png}
-  }{
-    % If logo doesn't exist, display company name in large text
-    \vspace*{1cm}
-    {\huge\bfseries\color{primary} ENTREPRISE DE STAGE\par}
-  }
-  \vspace*{2cm}
+  % Background color with gradient effect
+  \pagecolor{white}
+  \afterpage{\nopagecolor}
   
-  {\Huge\bfseries\color{primary} RAPPORT DE STAGE\par}
-  \vspace{1.5cm}
-  {\Large\itshape Conception et Développement d'une Plateforme E-learning\par}
-  \vspace{3cm}
+  % Top border decoration
+  \begin{center}
+    \vspace*{-1cm}
+    \noindent\makebox[\linewidth]{\color{primary}\rule{\paperwidth}{0.4cm}}
+  \end{center}
   
-  {\large Présenté par :\par}
-  \vspace{0.5cm}
-  {\Large\bfseries Zakaria el Khaldi\par}
-  \vspace{1.5cm}
+  \vspace{1cm}
+  \begin{center}
+    % Enterprise logo/name with styling
+    \begin{tikzpicture}
+      \node[draw=primary, line width=1.5pt, rounded corners=5mm, inner sep=8mm] {
+        {\fontsize{40}{48}\selectfont\textcolor{primary}{\textbf{IAAI}}}
+      };
+    \end{tikzpicture}
+    
+    \vspace{2cm}
+    
+    % Report title with styling
+    {\fontsize{30}{36}\selectfont\textcolor{primary}{\textbf{RAPPORT DE STAGE}}\par}
+    \vspace{0.8cm}
+    {\Large\itshape Conception et Développement d'une Plateforme E-learning\par}
+    
+    \vspace{3cm}
+    
+    % Student information with styling
+    \begin{tikzpicture}
+      \node[draw=secondary, rounded corners=3mm, line width=1pt, fill=white, inner sep=6mm] {
+        \begin{minipage}{0.8\textwidth}
+          \centering
+          {\large\textbf{Présenté par}}\\\vspace{0.3cm}
+          {\Large\textbf{Zakaria el Khaldi}}\\\vspace{0.7cm}
+          {\large\textbf{Formation :} [Formation]}\\\vspace{0.2cm}
+          {\large\textbf{Établissement :} [Établissement]}
+        \end{minipage}
+      };
+    \end{tikzpicture}
+    
+    \vspace{2cm}
+    
+    % Internship period with styling
+    \begin{tikzpicture}
+      \node[draw=accent, rounded corners=3mm, line width=1pt, fill=white, inner sep=5mm] {
+        \begin{minipage}{0.7\textwidth}
+          \centering
+          {\large\textbf{Période de stage}}\\\vspace{0.3cm}
+          {\large Du 5 mai 2025 au [Date de fin]}
+        \end{minipage}
+      };
+    \end{tikzpicture}
+    
+    \vspace{2cm}
+    
+    % Supervision information with styling
+    {\large\textbf{Sous la supervision de :}}\\\vspace{0.3cm}
+    {\large [Nom du superviseur]}\\\vspace{0.2cm}
+    {\large [Fonction du superviseur]}
+    
+    \vfill
+    
+    % Academic year at the bottom
+    {\large\textbf{Année Académique [Année Académique]}}\par
+  \end{center}
   
-  {\large Stage effectué du 10 mai au 10 juin 2025\par}
-  \vspace{0.5cm}
-  {\large Au sein de l'entreprise :\par}
-  \vspace{0.5cm}
-  {\large\bfseries LearnTech Solutions\par}
-  \vspace{3cm}
-  
-  {\large Sous la supervision de :\par}
-  \vspace{0.5cm}
-  {\large M. Ahmed Benali\par}
-  \vspace{0.5cm}
-  {\large Directeur Technique\par}
-  \vfill
-  
-  {\large\bfseries Formation : Master en Développement Informatique\par}
-  \vspace{0.5cm}
-  {\large Année Académique 2024-2025\par}
+  % Bottom border decoration
+  \begin{center}
+    \vspace{1cm}
+    \noindent\makebox[\linewidth]{\color{primary}\rule{\paperwidth}{0.4cm}}
+  \end{center}
 \end{titlepage}
 
 % --- Remerciements ---

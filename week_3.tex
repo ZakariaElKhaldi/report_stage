@@ -7,6 +7,10 @@ La troisième semaine du stage a été consacrée au développement des interfac
 
 La première tâche de cette semaine a été de structurer et pérenniser les données collectées lors des phases précédentes du projet.
 
+\subsection{Collecte et Préparation des Données}
+
+La semaine a débuté par la finalisation du processus de web scraping initié précédemment. Ce processus a permis de collecter un volume important de données éducatives provenant principalement de W3Schools. Les données brutes ont ensuite été soumises à un nettoyage préliminaire pour éliminer les éléments non pertinents et standardiser les formats.
+
 \subsection{Transfert des Données vers MongoDB}
 
 Les fichiers JSON contenant les données scrappées et préalablement nettoyées ont été migrés vers une base de données MongoDB. Chaque type de contenu a été organisé dans des collections distinctes, créant ainsi une structure cohérente et facilement interrogeable.
@@ -33,6 +37,19 @@ Pour assurer une accessibilité optimale et une scalabilité future, la base de 
 \subsection{Connexion de l'Application à la Base de Données}
 
 Une fois la base de données déployée, la connexion entre l'application backend et l'instance MongoDB hébergée sur Atlas a été établie. Cette étape cruciale a permis d'assurer que l'application puisse lire et écrire des données de manière fiable et sécurisée.
+
+\subsection{Évolution vers une Solution JSON Locale}
+
+Après des tests approfondis, une décision stratégique a été prise de migrer d'une architecture MongoDB vers une solution basée sur des fichiers JSON locaux. Cette transition a été motivée par :
+
+\begin{itemize}
+  \item La réduction de la complexité architecturale pour la phase actuelle du projet
+  \item L'amélioration de l'expérience de développement avec un accès direct aux données
+  \item La compatibilité optimale avec le framework Next.js et ses capacités de rendu côté serveur
+  \item La simplification du déploiement et de la maintenance pour les premiers stades du projet
+\end{itemize}
+
+Cette migration a nécessité l'adaptation des modèles de données et le développement d'une nouvelle logique d'accès aux données, mais a considérablement simplifié le processus de développement.
 
 \section{Conception et Développement de l'Interface Utilisateur}
 
@@ -113,6 +130,18 @@ Le traitement des données collectées présentait plusieurs défis :
   \item Extraction des métadonnées pertinentes
 \end{itemize}
 
+\subsection{Problématique du Scraping et Nettoyage des Données}
+
+L'un des défis majeurs rencontrés a été la séparation du contenu textuel explicatif et des extraits de code dans les sections détaillées des cours. Plusieurs approches ont été explorées :
+
+\begin{itemize}
+  \item Tentatives initiales avec des expressions régulières et des algorithmes de traitement de texte, atteignant une précision maximale de 80\%
+  \item Expérimentation avec un agent IA basé sur des modèles de langage large (LLM) pour effectuer cette séparation de manière plus intelligente
+  \item Découverte finale que la structure HTML particulière de W3Schools nécessitait une approche de scraping spécifique
+\end{itemize}
+
+La solution définitive a impliqué une refonte du script de scraping pour mieux cibler les éléments HTML spécifiques, permettant ainsi d'obtenir des données brutes de meilleure qualité dès le départ.
+
 \subsection{Implémentation d'un Pipeline de Traitement LLM}
 
 Pour surmonter ces défis, un pipeline de traitement basé sur des modèles de langage large (LLM) a été conçu et implémenté.
@@ -165,6 +194,18 @@ Les requêtes MongoDB ont été optimisées pour garantir des performances optim
   \item Implémentation de mécanismes de mise en cache pour les données fréquemment consultées
 \end{itemize}
 
+\subsection{Adaptation à l'Architecture JSON}
+
+Suite à la migration vers des fichiers JSON locaux, l'architecture d'accès aux données a été adaptée :
+
+\begin{itemize}
+  \item Développement de fonctions de récupération (fetch) optimisées pour les fichiers JSON
+  \item Mise en place d'un système de chargement dynamique des données pour les différentes sections de l'interface
+  \item Intégration des capacités de rendu côté serveur de Next.js pour améliorer les performances
+\end{itemize}
+
+Cette adaptation a permis de maintenir toutes les fonctionnalités prévues tout en simplifiant l'architecture globale du système.
+
 \section{Tests et Validation}
 
 Pour garantir la qualité et la fiabilité des interfaces et systèmes développés, plusieurs types de tests ont été mis en place :
@@ -187,8 +228,18 @@ Pour garantir la qualité et la fiabilité des interfaces et systèmes développ
   \item \textbf{Tests de charge :} Simulation d'utilisation intensive pour évaluer la robustesse
 \end{itemize}
 
+\subsection{Planification Stratégique pour l'Avenir}
+
+En fin de semaine, une réflexion stratégique a été menée concernant l'enrichissement du contenu et la différenciation de la plateforme :
+
+\begin{itemize}
+  \item Identification du besoin de diversifier les sources de contenu au-delà de W3Schools
+  \item Planification de l'intégration d'éléments interactifs avancés, comme un éditeur de code basé sur les technologies VSCode
+  \item Initiation à l'apprentissage des techniques d'optimisation pour les moteurs de recherche (SEO) pour améliorer la visibilité future de la plateforme
+\end{itemize}
+
 \section{Conclusion}
 
 Cette troisième semaine a marqué des avancées significatives dans le développement de la plateforme e-learning. La mise en place d'interfaces utilisateur intuitives et ergonomiques, couplée à un système sophistiqué de traitement des données éducatives, a permis de poser les fondations solides pour l'expérience utilisateur finale. L'utilisation innovante de technologies comme MongoDB Atlas et les modèles de langage large (LLM) a apporté des solutions efficaces aux défis techniques rencontrés.
 
-Les interfaces développées durant cette semaine offrent maintenant aux utilisateurs un environnement d'apprentissage fluide et immersif, tandis que l'optimisation du traitement des données garantit une qualité exceptionnelle du contenu éducatif proposé. 
+Les interfaces développées durant cette semaine offrent maintenant aux utilisateurs un environnement d'apprentissage fluide et immersif, tandis que l'optimisation du traitement des données garantit une qualité exceptionnelle du contenu éducatif proposé. Les décisions stratégiques prises, notamment la simplification de l'architecture de données et la planification d'éléments différenciateurs, posent les bases d'une plateforme compétitive et évolutive. 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.6.6)  6 JUN 2025 17:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.6.6)  6 JUN 2025 18:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -512,61 +512,333 @@ Package: listings 2023/02/27 1.9 (Carsten Heinz)
 (/usr/share/texlive/texmf-dist/tex/latex/bera/beramono.sty
 Package: beramono 2004/01/31 (WaS)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 76.
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen256
+\pgfutil@tempdimb=\dimen257
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box60
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex
+\pgfkeys@tmptoks=\toks35
+))
+\pgf@x=\dimen258
+\pgf@y=\dimen259
+\pgf@xa=\dimen260
+\pgf@ya=\dimen261
+\pgf@xb=\dimen262
+\pgf@yb=\dimen263
+\pgf@xc=\dimen264
+\pgf@yc=\dimen265
+\pgf@xd=\dimen266
+\pgf@yd=\dimen267
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count312
+\c@pgf@countb=\count313
+\c@pgf@countc=\count314
+\c@pgf@countd=\count315
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+\pgf@sys@id@count=\count316
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count317
+\pgfsyssoftpath@bigbuffer@items=\count318
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen268
+\pgfmath@count=\count319
+\pgfmath@box=\box61
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count320
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen269
+\pgf@picmaxx=\dimen270
+\pgf@picminy=\dimen271
+\pgf@picmaxy=\dimen272
+\pgf@pathminx=\dimen273
+\pgf@pathmaxx=\dimen274
+\pgf@pathminy=\dimen275
+\pgf@pathmaxy=\dimen276
+\pgf@xx=\dimen277
+\pgf@xy=\dimen278
+\pgf@yx=\dimen279
+\pgf@yy=\dimen280
+\pgf@zx=\dimen281
+\pgf@zy=\dimen282
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen283
+\pgf@path@lasty=\dimen284
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen285
+\pgf@shorten@start@additional=\dimen286
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count321
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen287
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen288
+\pgf@pt@y=\dimen289
+\pgf@pt@temp=\dimen290
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen291
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen292
+\pgf@sys@shading@range@num=\count322
+\pgf@shadingcount=\count323
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box65
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box66
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen293
+\pgf@nodesepend=\dimen294
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen295
+\pgffor@skip=\dimen296
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count324
+\pgfplotmarksize=\dimen297
+)
+\tikz@lastx=\dimen298
+\tikz@lasty=\dimen299
+\tikz@lastxsaved=\dimen300
+\tikz@lastysaved=\dimen301
+\tikz@lastmovetox=\dimen302
+\tikz@lastmovetoy=\dimen303
+\tikzleveldistance=\dimen304
+\tikzsiblingdistance=\dimen305
+\tikz@figbox=\box67
+\tikz@figbox@bg=\box68
+\tikz@tempbox=\box69
+\tikz@tempbox@bg=\box70
+\tikztreelevel=\count325
+\tikznumberofchildren=\count326
+\tikznumberofcurrentchild=\count327
+\tikz@fig@count=\count328
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count329
+\pgfmatrixcurrentcolumn=\count330
+\pgf@matrix@numberofcolumns=\count331
+)
+\tikz@expandcount=\count332
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks44
+\AP@partial=\box71
+\AP@footins=\box72
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 81.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
-3.
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count312
-\l__pdf_internal_box=\box60
+\l__color_backend_stack_int=\count333
+\l__pdf_internal_box=\box73
 )
 (./main.aux (./week_1.aux) (./week_2.aux) (./week_3.aux) (./week_4.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Info: Redefining \degres on input line 113.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Info: Redefining \degres on input line 118.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 113.
+(french.ldf)             reported on input line 118.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 113.
-LaTeX Info: Redefining \up on input line 113.
+(french.ldf)             reported on input line 118.
+LaTeX Info: Redefining \up on input line 118.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count313
-\scratchdimen=\dimen256
-\scratchbox=\box61
-\nofMPsegments=\count314
-\nofMParguments=\count315
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count316
-\MPscratchDim=\dimen257
-\MPnumerator=\count317
-\makeMPintoPDFobject=\count318
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count334
+\scratchdimen=\dimen306
+\scratchbox=\box74
+\nofMPsegments=\count335
+\nofMParguments=\count336
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count337
+\MPscratchDim=\dimen307
+\MPnumerator=\count338
+\makeMPintoPDFobject=\count339
+\everyMPtoPDFconversion=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -610,24 +882,24 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 113.
+Package hyperref Info: Link coloring ON on input line 118.
 (./main.out) (./main.out)
-\@outlinefile=\write3
-\openout3 = `main.out'.
+\@outlinefile=\write4
+\openout4 = `main.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 113.
-Package microtype Info: Applying patch `item' on input line 113.
-Package microtype Info: Applying patch `toc' on input line 113.
-Package microtype Info: Applying patch `eqnum' on input line 113.
-Package microtype Info: Applying patch `footnote' on input line 113.
-Package microtype Info: Applying patch `verbatim' on input line 113.
+LaTeX Info: Redefining \microtypecontext on input line 118.
+Package microtype Info: Applying patch `item' on input line 118.
+Package microtype Info: Applying patch `toc' on input line 118.
+Package microtype Info: Applying patch `eqnum' on input line 118.
+Package microtype Info: Applying patch `footnote' on input line 118.
+Package microtype Info: Applying patch `verbatim' on input line 118.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 113.
+LaTeX Info: Redefining \showhyphens on input line 118.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -636,65 +908,58 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-\c@lstlisting=\count319
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
-st/fonts/enc/dvips/lm/lm-ec.enc}] [2]
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.171 \newpage
-               [1
-
-] (./main.toc
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
-.
+\c@lstlisting=\count340
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+66.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
-.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+66.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-4.
+166.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-4.
+166.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 4.
+(Font)              <12> on input line 166.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 4.
+(Font)              <8> on input line 166.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 4.
+(Font)              <6> on input line 166.
+ [1
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
+st/fonts/enc/dvips/lm/lm-ec.enc}]
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.57 ...et Traitement des DonnÃ©es}{28}{chapter.4}
-                                                  % [2
+l.227 \newpage
+               [1
+
+] (./main.toc [2
 
 ])
-\tf@toc=\write4
-\openout4 = `main.toc'.
+\tf@toc=\write5
+\openout5 = `main.toc'.
 
  [3]
 Chapitre 1.
 
-Overfull \hbox (16.47092pt too wide) in paragraph at lines 190--191
+Overfull \hbox (16.47092pt too wide) in paragraph at lines 246--247
 []\T1/lmr/m/n/12 (-20) Le projet s'inscrit dans un contexte de digitalisation a
 ccélérée de la formation professionnelle
  []
@@ -710,7 +975,7 @@ Chapitre 2.
 
 
 ]
-<week_1_img//class_diagrame.png, id=349, 3854.4pt x 2206.2425pt>
+<week_1_img//class_diagrame.png, id=376, 3854.4pt x 2206.2425pt>
 File: week_1_img//class_diagrame.png Graphic file (type png)
 <use week_1_img//class_diagrame.png>
 Package pdftex.def Info: week_1_img//class_diagrame.png  used on input line 71.
@@ -735,7 +1000,7 @@ Overfull \hbox (7.71765pt too wide) in paragraph at lines 111--113
 épondre aux besoins fonctionnels
  []
 
-<week_1_img//archetecture_diagrame.png, id=362, 3854.4pt x 1555.8125pt>
+<week_1_img//archetecture_diagrame.png, id=389, 3854.4pt x 1555.8125pt>
 File: week_1_img//archetecture_diagrame.png Graphic file (type png)
 <use week_1_img//archetecture_diagrame.png>
 Package pdftex.def Info: week_1_img//archetecture_diagrame.png  used on input l
@@ -750,7 +1015,7 @@ i un exemple de flux de communication
 [9{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./week_1_im
 g//archetecture_diagrame.png>] [10]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_Serv
-ice.pdf.png, id=381, 1778.645pt x 1000.73875pt>
+ice.pdf.png, id=408, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM
 _Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_
@@ -767,7 +1032,7 @@ Overfull \hbox (2.47006pt too wide) in paragraph at lines 161--162
 [11 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IA
 M_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Content_
-Service.pdf.png, id=390, 861.2175pt x 887.315pt>
+Service.pdf.png, id=416, 861.2175pt x 887.315pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Con
 tent_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Cont
@@ -778,7 +1043,7 @@ Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
  [12 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 C
 ontent_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 Billing_
-and_Subscription_Service.pdf.png, id=397, 1778.645pt x 1000.73875pt>
+and_Subscription_Service.pdf.png, id=424, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 Bil
 ling_and_Subscription_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 Bill
@@ -790,7 +1055,7 @@ Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
  [13 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 B
 illing_and_Subscription_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 Certific
-ation_Service.pdf.png, id=404, 1778.645pt x 1000.73875pt>
+ation_Service.pdf.png, id=431, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 Cer
 tification_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 Cert
@@ -801,7 +1066,7 @@ Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
  [14 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 C
 ertification_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 Analytic
-s_and_Reporting_Service.pdf.png, id=411, 1778.645pt x 995.72pt>
+s_and_Reporting_Service.pdf.png, id=438, 1778.645pt x 995.72pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 Ana
 lytics_and_Reporting_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 Anal
@@ -813,7 +1078,7 @@ Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
  [15 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 A
 nalytics_and_Reporting_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Feedback
-_Service.pdf.png, id=418, 1778.645pt x 1000.73875pt>
+_Service.pdf.png, id=445, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Fee
 dback_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Feed
@@ -825,7 +1090,7 @@ Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
 [16 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Fe
 edback_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 Notifica
-tion_Service.pdf.png, id=425, 1778.645pt x 1000.73875pt>
+tion_Service.pdf.png, id=452, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 Not
 ification_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 Noti
@@ -836,7 +1101,7 @@ Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
  [17 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 N
 otification_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 Media_Ma
-nagement_Service.pdf.png, id=433, 1778.645pt x 1000.73875pt>
+nagement_Service.pdf.png, id=459, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 Med
 ia_Management_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 Medi
@@ -847,7 +1112,7 @@ Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
  [18 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 M
 edia_Management_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 Platform
-_Configuration_Service.pdf.png, id=440, 1778.645pt x 1000.73875pt>
+_Configuration_Service.pdf.png, id=467, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 Pla
 tform_Configuration_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 Plat
@@ -859,7 +1124,7 @@ Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
  [19 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 P
 latform_Configuration_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 Search_S
-ervice.pdf.png, id=447, 1778.645pt x 1000.73875pt>
+ervice.pdf.png, id=474, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 Sea
 rch_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 Sear
@@ -881,7 +1146,7 @@ Overfull \hbox (40.39568pt too wide) in paragraph at lines 1--1
 |[]\T1/lmr/bx/n/20.74 (-20) Semaine 2 : Conception de l'Interface d'Accueil| 
  []
 
-<week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png, id=455, 19
+<week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png, id=483, 19
 11.14pt x 1041.8925pt>
 File: week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png Graphi
 c file (type png)
@@ -895,13 +1160,13 @@ ects_etc.png  used on input line 15.
 
 
  <./week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png>]
-<week_2_img/where_we_are_section.png, id=462, 770.88pt x 540.0175pt>
+<week_2_img/where_we_are_section.png, id=490, 770.88pt x 540.0175pt>
 File: week_2_img/where_we_are_section.png Graphic file (type png)
 <use week_2_img/where_we_are_section.png>
 Package pdftex.def Info: week_2_img/where_we_are_section.png  used on input lin
 e 35.
 (pdftex.def)             Requested size: 409.71692pt x 287.01543pt.
-<week_2_img/featchersection_1.png, id=463, 1314.9125pt x 724.7075pt>
+<week_2_img/featchersection_1.png, id=491, 1314.9125pt x 724.7075pt>
 File: week_2_img/featchersection_1.png Graphic file (type png)
 <use week_2_img/featchersection_1.png>
 Package pdftex.def Info: week_2_img/featchersection_1.png  used on input line 5
@@ -911,7 +1176,7 @@ Package pdftex.def Info: week_2_img/featchersection_1.png  used on input line 5
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<week_2_img/fetchersection_2.png, id=464, 1314.9125pt x 724.7075pt>
+<week_2_img/fetchersection_2.png, id=492, 1314.9125pt x 724.7075pt>
 File: week_2_img/fetchersection_2.png Graphic file (type png)
 <use week_2_img/fetchersection_2.png>
 Package pdftex.def Info: week_2_img/fetchersection_2.png  used on input line 60
@@ -920,7 +1185,7 @@ Package pdftex.def Info: week_2_img/fetchersection_2.png  used on input line 60
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<week_2_img/fetchersection_3.png, id=465, 1314.9125pt x 724.7075pt>
+<week_2_img/fetchersection_3.png, id=493, 1314.9125pt x 724.7075pt>
 File: week_2_img/fetchersection_3.png Graphic file (type png)
 <use week_2_img/fetchersection_3.png>
 Package pdftex.def Info: week_2_img/fetchersection_3.png  used on input line 67
@@ -930,7 +1195,7 @@ Package pdftex.def Info: week_2_img/fetchersection_3.png  used on input line 67
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [22 <./week_2_img/where_we_are_section.png>]
-<week_2_img/faqsection.png, id=473, 1314.9125pt x 724.7075pt>
+<week_2_img/faqsection.png, id=500, 1314.9125pt x 724.7075pt>
 File: week_2_img/faqsection.png Graphic file (type png)
 <use week_2_img/faqsection.png>
 Package pdftex.def Info: week_2_img/faqsection.png  used on input line 85.
@@ -939,7 +1204,7 @@ Package pdftex.def Info: week_2_img/faqsection.png  used on input line 85.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<week_2_img/second_call_of_action.png, id=474, 1314.9125pt x 724.7075pt>
+<week_2_img/second_call_of_action.png, id=501, 1314.9125pt x 724.7075pt>
 File: week_2_img/second_call_of_action.png Graphic file (type png)
 <use week_2_img/second_call_of_action.png>
 Package pdftex.def Info: week_2_img/second_call_of_action.png  used on input li
@@ -948,7 +1213,7 @@ ne 95.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<week_2_img/navbar.png, id=475, 1314.9125pt x 36.135pt>
+<week_2_img/navbar.png, id=502, 1314.9125pt x 36.135pt>
 File: week_2_img/navbar.png Graphic file (type png)
 <use week_2_img/navbar.png>
 Package pdftex.def Info: week_2_img/navbar.png  used on input line 105.
@@ -957,7 +1222,7 @@ Package pdftex.def Info: week_2_img/navbar.png  used on input line 105.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<week_2_img/foter.png, id=485, 1314.9125pt x 433.62pt>
+<week_2_img/foter.png, id=511, 1314.9125pt x 433.62pt>
 File: week_2_img/foter.png Graphic file (type png)
 <use week_2_img/foter.png>
 Package pdftex.def Info: week_2_img/foter.png  used on input line 112.
@@ -965,7 +1230,7 @@ Package pdftex.def Info: week_2_img/foter.png  used on input line 112.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<week_2_img/payment_1.png, id=486, 1314.9125pt x 724.7075pt>
+<week_2_img/payment_1.png, id=512, 1314.9125pt x 724.7075pt>
 File: week_2_img/payment_1.png Graphic file (type png)
 <use week_2_img/payment_1.png>
 Package pdftex.def Info: week_2_img/payment_1.png  used on input line 123.
@@ -980,12 +1245,18 @@ ter.png>] [26 <./week_2_img/payment_1.png>]) [27]
 
  (./week_3.tex
 Chapitre 4.
-<week_3_img/Screenshot 2025-05-19 234047.png, id=515, 178.16562pt x 63.23625pt>
+
+Overfull \hbox (1.12485pt too wide) in paragraph at lines 12--13
+[]\T1/lmr/m/n/12 (-20) La semaine a débuté par la finalisation du processus de 
+web scraping initié précédemment.
+ []
+
+<week_3_img/Screenshot 2025-05-19 234047.png, id=542, 178.16562pt x 63.23625pt>
 
 File: week_3_img/Screenshot 2025-05-19 234047.png Graphic file (type png)
 <use week_3_img/Screenshot 2025-05-19 234047.png>
 Package pdftex.def Info: week_3_img/Screenshot 2025-05-19 234047.png  used on i
-nput line 16.
+nput line 20.
 (pdftex.def)             Requested size: 409.71692pt x 145.42773pt.
 [28
 
@@ -993,59 +1264,71 @@ nput line 16.
 
 
  <./week_3_img/Screenshot 2025-05-19 234047.png>]
-Overfull \hbox (42.19826pt too wide) in paragraph at lines 37--37
+Overfull \hbox (42.19826pt too wide) in paragraph at lines 54--54
 |[]\T1/lmr/bx/n/17.28 (-20) Conception et Développement de l'Interface Utilisat
 eur| 
  []
 
-<week_3_img/accueil.png, id=522, 1573.88pt x 932.48375pt>
+<week_3_img/accueil.png, id=549, 1573.88pt x 932.48375pt>
 File: week_3_img/accueil.png Graphic file (type png)
 <use week_3_img/accueil.png>
-Package pdftex.def Info: week_3_img/accueil.png  used on input line 47.
+Package pdftex.def Info: week_3_img/accueil.png  used on input line 64.
 (pdftex.def)             Requested size: 409.71692pt x 242.73885pt.
-<week_3_img/sidebare.png, id=523, 279.0425pt x 893.3375pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<week_3_img/sidebare.png, id=550, 279.0425pt x 893.3375pt>
 File: week_3_img/sidebare.png Graphic file (type png)
 <use week_3_img/sidebare.png>
-Package pdftex.def Info: week_3_img/sidebare.png  used on input line 58.
+Package pdftex.def Info: week_3_img/sidebare.png  used on input line 75.
 (pdftex.def)             Requested size: 182.09486pt x 582.9798pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29 <./week_3_img/accueil.png>] [30 <./week_3_img/sidebare.png>]
-Overfull \hbox (12.24788pt too wide) in paragraph at lines 75--76
+[29]
+Overfull \hbox (12.24788pt too wide) in paragraph at lines 92--93
 []\T1/lmr/m/n/12 (-20) L'interface de consultation des cours a été conçue pour 
 offrir une expérience d'apprentissage
  []
 
-<week_3_img/part1.png, id=537, 1096.095pt x 490.83376pt>
+<week_3_img/part1.png, id=555, 1096.095pt x 490.83376pt>
 File: week_3_img/part1.png Graphic file (type png)
 <use week_3_img/part1.png>
-Package pdftex.def Info: week_3_img/part1.png  used on input line 79.
+Package pdftex.def Info: week_3_img/part1.png  used on input line 96.
 (pdftex.def)             Requested size: 409.71692pt x 183.47052pt.
-<week_3_img/part2.png, id=538, 1067.99pt x 886.31125pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<week_3_img/part2.png, id=556, 1067.99pt x 886.31125pt>
 File: week_3_img/part2.png Graphic file (type png)
 <use week_3_img/part2.png>
-Package pdftex.def Info: week_3_img/part2.png  used on input line 86.
+Package pdftex.def Info: week_3_img/part2.png  used on input line 103.
 (pdftex.def)             Requested size: 409.71692pt x 340.02048pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<week_3_img/Screenshot 2025-05-20 164411.png, id=539, 765.86125pt x 439.14063pt
+[30 <./week_3_img/accueil.png>] [31 <./week_3_img/sidebare.png>] [32 <./week_3_
+img/part1.png> <./week_3_img/part2.png>]
+<week_3_img/Screenshot 2025-05-20 164411.png, id=578, 765.86125pt x 439.14063pt
 >
 File: week_3_img/Screenshot 2025-05-20 164411.png Graphic file (type png)
 <use week_3_img/Screenshot 2025-05-20 164411.png>
 Package pdftex.def Info: week_3_img/Screenshot 2025-05-20 164411.png  used on i
-nput line 122.
+nput line 151.
 (pdftex.def)             Requested size: 409.71692pt x 234.92786pt.
+ [33 <./week_3_img/Screenshot 2025-05-20 164411.png>]
+Overfull \hbox (4.14896pt too wide) in paragraph at lines 204--205
+[]\T1/lmr/m/n/12 (-20) Intégration des capacités de rendu côté serveur de Next.
+js pour améliorer les performances 
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+[34])
+Overfull \hbox (7.9023pt too wide) in paragraph at lines 245--277
+\T1/lmr/m/n/12 (-20) stratégiques prises, notamment la simplification de l'arch
+itecture de données et la planification
+ []
 
-[31 <./week_3_img/part1.png>]
-
-LaTeX Warning: Text page 32 contains only floats.
-
-[32 <./week_3_img/part2.png> <./week_3_img/Screenshot 2025-05-20 164411.png>]
-[33]) [34]
+[35]
 \openout2 = `week_4.aux'.
 
  (./week_4.tex
@@ -1055,7 +1338,7 @@ Overfull \hbox (30.88467pt too wide) in paragraph at lines 1--1
 |[]\T1/lmr/bx/n/20.74 (-20) Semaine 4 : Finalisation, Tests et Déploiement| 
  []
 
-) [35
+) [36
 
 
 
@@ -1063,41 +1346,44 @@ Overfull \hbox (30.88467pt too wide) in paragraph at lines 1--1
 ]
 Chapitre 6.
 
-Overfull \hbox (13.86755pt too wide) in paragraph at lines 254--255
+Overfull \hbox (13.86755pt too wide) in paragraph at lines 310--311
 \T1/lmr/m/n/12 (-20) des fonctionnalités supplémentaires comme l'intelligence a
 rtificielle pour la personnalisation
  []
 
-[36
+[37
 
 
 
 ]
 Annexe A.
-[37
+[38
 
 ] (./main.aux (./week_1.aux) (./week_2.aux) (./week_3.aux) (./week_4.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C33B3C3226A49EE4C34F8206AF9D8E76;13004.
+(rerunfilecheck)             Checksum: 849D4ED7526D0B557F1B40BB3279F985;14373.
  ) 
 Here is how much of TeX's memory you used:
- 17188 strings out of 477985
- 281296 string characters out of 5839381
- 1864388 words of memory out of 6000000
- 36788 multiletter control sequences out of 15000+600000
- 579465 words of font info for 150 fonts, out of 8000000 for 9000
+ 27370 strings out of 477985
+ 504959 string characters out of 5839381
+ 1865388 words of memory out of 6000000
+ 46732 multiletter control sequences out of 15000+600000
+ 598936 words of font info for 170 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,13n,76p,1001b,736s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,13n,80p,1001b,1113s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (39 pages, 3414022 bytes).
+Output written on main.pdf (39 pages, 3420964 bytes).
 PDF statistics:
- 642 PDF objects out of 1000 (max. 8388607)
- 525 compressed objects within 6 object streams
- 136 named destinations out of 1000 (max. 500000)
- 37493 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 674 PDF objects out of 1000 (max. 8388607)
+ 556 compressed objects within 6 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 49839 words of extra memory for PDF output out of 51595 (max. 10000000)
 
