@@ -121,6 +121,18 @@
 % --- TOC Formatting ---
 \renewcommand{\contentsname}{Sommaire}
 
+% Set up counter for tracking chapters and section numbering
+\newcounter{mychapter}
+\setcounter{mychapter}{0}
+
+% Fix section numbering to use simple 1, 1.1 format with proper resetting
+\makeatletter
+\@addtoreset{section}{chapter}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+\makeatother
+
 % New TOC formatting
 \titlecontents{chapter}
     [0em]                                       % left margin
@@ -160,7 +172,7 @@
   {\parindent \z@ \raggedright \normalfont
     \ifnum \c@secnumdepth >\m@ne
       \if@mainmatter
-        \huge\bfseries\color{primary} \thechapter \\ #1
+        \huge\bfseries\color{primary} #1
         \par\nobreak
         \vskip 20\p@
       \fi
@@ -335,8 +347,10 @@ Ce rapport détaille l'ensemble des travaux réalisés durant les différentes s
 % Chapter 6: Assessment and Future Perspectives
 \include{chapter_6}
 
-\chapter{Chapitre 7 : Conclusion et Perspectives}
+\chapter*{Chapitre 7 : Conclusion et Perspectives}
+\addcontentsline{toc}{chapter}{Chapitre 7 : Conclusion et Perspectives}
 \thispagestyle{fancy}
+\setcounter{section}{0}
 \newpage
 
 Ce stage de quatre semaines chez LearnTech Solutions m'a permis de participer activement au développement d'une plateforme e-learning innovante. Au cours de cette période, j'ai pu mettre en pratique mes connaissances théoriques et acquérir de nouvelles compétences techniques dans un environnement professionnel stimulant.
