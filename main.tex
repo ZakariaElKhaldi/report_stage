@@ -1,0 +1,286 @@
+\documentclass[12pt, a4paper]{report}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage[scaled=0.85]{beramono}
+
+% --- Font Configuration ---
+
+% --- Color Definitions ---
+\definecolor{primary}{RGB}{0,51,102}
+\definecolor{secondary}{RGB}{102,102,153}
+\definecolor{accent}{RGB}{204,0,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{codeblue}{rgb}{0,0,0.9}
+\definecolor{codegreen}{rgb}{0.1,0.6,0.1}
+
+% --- Page Geometry ---
+\geometry{
+  a4paper,
+  left=2.5cm,
+  right=2.5cm,
+  top=2.5cm,
+  bottom=2.5cm,
+  headheight=15pt
+}
+
+% --- Header/Footer Setup ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Rapport de Stage}
+\fancyhead[R]{\small Zakaria el Khaldi}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% --- Title Formatting ---
+\titleformat{\chapter}
+  {\normalfont\LARGE\bfseries\color{primary}}
+  {\thechapter}{1em}{}
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{primary}}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{secondary}}
+  {\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{accent}}
+  {\thesubsubsection}{1em}{}
+
+% --- List Formatting ---
+\setlist[itemize]{leftmargin=*, nosep}
+\setlist[enumerate]{leftmargin=*, nosep}
+
+% --- Hyperlink Setup ---
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=secondary,
+  citecolor=accent
+}
+
+% --- Listings Setup for Code ---
+\lstdefinestyle{codestyle}{
+    basicstyle=\ttfamily\footnotesize,
+    numbers=left,
+    numberstyle=\tiny\color{codegray},
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{white!95!black},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=tb,
+    framextopmargin=3pt,
+    framexbottommargin=3pt,
+    rulecolor=\color{black!30!white},
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    stringstyle=\color{codepurple},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{codeblue}
+}
+
+% --- Document Information ---
+\title{\Huge\bfseries\color{primary} Rapport de Stage \\ 
+       \Large Conception et Développement d'une Plateforme E-learning}
+\author{\Large Zakaria el Khaldi}
+\date{\large Juin 2025}
+
+\begin{document}
+
+% --- Cover Page ---
+\begin{titlepage}
+  \centering
+  \IfFileExists{images/logo_entreprise.png}{
+    \includegraphics[width=0.4\textwidth]{images/logo_entreprise.png}
+  }{
+    % If logo doesn't exist, display company name in large text
+    \vspace*{1cm}
+    {\huge\bfseries\color{primary} ENTREPRISE DE STAGE\par}
+  }
+  \vspace*{2cm}
+  
+  {\Huge\bfseries\color{primary} RAPPORT DE STAGE\par}
+  \vspace{1.5cm}
+  {\Large\itshape Conception et Développement d'une Plateforme E-learning\par}
+  \vspace{3cm}
+  
+  {\large Présenté par :\par}
+  \vspace{0.5cm}
+  {\Large\bfseries Zakaria el Khaldi\par}
+  \vspace{1.5cm}
+  
+  {\large Stage effectué du 10 mai au 10 juin 2025\par}
+  \vspace{0.5cm}
+  {\large Au sein de l'entreprise :\par}
+  \vspace{0.5cm}
+  {\large\bfseries LearnTech Solutions\par}
+  \vspace{3cm}
+  
+  {\large Sous la supervision de :\par}
+  \vspace{0.5cm}
+  {\large M. Ahmed Benali\par}
+  \vspace{0.5cm}
+  {\large Directeur Technique\par}
+  \vfill
+  
+  {\large\bfseries Formation : Master en Développement Informatique\par}
+  \vspace{0.5cm}
+  {\large Année Académique 2024-2025\par}
+\end{titlepage}
+
+% --- Remerciements ---
+\chapter*{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}
+\thispagestyle{fancy}
+
+Je tiens à exprimer ma profonde gratitude à toutes les personnes qui ont contribué à la réussite de ce stage et à l'élaboration de ce rapport.
+
+Je remercie tout d'abord M. Ahmed Benali, Directeur Technique de LearnTech Solutions, pour son accueil au sein de l'entreprise, sa disponibilité et ses précieux conseils qui m'ont guidé tout au long de cette expérience professionnelle.
+
+Mes remerciements s'adressent également à l'ensemble de l'équipe de LearnTech Solutions pour leur accueil chaleureux, leur soutien et leur partage de connaissances qui ont rendu cette expérience particulièrement enrichissante.
+
+Je suis également reconnaissant envers mon université et mes professeurs pour la qualité de l'enseignement reçu qui m'a permis d'aborder ce stage avec les compétences nécessaires.
+
+Enfin, je remercie ma famille et mes amis pour leur soutien inconditionnel tout au long de mon parcours.
+
+\newpage
+
+% --- Table of Contents ---
+\tableofcontents
+\thispagestyle{fancy}
+
+\chapter{Introduction}
+\thispagestyle{fancy}
+
+Ce rapport présente le travail réalisé lors de mon stage de fin d'études effectué au sein de LearnTech Solutions du 10 mai au 10 juin 2025. Durant cette période, j'ai participé à la conception et au développement d'une plateforme e-learning complète destinée aux entreprises et aux professionnels individuels.
+
+L'objectif de ce stage était de mettre en pratique les connaissances théoriques acquises durant ma formation et de les approfondir dans un contexte professionnel. Ce projet m'a permis de développer des compétences en développement web, en conception d'architecture logicielle, en gestion de bases de données et en traitement de données.
+
+Ce rapport détaille l'ensemble des travaux réalisés durant les différentes semaines du stage, les méthodologies employées, les difficultés rencontrées et les solutions apportées, ainsi que les résultats obtenus.
+
+\section{Contexte du Stage}
+LearnTech Solutions est une entreprise spécialisée dans le développement de solutions d'apprentissage en ligne. Face à une demande croissante pour des plateformes de formation à distance, l'entreprise a décidé de développer une nouvelle plateforme e-learning innovante combinant des cours structurés et des services de consultation personnalisés.
+
+Le projet s'inscrit dans un contexte de digitalisation accélérée de la formation professionnelle et de besoin croissant en solutions permettant un apprentissage flexible et adapté aux besoins spécifiques des entreprises et des individus.
+
+\section{Présentation de l'Entreprise}
+LearnTech Solutions est une entreprise tech spécialisée dans le développement de solutions éducatives numériques. Fondée en 2020, elle se positionne comme un acteur innovant dans le domaine de l'e-learning et des technologies éducatives. L'entreprise compte une vingtaine de collaborateurs, principalement des développeurs, des designers UX/UI, des spécialistes en contenu pédagogique et des experts en expérience utilisateur.
+
+La mission de LearnTech Solutions est de démocratiser l'accès à une éducation de qualité grâce à des plateformes technologiques avancées et intuitives. L'entreprise se distingue par son approche qui combine apprentissage structuré et interaction humaine à la demande.
+
+\section{Objectifs du Stage}
+Les objectifs principaux de ce stage étaient les suivants :
+
+\begin{itemize}
+  \item Participer à la conception initiale de l'architecture de la plateforme e-learning
+  \item Développer des composants back-end pour la gestion des utilisateurs et des cours
+  \item Mettre en place un système de traitement et de nettoyage de données pour les contenus pédagogiques
+  \item Implémenter des fonctionnalités front-end pour l'expérience utilisateur
+  \item Contribuer à l'intégration des différents services et microservices
+  \item Participer aux phases de test et d'évaluation de la plateforme
+\end{itemize}
+
+Ces objectifs s'inscrivent dans le cadre plus large du développement d'une plateforme e-learning complète et innovante, destinée à être commercialisée auprès d'entreprises et de professionnels individuels.
+
+\chapter{Conception et Architecture de la Plateforme E-learning}
+\thispagestyle{fancy}
+
+La première semaine du stage a été consacrée à la conception initiale du projet, à la définition de l'architecture backend et des bases de données, ainsi qu'à la création des premiers diagrammes UML.
+
+\section{Vision de la Plateforme}
+La plateforme e-learning conçue repose sur une vision claire :
+\begin{itemize}
+  \item \textbf{Offres Clés :} Cours en ligne auto-rythmés (vidéos, images, quiz) et services de support, de conseil et de prestation via une plateforme de réunion intégrée
+  \item \textbf{Utilisateurs Cibles :} Entreprises (pour la formation des employés) et apprenants individuels (pour l'amélioration des compétences)
+  \item \textbf{Valeur Unique :} Un mélange harmonieux d'apprentissage structuré et d'interaction avec des experts à la demande
+\end{itemize}
+
+\section{Architecture Microservices}
+L'architecture choisie pour cette plateforme est une architecture microservices, justifiée par plusieurs avantages :
+\begin{itemize}
+  \item \textbf{Scalabilité :} Capacité à mettre à l'échelle les services individuels
+  \item \textbf{Maintenabilité :} Possibilité de modifier des composants sans impacter l'ensemble du système
+  \item \textbf{Résilience :} Limitation de l'impact d'une défaillance à un service spécifique
+  \item \textbf{Autonomie des Équipes :} Permettre à différentes équipes de gérer et déployer leurs services
+  \item \textbf{Flexibilité Technologique :} Utiliser les technologies les plus adaptées pour chaque service
+\end{itemize}
+
+\section{Pile Technologique}
+La pile technologique définie pour le développement comprend :
+\begin{itemize}
+  \item \textbf{Frontend :} Next.js (React)
+  \item \textbf{Backend :}
+    \begin{itemize}
+      \item Go (pour les services critiques en performance)
+      \item Python avec FastAPI (pour les services de données)
+      \item Node.js avec Express (pour les opérations I/O intensives)
+    \end{itemize}
+  \item \textbf{Bases de Données :} PostgreSQL et Supabase
+  \item \textbf{Passerelle API :} Nginx
+  \item \textbf{Broker de Messages :} Apache Kafka
+  \item \textbf{Conteneurisation :} Docker
+\end{itemize}
+
+\chapter{Analyse et Nettoyage des Données}
+\thispagestyle{fancy}
+
+La deuxième et troisième semaine du stage ont été consacrées à l'analyse approfondie de la qualité des données obtenues par scraping et au développement de scripts pour leur nettoyage et leur transformation.
+
+\section{Analyse de la Qualité des Données}
+L'analyse initiale des données scrappées a porté sur :
+\begin{itemize}
+  \item \textbf{Complétude :} Identification des champs manquants
+  \item \textbf{Cohérence :} Vérification des formats de données
+  \item \textbf{Exactitude :} Évaluation de la plausibilité des données
+  \item \textbf{Doublons :} Détection des entrées redondantes
+  \item \textbf{Pertinence :} Élimination du bruit et des données non pertinentes
+\end{itemize}
+
+\section{Stratégie de Nettoyage avec LLM}
+Face aux défis de nettoyage des données complexes, une approche innovante utilisant des Modèles de Langage Large (LLM) a été implémentée :
+\begin{itemize}
+  \item \textbf{Approche Multi-LLM :} Utilisation de plusieurs API LLM en parallèle pour optimiser le traitement
+  \item \textbf{Traitement Asynchrone :} Requêtes asynchrones pour réduire la latence globale
+  \item \textbf{Segmentation des Données :} Répartition des données entre différents fournisseurs LLM
+\end{itemize}
+
+Cette approche a permis d'obtenir une précision de nettoyage significativement supérieure aux méthodes algorithmiques traditionnelles, tout en optimisant les temps de traitement.
+
+\chapter{Développement et Implémentation}
+\thispagestyle{fancy}
+[Contenu détaillé sur le développement des différents composants de la plateforme]
+
+\chapter{Évaluation et Tests}
+\thispagestyle{fancy}
+[Contenu sur les méthodologies de test et les résultats d'évaluation]
+
+\chapter{Conclusion et Perspectives}
+\thispagestyle{fancy}
+[Conclusion du rapport et perspectives futures pour la plateforme]
+
+\appendix
+\chapter{Annexes}
+\thispagestyle{fancy}
+[Diagrammes UML, exemples de code, captures d'écran de l'interface]
+
+\end{document}
