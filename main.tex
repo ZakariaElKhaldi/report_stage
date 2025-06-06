@@ -17,6 +17,7 @@
 \usepackage{microtype}
 \usepackage{fancyhdr}
 \usepackage{listings}
+\usepackage{float}
 \usepackage[scaled=0.85]{beramono}
 \usepackage{tikz}
 \usepackage{afterpage}
@@ -373,6 +374,12 @@ This internship was a formative experience that allowed me to deepen my technica
 \thispagestyle{fancy}
 \newpage
 
+% --- List of Figures ---
+\renewcommand{\listfigurename}{Liste des figures}
+\listoffigures
+\thispagestyle{fancy}
+\newpage
+
 % --- Include Chapter Files ---
 % Each chapter.s content is in a separate file for better organization
 
@@ -400,47 +407,95 @@ Ce rapport détaille l'ensemble des travaux réalisés durant les différentes s
 \include{chapter_4}
 
 % Chapter 5: Deployment and Optimization
-\include{chapter_5}
+% \include{chapter_5}
 
 % Chapter 6: Assessment and Future Perspectives
-\include{chapter_6}
+% \include{chapter_6}
 
-\chapter*{Chapitre 7 : Conclusion et Perspectives}
-\addcontentsline{toc}{chapter}{Chapitre 7 : Conclusion et Perspectives}
+\chapter*{Conclusion et Perspectives}
+\addcontentsline{toc}{chapter}{Conclusion et Perspectives}
 \thispagestyle{fancy}
 \setcounter{section}{0}
 \newpage
 
-Ce stage de quatre semaines chez IAAI m'a permis de participer activement au développement d'une plateforme e-learning innovante. Au cours de cette période, j'ai pu mettre en pratique mes connaissances théoriques et acquérir de nouvelles compétences techniques dans un environnement professionnel stimulant.
+Ce stage de quatre semaines au sein d'IAAI m'a permis de participer activement au développement de la plateforme e-learning LearnExpert. Cette expérience professionnelle a été particulièrement enrichissante, tant sur le plan technique que personnel.
 
-\section{Synthèse des Réalisations}
+\section{Bilan du Projet}
 
-Durant ces quatre semaines, les principales réalisations ont été :
+Le projet de développement de la plateforme LearnExpert a été mené avec succès jusqu'au stade de prototype fonctionnel. Les principales réalisations comprennent :
+
 \begin{itemize}
-  \item La conception de l'architecture microservices pour la plateforme
-  \item La participation au développement des interfaces utilisateur
-  \item L'implémentation de systèmes de traitement et nettoyage de données
-  \item La contribution à l'optimisation des performances et à l'amélioration de l'expérience utilisateur
+  \item \textbf{Conception d'une architecture microservices} adaptée aux besoins spécifiques d'une plateforme e-learning moderne
+  \item \textbf{Développement d'une interface utilisateur intuitive et responsive} avec Next.js, offrant une expérience d'apprentissage immersive
+  \item \textbf{Implémentation d'un éditeur de code interactif} permettant la pratique en temps réel
+  \item \textbf{Mise en place d'un pipeline de traitement de données} utilisant des modèles LLM en parallèle pour optimiser le processus de structuration du contenu
+  \item \textbf{Création de fonctionnalités avancées d'authentification} avec plusieurs niveaux d'autorisation et un système sécurisé de gestion des utilisateurs
 \end{itemize}
+
+La méthodologie de développement adoptée, inspirée des principes agiles, a permis une progression constante et des ajustements réguliers en fonction des priorités identifiées.
 
 \section{Compétences Acquises}
 
-Ce stage m'a permis de développer de nombreuses compétences :
+Ce stage m'a permis de développer un large éventail de compétences :
+
 \begin{itemize}
-  \item \textbf{Compétences techniques :} Approfondissement des connaissances en développement web moderne (Next.js, API REST), en architecture microservices et en traitement de données avec des modèles LLM
-  \item \textbf{Compétences méthodologiques :} Maîtrise des outils de gestion de projet agile, de versionnement et de déploiement continu
-  \item \textbf{Compétences transversales :} Amélioration des capacités de communication, de travail en équipe et d'adaptation à un environnement professionnel
+  \item \textbf{Compétences techniques :}
+  \begin{itemize}
+    \item Maîtrise approfondie de Next.js et React pour le développement frontend
+    \item Expérience pratique avec l'architecture microservices et les API RESTful
+    \item Utilisation avancée de MongoDB et Supabase pour la gestion de données
+    \item Intégration de modèles LLM pour le traitement de données éducatives
+    \item Configuration et optimisation d'environnements de développement modernes
+  \end{itemize}
+  
+  \item \textbf{Compétences méthodologiques :}
+  \begin{itemize}
+    \item Application des principes de développement agile dans un contexte réel
+    \item Utilisation efficace des outils de gestion de versions (GitHub)
+    \item Pratiques de documentation et de maintenance de code
+    \item Approche structurée de résolution de problèmes complexes
+  \end{itemize}
+  
+  \item \textbf{Compétences transversales :}
+  \begin{itemize}
+    \item Communication technique et présentation de solutions
+    \item Collaboration au sein d'une équipe de développement
+    \item Gestion du temps et priorisation des tâches
+    \item Adaptation aux changements de spécifications et aux contraintes techniques
+  \end{itemize}
 \end{itemize}
+
+\section{Défis Rencontrés et Solutions Apportées}
+
+Tout au long du stage, plusieurs défis techniques ont dû être surmontés :
+
+\begin{itemize}
+  \item \textbf{Traitement automatisé du contenu éducatif :} Les approches conventionnelles de séparation contenu/code n'atteignant que 80\% de précision, j'ai conçu une solution innovante utilisant des modèles LLM en parallèle, réduisant le temps de traitement de 15 à 7-8 heures tout en atteignant une précision proche de 100\%.
+  
+  \item \textbf{Intégration de l'éditeur de code interactif :} L'implémentation d'un environnement d'exécution sécurisé pour le code utilisateur a nécessité des solutions créatives pour isoler l'exécution tout en fournissant un feedback immédiat.
+  
+  \item \textbf{Performance des interfaces riches :} L'optimisation des composants React complexes et la mise en place de stratégies de chargement différé ont permis d'améliorer significativement les temps de réponse de l'interface utilisateur.
+\end{itemize}
+
+Ces défis ont été des opportunités d'apprentissage précieuses, renforçant ma capacité à aborder des problèmes techniques complexes de manière méthodique.
 
 \section{Perspectives}
 
-Ce projet ouvre plusieurs perspectives intéressantes :
+Ce projet ouvre de nombreuses perspectives, tant pour l'entreprise que pour ma carrière professionnelle :
+
 \begin{itemize}
-  \item \textbf{Pour l'entreprise :} Finalisation et commercialisation de la plateforme e-learning, avec des fonctionnalités supplémentaires comme l'intelligence artificielle pour la personnalisation des parcours d'apprentissage
-  \item \textbf{Pour ma carrière :} Approfondissement des compétences en développement full-stack et en architecture de systèmes complexes
+  \item \textbf{Pour IAAI :} La plateforme LearnExpert pourra être enrichie avec des fonctionnalités d'intelligence artificielle pour personnaliser davantage les parcours d'apprentissage, analyser les performances des apprenants et générer du contenu adaptatif.
+  
+  \item \textbf{Pour ma carrière :} Cette expérience constitue une base solide pour poursuivre mon développement professionnel dans le domaine des technologies éducatives et des architectures web modernes. Elle m'a permis d'identifier des domaines d'approfondissement, notamment l'optimisation des performances frontend et l'architecture de systèmes distribués.
 \end{itemize}
 
-En conclusion, ce stage a été une expérience extrêmement enrichissante qui m'a permis d'approfondir mes connaissances techniques tout en développant ma compréhension des enjeux liés au développement de solutions éducatives numériques. Les compétences acquises et l'expérience professionnelle seront des atouts précieux pour ma future carrière.
+\section{Mot de Fin}
+
+Ce stage a représenté une étape déterminante dans mon parcours de formation. Au-delà des compétences techniques acquises, j'ai pu découvrir la réalité du développement logiciel en entreprise et confirmer mon intérêt pour ce domaine professionnel.
+
+Je suis particulièrement reconnaissant envers l'équipe d'IAAI pour cette opportunité d'apprentissage, pour leur confiance et pour le partage de leurs connaissances. Cette expérience m'a permis de consolider mes acquis académiques tout en développant une vision plus concrète des défis et opportunités du secteur du développement web et des technologies éducatives.
+
+Les enseignements tirés de ce stage constitueront sans aucun doute des atouts précieux pour ma future carrière professionnelle.
 
 \appendix
 \chapter{Annexes}
