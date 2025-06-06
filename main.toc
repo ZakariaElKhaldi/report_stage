@@ -1,110 +1,152 @@
 \babel@toc {french}{}\relax 
-\contentsline {chapter}{Remerciements}{1}{chapter*.1}%
-\contentsline {chapter}{Introduction}{5}{chapter*.3}%
-\contentsline {chapter}{Chapitre 1 : Présentation de l'Entreprise et Cadre du Stage}{6}{chapter*.4}%
-\contentsline {section}{\numberline {1}Présentation de IAAI}{7}{section.0.1}%
-\contentsline {subsection}{\numberline {1.1}Historique et Domaine d'Activité}{7}{subsection.0.1.1}%
-\contentsline {subsection}{\numberline {1.2}Vision et Mission}{7}{subsection.0.1.2}%
-\contentsline {subsection}{\numberline {1.3}Organisation Structurelle}{7}{subsection.0.1.3}%
-\contentsline {section}{\numberline {2}Cadre Général du Stage}{7}{section.0.2}%
-\contentsline {subsection}{\numberline {2.1}Objectifs du Stage}{7}{subsection.0.2.1}%
-\contentsline {subsection}{\numberline {2.2}Environnement de Travail}{8}{subsection.0.2.2}%
-\contentsline {subsection}{\numberline {2.3}Planning et Méthodologie}{8}{subsection.0.2.3}%
-\contentsline {chapter}{Chapitre 2 : Cahier des Charges et Spécifications}{9}{chapter*.5}%
-\contentsline {section}{\numberline {1}Présentation du Projet LearnExpert}{10}{section.0.1}%
-\contentsline {subsection}{\numberline {1.1}Contexte et Problématique}{10}{subsection.0.1.1}%
-\contentsline {subsection}{\numberline {1.2}Objectifs du Projet}{10}{subsection.0.1.2}%
-\contentsline {section}{\numberline {2}Analyse des Besoins}{10}{section.0.2}%
-\contentsline {subsection}{\numberline {2.1}Besoins Fonctionnels}{10}{subsection.0.2.1}%
-\contentsline {subsection}{\numberline {2.2}Besoins Non Fonctionnels}{11}{subsection.0.2.2}%
-\contentsline {section}{\numberline {3}Technologies et Outils}{11}{section.0.3}%
-\contentsline {subsection}{\numberline {3.1}Stack Technologique}{11}{subsection.0.3.1}%
-\contentsline {subsection}{\numberline {3.2}Environnement de Développement}{12}{subsection.0.3.2}%
-\contentsline {chapter}{Chapitre 3 : Conception et Modélisation}{13}{chapter*.6}%
-\contentsline {section}{\numberline {1}Introduction}{14}{section.0.1}%
-\contentsline {section}{\numberline {2}Méthodologie Adoptée}{14}{section.0.2}%
-\contentsline {subsection}{\numberline {2.1}Modèle en cascade}{14}{subsection.0.2.1}%
-\contentsline {subsection}{\numberline {2.2}Langage UML}{14}{subsection.0.2.2}%
-\contentsline {section}{\numberline {3}Conception}{14}{section.0.3}%
-\contentsline {subsection}{\numberline {3.1}Identification des acteurs}{14}{subsection.0.3.1}%
-\contentsline {subsection}{\numberline {3.2}Identification des messages}{14}{subsection.0.3.2}%
-\contentsline {subsection}{\numberline {3.3}Les diagrammes de cas d'utilisation}{15}{subsection.0.3.3}%
-\contentsline {subsection}{\numberline {3.4}Les diagrammes de séquence}{15}{subsection.0.3.4}%
-\contentsline {subsection}{\numberline {3.5}Le diagramme de classes}{16}{subsection.0.3.5}%
-\contentsline {section}{\numberline {4}Architecture Adoptée}{16}{section.0.4}%
-\contentsline {subsection}{\numberline {4.1}Pile Technologique}{17}{subsection.0.4.1}%
-\contentsline {subsection}{\numberline {4.2}Modèles de Données des Services}{17}{subsection.0.4.2}%
-\contentsline {subsubsection}{Service IAM (Identity and Access Management)}{18}{subsection.0.4.2}%
-\contentsline {paragraph}{Points clés du modèle IAM :}{18}{figure.0.4}%
-\contentsline {subsubsection}{Service de Contenu}{19}{figure.0.4}%
-\contentsline {paragraph}{Points clés du service de Contenu :}{19}{figure.0.5}%
-\contentsline {subsubsection}{Service de Facturation et d'Abonnement}{20}{figure.0.5}%
-\contentsline {paragraph}{Points clés du service de Facturation :}{20}{figure.0.6}%
-\contentsline {subsubsection}{Service de Certification}{21}{figure.0.6}%
-\contentsline {paragraph}{Points clés du service de Certification :}{21}{figure.0.7}%
-\contentsline {subsubsection}{Service d'Analytique et Reporting}{22}{figure.0.7}%
-\contentsline {paragraph}{Points clés du service d'Analytique :}{22}{figure.0.8}%
-\contentsline {subsubsection}{Service de Feedback}{23}{figure.0.8}%
-\contentsline {paragraph}{Points clés du service de Feedback :}{23}{figure.0.9}%
-\contentsline {subsubsection}{Service de Notification}{24}{figure.0.9}%
-\contentsline {paragraph}{Points clés du service de Notification :}{24}{figure.0.10}%
-\contentsline {subsubsection}{Service de Gestion des Médias}{25}{figure.0.10}%
-\contentsline {paragraph}{Points clés du service de Médias :}{25}{figure.0.11}%
-\contentsline {subsubsection}{Service de Configuration de la Plateforme}{26}{figure.0.11}%
-\contentsline {paragraph}{Points clés du service de Configuration :}{26}{figure.0.12}%
-\contentsline {subsubsection}{Service de Recherche}{27}{figure.0.12}%
-\contentsline {paragraph}{Points clés du service de Recherche :}{27}{figure.0.13}%
-\contentsline {chapter}{Chapitre 4 : Réalisation et mise en pied du système}{28}{chapter*.7}%
-\contentsline {section}{\numberline {1}Outils et technologies de développement}{29}{section.0.1}%
-\contentsline {subsection}{\numberline {1.1}Environnement de développement}{29}{subsection.0.1.1}%
-\contentsline {subsection}{\numberline {1.2}Technologies frontend}{29}{subsection.0.1.2}%
-\contentsline {subsection}{\numberline {1.3}Technologies backend}{29}{subsection.0.1.3}%
-\contentsline {chapter}{Chapitre 5 : Déploiement et Tests}{30}{chapter*.8}%
-\contentsline {section}{\numberline {1}Intégration et Déploiement du Backend}{31}{section.0.1}%
-\contentsline {subsection}{\numberline {1.1}Configuration du Serveur}{31}{subsection.0.1.1}%
-\contentsline {subsection}{\numberline {1.2}Déploiement de la Base de Données}{31}{subsection.0.1.2}%
-\contentsline {subsection}{\numberline {1.3}Évolution de l'Architecture}{32}{subsection.0.1.3}%
-\contentsline {section}{\numberline {2}Intégration et Tests}{32}{section.0.2}%
-\contentsline {subsection}{\numberline {2.1}Tests Unitaires}{32}{subsection.0.2.1}%
-\contentsline {subsection}{\numberline {2.2}Tests d'Intégration}{32}{subsection.0.2.2}%
-\contentsline {subsection}{\numberline {2.3}Tests de Performance}{32}{subsection.0.2.3}%
-\contentsline {section}{\numberline {3}Optimisation et Monitoring}{32}{section.0.3}%
-\contentsline {subsection}{\numberline {3.1}Optimisation des Performances}{32}{subsection.0.3.1}%
-\contentsline {subsection}{\numberline {3.2}Mise en Place du Monitoring}{33}{subsection.0.3.2}%
-\contentsline {subsection}{\numberline {3.3}Documentation}{33}{subsection.0.3.3}%
-\contentsline {section}{\numberline {4}Conception et Développement de l'Interface Utilisateur}{33}{section.0.4}%
-\contentsline {subsection}{\numberline {4.1}Interface d'Accueil des Utilisateurs Connectés}{33}{subsection.0.4.1}%
-\contentsline {subsection}{\numberline {4.2}Barre Latérale de Navigation}{33}{subsection.0.4.2}%
-\contentsline {subsection}{\numberline {4.3}Interface de Consultation des Cours}{34}{subsection.0.4.3}%
-\contentsline {section}{\numberline {5}Traitement Avancé des Données de Contenu}{34}{section.0.5}%
-\contentsline {subsection}{\numberline {5.1}Défis du Traitement des Données}{34}{subsection.0.5.1}%
-\contentsline {subsection}{\numberline {5.2}Problématique du Scraping et Nettoyage des Données}{35}{subsection.0.5.2}%
-\contentsline {subsection}{\numberline {5.3}Implémentation d'un Pipeline de Traitement LLM}{37}{subsection.0.5.3}%
-\contentsline {subsection}{\numberline {5.4}Stratégie d'Optimisation Multi-LLM}{37}{subsection.0.5.4}%
-\contentsline {section}{\numberline {6}Intégration Frontend-Backend}{38}{section.0.6}%
-\contentsline {subsection}{\numberline {6.1}Développement des Routes d'API}{38}{subsection.0.6.1}%
-\contentsline {subsection}{\numberline {6.2}Optimisation des Requêtes}{38}{subsection.0.6.2}%
-\contentsline {subsection}{\numberline {6.3}Adaptation à l'Architecture JSON}{38}{subsection.0.6.3}%
-\contentsline {section}{\numberline {7}Tests et Validation}{38}{section.0.7}%
-\contentsline {subsection}{\numberline {7.1}Tests d'Interface Utilisateur}{38}{subsection.0.7.1}%
-\contentsline {subsection}{\numberline {7.2}Tests Fonctionnels et d'Intégration}{39}{subsection.0.7.2}%
-\contentsline {subsection}{\numberline {7.3}Planification Stratégique pour l'Avenir}{39}{subsection.0.7.3}%
-\contentsline {section}{\numberline {8}Conclusion}{39}{section.0.8}%
-\contentsline {chapter}{Chapitre 6 : Bilan et Perspectives}{40}{chapter*.9}%
-\contentsline {section}{\numberline {1}Réalisations et État Actuel du Projet}{41}{section.0.1}%
-\contentsline {subsection}{\numberline {1.1}Fonctionnalités Implémentées}{41}{subsection.0.1.1}%
-\contentsline {subsection}{\numberline {1.2}Défis Techniques Surmontés}{41}{subsection.0.1.2}%
-\contentsline {section}{\numberline {2}Développements Futurs}{41}{section.0.2}%
-\contentsline {subsection}{\numberline {2.1}Fonctionnalités Planifiées}{42}{subsection.0.2.1}%
-\contentsline {subsection}{\numberline {2.2}Améliorations Techniques Envisagées}{42}{subsection.0.2.2}%
-\contentsline {subsection}{\numberline {2.3}Roadmap d'Évolution}{42}{subsection.0.2.3}%
-\contentsline {section}{\numberline {3}Bilan Personnel du Stage}{42}{section.0.3}%
-\contentsline {subsection}{\numberline {3.1}Compétences Techniques Acquises}{43}{subsection.0.3.1}%
-\contentsline {subsection}{\numberline {3.2}Compétences Transversales Développées}{43}{subsection.0.3.2}%
-\contentsline {subsection}{\numberline {3.3}Apprentissages Professionnels}{43}{subsection.0.3.3}%
-\contentsline {chapter}{Chapitre 7 : Conclusion et Perspectives}{44}{chapter*.10}%
-\contentsline {section}{\numberline {1}Synthèse des Réalisations}{45}{section.0.1}%
-\contentsline {section}{\numberline {2}Compétences Acquises}{45}{section.0.2}%
-\contentsline {section}{\numberline {3}Perspectives}{45}{section.0.3}%
-\contentsline {chapter}{\numberline {A}Annexes}{46}{appendix.A}%
+\contentsline {chapter}{Dédicace}{1}{chapter*.1}%
+\contentsline {chapter}{Remerciements}{2}{chapter*.2}%
+\contentsline {chapter}{Résumé}{3}{chapter*.3}%
+\contentsline {chapter}{Abstract}{4}{chapter*.4}%
+\contentsline {chapter}{Introduction}{9}{chapter*.6}%
+\contentsline {chapter}{Chapitre 1 : Présentation de l'Entreprise et Cadre du Stage}{10}{chapter*.7}%
+\contentsline {section}{\numberline {1}Présentation de IAAI}{11}{section.0.1}%
+\contentsline {subsection}{\numberline {1.1}Historique et Domaine d'Activité}{11}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {1.2}Vision et Mission}{11}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {1.3}Organisation Structurelle}{11}{subsection.0.1.3}%
+\contentsline {section}{\numberline {2}Cadre Général du Stage}{11}{section.0.2}%
+\contentsline {subsection}{\numberline {2.1}Objectifs du Stage}{11}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {2.2}Environnement de Travail}{12}{subsection.0.2.2}%
+\contentsline {subsection}{\numberline {2.3}Planning et Méthodologie}{12}{subsection.0.2.3}%
+\contentsline {chapter}{Chapitre 2 : Cahier des Charges et Spécifications}{13}{chapter*.8}%
+\contentsline {section}{\numberline {1}Présentation du Projet LearnExpert}{14}{section.0.1}%
+\contentsline {subsection}{\numberline {1.1}Contexte et Problématique}{14}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {1.2}Objectifs du Projet}{14}{subsection.0.1.2}%
+\contentsline {section}{\numberline {2}Analyse des Besoins}{14}{section.0.2}%
+\contentsline {subsection}{\numberline {2.1}Besoins Fonctionnels}{14}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {2.2}Besoins Non Fonctionnels}{15}{subsection.0.2.2}%
+\contentsline {section}{\numberline {3}Technologies et Outils}{15}{section.0.3}%
+\contentsline {subsection}{\numberline {3.1}Stack Technologique}{15}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {3.2}Environnement de Développement}{16}{subsection.0.3.2}%
+\contentsline {chapter}{Chapitre 3 : Conception et Modélisation}{17}{chapter*.9}%
+\contentsline {section}{\numberline {1}Introduction}{18}{section.0.1}%
+\contentsline {section}{\numberline {2}Méthodologie Adoptée}{18}{section.0.2}%
+\contentsline {subsection}{\numberline {2.1}Modèle en cascade}{18}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {2.2}Langage UML}{18}{subsection.0.2.2}%
+\contentsline {section}{\numberline {3}Conception}{18}{section.0.3}%
+\contentsline {subsection}{\numberline {3.1}Identification des acteurs}{18}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {3.2}Identification des messages}{18}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {3.3}Les diagrammes de cas d'utilisation}{19}{subsection.0.3.3}%
+\contentsline {subsection}{\numberline {3.4}Les diagrammes de séquence}{19}{subsection.0.3.4}%
+\contentsline {subsection}{\numberline {3.5}Le diagramme de classes}{20}{subsection.0.3.5}%
+\contentsline {section}{\numberline {4}Architecture Adoptée}{20}{section.0.4}%
+\contentsline {subsection}{\numberline {4.1}Pile Technologique}{21}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {4.2}Modèles de Données des Services}{21}{subsection.0.4.2}%
+\contentsline {subsubsection}{Service IAM (Identity and Access Management)}{22}{subsection.0.4.2}%
+\contentsline {paragraph}{Points clés du modèle IAM :}{22}{figure.0.4}%
+\contentsline {subsubsection}{Service de Contenu}{23}{figure.0.4}%
+\contentsline {paragraph}{Points clés du service de Contenu :}{23}{figure.0.5}%
+\contentsline {subsubsection}{Service de Facturation et d'Abonnement}{24}{figure.0.5}%
+\contentsline {paragraph}{Points clés du service de Facturation :}{24}{figure.0.6}%
+\contentsline {subsubsection}{Service de Certification}{25}{figure.0.6}%
+\contentsline {paragraph}{Points clés du service de Certification :}{25}{figure.0.7}%
+\contentsline {subsubsection}{Service d'Analytique et Reporting}{26}{figure.0.7}%
+\contentsline {paragraph}{Points clés du service d'Analytique :}{26}{figure.0.8}%
+\contentsline {subsubsection}{Service de Feedback}{27}{figure.0.8}%
+\contentsline {paragraph}{Points clés du service de Feedback :}{27}{figure.0.9}%
+\contentsline {subsubsection}{Service de Notification}{28}{figure.0.9}%
+\contentsline {paragraph}{Points clés du service de Notification :}{28}{figure.0.10}%
+\contentsline {subsubsection}{Service de Gestion des Médias}{29}{figure.0.10}%
+\contentsline {paragraph}{Points clés du service de Médias :}{29}{figure.0.11}%
+\contentsline {subsubsection}{Service de Configuration de la Plateforme}{30}{figure.0.11}%
+\contentsline {paragraph}{Points clés du service de Configuration :}{30}{figure.0.12}%
+\contentsline {subsubsection}{Service de Recherche}{31}{figure.0.12}%
+\contentsline {paragraph}{Points clés du service de Recherche :}{31}{figure.0.13}%
+\contentsline {chapter}{Chapitre 4 : Réalisation et mise en œuvre du système}{32}{chapter*.10}%
+\contentsline {section}{\numberline {1}Outils et technologies de développement}{33}{section.0.1}%
+\contentsline {subsection}{\numberline {1.1}Environnement de développement}{33}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {1.2}Technologies frontend}{33}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {1.3}Technologies backend}{33}{subsection.0.1.3}%
+\contentsline {section}{\numberline {2}Développement de l'interface utilisateur}{34}{section.0.2}%
+\contentsline {subsection}{\numberline {2.1}Site vitrine et page d'accueil}{34}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {2.2}Tableau de bord apprenant}{34}{subsection.0.2.2}%
+\contentsline {subsection}{\numberline {2.3}Interface de consultation des cours}{36}{subsection.0.2.3}%
+\contentsline {subsection}{\numberline {2.4}Améliorations UI/UX avancées}{38}{subsection.0.2.4}%
+\contentsline {subsubsection}{Interactivité des exemples de code}{38}{subsection.0.2.4}%
+\contentsline {subsubsection}{Navigation et structure améliorées}{39}{figure.0.21}%
+\contentsline {subsection}{\numberline {2.5}Interfaces utilisateur premium}{40}{subsection.0.2.5}%
+\contentsline {subsection}{\numberline {2.6}Interfaces d'administration et de gestion}{40}{subsection.0.2.6}%
+\contentsline {subsection}{\numberline {2.7}Système d'authentification et sécurité}{41}{subsection.0.2.7}%
+\contentsline {subsubsection}{Processus de création de compte multi-étapes}{41}{figure.0.35}%
+\contentsline {subsubsection}{Notifications et communications}{43}{figure.0.37}%
+\contentsline {subsection}{\numberline {2.8}Paramètres administrateur avancés}{44}{subsection.0.2.8}%
+\contentsline {subsection}{\numberline {2.9}Parcours d'apprentissage spécialisés}{45}{subsection.0.2.9}%
+\contentsline {subsection}{\numberline {2.10}Interfaces créateur de contenu}{48}{subsection.0.2.10}%
+\contentsline {section}{\numberline {3}Implémentation du backend et traitement des données}{50}{section.0.3}%
+\contentsline {subsection}{\numberline {3.1}Architecture microservices}{50}{subsection.0.3.1}%
+\contentsline {subsubsection}{API Gateway avec Nginx}{51}{figure.0.47}%
+\contentsline {subsubsection}{Implémentation avancée de l'API Gateway}{52}{figure.0.47}%
+\contentsline {subsubsection}{Système d'authentification avancé}{52}{figure.0.47}%
+\contentsline {subsubsection}{Conteneurisation avec Docker}{53}{figure.0.47}%
+\contentsline {subsection}{\numberline {3.2}Traitement des données de contenu}{53}{subsection.0.3.2}%
+\contentsline {subsubsection}{Défis du nettoyage des données}{53}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {3.3}Pipeline de traitement LLM}{53}{subsection.0.3.3}%
+\contentsline {subsubsection}{Architecture du pipeline LLM}{53}{figure.0.48}%
+\contentsline {subsubsection}{Optimisation des performances}{54}{figure.0.48}%
+\contentsline {subsection}{\numberline {3.4}Intégration frontend-backend}{54}{subsection.0.3.4}%
+\contentsline {section}{\numberline {4}Fonctionnalités interactives d'apprentissage}{55}{section.0.4}%
+\contentsline {subsection}{\numberline {4.1}Éditeur de code interactif}{55}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {4.2}Système de quiz et exercices}{55}{subsection.0.4.2}%
+\contentsline {subsection}{\numberline {4.3}Suivi de progression interactif}{55}{subsection.0.4.3}%
+\contentsline {section}{\numberline {5}Infrastructure et déploiement}{56}{section.0.5}%
+\contentsline {subsection}{\numberline {5.1}Configuration de Nginx et Docker}{56}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {5.2}Déploiement et optimisation}{56}{subsection.0.5.2}%
+\contentsline {section}{\numberline {6}Tests et assurance qualité}{56}{section.0.6}%
+\contentsline {subsection}{\numberline {6.1}Tests unitaires et d'intégration}{56}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {6.2}Tests d'interface utilisateur}{56}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {6.3}Tests de performance}{57}{subsection.0.6.3}%
+\contentsline {section}{\numberline {7}Conclusion}{57}{section.0.7}%
+\contentsline {chapter}{Chapitre 5 : Déploiement et Tests}{58}{chapter*.11}%
+\contentsline {section}{\numberline {1}Intégration et Déploiement du Backend}{59}{section.0.1}%
+\contentsline {subsection}{\numberline {1.1}Configuration du Serveur}{59}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {1.2}Déploiement de la Base de Données}{59}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {1.3}Évolution de l'Architecture}{60}{subsection.0.1.3}%
+\contentsline {section}{\numberline {2}Intégration et Tests}{60}{section.0.2}%
+\contentsline {subsection}{\numberline {2.1}Tests Unitaires}{60}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {2.2}Tests d'Intégration}{60}{subsection.0.2.2}%
+\contentsline {subsection}{\numberline {2.3}Tests de Performance}{60}{subsection.0.2.3}%
+\contentsline {section}{\numberline {3}Optimisation et Monitoring}{60}{section.0.3}%
+\contentsline {subsection}{\numberline {3.1}Optimisation des Performances}{60}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {3.2}Mise en Place du Monitoring}{61}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {3.3}Documentation}{61}{subsection.0.3.3}%
+\contentsline {section}{\numberline {4}Conception et Développement de l'Interface Utilisateur}{61}{section.0.4}%
+\contentsline {subsection}{\numberline {4.1}Interface d'Accueil des Utilisateurs Connectés}{61}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {4.2}Barre Latérale de Navigation}{61}{subsection.0.4.2}%
+\contentsline {subsection}{\numberline {4.3}Interface de Consultation des Cours}{62}{subsection.0.4.3}%
+\contentsline {section}{\numberline {5}Traitement Avancé des Données de Contenu}{62}{section.0.5}%
+\contentsline {subsection}{\numberline {5.1}Défis du Traitement des Données}{62}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {5.2}Problématique du Scraping et Nettoyage des Données}{63}{subsection.0.5.2}%
+\contentsline {subsection}{\numberline {5.3}Implémentation d'un Pipeline de Traitement LLM}{65}{subsection.0.5.3}%
+\contentsline {subsection}{\numberline {5.4}Stratégie d'Optimisation Multi-LLM}{65}{subsection.0.5.4}%
+\contentsline {section}{\numberline {6}Intégration Frontend-Backend}{66}{section.0.6}%
+\contentsline {subsection}{\numberline {6.1}Développement des Routes d'API}{66}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {6.2}Optimisation des Requêtes}{66}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {6.3}Adaptation à l'Architecture JSON}{66}{subsection.0.6.3}%
+\contentsline {section}{\numberline {7}Tests et Validation}{66}{section.0.7}%
+\contentsline {subsection}{\numberline {7.1}Tests d'Interface Utilisateur}{66}{subsection.0.7.1}%
+\contentsline {subsection}{\numberline {7.2}Tests Fonctionnels et d'Intégration}{67}{subsection.0.7.2}%
+\contentsline {subsection}{\numberline {7.3}Planification Stratégique pour l'Avenir}{67}{subsection.0.7.3}%
+\contentsline {section}{\numberline {8}Conclusion}{67}{section.0.8}%
+\contentsline {chapter}{Chapitre 6 : Bilan et Perspectives}{68}{chapter*.12}%
+\contentsline {section}{\numberline {1}Réalisations et État Actuel du Projet}{69}{section.0.1}%
+\contentsline {subsection}{\numberline {1.1}Fonctionnalités Implémentées}{69}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {1.2}Défis Techniques Surmontés}{69}{subsection.0.1.2}%
+\contentsline {section}{\numberline {2}Développements Futurs}{69}{section.0.2}%
+\contentsline {subsection}{\numberline {2.1}Fonctionnalités Planifiées}{70}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {2.2}Améliorations Techniques Envisagées}{70}{subsection.0.2.2}%
+\contentsline {subsection}{\numberline {2.3}Roadmap d'Évolution}{70}{subsection.0.2.3}%
+\contentsline {section}{\numberline {3}Bilan Personnel du Stage}{70}{section.0.3}%
+\contentsline {subsection}{\numberline {3.1}Compétences Techniques Acquises}{71}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {3.2}Compétences Transversales Développées}{71}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {3.3}Apprentissages Professionnels}{71}{subsection.0.3.3}%
+\contentsline {chapter}{Chapitre 7 : Conclusion et Perspectives}{72}{chapter*.13}%
+\contentsline {section}{\numberline {1}Synthèse des Réalisations}{73}{section.0.1}%
+\contentsline {section}{\numberline {2}Compétences Acquises}{73}{section.0.2}%
+\contentsline {section}{\numberline {3}Perspectives}{73}{section.0.3}%
+\contentsline {chapter}{\numberline {A}Annexes}{74}{appendix.A}%
 \contentsfinish 

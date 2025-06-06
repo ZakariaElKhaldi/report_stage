@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.6.6)  6 JUN 2025 21:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.6.6)  6 JUN 2025 22:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -829,7 +829,11 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box81
 )
 (./main.aux (./chapter_1.aux) (./chapter_2.aux) (./chapter_3.aux)
-(./chapter_4.aux) (./chapter_5.aux) (./chapter_6.aux))
+(./chapter_4.aux) (./chapter_5.aux
+
+LaTeX Warning: Label `fig:llm_pipeline' multiply defined.
+
+) (./chapter_6.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 236.
@@ -942,7 +946,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 \c@lstlisting=\count344
-<ministere.jpg, id=314, 293.095pt x 172.645pt>
+<ministere.jpg, id=418, 293.095pt x 172.645pt>
 File: ministere.jpg Graphic file (type jpg)
 <use ministere.jpg>
 Package pdftex.def Info: ministere.jpg  used on input line 249.
@@ -977,7 +981,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 250.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 250.
-<bts_logo.png, id=315, 344.28625pt x 132.495pt>
+<bts_logo.png, id=419, 344.28625pt x 132.495pt>
 File: bts_logo.png Graphic file (type png)
 <use bts_logo.png>
 Package pdftex.def Info: bts_logo.png  used on input line 253.
@@ -993,21 +997,33 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.311 \newpage
+l.318 \newpage
                [1
 
-] (./main.toc [2
+] [2
 
-] [3])
+]
+Overfull \hbox (23.43312pt too wide) in paragraph at lines 350--351
+\T1/lmr/m/n/12 (-20) techniques tout en développant des compétences transversal
+es essentielles dans un environnement
+ []
+
+[3
+
+] [4
+
+] (./main.toc [5
+
+] [6] [7])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [4] [5
+ [8] [9
 
 ]
 \openout2 = `chapter_1.aux'.
 
- (./chapter_1.tex [6
+ (./chapter_1.tex [10
 
 
 ]
@@ -1016,13 +1032,13 @@ Overfull \hbox (2.65974pt too wide) in paragraph at lines 10--11
 numériques basées sur l'intelligence
  []
 
-[7])
-Overfull \hbox (2.36671pt too wide) in paragraph at lines 78--333
+[11])
+Overfull \hbox (2.36671pt too wide) in paragraph at lines 78--391
 \T1/lmr/m/n/12 (-20) terminait par une démonstration des fonctionnalités implém
 entées, suivie d'une rétrospective
  []
 
-[8]
+[12]
 \openout2 = `chapter_2.aux'.
 
  (./chapter_2.tex
@@ -1030,7 +1046,7 @@ Overfull \hbox (20.77663pt too wide) in paragraph at lines 1--1
 |\T1/lmr/bx/n/20.74 (-20) Chapitre 2 : Cahier des Charges et Spécifications| 
  []
 
-[9
+[13
 
 
 
@@ -1065,16 +1081,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 <to be read again> 
                    \relax 
 l.36 \subsection{Besoins Fonctionnels}
-                                       [10]
+                                       [14]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.76 \subsection{Besoins Non Fonctionnels}
-                                           [11]) [12]
+                                           [15]) [16]
 \openout2 = `chapter_3.aux'.
 
- (./chapter_3.tex [13
+ (./chapter_3.tex [17
 
 
 
@@ -1121,13 +1137,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 <to be read again> 
                    \relax 
 l.33 \subsection{Identification des messages}
-                                              [14]
+                                              [18]
 Overfull \hbox (5.71657pt too wide) in paragraph at lines 63--64
 []\T1/lmr/m/n/12 (-20) Les diagrammes de cas d'utilisation ont permis de représ
 enter visuellement les interactions
  []
 
-<week_1_img//class_diagrame.png, id=564, 3854.4pt x 2206.2425pt>
+<week_1_img//class_diagrame.png, id=748, 3854.4pt x 2206.2425pt>
 File: week_1_img//class_diagrame.png Graphic file (type png)
 <use week_1_img//class_diagrame.png>
 Package pdftex.def Info: week_1_img//class_diagrame.png  used on input line 67.
@@ -1142,8 +1158,8 @@ Overfull \hbox (18.36124pt too wide) in paragraph at lines 75--77
 i un exemple de flux de communication
  []
 
-[15 <./week_1_img//class_diagrame.png>]
-<week_1_img//archetecture_diagrame.png, id=571, 3854.4pt x 1555.8125pt>
+[19 <./week_1_img//class_diagrame.png>]
+<week_1_img//archetecture_diagrame.png, id=755, 3854.4pt x 1555.8125pt>
 File: week_1_img//archetecture_diagrame.png Graphic file (type png)
 <use week_1_img//archetecture_diagrame.png>
 Package pdftex.def Info: week_1_img//archetecture_diagrame.png  used on input l
@@ -1164,10 +1180,10 @@ Overfull \hbox (0.8243pt too wide) in paragraph at lines 110--111
 difier des parties spécifiques sans impacter l'ensemble
  []
 
-[16{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./week_1_i
-mg//archetecture_diagrame.png>] [17]
+[20{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./week_1_i
+mg//archetecture_diagrame.png>] [21]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_Serv
-ice.pdf.png, id=591, 1778.645pt x 1000.73875pt>
+ice.pdf.png, id=775, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM
 _Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_
@@ -1181,10 +1197,10 @@ Overfull \hbox (2.47006pt too wide) in paragraph at lines 151--152
 95 (-20) avec tables dédiées aux utilisateurs, rôles et permissions 
  []
 
-[18 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IA
+[22 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IA
 M_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Content_
-Service.pdf.png, id=599, 861.2175pt x 887.315pt>
+Service.pdf.png, id=782, 861.2175pt x 887.315pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Con
 tent_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Cont
@@ -1192,10 +1208,10 @@ ent_Service.pdf.png>
 Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
 -06 at 15-07-51 Content_Service.pdf.png  used on input line 163.
 (pdftex.def)             Requested size: 364.19667pt x 375.24223pt.
- [19 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 C
+ [23 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 C
 ontent_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 Billing_
-and_Subscription_Service.pdf.png, id=606, 1778.645pt x 1000.73875pt>
+and_Subscription_Service.pdf.png, id=789, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 Bil
 ling_and_Subscription_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 Bill
@@ -1204,10 +1220,10 @@ Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
 -06 at 15-05-28 Billing_and_Subscription_Service.pdf.png  used on input line 18
 3.
 (pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
- [20 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 B
+ [24 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 B
 illing_and_Subscription_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 Certific
-ation_Service.pdf.png, id=613, 1778.645pt x 1000.73875pt>
+ation_Service.pdf.png, id=797, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 Cer
 tification_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 Cert
@@ -1215,10 +1231,10 @@ ification_Service.pdf.png>
 Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
 -06 at 15-05-53 Certification_Service.pdf.png  used on input line 203.
 (pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
- [21 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 C
+ [25 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 C
 ertification_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 Analytic
-s_and_Reporting_Service.pdf.png, id=620, 1778.645pt x 995.72pt>
+s_and_Reporting_Service.pdf.png, id=804, 1778.645pt x 995.72pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 Ana
 lytics_and_Reporting_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 Anal
@@ -1227,10 +1243,10 @@ Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
 -06 at 15-04-59 Analytics_and_Reporting_Service.pdf.png  used on input line 223
 .
 (pdftex.def)             Requested size: 364.19667pt x 203.88083pt.
- [22 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 A
+ [26 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 A
 nalytics_and_Reporting_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Feedback
-_Service.pdf.png, id=627, 1778.645pt x 1000.73875pt>
+_Service.pdf.png, id=811, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Fee
 dback_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Feed
@@ -1239,10 +1255,10 @@ Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
 -06 at 15-08-00 Feedback_Service.pdf.png  used on input line 243.
 (pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
 
-[23 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Fe
+[27 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Fe
 edback_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 Notifica
-tion_Service.pdf.png, id=634, 1778.645pt x 1000.73875pt>
+tion_Service.pdf.png, id=818, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 Not
 ification_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 Noti
@@ -1250,10 +1266,10 @@ fication_Service.pdf.png>
 Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
 -06 at 15-08-13 Notification_Service.pdf.png  used on input line 263.
 (pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
- [24 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 N
+ [28 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 N
 otification_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 Media_Ma
-nagement_Service.pdf.png, id=642, 1778.645pt x 1000.73875pt>
+nagement_Service.pdf.png, id=825, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 Med
 ia_Management_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 Medi
@@ -1261,10 +1277,10 @@ a_Management_Service.pdf.png>
 Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
 -06 at 15-08-27 Media_Management_Service.pdf.png  used on input line 283.
 (pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
- [25 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 M
+ [29 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 M
 edia_Management_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 Platform
-_Configuration_Service.pdf.png, id=649, 1778.645pt x 1000.73875pt>
+_Configuration_Service.pdf.png, id=832, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 Pla
 tform_Configuration_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 Plat
@@ -1273,10 +1289,10 @@ Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
 -06 at 15-08-44 Platform_Configuration_Service.pdf.png  used on input line 303.
 
 (pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
- [26 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 P
+ [30 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 P
 latform_Configuration_Service.pdf.png>]
 <week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 Search_S
-ervice.pdf.png, id=656, 1778.645pt x 1000.73875pt>
+ervice.pdf.png, id=840, 1778.645pt x 1000.73875pt>
 File: week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 Sea
 rch_Service.pdf.png Graphic file (type png)
 <use week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 Sear
@@ -1286,12 +1302,12 @@ Package pdftex.def Info: week_1_img//services_db_screanshots/Screenshot 2025-06
 (pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 343.
-) [27 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 
+) [31 <./week_1_img//services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 
 Search_Service.pdf.png>]
 \openout2 = `chapter_4.aux'.
 
 
-(./chapter_4.tex [28
+(./chapter_4.tex [32
 
 
 
@@ -1319,11 +1335,546 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 1.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 \subsection{Technologies backend}
-                                      ) [29]
+l.32 \subsection{Technologies backend}
+                                      
+pdfTeX warning (ext4): destination with the same identifier (name{section.0.2})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.43 ...DÃ©veloppement de l'interface utilisateur}
+                                                   [33]
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.47 \subsection{Site vitrine et page d'accueil}
+                                                
+<week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png, id=857, 19
+11.14pt x 1041.8925pt>
+File: week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png Graphi
+c file (type png)
+<use week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png>
+Package pdftex.def Info: week_2_img/last_and_improved_hero_section_withe_3d_eff
+ects_etc.png  used on input line 53.
+(pdftex.def)             Requested size: 409.71692pt x 223.35071pt.
+<week_2_img/fetchersection_2.png, id=858, 1314.9125pt x 724.7075pt>
+File: week_2_img/fetchersection_2.png Graphic file (type png)
+<use week_2_img/fetchersection_2.png>
+Package pdftex.def Info: week_2_img/fetchersection_2.png  used on input line 70
+.
+(pdftex.def)             Requested size: 409.71692pt x 225.80705pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 \subsection{Tableau de bord apprenant}
+                                           
+<week_3_img/accueil.png, id=859, 1573.88pt x 932.48375pt>
+File: week_3_img/accueil.png Graphic file (type png)
+<use week_3_img/accueil.png>
+Package pdftex.def Info: week_3_img/accueil.png  used on input line 89.
+(pdftex.def)             Requested size: 409.71692pt x 242.73885pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[34 <./week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png>]
+<week_3_img/sidebare.png, id=866, 279.0425pt x 893.3375pt>
+File: week_3_img/sidebare.png Graphic file (type png)
+<use week_3_img/sidebare.png>
+Package pdftex.def Info: week_3_img/sidebare.png  used on input line 106.
+(pdftex.def)             Requested size: 182.09486pt x 582.9798pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+2.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.111 ...tion{Interface de consultation des cours}
+                                                  
+Overfull \hbox (12.24788pt too wide) in paragraph at lines 113--114
+[]\T1/lmr/m/n/12 (-20) L'interface de consultation des cours a été conçue pour 
+offrir une expérience d'apprentissage
+ []
+
+<week_3_img/part1.png, id=867, 1096.095pt x 490.83376pt>
+File: week_3_img/part1.png Graphic file (type png)
+<use week_3_img/part1.png>
+Package pdftex.def Info: week_3_img/part1.png  used on input line 117.
+(pdftex.def)             Requested size: 409.71692pt x 183.47052pt.
+[35 <./week_2_img/fetchersection_2.png> <./week_3_img/accueil.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<week_3_img/part2.png, id=876, 1067.99pt x 886.31125pt>
+File: week_3_img/part2.png Graphic file (type png)
+<use week_3_img/part2.png>
+Package pdftex.def Info: week_3_img/part2.png  used on input line 124.
+(pdftex.def)             Requested size: 409.71692pt x 340.02048pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[36 <./week_3_img/sidebare.png>] [37 <./week_3_img/part1.png> <./week_3_img/par
+t2.png>]
+Overfull \hbox (7.60516pt too wide) in paragraph at lines 141--142
+[]\T1/lmr/m/n/12 (-20) Durant la quatrième semaine, d'importantes améliorations
+ ont été apportées à l'expérience
+ []
+
+
+Overfull \hbox (9.94186pt too wide) in paragraph at lines 150--151
+[]\T1/lmr/bx/n/12 (-20) Modes d'affichage flexibles : \T1/lmr/m/n/12 (-20) Opti
+ons pour changer la disposition (verticale, horizontale,
+ []
+
+<old-reports/week_4_img/pre_edit.jpeg, id=892, 808.01875pt x 274.02374pt>
+File: old-reports/week_4_img/pre_edit.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/pre_edit.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/pre_edit.jpeg  used on input li
+ne 157.
+(pdftex.def)             Requested size: 182.09486pt x 61.75302pt.
+<old-reports/week_4_img/editmode.jpeg, id=893, 808.01875pt x 580.1675pt>
+File: old-reports/week_4_img/editmode.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/editmode.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/editmode.jpeg  used on input li
+ne 158.
+(pdftex.def)             Requested size: 182.09486pt x 130.7445pt.
+<old-reports/week_4_img/expended.jpeg, id=894, 1606.0pt x 711.65875pt>
+File: old-reports/week_4_img/expended.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/expended.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/expended.jpeg  used on input li
+ne 165.
+(pdftex.def)             Requested size: 227.62206pt x 100.85861pt.
+[38 <./old-reports/week_4_img/pre_edit.jpeg> <./old-reports/week_4_img/editmode
+.jpeg> <./old-reports/week_4_img/expended.jpeg>]
+<old-reports/week_4_img/outline.jpeg, id=901, 421.575pt x 869.2475pt>
+File: old-reports/week_4_img/outline.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/outline.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/outline.jpeg  used on input lin
+e 181.
+(pdftex.def)             Requested size: 182.09486pt x 375.46689pt.
+<old-reports/week_4_img/sidebare2.jpeg, id=902, 330.23375pt x 899.36pt>
+File: old-reports/week_4_img/sidebare2.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/sidebare2.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/sidebare2.jpeg  used on input l
+ine 182.
+(pdftex.def)             Requested size: 182.09486pt x 495.92578pt.
+ [39 <./old-reports/week_4_img/outline.jpeg> <./old-reports/week_4_img/sidebare
+2.jpeg>]
+<old-reports/week_4_img/dashboard.jpeg, id=908, 1606.0pt x 1374.13374pt>
+File: old-reports/week_4_img/dashboard.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/dashboard.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/dashboard.jpeg  used on input l
+ine 201.
+(pdftex.def)             Requested size: 386.96027pt x 331.07787pt.
+<old-reports/week_4_img/settings.jpeg, id=909, 1606.0pt x 932.48375pt>
+File: old-reports/week_4_img/settings.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/settings.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/settings.jpeg  used on input li
+ne 208.
+(pdftex.def)             Requested size: 386.96027pt x 224.66861pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/explor.jpeg, id=910, 1101.11375pt x 1606.0pt>
+File: old-reports/week_4_img/explor.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/explor.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/explor.jpeg  used on input line
+ 215.
+(pdftex.def)             Requested size: 386.96027pt x 564.38745pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/froms.jpeg, id=911, 1326.9575pt x 1606.0pt>
+File: old-reports/week_4_img/froms.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/froms.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/froms.jpeg  used on input line 
+222.
+(pdftex.def)             Requested size: 386.96027pt x 468.32567pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/learnpath.jpeg, id=912, 1410.26875pt x 1606.0pt>
+File: old-reports/week_4_img/learnpath.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/learnpath.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/learnpath.jpeg  used on input l
+ine 229.
+(pdftex.def)             Requested size: 386.96027pt x 440.6589pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[40 <./old-reports/week_4_img/dashboard.jpeg>]
+<old-reports/week_4_img/admin.jpeg, id=918, 1606.0pt x 709.65125pt>
+File: old-reports/week_4_img/admin.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/admin.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/admin.jpeg  used on input line 
+249.
+(pdftex.def)             Requested size: 386.96027pt x 170.9803pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/usrmana.jpeg, id=919, 1606.0pt x 712.6625pt>
+File: old-reports/week_4_img/usrmana.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/usrmana.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/usrmana.jpeg  used on input lin
+e 256.
+(pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/coursmanagement.jpeg, id=920, 1606.0pt x 712.6625pt>
+File: old-reports/week_4_img/coursmanagement.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/coursmanagement.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/coursmanagement.jpeg  used on i
+nput line 263.
+(pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/contentmod.jpeg, id=921, 1606.0pt x 712.6625pt>
+File: old-reports/week_4_img/contentmod.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/contentmod.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/contentmod.jpeg  used on input 
+line 270.
+(pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/analytics.jpeg, id=922, 1606.0pt x 709.65125pt>
+File: old-reports/week_4_img/analytics.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/analytics.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/analytics.jpeg  used on input l
+ine 277.
+(pdftex.def)             Requested size: 386.96027pt x 170.9803pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/sub.jpeg, id=923, 1606.0pt x 712.6625pt>
+File: old-reports/week_4_img/sub.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/sub.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/sub.jpeg  used on input line 28
+4.
+(pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (9.84076pt too wide) in paragraph at lines 295--296
+[]\T1/lmr/bx/n/12 (-20) Récupération de mot de passe : \T1/lmr/m/n/12 (-20) Pro
+cessus de réinitialisation sécurisé avec confirmation
+ []
+
+<old-reports/week_4_img/login.jpeg, id=924, 961.5925pt x 853.1875pt>
+File: old-reports/week_4_img/login.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/login.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/login.jpeg  used on input line 
+302.
+(pdftex.def)             Requested size: 182.09486pt x 161.56053pt.
+<old-reports/week_4_img/reset.jpeg, id=925, 961.5925pt x 853.1875pt>
+File: old-reports/week_4_img/reset.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/reset.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/reset.jpeg  used on input line 
+303.
+(pdftex.def)             Requested size: 182.09486pt x 161.56053pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/audit.jpeg, id=926, 1606.0pt x 712.6625pt>
+File: old-reports/week_4_img/audit.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/audit.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/audit.jpeg  used on input line 
+310.
+(pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[41 <./old-reports/week_4_img/settings.jpeg>]
+<old-reports/week_4_img/etap1.jpeg, id=932, 961.5925pt x 853.1875pt>
+File: old-reports/week_4_img/etap1.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/etap1.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/etap1.jpeg  used on input line 
+328.
+(pdftex.def)             Requested size: 182.09486pt x 161.56053pt.
+<old-reports/week_4_img/etap2.jpeg, id=933, 961.5925pt x 853.1875pt>
+File: old-reports/week_4_img/etap2.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/etap2.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/etap2.jpeg  used on input line 
+329.
+(pdftex.def)             Requested size: 182.09486pt x 161.56053pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/sended.jpeg, id=934, 961.5925pt x 853.1875pt>
+File: old-reports/week_4_img/sended.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/sended.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/sended.jpeg  used on input line
+ 336.
+(pdftex.def)             Requested size: 386.96027pt x 343.33891pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[42 <./old-reports/week_4_img/explor.jpeg>]
+Overfull \hbox (5.19385pt too wide) in paragraph at lines 355--356
+[]\T1/lmr/bx/n/12 (-20) Centre de notifications : \T1/lmr/m/n/12 (-20) Interfac
+e centralisée pour toutes les alertes et communications 
+ []
+
+[43 <./old-reports/week_4_img/froms.jpeg>]
+<old-reports/week_4_img/notifi.jpeg, id=946, 1606.0pt x 712.6625pt>
+File: old-reports/week_4_img/notifi.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/notifi.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/notifi.jpeg  used on input line
+ 363.
+(pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (3.07008pt too wide) in paragraph at lines 374--375
+[]\T1/lmr/bx/n/12 (-20) Personnalisation de l'interface : \T1/lmr/m/n/12 (-20) 
+Options pour ajuster l'apparence et le comportement
+ []
+
+<old-reports/week_4_img/settings_admin.jpeg, id=947, 1606.0pt x 712.6625pt>
+File: old-reports/week_4_img/settings_admin.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/settings_admin.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/settings_admin.jpeg  used on in
+put line 381.
+(pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[44 <./old-reports/week_4_img/learnpath.jpeg>]
+Overfull \vbox (0.12355pt too high) has occurred while \output is active []
+
+
+[45 <./old-reports/week_4_img/admin.jpeg> <./old-reports/week_4_img/usrmana.jpe
+g> <./old-reports/week_4_img/coursmanagement.jpeg>] [46 <./old-reports/week_4_i
+mg/contentmod.jpeg> <./old-reports/week_4_img/analytics.jpeg> <./old-reports/we
+ek_4_img/sub.jpeg>] [47 <./old-reports/week_4_img/login.jpeg> <./old-reports/we
+ek_4_img/reset.jpeg> <./old-reports/week_4_img/audit.jpeg> <./old-reports/week_
+4_img/etap1.jpeg> <./old-reports/week_4_img/etap2.jpeg>]
+<old-reports/week_4_img/ai_1.jpeg, id=974, 1606.0pt x 709.65125pt>
+File: old-reports/week_4_img/ai_1.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/ai_1.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/ai_1.jpeg  used on input line 3
+99.
+(pdftex.def)             Requested size: 182.09486pt x 80.45494pt.
+<old-reports/week_4_img/ai_2.jpeg, id=975, 1197.47375pt x 917.4275pt>
+File: old-reports/week_4_img/ai_2.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/ai_2.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/ai_2.jpeg  used on input line 4
+00.
+(pdftex.def)             Requested size: 182.09486pt x 139.49802pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/syber.jpeg, id=976, 1606.0pt x 890.32625pt>
+File: old-reports/week_4_img/syber.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/syber.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/syber.jpeg  used on input line 
+407.
+(pdftex.def)             Requested size: 182.09486pt x 100.93852pt.
+<old-reports/week_4_img/it.jpeg, id=977, 1541.76pt x 911.405pt>
+File: old-reports/week_4_img/it.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/it.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/it.jpeg  used on input line 408
+.
+(pdftex.def)             Requested size: 182.09486pt x 107.63942pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/leetcode.jpeg, id=978, 1606.0pt x 892.33376pt>
+File: old-reports/week_4_img/leetcode.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/leetcode.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/leetcode.jpeg  used on input li
+ne 415.
+(pdftex.def)             Requested size: 386.96027pt x 214.99504pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[48 <./old-reports/week_4_img/sended.jpeg> <./old-reports/week_4_img/notifi.jpe
+g>]
+<old-reports/week_4_img/cdash.jpeg, id=986, 1606.0pt x 710.655pt>
+File: old-reports/week_4_img/cdash.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/cdash.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/cdash.jpeg  used on input line 
+433.
+(pdftex.def)             Requested size: 386.96027pt x 171.22214pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/create_course.jpeg, id=987, 1606.0pt x 710.655pt>
+File: old-reports/week_4_img/create_course.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/create_course.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/create_course.jpeg  used on inp
+ut line 440.
+(pdftex.def)             Requested size: 386.96027pt x 171.22214pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/your_courses.jpeg, id=988, 1606.0pt x 709.65125pt>
+File: old-reports/week_4_img/your_courses.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/your_courses.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/your_courses.jpeg  used on inpu
+t line 447.
+(pdftex.def)             Requested size: 386.96027pt x 170.9803pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<old-reports/week_4_img/consultingmana.jpeg, id=989, 1606.0pt x 712.6625pt>
+File: old-reports/week_4_img/consultingmana.jpeg Graphic file (type jpg)
+<use old-reports/week_4_img/consultingmana.jpeg>
+Package pdftex.def Info: old-reports/week_4_img/consultingmana.jpeg  used on in
+put line 454.
+(pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{section.0.3})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.459 ...on du backend et traitement des donnÃ©es}
+                                                  
+Overfull \hbox (16.72348pt too wide) in paragraph at lines 459--459
+|[]\T1/lmr/bx/n/17.28 (-20) Implémentation du backend et traitement des données
+| 
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.463 \subsection{Architecture microservices}
+                                              [49 <./old-reports/week_4_img/set
+tings_admin.jpeg> <./old-reports/week_4_img/ai_1.jpeg> <./old-reports/week_4_im
+g/ai_2.jpeg> <./old-reports/week_4_img/syber.jpeg> <./old-reports/week_4_img/it
+.jpeg>]
+<week_3_img/Screenshot 2025-05-19 234047.png, id=997, 178.16562pt x 63.23625pt>
+
+File: week_3_img/Screenshot 2025-05-19 234047.png Graphic file (type png)
+<use week_3_img/Screenshot 2025-05-19 234047.png>
+Package pdftex.def Info: week_3_img/Screenshot 2025-05-19 234047.png  used on i
+nput line 476.
+(pdftex.def)             Requested size: 409.71692pt x 145.42773pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[50 <./old-reports/week_4_img/leetcode.jpeg> <./old-reports/week_4_img/cdash.jp
+eg>] [51 <./old-reports/week_4_img/create_course.jpeg> <./old-reports/week_4_im
+g/your_courses.jpeg> <./old-reports/week_4_img/consultingmana.jpeg>] [52 <./wee
+k_3_img/Screenshot 2025-05-19 234047.png>]
+Overfull \hbox (10.98389pt too wide) in paragraph at lines 532--533
+[]\T1/lmr/bx/n/12 (-20) Docker Compose : \T1/lmr/m/n/12 (-20) Orchestration de 
+l'ensemble des services avec gestion des dépendances 
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+3.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.537 ...ction{Traitement des donnÃ©es de contenu}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+3.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.559 \subsection{Pipeline de traitement LLM}
+                                             
+<week_3_img/Screenshot 2025-05-20 164411.png, id=1018, 765.86125pt x 439.14063p
+t>
+File: week_3_img/Screenshot 2025-05-20 164411.png Graphic file (type png)
+<use week_3_img/Screenshot 2025-05-20 164411.png>
+Package pdftex.def Info: week_3_img/Screenshot 2025-05-20 164411.png  used on i
+nput line 565.
+(pdftex.def)             Requested size: 409.71692pt x 234.92786pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[53]
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.594 \subsection{IntÃ©gration frontend-backend}
+                                                
+Overfull \hbox (9.33931pt too wide) in paragraph at lines 599--600
+[]\T1/lmr/bx/n/12 (-20) Développement de routes d'API : \T1/lmr/m/n/12 (-20) Cr
+éation d'endpoints pour toutes les fonctionnalités
+ []
+
+
+Overfull \hbox (9.83809pt too wide) in paragraph at lines 600--601
+[]\T1/lmr/bx/n/12 (-20) Optimisation des requêtes : \T1/lmr/m/n/12 (-20) Utilis
+ation d'index et de projections pour des performances
+ []
+
+[54 <./week_3_img/Screenshot 2025-05-20 164411.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{section.0.4})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.605 ...ionnalitÃ©s interactives d'apprentissage}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.609 \subsection{Ã‰diteur de code interactif}
+                                              
+Overfull \hbox (8.28546pt too wide) in paragraph at lines 614--615
+[]\T1/lmr/bx/n/12 (-20) Coloration syntaxique : \T1/lmr/m/n/12 (-20) Support po
+ur multiple langages de programmation (JavaScript,
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+4.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.625 \subsection{SystÃ¨me de quiz et exercices}
+                                                
+Overfull \hbox (2.65767pt too wide) in paragraph at lines 627--628
+[]\T1/lmr/m/n/12 (-20) Un système complet de quiz et d'exercices a été implémen
+té pour valider les connaissances
+ []
+
+[55]
+Overfull \hbox (6.7874pt too wide) in paragraph at lines 658--659
+[]\T1/lmr/bx/n/12 (-20) Orchestration avec Docker Compose : \T1/lmr/m/n/12 (-20
+) Configuration pour la gestion des dépendances
+ []
+
+[56]
+Overfull \hbox (10.33484pt too wide) in paragraph at lines 717--718
+[]\T1/lmr/m/n/12 (-20) La combinaison d'une interface utilisateur soignée, d'un
+e architecture backend performante
+ []
+
+) [57]
 \openout2 = `chapter_5.aux'.
 
- (./chapter_5.tex [30
+ (./chapter_5.tex [58
 
 
 
@@ -1347,8 +1898,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
                    \relax 
 l.25 ...ction{DÃ©ploiement de la Base de DonnÃ©es}
                                                   
-<week_3_img/Screenshot 2025-05-19 234047.png, id=678, 178.16562pt x 63.23625pt>
-
 File: week_3_img/Screenshot 2025-05-19 234047.png Graphic file (type png)
 <use week_3_img/Screenshot 2025-05-19 234047.png>
 Package pdftex.def Info: week_3_img/Screenshot 2025-05-19 234047.png  used on i
@@ -1360,8 +1909,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 <to be read again> 
                    \relax 
 l.44 \subsection{Ã‰volution de l'Architecture}
-                                               [31 <./week_3_img/Screenshot 202
-5-05-19 234047.png>]
+                                               [59]
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.2})
  has been already used, duplicate ignored
 <to be read again> 
@@ -1409,7 +1957,7 @@ Overfull \hbox (4.14896pt too wide) in paragraph at lines 97--98
 js pour améliorer les performances
  []
 
-[32]
+[60]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 3.2}) has been already used, duplicate ignored
 <to be read again> 
@@ -1440,7 +1988,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
                    \relax 
 l.132 ...ce d'Accueil des Utilisateurs ConnectÃ©s}
                                                   
-<week_3_img/accueil.png, id=689, 1573.88pt x 932.48375pt>
 File: week_3_img/accueil.png Graphic file (type png)
 <use week_3_img/accueil.png>
 Package pdftex.def Info: week_3_img/accueil.png  used on input line 138.
@@ -1456,7 +2003,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
                    \relax 
 l.143 \subsection{Barre LatÃ©rale de Navigation}
                                                 
-<week_3_img/sidebare.png, id=690, 279.0425pt x 893.3375pt>
 File: week_3_img/sidebare.png Graphic file (type png)
 <use week_3_img/sidebare.png>
 Package pdftex.def Info: week_3_img/sidebare.png  used on input line 149.
@@ -1465,13 +2011,18 @@ Package pdftex.def Info: week_3_img/sidebare.png  used on input line 149.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33]
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+4.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.164 ...tion{Interface de Consultation des Cours}
+                                                   [61]
 Overfull \hbox (12.24788pt too wide) in paragraph at lines 166--167
 []\T1/lmr/m/n/12 (-20) L'interface de consultation des cours a été conçue pour 
 offrir une expérience d'apprentissage
  []
 
-<week_3_img/part1.png, id=695, 1096.095pt x 490.83376pt>
 File: week_3_img/part1.png Graphic file (type png)
 <use week_3_img/part1.png>
 Package pdftex.def Info: week_3_img/part1.png  used on input line 170.
@@ -1479,7 +2030,6 @@ Package pdftex.def Info: week_3_img/part1.png  used on input line 170.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<week_3_img/part2.png, id=696, 1067.99pt x 886.31125pt>
 File: week_3_img/part2.png Graphic file (type png)
 <use week_3_img/part2.png>
 Package pdftex.def Info: week_3_img/part2.png  used on input line 177.
@@ -1487,31 +2037,76 @@ Package pdftex.def Info: week_3_img/part2.png  used on input line 177.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[34 <./week_3_img/accueil.png>] [35 <./week_3_img/sidebare.png>] [36 <./week_3_
-img/part1.png> <./week_3_img/part2.png>]
-<week_3_img/Screenshot 2025-05-20 164411.png, id=718, 765.86125pt x 439.14063pt
->
+
+pdfTeX warning (ext4): destination with the same identifier (name{section.0.5})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.192 ...aitement AvancÃ© des DonnÃ©es de Contenu}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+5.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.196 ...ection{DÃ©fis du Traitement des DonnÃ©es}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+5.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.207 ...ue du Scraping et Nettoyage des DonnÃ©es}
+                                                   [62] [63] [64]
 File: week_3_img/Screenshot 2025-05-20 164411.png Graphic file (type png)
 <use week_3_img/Screenshot 2025-05-20 164411.png>
 Package pdftex.def Info: week_3_img/Screenshot 2025-05-20 164411.png  used on i
 nput line 225.
 (pdftex.def)             Requested size: 409.71692pt x 234.92786pt.
- [37 <./week_3_img/Screenshot 2025-05-20 164411.png>]
+
+pdfTeX warning (ext4): destination with the same identifier (name{section.0.6})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.243 \section{IntÃ©gration Frontend-Backend}
+                                             
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+6.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.247 \subsection{DÃ©veloppement des Routes d'API}
+                                                   [65]
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+6.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.259 \subsection{Optimisation des RequÃªtes}
+                                             
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+6.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.271 ...ection{Adaptation Ã  l'Architecture JSON}
+                                                  
 Overfull \hbox (4.14896pt too wide) in paragraph at lines 278--279
 []\T1/lmr/m/n/12 (-20) Intégration des capacités de rendu côté serveur de Next.
 js pour améliorer les performances 
  []
 
-[38])
-Overfull \hbox (7.9023pt too wide) in paragraph at lines 319--345
+
+pdfTeX warning (ext4): destination with the same identifier (name{section.0.7})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.283 \section{Tests et Validation}
+                                    [66])
+Overfull \hbox (7.9023pt too wide) in paragraph at lines 319--403
 \T1/lmr/m/n/12 (-20) stratégiques prises, notamment la simplification de l'arch
 itecture de données et la planification
  []
 
-[39]
+[67]
 \openout2 = `chapter_6.aux'.
 
- (./chapter_6.tex [40
+ (./chapter_6.tex [68
 
 
 
@@ -1552,7 +2147,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 <to be read again> 
                    \relax 
 l.44 \subsection{FonctionnalitÃ©s PlanifiÃ©es}
-                                               [41]
+                                               [69]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 2.2}) has been already used, duplicate ignored
 <to be read again> 
@@ -1576,7 +2171,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 <to be read again> 
                    \relax 
 l.93 \subsection{CompÃ©tences Techniques Acquises}
-                                                   [42]
+                                                   [70]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 3.2}) has been already used, duplicate ignored
 <to be read again> 
@@ -1594,7 +2189,7 @@ Overfull \hbox (10.69371pt too wide) in paragraph at lines 117--118
 es précieux sur le plan professionnel : 
  []
 
-) [43] [44
+) [71] [72
 
 
 
@@ -1603,51 +2198,55 @@ pdfTeX warning (ext4): destination with the same identifier (name{section.0.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.358 \section{SynthÃ¨se des RÃ©alisations}
+l.416 \section{SynthÃ¨se des RÃ©alisations}
                                            
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.368 \section{CompÃ©tences Acquises}
+l.426 \section{CompÃ©tences Acquises}
                                      
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.3})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.377 \section{Perspectives}
+l.435 \section{Perspectives}
                             
-Overfull \hbox (13.86755pt too wide) in paragraph at lines 381--382
+Overfull \hbox (13.86755pt too wide) in paragraph at lines 439--440
 \T1/lmr/m/n/12 (-20) des fonctionnalités supplémentaires comme l'intelligence a
 rtificielle pour la personnalisation
  []
 
-[45]
+[73]
 Annexe A.
-[46
+[74
 
 ] (./main.aux (./chapter_1.aux) (./chapter_2.aux) (./chapter_3.aux)
 (./chapter_4.aux) (./chapter_5.aux) (./chapter_6.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F276E73038E54F24D3553D23E52D655D;17930.
+(rerunfilecheck)             Checksum: 7301AEFABF5B18432C1ADB757E3052C4;24551.
  ) 
 Here is how much of TeX's memory you used:
- 29336 strings out of 477985
- 555696 string characters out of 5839381
- 1873388 words of memory out of 6000000
- 48701 multiletter control sequences out of 15000+600000
- 585295 words of font info for 166 fonts, out of 8000000 for 9000
+ 29746 strings out of 477985
+ 567027 string characters out of 5839381
+ 1875388 words of memory out of 6000000
+ 48958 multiletter control sequences out of 15000+600000
+ 591666 words of font info for 188 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,13n,80p,1001b,727s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (47 pages, 1815128 bytes).
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on main.pdf (75 pages, 6886877 bytes).
 PDF statistics:
- 822 PDF objects out of 1000 (max. 8388607)
- 627 compressed objects within 7 object streams
- 117 named destinations out of 1000 (max. 500000)
- 41777 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1199 PDF objects out of 1200 (max. 8388607)
+ 903 compressed objects within 10 object streams
+ 190 named destinations out of 1000 (max. 500000)
+ 44248 words of extra memory for PDF output out of 51595 (max. 10000000)
 
