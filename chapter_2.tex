@@ -1,0 +1,158 @@
+\chapter{Chapitre 2 : Cahier des Charges et Spécifications}
+\thispagestyle{fancy}
+\newpage
+
+Ce chapitre présente le projet LearnExpert, ses objectifs, l'analyse des besoins fonctionnels et non fonctionnels, ainsi que les technologies choisies pour sa réalisation.
+
+\section{Présentation du Projet LearnExpert}
+
+\subsection{Contexte et Problématique}
+Le secteur de l'éducation en ligne connaît une croissance exponentielle, accélérée encore davantage par la pandémie mondiale qui a révélé les limites des plateformes d'apprentissage existantes. Dans ce contexte, plusieurs problématiques ont été identifiées :
+
+\begin{itemize}
+  \item Les plateformes actuelles proposent souvent un contenu générique et peu personnalisé
+  \item Les méthodes d'apprentissage de la programmation restent trop théoriques, avec un manque d'interactivité
+  \item Les apprenants font face à une fragmentation des ressources éducatives, nécessitant de naviguer entre différentes plateformes
+  \item Les outils d'apprentissage ne s'adaptent pas au rythme et au niveau de chaque utilisateur
+\end{itemize}
+
+Face à ces défis, IAAI a décidé de développer LearnExpert, une plateforme innovante centrée sur l'apprentissage de la programmation et des technologies web.
+
+\subsection{Objectifs du Projet}
+Le projet LearnExpert vise à créer une plateforme d'apprentissage complète qui se distingue par :
+
+\begin{itemize}
+  \item Une approche centrée sur la pratique et l'interactivité pour l'apprentissage de la programmation
+  \item Une personnalisation de l'expérience d'apprentissage grâce à l'IA
+  \item Une intégration de contenus structurés et de haute qualité pour divers langages de programmation
+  \item Une architecture évolutive permettant d'ajouter de nouvelles fonctionnalités et de nouveaux contenus
+  \item Une expérience utilisateur fluide et engageante
+\end{itemize}
+
+L'objectif principal est de créer une plateforme qui accompagne efficacement les apprenants dans leur parcours d'acquisition de compétences techniques, qu'ils soient débutants ou développeurs expérimentés cherchant à se perfectionner.
+
+\section{Analyse des Besoins}
+
+\subsection{Besoins Fonctionnels}
+Les fonctionnalités clés identifiées pour la plateforme LearnExpert sont :
+
+\begin{itemize}
+  \item \textbf{Gestion des utilisateurs et authentification}
+    \begin{itemize}
+      \item Inscription et connexion des utilisateurs
+      \item Profils utilisateurs avec suivi de progression
+      \item Système de rôles (apprenant, créateur de contenu, administrateur)
+    \end{itemize}
+  
+  \item \textbf{Gestion des cours et contenus}
+    \begin{itemize}
+      \item Catalogue de cours organisé par catégories et niveaux
+      \item Système de modules et de leçons structurés
+      \item Support pour divers formats de contenu (texte, code, vidéo)
+    \end{itemize}
+  
+  \item \textbf{Apprentissage interactif}
+    \begin{itemize}
+      \item Éditeur de code intégré avec exécution en temps réel
+      \item Exercices pratiques et projets guidés
+      \item Tests automatisés pour valider les compétences
+    \end{itemize}
+  
+  \item \textbf{Analyse et suivi}
+    \begin{itemize}
+      \item Tableau de bord de progression pour les apprenants
+      \item Statistiques d'utilisation pour les administrateurs
+      \item Recommandations personnalisées basées sur les performances
+    \end{itemize}
+  
+  \item \textbf{Interface d'administration}
+    \begin{itemize}
+      \item Gestion des utilisateurs et des permissions
+      \item Création et édition de contenu éducatif
+      \item Suivi des métriques de la plateforme
+    \end{itemize}
+\end{itemize}
+
+\subsection{Besoins Non Fonctionnels}
+Au-delà des fonctionnalités, plusieurs exigences non fonctionnelles ont été définies :
+
+\begin{itemize}
+  \item \textbf{Performance}
+    \begin{itemize}
+      \item Temps de chargement des pages inférieur à 2 secondes
+      \item Capacité à supporter au moins 1000 utilisateurs simultanés
+      \item Exécution rapide du code dans l'environnement intégré
+    \end{itemize}
+  
+  \item \textbf{Sécurité}
+    \begin{itemize}
+      \item Protection des données personnelles des utilisateurs
+      \item Isolation des environnements d'exécution de code
+      \item Authentification robuste et gestion sécurisée des sessions
+    \end{itemize}
+  
+  \item \textbf{Accessibilité et UX}
+    \begin{itemize}
+      \item Interface intuitive et responsive (mobile, tablette, desktop)
+      \item Respect des standards d'accessibilité WCAG 2.1
+      \item Support multilingue (initialement français et anglais)
+    \end{itemize}
+  
+  \item \textbf{Évolutivité et maintenance}
+    \begin{itemize}
+      \item Architecture modulaire facilitant l'ajout de nouvelles fonctionnalités
+      \item Documentation technique complète
+      \item Tests automatisés couvrant les fonctionnalités critiques
+    \end{itemize}
+\end{itemize}
+
+\section{Technologies et Outils}
+
+\subsection{Stack Technologique}
+Après analyse des besoins et des contraintes du projet, les technologies suivantes ont été sélectionnées :
+
+\begin{itemize}
+  \item \textbf{Frontend}
+    \begin{itemize}
+      \item Next.js (framework React) pour le développement d'une application web moderne
+      \item TypeScript pour garantir la robustesse et la maintenabilité du code
+      \item Tailwind CSS pour un design responsive et cohérent
+      \item Monaco Editor pour l'implémentation de l'éditeur de code interactif
+      \item Framer Motion pour les animations et transitions fluides
+    \end{itemize}
+  
+  \item \textbf{Backend}
+    \begin{itemize}
+      \item Architecture microservices avec Node.js et Express
+      \item NGINX comme API Gateway pour la gestion des requêtes
+      \item Supabase pour l'authentification et les services de base de données
+      \item MongoDB pour le stockage des contenus de cours et des données structurées
+    \end{itemize}
+  
+  \item \textbf{Traitement des données}
+    \begin{itemize}
+      \item Python pour les scripts de scraping et de nettoyage de données
+      \item APIs LLM (Large Language Models) pour le traitement intelligent des contenus
+      \item JSON comme format principal pour le stockage et l'échange de données
+    \end{itemize}
+  
+  \item \textbf{Déploiement et infrastructure}
+    \begin{itemize}
+      \item Vercel pour l'hébergement du frontend
+      \item Docker pour la conteneurisation des services backend
+      \item GitHub Actions pour l'intégration et le déploiement continus
+    \end{itemize}
+\end{itemize}
+
+\subsection{Environnement de Développement}
+L'environnement de développement a été configuré pour optimiser la productivité et la collaboration :
+
+\begin{itemize}
+  \item Visual Studio Code comme IDE principal
+  \item ESLint et Prettier pour le linting et le formatage du code
+  \item Git et GitHub pour le contrôle de version et la collaboration
+  \item Postman pour le test des API
+  \item Figma pour la conception et le prototypage de l'interface utilisateur
+\end{itemize}
+
+Cette stack technologique a été choisie pour sa modernité, sa flexibilité et sa capacité à répondre aux besoins spécifiques du projet, tout en garantissant des performances optimales et une bonne expérience utilisateur. 

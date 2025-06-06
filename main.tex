@@ -20,13 +20,17 @@
 \usepackage[scaled=0.85]{beramono}
 \usepackage{tikz}
 \usepackage{afterpage}
+\usepackage{tcolorbox}
+\usepackage{titletoc}
 
 % --- Font Configuration ---
 
 % --- Color Definitions ---
-\definecolor{primary}{RGB}{0,51,102}
+\definecolor{primary}{RGB}{0,102,204}
 \definecolor{secondary}{RGB}{102,102,153}
 \definecolor{accent}{RGB}{204,0,0}
+\definecolor{darkgray}{RGB}{90,90,90}
+\definecolor{lightgray}{RGB}{240,240,240}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{codeblue}{rgb}{0,0,0.9}
@@ -55,6 +59,8 @@
 \titleformat{\chapter}
   {\normalfont\LARGE\bfseries\color{primary}}
   {\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+
 \titleformat{\section}
   {\normalfont\Large\bfseries\color{primary}}
   {\thesection}{1em}{}
@@ -104,7 +110,7 @@
 % --- Image path configuration ---
 % When you upload images to Overleaf, place them in folders named:
 % week_1_img, week_2_img, week_3_img, week_4_img
-\graphicspath{{week_1_img/}{week_2_img/}{week_3_img/}{week_4_img/}}
+\graphicspath{{week_1_img/}{week_2_img/}{week_3_img/}{week_4_img/}{./}}
 
 % --- Document Information ---
 \title{\Huge\bfseries\color{primary} Rapport de Stage \\ 
@@ -112,82 +118,167 @@
 \author{\Large Zakaria el Khaldi}
 \date{\large Juin 2025}
 
+% --- TOC Formatting ---
+\renewcommand{\contentsname}{Sommaire}
+
+% New TOC formatting
+\titlecontents{chapter}
+    [0em]                                       % left margin
+    {\vspace{1.5em}\large\bfseries}             % above code (font size, weight)
+    {\color{primary}}                           % numbered entry format (removed number)
+    {\color{primary}}                           % unnumbered entry format
+    {\titlerule*[1pc]{.}\contentspage}          % filler and page number
+    [\vspace{0.5em}]                            % below code
+
+% Format for section entries
+\titlecontents{section}
+    [2.3em]                               % left margin
+    {\normalfont}                         % above code
+    {\contentslabel{2.3em}}              % numbered entry format
+    {}                                    % unnumbered entry format
+    {\titlerule*[1pc]{.}\contentspage}    % filler and page number
+
+% Format for subsection entries
+\titlecontents{subsection}
+    [4.6em]                               % left margin
+    {\small}                              % above code
+    {\contentslabel{2.8em}}              % numbered entry format
+    {}                                    % unnumbered entry format
+    {\titlerule*[1pc]{.}\contentspage}    % filler and page number
+
+% Format for subsubsection entries
+\titlecontents{subsubsection}
+    [7.4em]                               % left margin
+    {\small\itshape}                      % above code
+    {\contentslabel{3.3em}}              % numbered entry format
+    {}                                    % unnumbered entry format
+    {\titlerule*[1pc]{.}\contentspage}    % filler and page number
+
+% --- Chapter Styling ---
+\def\@makechapterhead#1{%
+  \vspace*{50\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+      \if@mainmatter
+        \huge\bfseries\color{primary} \thechapter \\ #1
+        \par\nobreak
+        \vskip 20\p@
+      \fi
+    \fi
+    \interlinepenalty\@M
+    \ifnum \c@secnumdepth >\m@ne
+      \if@mainmatter
+      \else
+        \Huge \bfseries \color{primary} #1
+      \fi
+    \else
+      \Huge \bfseries \color{primary} #1
+    \fi
+    \par\nobreak
+    \vskip 40\p@
+    \hrule
+    \vskip 40\p@
+  }
+  \newpage
+}
+
+\def\@makeschapterhead#1{%
+  \vspace*{50\p@}%
+  {\parindent \z@ \raggedright
+    \normalfont
+    \interlinepenalty\@M
+    \Huge \bfseries \color{primary} #1\par\nobreak
+    \vskip 40\p@
+    \hrule
+    \vskip 40\p@
+  }
+  \newpage
+}
+
+% --- Apply fancy style to all chapters automatically ---
+\makeatletter
+\renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
+                    \thispagestyle{fancy}%
+                    \global\@topnum\z@
+                    \@afterindentfalse
+                    \secdef\@chapter\@schapter}
+\makeatother
+
+% --- Prevent duplicate chapter numbers ---
+\renewcommand{\thechapter}{\arabic{chapter}}
+\makeatletter
+\renewcommand{\@seccntformat}[1]{%
+  \ifcsname format#1\endcsname
+    \csname format#1\endcsname
+  \else
+    \csname the#1\endcsname\quad
+  \fi
+}
+\makeatother
+
+% Format chapter numbering (hide in document text since it's in the title)
+\makeatletter
+\newcommand{\formatchapter}{}
+\makeatother
+
 \begin{document}
 
 % --- Cover Page ---
 \begin{titlepage}
-  % Background color with gradient effect
-  \pagecolor{white}
-  \afterpage{\nopagecolor}
-  
-  % Top border decoration
-  \begin{center}
-    \vspace*{-1cm}
-    \noindent\makebox[\linewidth]{\color{primary}\rule{\paperwidth}{0.4cm}}
-  \end{center}
-  
-  \vspace{1cm}
-  \begin{center}
-    % Enterprise logo/name with styling
-    \begin{tikzpicture}
-      \node[draw=primary, line width=1.5pt, rounded corners=5mm, inner sep=8mm] {
+    \centering
+    % --- Kingdom and Ministry Text ---
+    {\LARGE \textbf{Royaume du Maroc}}\\[0.2cm]
+    {\small \textbf{Ministère de l'Éducation Nationale, du Préscolaire et des Sports}}\\[0.2cm]
+    \rule{\linewidth}{0.4mm} \\[0.4cm]
+
+    % --- Logos Section ---
+    \begin{minipage}{0.45\textwidth}
+        \flushleft
+        \includegraphics[width=3.5cm]{ministere.jpg}
+    \end{minipage}
+    \begin{minipage}{0.45\textwidth}
+        \flushright
+        \includegraphics[width=5cm]{bts_logo.png}
+    \end{minipage}\\[1.3cm]
+
+    % --- Enterprise Name (IAAI) ---
+    \begin{tcolorbox}[colback=primary!10, colframe=primary, width=8cm, height=2.5cm, halign=center, valign=center]
         {\fontsize{40}{48}\selectfont\textcolor{primary}{\textbf{IAAI}}}
-      };
-    \end{tikzpicture}
+    \end{tcolorbox}
     
-    \vspace{2cm}
+    \vspace{1.3cm}
     
-    % Report title with styling
-    {\fontsize{30}{36}\selectfont\textcolor{primary}{\textbf{RAPPORT DE STAGE}}\par}
-    \vspace{0.8cm}
-    {\Large\itshape Conception et Développement d'une Plateforme E-learning\par}
+    % --- Report Title ---
+    \rule{\linewidth}{0.4mm} \\[0.3cm]
+    {\Huge \textbf{Rapport de Stage}}\\[0.3cm]
+    \rule{\linewidth}{0.4mm} \\[0.7cm]
     
-    \vspace{3cm}
+    % --- Project Subject ---
+    {\large \textbf{Projet : Conception et Développement d'une Plateforme E-learning}}\\[1.5cm]
     
-    % Student information with styling
-    \begin{tikzpicture}
-      \node[draw=secondary, rounded corners=3mm, line width=1pt, fill=white, inner sep=6mm] {
-        \begin{minipage}{0.8\textwidth}
-          \centering
-          {\large\textbf{Présenté par}}\\\vspace{0.3cm}
-          {\Large\textbf{Zakaria el Khaldi}}\\\vspace{0.7cm}
-          {\large\textbf{Formation :} [Formation]}\\\vspace{0.2cm}
-          {\large\textbf{Établissement :} [Établissement]}
-        \end{minipage}
-      };
-    \end{tikzpicture}
+    % --- Student and Supervisor Information ---
+    \begin{minipage}{0.45\textwidth}
+        \flushleft
+        {\large \textbf{Présenté par :}}\\[0.2cm]
+        {\large \textsc{Zakaria el Khaldi}}\\[0.5cm]
+        {\large \textbf{Formation :} [Formation]}\\[0.2cm]
+        {\large \textbf{Établissement :} [Établissement]}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \flushright
+        {\large \textbf{Sous la supervision de :}}\\[0.2cm]
+        {\large [Nom du superviseur]}\\[0.2cm]
+        {\large [Fonction du superviseur]}
+    \end{minipage}\\[1.5cm]
     
-    \vspace{2cm}
+    % --- Internship Period ---
+    {\large \textbf{Période de stage :}}\\[0.2cm]
+    {\large Du 5 mai 2025 au [Date de fin]}\\[1.8cm]
     
-    % Internship period with styling
-    \begin{tikzpicture}
-      \node[draw=accent, rounded corners=3mm, line width=1pt, fill=white, inner sep=5mm] {
-        \begin{minipage}{0.7\textwidth}
-          \centering
-          {\large\textbf{Période de stage}}\\\vspace{0.3cm}
-          {\large Du 5 mai 2025 au [Date de fin]}
-        \end{minipage}
-      };
-    \end{tikzpicture}
+    % --- Academic Year ---
+    {\large \textbf{Année Académique : [Année Académique]}}\\
     
-    \vspace{2cm}
-    
-    % Supervision information with styling
-    {\large\textbf{Sous la supervision de :}}\\\vspace{0.3cm}
-    {\large [Nom du superviseur]}\\\vspace{0.2cm}
-    {\large [Fonction du superviseur]}
-    
-    \vfill
-    
-    % Academic year at the bottom
-    {\large\textbf{Année Académique [Année Académique]}}\par
-  \end{center}
-  
-  % Bottom border decoration
-  \begin{center}
-    \vspace{1cm}
-    \noindent\makebox[\linewidth]{\color{primary}\rule{\paperwidth}{0.4cm}}
-  \end{center}
 \end{titlepage}
 
 % --- Remerciements ---
@@ -212,7 +303,12 @@ Enfin, je remercie ma famille et mes amis pour leur soutien inconditionnel tout 
 \thispagestyle{fancy}
 \newpage
 
-\chapter{Introduction}
+% --- Include Chapter Files ---
+% Each chapter.s content is in a separate file for better organization
+
+% Create unnumbered introduction
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
 \thispagestyle{fancy}
 
 Ce rapport présente le travail réalisé lors de mon stage de fin d'études effectué au sein de LearnTech Solutions du 10 mai au 10 juin 2025. Durant cette période, j'ai participé à la conception et au développement d'une plateforme e-learning complète destinée aux entreprises et aux professionnels individuels.
@@ -221,47 +317,27 @@ L'objectif de ce stage était de mettre en pratique les connaissances théorique
 
 Ce rapport détaille l'ensemble des travaux réalisés durant les différentes semaines du stage, les méthodologies employées, les difficultés rencontrées et les solutions apportées, ainsi que les résultats obtenus.
 
-\section{Contexte du Stage}
-LearnTech Solutions est une entreprise spécialisée dans le développement de solutions d'apprentissage en ligne. Face à une demande croissante pour des plateformes de formation à distance, l'entreprise a décidé de développer une nouvelle plateforme e-learning innovante combinant des cours structurés et des services de consultation personnalisés.
+% Chapter 1: Presentation of the Company and Internship Framework
+\include{chapter_1}
 
-Le projet s'inscrit dans un contexte de digitalisation accélérée de la formation professionnelle et de besoin croissant en solutions permettant un apprentissage flexible et adapté aux besoins spécifiques des entreprises et des individus.
+% Chapter 2: Requirements and Specifications
+\include{chapter_2}
 
-\section{Présentation de l'Entreprise}
-LearnTech Solutions est une entreprise tech spécialisée dans le développement de solutions éducatives numériques. Fondée en 2020, elle se positionne comme un acteur innovant dans le domaine de l'e-learning et des technologies éducatives. L'entreprise compte une vingtaine de collaborateurs, principalement des développeurs, des designers UX/UI, des spécialistes en contenu pédagogique et des experts en expérience utilisateur.
+% Chapter 3: Platform Design and Architecture
+\include{chapter_3}
 
-La mission de LearnTech Solutions est de démocratiser l'accès à une éducation de qualité grâce à des plateformes technologiques avancées et intuitives. L'entreprise se distingue par son approche qui combine apprentissage structuré et interaction humaine à la demande.
+% Chapter 4: Development and Implementation
+\include{chapter_4}
 
-\section{Objectifs du Stage}
-Les objectifs principaux de ce stage étaient les suivants :
+% Chapter 5: Deployment and Optimization
+\include{chapter_5}
 
-\begin{itemize}
-  \item Participer à la conception initiale de l'architecture de la plateforme e-learning
-  \item Développer des composants back-end pour la gestion des utilisateurs et des cours
-  \item Mettre en place un système de traitement et de nettoyage de données pour les contenus pédagogiques
-  \item Implémenter des fonctionnalités front-end pour l'expérience utilisateur
-  \item Contribuer à l'intégration des différents services et microservices
-  \item Participer aux phases de test et d'évaluation de la plateforme
-\end{itemize}
+% Chapter 6: Assessment and Future Perspectives
+\include{chapter_6}
 
-Ces objectifs s'inscrivent dans le cadre plus large du développement d'une plateforme e-learning complète et innovante, destinée à être commercialisée auprès d'entreprises et de professionnels individuels.
-
-% --- Include Week Files ---
-% Each week's content is in a separate file for better organization
-
-% Week 1 content
-\include{week_1}
-
-% Week 2 content
-\include{week_2}
-
-% Week 3 content
-\include{week_3}
-
-% Week 4 content
-\include{week_4}
-
-\chapter{Conclusion et Perspectives}
+\chapter{Chapitre 7 : Conclusion et Perspectives}
 \thispagestyle{fancy}
+\newpage
 
 Ce stage de quatre semaines chez LearnTech Solutions m'a permis de participer activement au développement d'une plateforme e-learning innovante. Au cours de cette période, j'ai pu mettre en pratique mes connaissances théoriques et acquérir de nouvelles compétences techniques dans un environnement professionnel stimulant.
 
