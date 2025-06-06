@@ -99,6 +99,11 @@
     keywordstyle=\color{codeblue}
 }
 
+% --- Image path configuration ---
+% When you upload images to Overleaf, place them in folders named:
+% week_1_img, week_2_img, week_3_img, week_4_img
+\graphicspath{{week_1_img/}{week_2_img/}{week_3_img/}{week_4_img/}}
+
 % --- Document Information ---
 \title{\Huge\bfseries\color{primary} Rapport de Stage \\ 
        \Large Conception et Développement d'une Plateforme E-learning}
@@ -168,6 +173,7 @@ Enfin, je remercie ma famille et mes amis pour leur soutien inconditionnel tout 
 % --- Table of Contents ---
 \tableofcontents
 \thispagestyle{fancy}
+\newpage
 
 \chapter{Introduction}
 \thispagestyle{fancy}
@@ -202,81 +208,54 @@ Les objectifs principaux de ce stage étaient les suivants :
 
 Ces objectifs s'inscrivent dans le cadre plus large du développement d'une plateforme e-learning complète et innovante, destinée à être commercialisée auprès d'entreprises et de professionnels individuels.
 
-\chapter{Conception et Architecture de la Plateforme E-learning}
-\thispagestyle{fancy}
+% --- Include Week Files ---
+% Each week's content is in a separate file for better organization
 
-La première semaine du stage a été consacrée à la conception initiale du projet, à la définition de l'architecture backend et des bases de données, ainsi qu'à la création des premiers diagrammes UML.
+% Week 1 content
+\include{week_1}
 
-\section{Vision de la Plateforme}
-La plateforme e-learning conçue repose sur une vision claire :
-\begin{itemize}
-  \item \textbf{Offres Clés :} Cours en ligne auto-rythmés (vidéos, images, quiz) et services de support, de conseil et de prestation via une plateforme de réunion intégrée
-  \item \textbf{Utilisateurs Cibles :} Entreprises (pour la formation des employés) et apprenants individuels (pour l'amélioration des compétences)
-  \item \textbf{Valeur Unique :} Un mélange harmonieux d'apprentissage structuré et d'interaction avec des experts à la demande
-\end{itemize}
+% Week 2 content
+\include{week_2}
 
-\section{Architecture Microservices}
-L'architecture choisie pour cette plateforme est une architecture microservices, justifiée par plusieurs avantages :
-\begin{itemize}
-  \item \textbf{Scalabilité :} Capacité à mettre à l'échelle les services individuels
-  \item \textbf{Maintenabilité :} Possibilité de modifier des composants sans impacter l'ensemble du système
-  \item \textbf{Résilience :} Limitation de l'impact d'une défaillance à un service spécifique
-  \item \textbf{Autonomie des Équipes :} Permettre à différentes équipes de gérer et déployer leurs services
-  \item \textbf{Flexibilité Technologique :} Utiliser les technologies les plus adaptées pour chaque service
-\end{itemize}
+% Week 3 content
+\include{week_3}
 
-\section{Pile Technologique}
-La pile technologique définie pour le développement comprend :
-\begin{itemize}
-  \item \textbf{Frontend :} Next.js (React)
-  \item \textbf{Backend :}
-    \begin{itemize}
-      \item Go (pour les services critiques en performance)
-      \item Python avec FastAPI (pour les services de données)
-      \item Node.js avec Express (pour les opérations I/O intensives)
-    \end{itemize}
-  \item \textbf{Bases de Données :} PostgreSQL et Supabase
-  \item \textbf{Passerelle API :} Nginx
-  \item \textbf{Broker de Messages :} Apache Kafka
-  \item \textbf{Conteneurisation :} Docker
-\end{itemize}
-
-\chapter{Analyse et Nettoyage des Données}
-\thispagestyle{fancy}
-
-La deuxième et troisième semaine du stage ont été consacrées à l'analyse approfondie de la qualité des données obtenues par scraping et au développement de scripts pour leur nettoyage et leur transformation.
-
-\section{Analyse de la Qualité des Données}
-L'analyse initiale des données scrappées a porté sur :
-\begin{itemize}
-  \item \textbf{Complétude :} Identification des champs manquants
-  \item \textbf{Cohérence :} Vérification des formats de données
-  \item \textbf{Exactitude :} Évaluation de la plausibilité des données
-  \item \textbf{Doublons :} Détection des entrées redondantes
-  \item \textbf{Pertinence :} Élimination du bruit et des données non pertinentes
-\end{itemize}
-
-\section{Stratégie de Nettoyage avec LLM}
-Face aux défis de nettoyage des données complexes, une approche innovante utilisant des Modèles de Langage Large (LLM) a été implémentée :
-\begin{itemize}
-  \item \textbf{Approche Multi-LLM :} Utilisation de plusieurs API LLM en parallèle pour optimiser le traitement
-  \item \textbf{Traitement Asynchrone :} Requêtes asynchrones pour réduire la latence globale
-  \item \textbf{Segmentation des Données :} Répartition des données entre différents fournisseurs LLM
-\end{itemize}
-
-Cette approche a permis d'obtenir une précision de nettoyage significativement supérieure aux méthodes algorithmiques traditionnelles, tout en optimisant les temps de traitement.
-
-\chapter{Développement et Implémentation}
-\thispagestyle{fancy}
-[Contenu détaillé sur le développement des différents composants de la plateforme]
-
-\chapter{Évaluation et Tests}
-\thispagestyle{fancy}
-[Contenu sur les méthodologies de test et les résultats d'évaluation]
+% Week 4 content
+\include{week_4}
 
 \chapter{Conclusion et Perspectives}
 \thispagestyle{fancy}
-[Conclusion du rapport et perspectives futures pour la plateforme]
+
+Ce stage de quatre semaines chez LearnTech Solutions m'a permis de participer activement au développement d'une plateforme e-learning innovante. Au cours de cette période, j'ai pu mettre en pratique mes connaissances théoriques et acquérir de nouvelles compétences techniques dans un environnement professionnel stimulant.
+
+\section{Synthèse des Réalisations}
+
+Durant ces quatre semaines, les principales réalisations ont été :
+\begin{itemize}
+  \item La conception de l'architecture microservices pour la plateforme
+  \item La participation au développement des interfaces utilisateur
+  \item L'implémentation de systèmes de traitement et nettoyage de données
+  \item La contribution à l'optimisation des performances et à l'amélioration de l'expérience utilisateur
+\end{itemize}
+
+\section{Compétences Acquises}
+
+Ce stage m'a permis de développer de nombreuses compétences :
+\begin{itemize}
+  \item \textbf{Compétences techniques :} Approfondissement des connaissances en développement web moderne (Next.js, API REST), en architecture microservices et en traitement de données avec des modèles LLM
+  \item \textbf{Compétences méthodologiques :} Maîtrise des outils de gestion de projet agile, de versionnement et de déploiement continu
+  \item \textbf{Compétences transversales :} Amélioration des capacités de communication, de travail en équipe et d'adaptation à un environnement professionnel
+\end{itemize}
+
+\section{Perspectives}
+
+Ce projet ouvre plusieurs perspectives intéressantes :
+\begin{itemize}
+  \item \textbf{Pour l'entreprise :} Finalisation et commercialisation de la plateforme e-learning, avec des fonctionnalités supplémentaires comme l'intelligence artificielle pour la personnalisation des parcours d'apprentissage
+  \item \textbf{Pour ma carrière :} Approfondissement des compétences en développement full-stack et en architecture de systèmes complexes
+\end{itemize}
+
+En conclusion, ce stage a été une expérience extrêmement enrichissante qui m'a permis d'approfondir mes connaissances techniques tout en développant ma compréhension des enjeux liés au développement de solutions éducatives numériques. Les compétences acquises et l'expérience professionnelle seront des atouts précieux pour ma future carrière.
 
 \appendix
 \chapter{Annexes}

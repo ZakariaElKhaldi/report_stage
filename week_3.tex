@@ -1,0 +1,194 @@
+\chapter{Semaine 3 : Développement des Interfaces Utilisateur et Traitement des Données}
+\thispagestyle{fancy}
+
+La troisième semaine du stage a été consacrée au développement des interfaces utilisateur pour la plateforme d'apprentissage en ligne, ainsi qu'à la mise en place d'un système avancé de traitement des données de contenu. Ces avancées ont permis de construire les fondations interactives de la plateforme et d'optimiser le traitement des ressources pédagogiques.
+
+\section{Intégration et Déploiement de la Base de Données}
+
+La première tâche de cette semaine a été de structurer et pérenniser les données collectées lors des phases précédentes du projet.
+
+\subsection{Transfert des Données vers MongoDB}
+
+Les fichiers JSON contenant les données scrappées et préalablement nettoyées ont été migrés vers une base de données MongoDB. Chaque type de contenu a été organisé dans des collections distinctes, créant ainsi une structure cohérente et facilement interrogeable.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth,keepaspectratio]{week_3_img/Screenshot 2025-05-19 234047.png}
+  \caption{\textbf{Interface MongoDB Atlas} montrant les différentes collections de données.}
+  \label{fig:mongodb_collections}
+\end{figure}
+
+\subsection{Déploiement Cloud sur MongoDB Atlas}
+
+Pour assurer une accessibilité optimale et une scalabilité future, la base de données a été déployée sur MongoDB Atlas, une plateforme de base de données en tant que service (DBaaS). Cette solution cloud offre plusieurs avantages :
+
+\begin{itemize}
+  \item Haute disponibilité avec réplication automatique
+  \item Surveillance en temps réel des performances
+  \item Sauvegardes automatisées
+  \item Sécurité renforcée avec authentification et chiffrement
+  \item Scalabilité horizontale et verticale selon les besoins
+\end{itemize}
+
+\subsection{Connexion de l'Application à la Base de Données}
+
+Une fois la base de données déployée, la connexion entre l'application backend et l'instance MongoDB hébergée sur Atlas a été établie. Cette étape cruciale a permis d'assurer que l'application puisse lire et écrire des données de manière fiable et sécurisée.
+
+\section{Conception et Développement de l'Interface Utilisateur}
+
+Après avoir développé la page d'accueil la semaine précédente, l'accent a été mis sur la création des interfaces principales que les utilisateurs utiliseront quotidiennement pour accéder aux contenus et suivre leur progression.
+
+\subsection{Interface d'Accueil des Utilisateurs Connectés}
+
+Une interface d'accueil spécifique pour les utilisateurs connectés a été développée, offrant un accès rapide aux cours en cours, aux recommandations personnalisées et aux dernières activités.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth,keepaspectratio]{week_3_img/accueil.png}
+  \caption{\textbf{Interface d'accueil personnalisée} pour les utilisateurs connectés.}
+  \label{fig:user_dashboard}
+\end{figure}
+
+\subsection{Barre Latérale de Navigation}
+
+Une barre latérale de navigation intuitive a été implémentée pour faciliter l'accès aux différentes sections de la plateforme.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.4\textwidth,keepaspectratio]{week_3_img/sidebare.png}
+  \caption{\textbf{Barre latérale de navigation} avec accès aux principales fonctionnalités.}
+  \label{fig:sidebar_nav}
+\end{figure}
+
+Cette barre latérale comprend :
+\begin{itemize}
+  \item Accès au tableau de bord personnel
+  \item Catalogue de cours et formations
+  \item Suivi de progression
+  \item Calendrier des sessions de consultation
+  \item Paramètres du compte
+  \item Centre de notifications
+\end{itemize}
+
+\subsection{Interface de Consultation des Cours}
+
+L'interface de consultation des cours a été conçue pour offrir une expérience d'apprentissage immersive et efficace.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth,keepaspectratio]{week_3_img/part1.png}
+  \caption{\textbf{Interface de consultation des cours} - Partie théorique.}
+  \label{fig:course_view_part1}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth,keepaspectratio]{week_3_img/part2.png}
+  \caption{\textbf{Interface de consultation des cours} - Partie pratique avec exercices interactifs.}
+  \label{fig:course_view_part2}
+\end{figure}
+
+Les caractéristiques principales de cette interface incluent :
+\begin{itemize}
+  \item Affichage clair du contenu théorique avec mise en forme optimisée
+  \item Navigation intuitive entre les différentes sections du cours
+  \item Exercices interactifs intégrés directement dans l'interface
+  \item Suivi de progression en temps réel
+  \item Possibilité de prendre des notes contextuelles
+  \item Mode sombre/clair pour améliorer le confort de lecture
+\end{itemize}
+
+\section{Traitement Avancé des Données de Contenu}
+
+Une partie importante de cette semaine a été consacrée à l'optimisation du traitement des données de contenu éducatif.
+
+\subsection{Défis du Traitement des Données}
+
+Le traitement des données collectées présentait plusieurs défis :
+\begin{itemize}
+  \item Distinction entre le contenu textuel explicatif et les exemples de code
+  \item Structuration cohérente des exemples et exercices
+  \item Préservation des formatages spécifiques (tableaux, listes, etc.)
+  \item Gestion des caractères spéciaux et encodages
+  \item Extraction des métadonnées pertinentes
+\end{itemize}
+
+\subsection{Implémentation d'un Pipeline de Traitement LLM}
+
+Pour surmonter ces défis, un pipeline de traitement basé sur des modèles de langage large (LLM) a été conçu et implémenté.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth,keepaspectratio]{week_3_img/Screenshot 2025-05-20 164411.png}
+  \caption{\textbf{Interface d'administration du pipeline LLM} montrant les statistiques de traitement.}
+  \label{fig:llm_pipeline}
+\end{figure}
+
+\subsection{Stratégie d'Optimisation Multi-LLM}
+
+Le traitement initial utilisant un LLM unique ayant démontré une excellente précision mais des performances limitées en termes de vitesse, une stratégie d'optimisation a été mise en place :
+
+\begin{itemize}
+  \item \textbf{Utilisation simultanée de plusieurs fournisseurs LLM :} Parallélisation des requêtes vers différentes API
+  \item \textbf{Traitement asynchrone :} Optimisation de la latence perçue en traitant plusieurs segments de données simultanément
+  \item \textbf{Segmentation intelligente :} Division des données en unités de traitement optimales pour chaque type de modèle
+  \item \textbf{Gestion des requêtes :} Assignation statique de segments spécifiques à des modèles dédiés pour simplifier la gestion de la concurrence
+\end{itemize}
+
+Cette approche a permis de réduire significativement le temps de traitement tout en maintenant une qualité optimale, passant d'environ 15 heures à 7-8 heures pour l'ensemble des données.
+
+\section{Intégration Frontend-Backend}
+
+Une attention particulière a été portée à l'intégration efficace entre le frontend et le backend de la plateforme.
+
+\subsection{Développement des Routes d'API}
+
+Des routes d'API RESTful ont été développées pour permettre à l'interface utilisateur d'accéder aux données structurées dans MongoDB :
+
+\begin{itemize}
+  \item Routes d'authentification et de gestion des utilisateurs
+  \item Routes d'accès au catalogue de cours
+  \item Routes de suivi de progression
+  \item Routes de gestion des consultations et réservations
+  \item Routes d'analytics et de rapports
+\end{itemize}
+
+\subsection{Optimisation des Requêtes}
+
+Les requêtes MongoDB ont été optimisées pour garantir des performances optimales :
+
+\begin{itemize}
+  \item Création d'index appropriés pour accélérer les recherches fréquentes
+  \item Limitation des champs retournés aux données strictement nécessaires
+  \item Utilisation de projections pour alléger les transferts de données
+  \item Mise en place de pagination pour les listes volumineuses
+  \item Implémentation de mécanismes de mise en cache pour les données fréquemment consultées
+\end{itemize}
+
+\section{Tests et Validation}
+
+Pour garantir la qualité et la fiabilité des interfaces et systèmes développés, plusieurs types de tests ont été mis en place :
+
+\subsection{Tests d'Interface Utilisateur}
+
+\begin{itemize}
+  \item \textbf{Tests de compatibilité :} Vérification du rendu sur différents navigateurs (Chrome, Firefox, Safari, Edge)
+  \item \textbf{Tests de responsive design :} Validation de l'adaptation aux différentes tailles d'écran
+  \item \textbf{Tests d'accessibilité :} Conformité aux standards WCAG pour garantir l'inclusivité
+  \item \textbf{Tests d'utilisabilité :} Évaluation de l'intuitivité et de la fluidité de navigation
+\end{itemize}
+
+\subsection{Tests Fonctionnels et d'Intégration}
+
+\begin{itemize}
+  \item \textbf{Tests des routes d'API :} Validation des entrées/sorties et gestion des erreurs
+  \item \textbf{Tests d'intégration :} Vérification de la communication correcte entre frontend et backend
+  \item \textbf{Tests de performance :} Mesure des temps de réponse et optimisation des goulots d'étranglement
+  \item \textbf{Tests de charge :} Simulation d'utilisation intensive pour évaluer la robustesse
+\end{itemize}
+
+\section{Conclusion}
+
+Cette troisième semaine a marqué des avancées significatives dans le développement de la plateforme e-learning. La mise en place d'interfaces utilisateur intuitives et ergonomiques, couplée à un système sophistiqué de traitement des données éducatives, a permis de poser les fondations solides pour l'expérience utilisateur finale. L'utilisation innovante de technologies comme MongoDB Atlas et les modèles de langage large (LLM) a apporté des solutions efficaces aux défis techniques rencontrés.
+
+Les interfaces développées durant cette semaine offrent maintenant aux utilisateurs un environnement d'apprentissage fluide et immersif, tandis que l'optimisation du traitement des données garantit une qualité exceptionnelle du contenu éducatif proposé. 
