@@ -23,6 +23,7 @@
 \usepackage{afterpage}
 \usepackage{tcolorbox}
 \usepackage{titletoc}
+\usepackage{pdfpages}
 
 % --- Font Configuration ---
 
@@ -237,62 +238,7 @@
 \begin{document}
 
 % --- Cover Page ---
-\begin{titlepage}
-    \centering
-    % --- Kingdom and Ministry Text ---
-    {\LARGE \textbf{Royaume du Maroc}}\\[0.2cm]
-    {\small \textbf{Ministère de l'Éducation Nationale, du Préscolaire et des Sports}}\\[0.2cm]
-    \rule{\linewidth}{0.4mm} \\[0.4cm]
-
-    % --- Logos Section ---
-    \begin{minipage}{0.45\textwidth}
-        \flushleft
-        \includegraphics[width=3.5cm]{ministere.jpg}
-    \end{minipage}
-    \begin{minipage}{0.45\textwidth}
-        \flushright
-        \includegraphics[width=5cm]{bts_logo.png}
-    \end{minipage}\\[1.3cm]
-
-    % --- Enterprise Name (IAAI) ---
-    \begin{tcolorbox}[colback=primary!10, colframe=primary, width=8cm, height=2.5cm, halign=center, valign=center]
-        {\fontsize{40}{48}\selectfont\textcolor{primary}{\textbf{IAAI}}}
-    \end{tcolorbox}
-    
-    \vspace{1.3cm}
-    
-    % --- Report Title ---
-    \rule{\linewidth}{0.4mm} \\[0.3cm]
-    {\Huge \textbf{Rapport de Stage}}\\[0.3cm]
-    \rule{\linewidth}{0.4mm} \\[0.7cm]
-    
-    % --- Project Subject ---
-    {\large \textbf{Projet : Conception et Développement d'une Plateforme E-learning}}\\[1.5cm]
-    
-    % --- Student and Supervisor Information ---
-    \begin{minipage}{0.45\textwidth}
-        \flushleft
-        {\large \textbf{Présenté par :}}\\[0.2cm]
-        {\large \textsc{Zakaria el Khaldi}}\\[0.5cm]
-        {\large \textbf{Formation :} BTS DSI (Développement Système Informatique)}\\[0.2cm]
-        {\large \textbf{Établissement :} Centre BTS Hay Hassani}
-    \end{minipage}
-    \hfill
-    \begin{minipage}{0.45\textwidth}
-        \flushright
-        {\large \textbf{Sous la supervision de :}}\\[0.2cm]
-        {\large Dr. Ayman NAIM}\\[0.2cm]
-        {\large Directeur Technique, IAAI}
-    \end{minipage}\\[1.5cm]
-    
-    % --- Internship Period ---
-    {\large \textbf{Période de stage :}}\\[0.2cm]
-    {\large Du 5 mai 2025 au 5 juin 2025}\\[1.8cm]
-    
-    % --- Academic Year ---
-    {\large \textbf{Année Académique : 2024-2025}}\\
-    
-\end{titlepage}
+\includepdf[pages=1]{page_de_garde_memoire.pdf}
 
 % --- Dédicace ---
 \chapter*{Dédicace}
