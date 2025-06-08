@@ -24,6 +24,7 @@
 \usepackage{tcolorbox}
 \usepackage{titletoc}
 \usepackage{pdfpages}
+\usepackage{marvosym}
 
 % --- Font Configuration ---
 
@@ -449,9 +450,104 @@ Je suis particulièrement reconnaissant envers l'équipe d'IAAI pour cette oppor
 
 Les enseignements tirés de ce stage constitueront sans aucun doute des atouts précieux pour ma future carrière professionnelle.
 
-\appendix
-\chapter{Annexes}
+\chapter*{Bibliographie}
+\addcontentsline{toc}{chapter}{Bibliographie}
 \thispagestyle{fancy}
-[Diagrammes UML, exemples de code, captures d'écran de l'interface]
+\setcounter{section}{0}
+
+Cette section présente les ressources et outils qui ont été utiles pour le développement de la plateforme LearnExpert, ainsi que des références pour approfondir les concepts abordés dans ce rapport.
+
+\section{Technologies et Frameworks}
+
+\subsection{Frontend}
+\begin{itemize}
+  \item \textbf{React} (\url{https://reactjs.org/}) - Bibliothèque JavaScript pour la construction d'interfaces utilisateur
+  \item \textbf{Next.js} (\url{https://nextjs.org/}) - Framework React pour le développement d'applications web avec rendu côté serveur
+  \item \textbf{TypeScript} (\url{https://www.typescriptlang.org/}) - Langage de programmation typé basé sur JavaScript
+  \item \textbf{Tailwind CSS} (\url{https://tailwindcss.com/}) - Framework CSS utilitaire pour le design responsive
+  \item \textbf{Framer Motion} (\url{https://www.framer.com/motion/}) - Bibliothèque d'animations pour React
+  \item \textbf{Monaco Editor} (\url{https://microsoft.github.io/monaco-editor/}) - Éditeur de code utilisé dans VS Code
+\end{itemize}
+
+\subsection{Backend}
+\begin{itemize}
+  \item \textbf{Node.js} (\url{https://nodejs.org/}) - Environnement d'exécution JavaScript côté serveur
+  \item \textbf{Express} (\url{https://expressjs.com/}) - Framework web minimaliste pour Node.js
+  \item \textbf{FastAPI} (\url{https://fastapi.tiangolo.com/}) - Framework web Python moderne pour la création d'API
+  \item \textbf{Go} (\url{https://golang.org/}) - Langage de programmation conçu pour la performance et la concurrence
+  \item \textbf{NGINX} (\url{https://nginx.org/}) - Serveur web et proxy inverse utilisé comme API Gateway
+  \item \textbf{Apache Kafka} (\url{https://kafka.apache.org/}) - Plateforme de streaming distribuée pour la gestion des événements
+\end{itemize}
+
+\subsection{Base de Données et Stockage}
+\begin{itemize}
+  \item \textbf{PostgreSQL} (\url{https://www.postgresql.org/}) - Système de gestion de base de données relationnelle
+  \item \textbf{MongoDB} (\url{https://www.mongodb.com/}) - Base de données NoSQL orientée documents
+  \item \textbf{Supabase} (\url{https://supabase.io/}) - Alternative open-source à Firebase pour l'authentification et le stockage
+\end{itemize}
+
+\subsection{Infrastructure et Déploiement}
+\begin{itemize}
+  \item \textbf{Docker} (\url{https://www.docker.com/}) - Plateforme de conteneurisation pour le packaging et le déploiement d'applications
+  \item \textbf{Vercel} (\url{https://vercel.com/}) - Plateforme de déploiement et d'hébergement pour les applications Next.js
+  \item \textbf{GitHub Actions} (\url{https://github.com/features/actions}) - Solution d'intégration et de déploiement continus
+\end{itemize}
+
+\section{Outils de Développement}
+
+\begin{itemize}
+  \item \textbf{Visual Studio Code} (\url{https://code.visualstudio.com/}) - Éditeur de code extensible et personnalisable
+  \item \textbf{ESLint} (\url{https://eslint.org/}) - Outil d'analyse statique pour identifier les problèmes dans le code JavaScript
+  \item \textbf{Prettier} (\url{https://prettier.io/}) - Formateur de code pour maintenir un style cohérent
+  \item \textbf{Git} (\url{https://git-scm.com/}) - Système de contrôle de version distribué
+  \item \textbf{GitHub} (\url{https://github.com/}) - Plateforme de développement collaboratif
+  \item \textbf{Postman} (\url{https://www.postman.com/}) - Plateforme de collaboration pour le développement d'API
+  \item \textbf{Figma} (\url{https://www.figma.com/}) - Outil de conception d'interface utilisateur et de prototypage
+\end{itemize}
+
+\section{Ressources d'Apprentissage}
+
+\subsection{Documentation Officielle}
+\begin{itemize}
+  \item \textbf{Next.js}: \url{https://nextjs.org/docs}
+  \item \textbf{React}: \url{https://reactjs.org/docs}
+  \item \textbf{TypeScript}: \url{https://www.typescriptlang.org/docs/}
+  \item \textbf{Tailwind CSS}: \url{https://tailwindcss.com/docs}
+  \item \textbf{Supabase}: \url{https://supabase.io/docs}
+\end{itemize}
+
+\subsection{Tutoriels et Cours}
+\begin{itemize}
+  \item \textbf{Fullstack React with TypeScript}: \\
+        \url{https://www.newline.co/fullstack-react-with-typescript}
+  \item \textbf{Next.js \& React - The Complete Guide}: \\
+        \url{https://www.udemy.com/course/nextjs-react-the-complete-guide/}
+  \item \textbf{Learn Microservices with Node.js}: \\
+        \url{https://www.packtpub.com/product/learn-microservices-with-nodejs/9781788620215}
+  \item \textbf{Advanced Microservices}: \\
+        \url{https://www.apress.com/gp/book/9781484228869}
+\end{itemize}
+
+\subsection{Articles et Blogs}
+\begin{itemize}
+  \item \textbf{The Principles of Clean Architecture}: \\
+        \url{https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html}
+  \item \textbf{Event-Driven Architecture}: \\
+        \url{https://martinfowler.com/articles/201701-event-driven.html}
+  \item \textbf{Microservices Architecture}: \\
+        \url{https://microservices.io/}
+  \item \textbf{Web Development Trends 2025}: \\
+        \url{https://www.smashingmagazine.com/}
+\end{itemize}
+
+\section{Outils d'IA et de Traitement de Données}
+\begin{itemize}
+  \item \textbf{OpenAI API} (\url{https://openai.com/api/}) - API pour l'accès aux modèles de langage GPT
+  \item \textbf{Hugging Face} (\url{https://huggingface.co/}) - Plateforme pour les modèles de traitement du langage naturel
+  \item \textbf{Weights \& Biases} (\url{https://wandb.ai/}) - Plateforme de suivi d'expériences pour le machine learning
+  \item \textbf{Pandas} (\url{https://pandas.pydata.org/}) - Bibliothèque Python pour l'analyse et la manipulation de données
+\end{itemize}
+
+Ces ressources ont été essentielles pour le développement de la plateforme LearnExpert et peuvent servir de références pour approfondir les concepts et technologies abordés dans ce rapport.
 
 \end{document}

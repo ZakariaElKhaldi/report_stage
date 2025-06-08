@@ -109,5 +109,16 @@
 \contentsline {section}{\numberline {3}Défis Rencontrés et Solutions Apportées}{67}{section.0.3}%
 \contentsline {section}{\numberline {4}Perspectives}{68}{section.0.4}%
 \contentsline {section}{\numberline {5}Mot de Fin}{68}{section.0.5}%
-\contentsline {chapter}{\numberline {A}Annexes}{69}{appendix.A}%
+\contentsline {chapter}{Bibliographie}{69}{chapter*.13}%
+\contentsline {section}{\numberline {1}Technologies et Frameworks}{69}{section.0.1}%
+\contentsline {subsection}{\numberline {1.1}Frontend}{69}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {1.2}Backend}{69}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {1.3}Base de Données et Stockage}{69}{subsection.0.1.3}%
+\contentsline {subsection}{\numberline {1.4}Infrastructure et Déploiement}{70}{subsection.0.1.4}%
+\contentsline {section}{\numberline {2}Outils de Développement}{70}{section.0.2}%
+\contentsline {section}{\numberline {3}Ressources d'Apprentissage}{70}{section.0.3}%
+\contentsline {subsection}{\numberline {3.1}Documentation Officielle}{70}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {3.2}Tutoriels et Cours}{70}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {3.3}Articles et Blogs}{71}{subsection.0.3.3}%
+\contentsline {section}{\numberline {4}Outils d'IA et de Traitement de Données}{71}{section.0.4}%
 \contentsfinish 
