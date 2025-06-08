@@ -1,0 +1,205 @@
+\documentclass[12pt, a4paper]{article}
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx} % Make sure this is here for images
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{listings} % Added for code/JSON display
+\usepackage[scaled=0.85]{beramono} % Added for a nicer monospaced font
+
+% --- Font Configuration ---
+% --- Color Definitions ---
+\definecolor{primary}{RGB}{0,51,102}
+\definecolor{secondary}{RGB}{102,102,153}
+\definecolor{accent}{RGB}{204,0,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{codeblue}{rgb}{0,0,0.9}
+\definecolor{codegreen}{rgb}{0.1,0.6,0.1} % Darker green for comments
+
+% --- Page Geometry ---
+\geometry{
+  a4paper,
+  left=2.5cm,
+  right=2.5cm,
+  top=2.5cm,
+  bottom=2.5cm,
+  headheight=15pt
+}
+% --- Header/Footer Setup ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Rapport de Stage - Semaine 3 - Jour 6} % Updated
+\fancyhead[R]{\small Zakaria el Khaldi}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+% --- Title Formatting ---
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{primary}}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{secondary}}
+  {\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{accent}}
+  {\thesubsubsection}{1em}{}
+% --- List Formatting ---
+\setlist[itemize]{leftmargin=*, nosep}
+\setlist[enumerate]{leftmargin=*, nosep}
+% --- Hyperlink Setup ---
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=secondary,
+  citecolor=accent
+}
+
+% --- Listings Setup for JSON ---
+\lstdefinestyle{json}{
+    language=json,
+    basicstyle=\ttfamily\footnotesize,
+    numbers=left,
+    numberstyle=\tiny\color{codegray},
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{white!95!black}, % Very light gray background
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=tb, % Top and bottom frame
+    framextopmargin=3pt,
+    framexbottommargin=3pt,
+    rulecolor=\color{black!30!white},
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    stringstyle=\color{codepurple},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{codeblue}, % For true, false, null
+    morestring=[b]",
+    literate=
+     *{0}{{{\color{codeblue}0}}}{1}
+      {1}{{{\color{codeblue}1}}}{1}
+      {2}{{{\color{codeblue}2}}}{1}
+      {3}{{{\color{codeblue}3}}}{1}
+      {4}{{{\color{codeblue}4}}}{1}
+      {5}{{{\color{codeblue}5}}}{1}
+      {6}{{{\color{codeblue}6}}}{1}
+      {7}{{{\color{codeblue}7}}}{1}
+      {8}{{{\color{codeblue}8}}}{1}
+      {9}{{{\color{codeblue}9}}}{1}
+      {:}{{{\color{black}:}}}{1}
+      {\{}{{{\color{black}{\{}}}}{1}
+      {\}}{{{\color{black}{\}}}}}{1}
+      {[}{{{\color{black}{[}}}}{1}
+      {]}{{{\color{black}{]}}}}{1}
+      {,}{{{\color{black}{,}}}}{1},
+}
+
+
+% --- Title Page Information ---
+\title{\Huge\bfseries\color{primary} Rapport de Stage \\ 
+      \Large Semaine 3 - Jour 6 : Résolution du Nettoyage de Données et Planification Stratégique} % Updated title
+\author{\Large Zakaria el Khaldi}
+\date{\large Le 24 mai 2025} % Updated date for Day 6 (assuming Friday)
+
+% --- Document Start ---
+\begin{document}
+% --- Cover Page ---
+\begin{titlepage}
+  \centering
+  \vspace*{\stretch{0.5}}
+  {\Huge\bfseries\color{primary} Rapport de Stage \par}
+  \vspace{1cm}
+  {\Large\itshape Semaine 3 - Jour 6 : Résolution du Problème de Nettoyage de Données, Identification de Nouvelles Ressources et Stratégie SEO\par} % Updated title
+  \vspace{2cm}
+  
+  \vspace{2cm}
+  {\Large Zakaria el Khaldi\par}
+  \vfill
+  {\large Le 24 mai 2025\par} % Date of activity day
+  \vspace*{\stretch{1}}
+\end{titlepage}
+
+% --- Table of Contents ---
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+% --- Introduction ---
+\section{Introduction}
+\thispagestyle{fancy}
+Ce rapport quotidien conclut la troisième semaine de stage et détaille les activités menées lors de ce sixième jour. Après avoir rencontré des difficultés persistantes avec le nettoyage et la structuration des données scrapées, la journée a été consacrée à une ré-analyse approfondie du problème. Cette démarche a permis d'identifier la cause racine et de mettre en œuvre une solution efficace. Parallèlement, des réflexions stratégiques ont été menées concernant l'enrichissement du contenu de la plateforme et l'amélioration de sa visibilité future.
+
+% --- Day's Accomplishments ---
+\section{Activités du Jour (Vendredi 24 Mai 2025)} % Updated day and date
+
+\subsection{Ré-analyse du Problème de Séparation des Données}
+Face aux défis rencontrés pour séparer correctement le texte explicatif des exemples de code, une approche de "retour en arrière pour mieux avancer" a été adoptée.
+\begin{itemize}
+    \item Une analyse détaillée de la structure HTML du site W3Schools a été entreprise.
+    \item Il a été découvert que la méthode de séparation du contenu sur W3Schools était atypique, ce qui expliquait pourquoi le script de scraping initial échouait à distinguer correctement les deux types de contenu.
+\end{itemize}
+
+\subsection{Implémentation d'une Solution de Scraping Ciblée}
+Fort de cette nouvelle compréhension, une méthode spécifique a été développée et implémentée dans le script de scraping.
+\begin{itemize}
+    \item Cette nouvelle logique est conçue pour contourner la difficulté posée par la structure particulière de W3Schools.
+    \item En conséquence, la qualité des données brutes obtenues en entrée du processus de nettoyage a été considérablement améliorée.
+\end{itemize}
+
+\subsection{Succès du Nettoyage des Données}
+Grâce à l'amélioration du processus de scraping, le nettoyage des données est désormais efficace et le problème de séparation entre texte et code est résolu.
+\begin{itemize}
+    \item Les données sont maintenant correctement structurées et prêtes à être utilisées par l'application.
+    \item Cette résolution constitue une avancée majeure pour la fiabilité du contenu de la plateforme.
+\end{itemize}
+
+\subsection{Décision de Reporter le Déploiement pour Tests Complémentaires}
+Bien que l'application soit techniquement prête à être déployée avec les données nettoyées, la décision a été prise de reporter cette étape.
+\begin{itemize}
+    \item Un temps supplémentaire sera alloué à des tests approfondis afin de garantir la robustesse de la solution et d'éviter de répéter les erreurs passées.
+    \item La priorité est donnée à la qualité et à la stabilité avant le lancement public.
+\end{itemize}
+
+\subsection{Stratégies de Diversification et de Différenciation du Contenu}
+Une réflexion approfondie a été menée afin de diversifier les sources de contenu pour la section gratuite de la plateforme et de proposer une offre réellement différenciante.
+\begin{itemize}
+    \item Il a été constaté que se reposer uniquement sur des ressources comme W3Schools ne permettrait pas à la plateforme de véritablement se démarquer, en particulier avec l'intégration croissante d'outils comme Gemini dans les navigateurs basés sur Chromium, capables de fournir des explications de code similaires.
+    \item Par ailleurs, afin d’apporter une valeur ajoutée concrète, l’intégration d’éléments interactifs est envisagée, notamment sous la forme d’un éditeur de code intégré basé sur les technologies de type VSCode, accompagné d’une assistance par intelligence artificielle. Certaines fonctionnalités avancées pourraient être réservées aux utilisateurs premium, tout en maintenant une version gratuite suffisamment engageante.
+\end{itemize}
+
+
+\subsection{Initiation à l'Optimisation pour les Moteurs de Recherche (SEO)}
+Afin d'améliorer la visibilité future de la plateforme, j'ai commencé à me former sur les principes du SEO.
+\begin{itemize}
+    \item Un cours sur le SEO est actuellement suivi pour mieux comprendre les mécanismes permettant d'accroître la portée organique du site.
+    \item Cela inclut l'apprentissage des métadonnées, de la recherche de mots-clés, et d'autres techniques d'optimisation.
+\end{itemize}
+
+\subsection{Planification pour la Semaine Prochaine (Lundi 26 Mai 2025)}
+La semaine prochaine débutera avec les objectifs suivants :
+\begin{itemize}
+  \item Finaliser la section publique de l'application, en s'assurant de l'intégration et de l'affichage corrects de tout le contenu nettoyé.
+  \item Commencer activement le travail d'optimisation SEO, notamment par la recherche et l'intégration de mots-clés pertinents pour le contenu de la plateforme.
+  \item Déployer une première version fonctionnelle de l'application afin de permettre les premiers tests et retours d’expérience.
+  \item Compléter le développement de l'interface et des fonctionnalités dédiées aux utilisateurs premium.
+\end{itemize}
+
+\section{Conclusion}
+Cette sixième journée de la troisième semaine marque une étape clé avec la résolution du problème complexe de nettoyage des données. La capacité à traiter et structurer correctement le contenu de W3Schools ouvre la voie à une plateforme plus fiable. Les décisions de reporter le déploiement pour des tests supplémentaires, de rechercher activement de nouvelles sources de contenu, et de s'initier au SEO démontrent une approche réfléchie et stratégique pour le développement à long terme du projet. La semaine à venir sera axée sur la consolidation de la section publique et les premières étapes concrètes d'optimisation pour une meilleure visibilité.
+
+\end{document}

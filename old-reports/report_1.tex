@@ -1,0 +1,657 @@
+\documentclass[12pt, a4paper]{report} % 'report' class is good for longer documents
+
+% --- Essential Packages ---
+\usepackage[utf8]{inputenc}     % Input encoding
+\usepackage[T1]{fontenc}        % Font encoding
+\usepackage{graphicx}           % For including images
+\usepackage{amsmath, amssymb}   % For math symbols if needed
+\usepackage{enumitem}           % For customized lists
+\setlistdepth{9}                % Allow deeper list nesting
+\setlist[itemize,1]{label=\textbullet}
+\setlist[itemize,2]{label=$\circ$}
+\setlist[itemize,3]{label=$\ast$}
+\setlist[itemize,4]{label=$\cdot$}
+\usepackage{booktabs}           % For professional quality tables
+\usepackage{longtable}          % For tables that span multiple pages
+\usepackage{xcolor}             % For custom colors
+\usepackage{hyperref}           % For clickable links and ToC entries
+\usepackage{geometry}           % For page layout
+\usepackage{fancyhdr}           % For custom headers and footers
+\usepackage{titlesec}           % For customizing section titles
+\usepackage{listings}           % For code listings (e.g., DBML, Mermaid)
+% \usepackage{minted}             % Alternative for syntax-highlighted code (requires Pygments)
+                                % If using minted, compile with -shell-escape flag
+\usepackage{lipsum}             % For dummy text, remove in final version
+
+% --- Page Layout ---
+\geometry{
+  a4paper,
+  left=2.5cm,
+  right=2.5cm,
+  top=2.5cm,
+  bottom=3cm % Increased bottom margin for footer
+}
+
+% --- Hyperref Setup ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=green!60!black,
+    urlcolor=magenta!80!black,
+    pdftitle={E-Learning & Consultation Platform: Comprehensive Project Report},
+    pdfauthor={Zakaria El Khaldi},
+    pdfsubject={Project Documentation},
+    pdfkeywords={E-Learning, Microservices, Consultation, Platform, Architecture}
+}
+
+% --- Fancy Headers & Footers ---
+\pagestyle{fancy}
+\fancyhf{} % Clear default headers/footers
+\fancyhead[L]{\nouppercase{\leftmark}} % Chapter name on left
+\fancyhead[R]{\nouppercase{\rightmark}} % Section name on right
+\fancyfoot[C]{\thepage} % Page number in center
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% --- Section Title Formatting ---
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{blue!70!black}}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{blue!60!black}}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}
+  {\thesubsection}{1em}{}
+\titleformat{\subsubsection} % Added for more detail
+  {\normalfont\normalsize\bfseries}
+  {\thesubsubsection}{1em}{}
+
+
+% --- Listings Setup (for code blocks) ---
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{gray!10},
+    commentstyle=\color{green!60!black},
+    keywordstyle=\color{blue!80!black},
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{purple!80!black},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+% --- Document Information ---
+\title{
+  \Huge\textbf{E-Learning \& Consultation Platform} \\
+  \vspace{0.5em}
+  \Large Comprehensive Project Report
+}
+\author{Zakaria El Khaldi}
+\date{\today}
+
+% ==============================================================================
+\begin{document}
+% ==============================================================================
+
+\maketitle
+\thispagestyle{empty} % No header/footer on title page
+\newpage
+
+\pagenumbering{roman} % Roman numerals for ToC, LoF, LoT
+\tableofcontents
+\newpage
+% \listoffigures % Uncomment if you have figures
+% \newpage
+% \listoftables  % Uncomment if you have tables
+% \newpage
+\pagenumbering{arabic} % Arabic numerals for main content
+\setcounter{page}{1}
+
+% --- CHAPTER 1: INTRODUCTION ---
+\chapter{Introduction}
+\section{Project Vision and Goals}
+  \subsection{Problem Statement}
+    In today's rapidly evolving professional landscape, continuous learning and access to expert guidance are paramount for both individual career growth and organizational success. However, existing solutions often present a fragmented experience: e-learning platforms may lack personalized support, while direct consultation can be costly and difficult to integrate with structured learning paths. This project aims to address these challenges by creating a unified platform that bridges this gap.
+    The E-Learning \& Consultation Platform seeks to solve:
+    \begin{itemize}
+        \item The difficulty for individuals to find high-quality, comprehensive e-learning resources coupled with accessible expert support.
+        \item The challenge for enterprises in efficiently managing, delivering, and tracking employee training while also providing avenues for specialized consultations.
+        \item The lack of integrated systems that combine self-paced learning with on-demand, interactive expert sessions.
+    \end{itemize}
+
+  \subsection{Platform Overview}
+    The E-Learning \& Consultation Platform is a state-of-the-art, microservices-based system designed to deliver a holistic and engaging learning and professional development experience. It will feature an extensive catalog of online courses comprising video lectures, image-based content, and interactive quizzes. Alongside this, the platform will incorporate a sophisticated booking system for users to schedule live, one-on-one or group consultation and "prestation" (service delivery) sessions with qualified experts, facilitated through a custom-built, integrated meeting interface. The platform will cater to both individual professionals subscribing for personal growth and enterprises seeking a comprehensive training and development solution for their workforce.
+
+  \subsection{Objectives and Key Success Metrics}
+    The primary objectives of this platform are:
+    \begin{itemize}
+        \item To establish a robust, scalable, and user-friendly e-learning infrastructure capable of hosting a diverse range of courses across various professional domains.
+        \item To develop and integrate a seamless and efficient booking and delivery mechanism for expert consultation and prestation services, enhancing the value proposition beyond traditional e-learning.
+        \item To empower enterprises with comprehensive tools for managing employee enrollments, tracking learning progress through detailed analytics, and facilitating access to expert consultations.
+        \item To provide individual professionals with an accessible, affordable, and high-quality avenue for continuous skill development and personalized expert guidance.
+        \item To foster a community of learners and experts, encouraging knowledge sharing and professional networking.
+    \end{itemize}
+    Key Success Metrics (KSMs) will include:
+    \begin{itemize}
+        \item \textbf{User Engagement:} Daily Active Users (DAU), Monthly Active Users (MAU), average session duration, content interaction rates.
+        \item \textbf{Learning Outcomes:} Course completion rates, average quiz scores, number of certificates issued.
+        \item \textbf{Consultation Metrics:} Number of consultation requests, successful session bookings, average consultation rating, consultant utilization rate.
+        \item \textbf{Monetization:} Solo learner subscription conversion and retention rates, enterprise client acquisition and churn rates, average revenue per user (ARPU).
+        \item \textbf{Platform Stability \& Performance:} System uptime, API response times, error rates.
+    \end{itemize}
+
+  \subsection{Scope of this Document}
+    This document provides a comprehensive blueprint for the E-Learning \& Consultation Platform project. It details the target user actors and their extensive use cases, outlines the proposed system architecture based on microservices, specifies the chosen technology stack for each component, describes the functional decomposition into individual microservices with their core features, presents the API gateway strategy, and lays out a high-level project roadmap. This report serves as a foundational document for the design, development, and deployment of the platform.
+
+% --- CHAPTER 2: ACTORS AND USE CASES ---
+\chapter{Actors and Use Cases}
+This chapter details the primary actors interacting with the platform and their respective use cases, grouped by actor type for clarity.
+
+\section{Solo Learner (Individual Professional)}
+The Solo Learner is an individual user who registers and subscribes independently to access learning content and consultation services for personal or professional development.
+  \subsection{Account Management}
+    \begin{itemize}
+        \item \textbf{Register for a New Account:} Provide email, password, full name, and agree to terms to create a new platform account.
+        \item \textbf{Confirm Email Address:} Verify email by clicking a confirmation link sent after registration.
+        \item \textbf{Log In / Log Out:} Authenticate to access the platform and securely end a session.
+        \item \textbf{View and Edit Profile:} Update personal information such as full name, profile picture (via Media Service), and potentially a short bio.
+        \item \textbf{Change Password:} Securely update account password.
+        \item \textbf{Request Password Reset:} Initiate a password reset process if the password is forgotten, typically via email.
+        \item \textbf{Manage User Settings:} Configure preferences such as preferred language (EN/FR), display theme (light/dark), and notification settings (enable/disable specific email or in-app notifications).
+        \item \textbf{View Account Activity/History:} (Optional) See a log of recent logins or key account changes.
+        \item \textbf{Delete Account:} Permanently remove their account and associated personal data from the platform, subject to data retention policies.
+    \end{itemize}
+  \subsection{Subscription and Billing Management}
+    \begin{itemize}
+        \item \textbf{Browse Subscription Plans:} View available subscription tiers for solo learners (e.g., monthly/yearly all-access).
+        \item \textbf{Subscribe to a Plan:} Select a plan, provide payment information (via integrated Payment Gateway), and activate the subscription.
+        \item \textbf{View Active Subscription Details:} See current plan, billing cycle, next billing date, and price.
+        \item \textbf{Manage Payment Methods:} Add, update, or remove credit/debit card information or other payment methods securely.
+        \item \textbf{View Billing History:} Access a list of past payments and download invoices.
+        \item \textbf{Upgrade/Downgrade Subscription Plan:} (If multiple solo tiers exist) Change to a different subscription plan.
+        \item \textbf{Cancel Subscription:} Terminate the active subscription, with access typically continuing until the end of the current billing period.
+        \item \textbf{Redeem Discount/Promo Codes:} Apply valid promotional codes during checkout for discounts.
+    \end{itemize}
+  \subsection{Course Discovery and Consumption}
+    \begin{itemize}
+        \item \textbf{Browse Course Catalog:} Navigate through the list of all available courses.
+        \item \textbf{Filter Courses:} Refine the course list based on categories, tags, difficulty level, language, etc.
+        \item \textbf{Search for Courses:} Use keywords to find specific courses by title, description, or tags.
+        \item \textbf{View Course Details Page:} Access comprehensive information about a course, including description, learning objectives, modules, lesson outlines, instructor bio (if applicable), duration, reviews, and ratings.
+        \item \textbf{Enroll in Courses:} Implicitly gain access to all courses upon successful subscription.
+        \item \textbf{Access Enrolled Courses Dashboard:} View a personalized list of courses they are actively engaged with or have completed.
+        \item \textbf{Navigate Course Content:} Move sequentially or freely between modules and lessons within a course.
+        \item \textbf{View Lesson Content:} Stream video lessons, view image-based content, read textual information within the platform's lesson player.
+        \item \textbf{Mark Lessons as Complete/In Progress:} Manually or automatically track progress through lesson material.
+        \item \textbf{Take Quizzes:} Access and complete quizzes associated with lessons or modules.
+        \item \textbf{Submit Quiz Answers:} Provide answers to various question types (multiple choice, true/false, etc.).
+        \item \textbf{View Quiz Results and Feedback:} Receive immediate scores and feedback on quiz performance.
+        \item \textbf{Resume In-Progress Courses/Lessons:} Pick up learning from where they last left off.
+    \end{itemize}
+  \subsection{Learning Progress and Certification}
+    \begin{itemize}
+        \item \textbf{View Overall Learning Dashboard:} Get an overview of all enrolled courses, current progress in each, and recently accessed content.
+        \item \textbf{Track Progress within Courses/Lessons:} See visual indicators of completion for modules and lessons.
+        \item \textbf{View Earned Certificates:} Access a list of all certificates obtained upon successful course completion.
+        \item \textbf{Download Certificates:} Obtain a digital (e.g., PDF) copy of earned certificates.
+        \item \textbf{Share Certificates (Optional):} Share certificates on professional networks like LinkedIn.
+    \end{itemize}
+  \subsection{Feedback and Community Interaction}
+    \begin{itemize}
+        \item \textbf{Rate Courses:} Provide a star rating (e.g., 1-5 stars) for completed courses.
+        \item \textbf{Write and Submit Course Reviews:} Share textual feedback, opinions, and experiences about courses.
+        \item \textbf{View Others' Ratings and Reviews:} Read feedback from other learners on course detail pages.
+        \item \textbf{Participate in Course Discussions/Forums (Future):} Engage with other learners and instructors related to course content.
+    \end{itemize}
+  \subsection{Consultation and Prestation Services}
+    \begin{itemize}
+        \item \textbf{Browse Available Consultation Services/Prestations:} View a catalog of expert services offered.
+        \item \textbf{View Consultant Profiles:} Read about consultants' expertise, experience, ratings, and potentially their availability.
+        \item \textbf{Check Consultant Availability:} See open time slots for booking.
+        \item \textbf{Request/Book a Consultation Session:} Select a service, consultant (if applicable), and a time slot, then submit a booking request, providing details about their needs.
+        \item \textbf{Receive Session Confirmation and Details:} Get notified about confirmed bookings, including date, time, consultant, and a link to join the meeting via the custom Meeting Platform.
+        \item \textbf{Manage Booked Sessions:} View upcoming and past sessions; potentially reschedule or cancel sessions (subject to policy).
+        \item \textbf{Join Scheduled Sessions:} Click the provided link to enter the virtual meeting room on the custom Meeting Platform.
+        \item \textbf{Provide Feedback/Rating for Consultations:} After a session, rate the consultant and provide feedback on the service received.
+    \end{itemize}
+  \subsection{Notifications}
+    \begin{itemize}
+        \item \textbf{Receive In-App Notifications:} Get alerts within the platform for important events.
+        \item \textbf{Receive Email Notifications:} Get email updates for critical information.
+        \item \textbf{Examples of Notifications:} New course recommendations, progress reminders, quiz results, certificate issuance, upcoming consultation reminders, subscription renewal notices, payment confirmations.
+    \end{itemize}
+
+\section{Enterprise Employee (Personnel of a Company)}
+An Enterprise Employee uses the platform under their company's subscription. Many use cases overlap with the Solo Learner, but subscription and company-level management are handled by Enterprise Admins.
+  \begin{itemize}
+    \item \textbf{All applicable use cases of a Solo Learner, with the following distinctions/additions:}
+        \begin{itemize}
+            \item \textbf{Account Creation/Association:}
+                \begin{itemize}
+                    \item Register via a company-provided invitation link or be added by an Enterprise Admin.
+                    \item Automatically associate their account with the employing enterprise.
+                \end{itemize}
+            \item \textbf{Subscription Management:} Does not manage their own subscription; access is governed by the enterprise plan.
+            \item \textbf{Course Access:}
+                \begin{itemize}
+                    \item Access courses specifically assigned to them by Enterprise Admins.
+                    \item Browse and self-enroll in courses made available to all employees under the company's subscription.
+                \end{itemize}
+            \item \textbf{Consultation Services:}
+                \begin{itemize}
+                    \item Request consultations as permitted and potentially funded or approved by their enterprise.
+                    \item Company may have specific consultants or service types available to them.
+                \end{itemize}
+            \item \textbf{Reporting/Visibility:} Their learning progress is visible to their Enterprise Admins/Managers.
+        \end{itemize}
+  \end{itemize}
+
+\section{Enterprise Admin / Company Manager}
+Manages the enterprise's overall engagement with the platform, including users, subscriptions, content assignment, and analytics.
+  \begin{itemize}
+    \item \textbf{All applicable use cases of an Enterprise Employee for their own learning.}
+    \item \textbf{Company Account Management:}
+        \begin{itemize}
+            \item \textbf{Register/Onboard Company Account:} Initial setup of the enterprise profile on the platform.
+            \item \textbf{View and Edit Company Profile:} Update company name, contact information, industry, etc.
+            \item \textbf{Manage Company-Specific Settings:} Configure branding (logo, colors), customize certificate templates (if feature exists), enable/disable specific platform features for their enterprise.
+        \end{itemize}
+    \item \textbf{Enterprise User Management (Employees):}
+        \begin{itemize}
+            \item \textbf{Invite Employees:} Send out invitation links or individually invite employees to join the platform under the company account.
+            \item \textbf{Add/Import Employees:} Manually add employees or use bulk import features (e.g., CSV upload).
+            \item \textbf{View List of Company Employees:} See all users associated with the enterprise account.
+            \item \textbf{Manage Employee Roles/Permissions (within company context):} (Optional) Assign internal roles like "Team Lead" which might affect reporting visibility or course assignment capabilities.
+            \item \textbf{Activate/Deactivate Employee Accounts:} Control employee access to the platform under the company subscription.
+            \item \textbf{Remove Employees from Enterprise Account:} Disassociate users from the company.
+            \item \textbf{Manage Other Enterprise Admin Accounts:} Add, remove, or modify permissions of other users designated as administrators for the company.
+        \end{itemize}
+    \item \textbf{Enterprise Subscription and Billing Management:}
+        \begin{itemize}
+            \item \textbf{Select and Manage Enterprise Subscription Plan:} Choose appropriate tiers based on user count, features, etc.
+            \item \textbf{Update Payment Methods for Enterprise Account.}
+            \item \textbf{View Enterprise Billing History and Download Invoices.}
+            \item \textbf{Manage User Seat Count/Licenses:} Adjust the number of active users permitted under the current plan.
+        \end{itemize}
+    \item \textbf{Course Assignment and Management for Employees:}
+        \begin{itemize}
+            \item \textbf{Browse Full Course Catalog Available to Enterprise.}
+            \item \textbf{Assign Specific Courses to Individual Employees or Groups/Departments.}
+            \item \textbf{Create Learning Paths/Curriculums (Future):} Group courses into defined sequences for employees.
+            \item \textbf{Set Deadlines for Course Completions (Optional).}
+            \item \textbf{Recommend Courses to Employees.}
+            \item \textbf{Manage Visibility of Courses for Enterprise Employees:} Determine which courses from the catalog are accessible to their employees.
+        \end{itemize}
+    \item \textbf{Analytics and Reporting for Enterprise Learning:}
+        \begin{itemize}
+            \item \textbf{View Enterprise Learning Dashboard:} Get an overview of learning activity within the company.
+            \item \textbf{Track Employee Progress:} Monitor course enrollment, progress status, completion rates, and quiz scores for individual employees and teams.
+            \item \textbf{Generate Reports:} Create and export reports on various metrics (e.g., most popular courses, compliance training completion).
+            \item \textbf{Analyze Course Engagement and Effectiveness within the Enterprise.}
+        \end{itemize}
+    \item \textbf{Consultation Service Management for Enterprise:}
+        \begin{itemize}
+            \item \textbf{Approve/Manage Consultation Requests from Employees (if workflow requires).}
+            \item \textbf{View History of Consultations for Enterprise Employees.}
+            \item \textbf{Manage Budget/Billing for Consultation Services utilized by the enterprise.}
+            \item \textbf{Potentially pre-approve certain consultants or service types for their employees.}
+        \end{itemize}
+  \end{itemize}
+
+\section{Course Creator / Content Author}
+Responsible for designing, developing, and maintaining e-learning course content.
+  \begin{itemize}
+    \item \textbf{Account Management:}
+        \begin{itemize}
+            \item Log in with Course Creator role.
+            \item Manage their personal profile (which might be displayed as author/instructor info).
+        \end{itemize}
+    \item \textbf{Course Design and Development:}
+        \begin{itemize}
+            \item \textbf{Create New Courses:} Define course title, description, target audience, learning objectives, categories, and tags.
+            \item \textbf{Manage Course Versions:} Create and iterate on different versions of a course.
+            \item \textbf{Structure Courses:} Add, edit, delete, and reorder modules within a course version.
+            \item \textbf{Develop Lessons:} Add, edit, delete, and reorder lessons within modules.
+            \item \textbf{Create Lesson Content:}
+                \begin{itemize}
+                    \item Write and format textual content.
+                    \item Upload and embed video files (via Media Service).
+                    \item Upload and embed image files (via Media Service).
+                    \item Link to other internal resources if applicable.
+                \end{itemize}
+            \item \textbf{Manage Media Assets:} Upload, organize (if folders exist), and select media from the Media Service for their lessons.
+        \end{itemize}
+    \item \textbf{Quiz and Assessment Creation:}
+        \begin{itemize}
+            \item \textbf{Create Quizzes:} Associate quizzes with lessons or modules.
+            \item \textbf{Add Questions to Quizzes:} Define question text, question type (multiple choice, true/false, etc.), and assign points.
+            \item \textbf{Define Answers for Questions:} Specify correct and incorrect answer options.
+            \item \textbf{Provide Feedback for Answers (Optional).}
+            \item \textbf{Set Quiz Parameters:} Define pass thresholds, time limits, maximum attempts.
+        \end{itemize}
+    \item \textbf{Content Management:}
+        \begin{itemize}
+            \item \textbf{Manage Translations:} Provide translations for course titles, descriptions, module/lesson content, quiz questions, and answers in supported languages (EN/FR).
+            \item \textbf{Define Certificate Issuance Rules:} Specify criteria for a course version that lead to certificate generation (e.g., minimum overall quiz score, completion of all lessons).
+            \item \textbf{Preview Courses:} View the course as a learner would see it before submitting for publication.
+            \item \textbf{Submit Course Versions for Review/Publication:} Send completed course versions to Platform Administrators for approval.
+            \item \textbf{View Status of Submitted Courses.}
+            \item \textbf{Edit and Update Existing Courses (by creating new versions).}
+            \item \textbf{Archive or Retire Old Courses/Versions.}
+        \end{itemize}
+    \item \textbf{Analytics (Author-Specific):}
+        \begin{itemize}
+            \item View statistics related to their created courses, such as enrollment numbers, completion rates, average ratings, and popular lessons.
+        \end{itemize}
+  \end{itemize}
+
+\section{Consultant / Prestation Provider}
+Experts who offer live consultation or prestation services through the platform's integrated meeting system.
+  \begin{itemize}
+    \item \textbf{Account and Profile Management:}
+        \begin{itemize}
+            \item Log in with Consultant role.
+            \item \textbf{Manage Professional Profile:} Update bio, areas of expertise, qualifications, years of experience, profile picture, and potentially links to external portfolios or publications.
+            \item \textbf{Define Services Offered:} Specify the types of consultations or prestations they provide, including duration and a brief description.
+        \end{itemize}
+    \item \textbf{Availability and Booking Management:}
+        \begin{itemize}
+            \item \textbf{Set and Manage Availability Schedule:} Define blocks of time when they are available for bookings (e.g., daily, weekly recurring slots, ad-hoc availability).
+            \item \textbf{View Incoming Consultation Requests Assigned to Them.}
+            \item \textbf{Accept or Decline Consultation Requests} (if manual assignment/confirmation is part of the workflow).
+            \item \textbf{View Personal Schedule of Upcoming and Past Sessions.}
+            \item \textbf{Manage Blocked Time/Time Off.}
+        \end{itemize}
+    \item \textbf{Session Execution and Management:}
+        \begin{itemize}
+            \item \textbf{Receive Notifications for Scheduled Sessions.}
+            \item \textbf{Join Scheduled Sessions on the Custom Meeting Platform} using the provided link.
+            \item \textbf{Conduct the Consultation/Prestation} with the user.
+            \item \textbf{(Within Meeting Platform) Record Session Notes or Outcomes} for personal reference or to share with the user if applicable.
+            \item \textbf{(Within Meeting Platform) Input Billing Information/Time Tracking} at the end of a session to trigger invoicing via the Billing Service.
+        \end{itemize}
+    \item \textbf{Reporting and Feedback:}
+        \begin{itemize}
+            \item \textbf{View History of Completed Consultations and Earnings (if applicable).}
+            \item \textbf{View Feedback or Ratings} received from users for their sessions.
+        \end{itemize}
+  \end{itemize}
+
+\section{Platform Support Agent}
+Provides assistance to users facing issues or having questions about the platform.
+  \begin{itemize}
+    \item \textbf{Account Management:} Log in with Support role.
+    \item \textbf{User Issue Resolution:}
+        \begin{itemize}
+            \item \textbf{Access User Account Information (Read-Only for most sensitive data):} View user details, subscription status, course enrollments, and activity logs to understand context for support requests.
+            \item \textbf{Troubleshoot User-Reported Issues:} Diagnose problems related to login, payments, content access, quiz functionality, certificate generation, etc.
+            \item \textbf{Answer User Queries (Q\&A):} Provide information about platform features, course content, policies, and procedures.
+            \item \textbf{Guide Users Through Platform Functionalities.}
+        \end{itemize}
+    \item \textbf{System Interaction:}
+        \begin{itemize}
+            \item \textbf{View System Logs or Admin Diagnostics (Limited Access):} To help identify sources of technical issues.
+            \item \textbf{Create Support Tickets/Log Issues:} Document user problems and interactions in a ticketing system (if integrated).
+            \item \textbf{Escalate Complex Issues:} Forward unresolved or technical problems to senior support, development teams, or Platform Administrators.
+        \end{itemize}
+    \item \textbf{Knowledge Management:}
+        \begin{itemize}
+            \item Access and maintain a knowledge base of common issues and solutions.
+            \item Stay updated on new platform features and changes.
+        \end{itemize}
+  \end{itemize}
+
+\section{Platform Administrator (Super Admin)}
+Has overarching control and oversight of the entire platform, its users, content, and settings.
+  \begin{itemize}
+    \item \textbf{May perform actions of any other user role for testing, support, or administrative purposes (with appropriate auditing).}
+    \item \textbf{User and Company Management (Global):}
+        \begin{itemize}
+            \item \textbf{Manage All User Accounts:} Create, view, edit, suspend, unsuspend, delete any user account.
+            \item \textbf{Assign/Revoke Any User Role.}
+            \item \textbf{Impersonate Users (for troubleshooting, with strict audit trails).}
+            \item \textbf{Manage All Company Accounts:} Create, view, edit, suspend company profiles.
+            \item \textbf{Oversee User Role Definitions and Permissions} across the platform.
+        \end{itemize}
+    \item \textbf{Content Curation and Publication Oversight:}
+        \begin{itemize}
+            \item \textbf{Review and Approve/Reject Course Versions} submitted by Course Creators.
+            \item \textbf{Publish Approved Courses} to the live catalog.
+            \item \textbf{Manage Global Course Categories and Tags.}
+            \item \textbf{Set Content Quality Standards and Guidelines.}
+            \item \textbf{Archive or Unpublish Courses/Content} as needed.
+        \end{itemize}
+    \item \textbf{Platform Configuration Management:}
+        \begin{itemize}
+            \item \textbf{Configure Global Platform Settings:} Default language, supported languages, maintenance mode toggles, URLs for Terms of Service/Privacy Policy, API keys for external services (Payment Gateway, Email Provider).
+            \item \textbf{Manage Global Feature Flags:} Enable/disable platform-wide features or manage A/B testing experiments.
+        \end{itemize}
+    \item \textbf{Billing and Subscription Plan Management (Global):}
+        \begin{itemize}
+            \item \textbf{Define and Manage All Subscription Plans} (solo and enterprise tiers, pricing, features).
+            \item \textbf{Create and Manage Global Discount Codes and Promotions.}
+            \item \textbf{View Overall Revenue Reports and Payment Transaction Logs.}
+            \item \textbf{Handle Complex Billing Issues, Disputes, or High-Value Refunds.}
+        \end{itemize}
+    \item \textbf{Consultation Service and Provider Management (Global):}
+        \begin{itemize}
+            \item \textbf{Define and Manage Available Consultation Service Types.}
+            \item \textbf{Onboard and Vet Consultants/Prestation Providers.}
+            \item \textbf{Assign Consultants to Specific Service Types or approve their listings.}
+            \item \textbf{Oversee the Health and Performance of the Booking System.}
+        \end{{itemize}
+    \item \textbf{System Health, Monitoring, and Analytics (Global):}
+        \begin{itemize}
+            \item \textbf{View Platform-Wide Analytics Dashboards:} User growth, overall revenue, aggregate course engagement, system health KPIs.
+            \item \textbf{Monitor System Logs, Error Rates, and Performance Metrics.}
+            \item \textbf{Oversee Platform Uptime and Availability.}
+        \end{itemize}
+    \item \textbf{Notification System Management:}
+        \begin{itemize}
+            \item \textbf{Manage Notification Templates and Types} (create, edit, activate/deactivate).
+            \item \textbf{Oversee Notification Delivery Health and troubleshoot issues.}
+        \end{itemize}
+    \item \textbf{Security, Compliance, and Legal:}
+        \begin{itemize}
+            \item Implement and monitor security policies and best practices.
+            \item Manage API keys for critical internal or external integrations.
+            \item Ensure compliance with data privacy regulations (e.g., GDPR, CCPA).
+            \item Oversee data backup and recovery procedures.
+        \end{itemize}
+  \end{itemize}
+
+% --- CHAPTER 3: SYSTEM ARCHITECTURE ---
+\chapter{System Architecture}
+% ... (Content from previous template, can be slightly expanded with more prose) ...
+\section{Architectural Style: Microservices}
+  \subsection{Rationale}
+    The microservices architecture was chosen for its inherent benefits in:
+    \begin{itemize}
+        \item \textbf{Scalability:} Individual services can be scaled independently based on demand. This is crucial for a platform expecting variable loads on its e-learning content delivery versus, for example, its billing cycle processing.
+        \item \textbf{Maintainability:} Services are smaller, self-contained units, making them easier to understand, develop, test, and debug. This leads to faster development cycles and reduced complexity for individual teams.
+        \item \textbf{Resilience:} Fault isolation ensures that failure in one non-critical service does not necessarily bring down the entire platform. For instance, an issue in the feedback service should not impact a user's ability to take a course.
+        \item \textbf{Technology Diversity:} Allows for selecting the most appropriate technology stack (languages, frameworks, databases) for each service's specific needs and performance characteristics.
+        \item \textbf{Team Autonomy:} Enables different teams to work on different services concurrently with independent deployment cycles, fostering agility and specialized expertise.
+    \end{itemize}
+
+  \subsection{High-Level Architecture Diagram}
+    % Insert your architecture diagram image here
+    % \begin{figure}[h!]
+    %   \centering
+    %   \includegraphics[width=0.9\textwidth]{path/to/your/architecture_diagram.png}
+    %   \caption{High-Level System Architecture}
+    %   \label{fig:architecture}
+    % \end{figure}
+    The platform's architecture is centered around a set of independently deployable microservices. Client applications (web, future mobile) interact with these services via an API Gateway (Nginx). Internally, services communicate either synchronously through well-defined APIs (REST/gRPC) or asynchronously through an event-driven mechanism facilitated by Apache Kafka. Each microservice will own its dedicated data store(s) (primarily PostgreSQL, with Supabase utilized for specific functions like Auth and Storage). External services such as payment gateways and email providers are integrated at specific service touchpoints. The entire system is designed to be containerized using Docker for consistency and ease of deployment. (A conceptual diagram is provided in Appendix A).
+
+\section{Inter-Service Communication}
+  Effective communication between microservices is critical. The strategy employs a hybrid approach:
+  \begin{itemize}
+    \item \textbf{Synchronous Communication:} Utilized for direct request/response interactions where an immediate answer is required. This will primarily be achieved using RESTful APIs. For internal, performance-sensitive communication between specific services, gRPC might be considered due to its efficiency and strong typing. Examples include a service querying the IAM service for user details or the Course Catalog service for content metadata.
+    \item \textbf{Asynchronous Communication (Event-Driven):} Apache Kafka will serve as the central nervous system for event-driven communication. Services will publish significant business events (e.g., `UserRegistered`, `CourseCompleted`, `PaymentSucceeded`) to Kafka topics. Other interested services will subscribe to these topics to react accordingly, promoting loose coupling, improved resilience (as services don't need to be simultaneously available), and enabling scalable background processing, notifications, and data aggregation for analytics.
+  \end{itemize}
+
+\section{API Gateway Strategy (Nginx)}
+  \subsection{Core Responsibilities}
+    Nginx is selected as the API Gateway, acting as the single, unified entry point for all external client traffic. Its core responsibilities include:
+    \begin{itemize}
+        \item \textbf{Request Routing:} Intelligently directing incoming client requests to the appropriate backend microservice based on URL paths (e.g., `/api/v1/users/*` to IAM Service).
+        \item \textbf{SSL/TLS Termination:} Offloading the SSL/TLS encryption and decryption processes from backend services, simplifying their configurations and improving performance.
+        \item \textbf{Authentication and Authorization (Initial Layer):} Validating JSON Web Tokens (JWTs) for all authenticated requests. If a token is invalid, missing, or lacks necessary permissions for a route, the gateway will reject the request. Validated user identity information will be passed to upstream services via headers.
+        \item \textbf{Rate Limiting:} Implementing policies to protect backend services from denial-of-service attacks and ensure fair usage by limiting the number of requests a client can make in a given time period.
+        \item \textbf{Load Balancing:} Distributing incoming traffic across multiple instances of a microservice, enhancing scalability and availability.
+        \item \textbf{CORS (Cross-Origin Resource Sharing) Handling:} Configuring necessary headers to allow the frontend application (served from a different origin) to securely interact with the backend APIs.
+        \item \textbf{Basic Request/Response Logging:} Capturing essential metadata for monitoring, debugging, and security auditing.
+        \item \textbf{Static Content Serving/Caching (Optional):} Nginx can efficiently serve static assets or act as a caching layer for frequently accessed, non-dynamic content.
+    \end{itemize}
+  \subsection{Routing Strategy}
+    A path-based routing strategy will be employed with versioned API endpoints (e.g., `/api/v1/service-name/resource`). This provides clarity and facilitates future API evolution without breaking existing client integrations. Nginx upstream configurations will initially point to service locations within the containerized environment, with plans to integrate with dynamic service discovery mechanisms in orchestrated environments like Kubernetes.
+  \subsection{Security Considerations}
+    Beyond authentication, the API Gateway will enforce HTTPS for all external communication, implement standard security headers (HSTS, X-Frame-Options, etc.), and provide a layer of abstraction that hides the internal network topology of the microservices. Basic request size limits and other rudimentary input sanitization can also be applied.
+
+
+% --- CHAPTER 4: TECHNOLOGY STACK ---
+\chapter{Technology Stack}
+  The technology stack has been carefully selected to meet the demands of a scalable, maintainable, and performant microservices-based platform.
+  \begin{itemize}
+    \item \textbf{Frontend Development:}
+        \begin{itemize}
+            \item \textbf{Next.js (React):} Chosen for its capabilities in server-side rendering (SSR) and static site generation (SSG), leading to excellent performance, SEO benefits, and a rich developer experience for building complex user interfaces.
+        \end{itemize}
+    \item \textbf{Backend Microservice Development (Polyglot Approach):}
+        \begin{itemize}
+            \item \textbf{Go:} Selected for services requiring high concurrency, low latency, and efficient resource utilization, such as the Notification Service (handling many outbound connections) and potentially core components of the custom Real-Time Meeting Platform.
+            \item \textbf{Python with FastAPI:} Ideal for services that are data-intensive, require rapid API development with built-in data validation (Pydantic), or benefit from Python's extensive ecosystem of libraries (e.g., Course Catalog, Billing, Analytics).
+            \item \textbf{Node.js with Express (TypeScript):} Suited for I/O-bound operations, services interacting heavily with JavaScript-centric tools (like Supabase SDKs), and for teams with strong JavaScript expertise (e.g., IAM Service, Media Service wrapper). TypeScript adds crucial type safety.
+        \end{itemize}
+    \item \textbf{Databases:}
+        \begin{itemize}
+            \item \textbf{PostgreSQL:} The primary relational database for most microservices, valued for its reliability, ACID compliance, extensibility, and strong support for complex queries and data integrity. Each service will manage its own schema or dedicated database instance.
+            \item \textbf{Supabase (Authentication \& Storage):} Leveraged as a Backend-as-a-Service (BaaS) for its robust, managed authentication (built on PostgreSQL and GoTrue) and its S3-compatible object storage solution for media files, simplifying development for these specific concerns.
+        \end{itemize}
+    \item \textbf{API Gateway:}
+        \begin{itemize}
+            \item \textbf{Nginx:} A battle-tested, high-performance web server, reverse proxy, and load balancer. It will be configured to act as the API Gateway, handling request routing, SSL termination, and initial authentication.
+        \end{itemize}
+    \item \textbf{Message Broker / Event Streaming Platform:}
+        \begin{itemize}
+            \item \textbf{Apache Kafka:} Chosen for its high-throughput, fault-tolerant, and scalable distributed event streaming capabilities. It will form the backbone of the asynchronous communication between microservices, enabling an event-driven architecture.
+        \end{itemize}
+    \item \textbf{Containerization:}
+        \begin{itemize}
+            \item \textbf{Docker:} Will be used to package each microservice and its dependencies into standardized, portable containers. This ensures consistency across development, staging, and production environments and simplifies deployment.
+        \end{itemize}
+    \item \textbf{Orchestration (Future Consideration for Production at Scale):}
+        \begin{itemize}
+            \item \textbf{Kubernetes:} Planned for managing, automating deployment, scaling, and operation of containerized applications in production environments, providing resilience and efficient resource management.
+        \end{itemize}
+  \end{itemize}
+
+% --- CHAPTER 5: MICROSERVICE DECOMPOSITION & FEATURES ---
+\chapter{Microservice Decomposition and Features}
+% ... (Content from previous template for each service, ensure features align with comprehensive use cases) ...
+% (This section needs significant fleshing out based on the detailed use cases in Chapter 2 for each service)
+% For example, for IAM Service:
+  \section{Identity \& Access Management (IAM) Service}
+    \begin{itemize}
+        \item \textbf{Primary Technology:} Node.js (Express/TypeScript) or Go, leveraging Supabase Auth.
+        \item \textbf{Core Features:}
+            \begin{itemize}
+                \item User self-registration with email verification.
+                \item Secure user login (email/password) and session management (JWT issuance).
+                \item Password management (change password, forgot password/reset).
+                \item Role-Based Access Control (RBAC): Definition and assignment of roles (Solo Learner, Enterprise Admin, Course Creator, etc.).
+                \item Company/Enterprise account creation and management.
+                \item Association of users with companies, including invitation mechanisms.
+                \item Management of user settings and preferences (language, notifications).
+                \item API key generation and management for secure programmatic access (optional).
+                \item Support for future SSO integration (e.g., SAML, OIDC).
+                \item Publishing user-related events (e.g., `UserRegistered`, `UserProfileUpdated`) to Kafka.
+            \end{itemize}
+        \item \textbf{Key Data Entities (Conceptual, Supabase Auth manages core user table):} Users (Supabase `auth.users` extension), Roles, UserRoles, Companies, CompanyUsers, UserSettings, APIKeys.
+    \end{itemize}
+  % ... Repeat detailed breakdown for ALL other services listed in previous template,
+  % ensuring their features directly support the comprehensive use cases from Chapter 2.
+  % This involves detailing what each service DOES.
+  % Example:
+  \subsection{Course Catalog \& Content Service Features}
+    This service is the authoritative source for all learning content structure and metadata.
+    \begin{itemize}
+        \item Manages the lifecycle of courses from draft to publication and archival.
+        \item Supports versioning of course content, allowing updates without disrupting learners on older versions.
+        \item Provides tools for structuring courses into modules and lessons.
+        \item Stores metadata for lessons, including type (video, text, quiz reference) and references to media assets (managed by Media Service).
+        \item Manages the structure of quizzes: questions, answer options, correct answers, scoring rules.
+        \item Supports multi-language content for all course elements.
+        \item Manages organizational taxonomies like categories and tags.
+        \item Exposes APIs for creating, reading, updating, and deleting course content (with appropriate permissions).
+        \item Publishes events like `CourseVersionPublished`, `CourseUpdated` to Kafka.
+    \end{itemize}
+  % ... and so on for Learner Progress, Billing, Booking, Media, Notification, Feedback, Platform Config, Analytics, Search ...
+
+% --- CHAPTER 6: PROJECT ROADMAP & DEVELOPMENT PLAN ---
+\chapter{Project Roadmap and Development Plan (High-Level)}
+% ... (Content from previous template, can remain high-level) ...
+\section{Phase 0: Conception \& Initial Planning}
+  \begin{itemize}
+    \item [X] Completed: Idea finalization, comprehensive scope definition, technology stack selection, architectural overview.
+  \end{itemize}
+\section{Phase 1: Detailed Design \& Prototyping (Current/Next Focus)}
+  \begin{itemize}
+    \item Finalize User Experience (UX) and User Interface (UI) Design: Develop detailed user flow diagrams, wireframes for all key screens, and interactive mockups. Establish branding guidelines.
+    \item Detailed Microservice Design: For each identified microservice, finalize database schemas (DDL from DBML), define comprehensive API contracts (OpenAPI/Swagger specifications), and map out event schemas for Kafka messages. Document specific business logic, validation rules, and inter-service dependencies.
+    \item Infrastructure Setup: Configure development and staging environments, including local Docker setups, basic Nginx (API Gateway), and Apache Kafka cluster configurations. Implement foundational CI/CD pipelines.
+    \item Proof-of-Concepts (PoCs): Validate critical or high-risk technical areas, such as Supabase Auth integration, Kafka producer/consumer patterns, core payment gateway interactions, and initial Meeting Platform API communication.
+  \end{itemize}
+\section{Phase 2: Minimum Viable Product (MVP) Development (Iterative Sprints)}
+  The MVP will focus on delivering core functionalities enabling solo learners to register, subscribe, take courses, and for basic administrative functions.
+  \begin{itemize}
+    \item \textbf{Sprint Cluster 1 (Foundation):} IAM Service (registration, login, JWTs, basic roles), API Gateway (initial routing, auth).
+    \item \textbf{Sprint Cluster 2 (Content Core):} Course Catalog Service (course/lesson/quiz structure CRUD), Media Service (upload/retrieval via Supabase Storage), Basic Frontend for course creation (simplified).
+    \item \textbf{Sprint Cluster 3 (Learning Core):} Learner Progress Service (enrollment, lesson/quiz tracking), Frontend for course browsing, lesson viewing, and quiz taking.
+    \item \textbf{Sprint Cluster 4 (Monetization Core):} Billing Service (solo user subscription plans, payment gateway integration for checkout), Frontend for subscription management.
+    \item \textbf{Sprint Cluster 5 (Notifications & Polish):} Notification Service (basic email/in-app for key events), Frontend for user dashboard and settings.
+  \end{itemize}
+\section{Phase 3: Integration, Testing \& Refinement for MVP}
+  \begin{itemize}
+    \item Thorough End-to-End Integration Testing of all MVP user flows across microservices.
+    \item Comprehensive Quality Assurance (QA): Manual functional testing, expansion of automated tests (unit, integration), initial performance and security checks.
+    \item Iterative Bug Fixing and UI/UX Refinements based on internal reviews and usability testing.
+    \item Documentation: Finalize API documentation for MVP services and create initial user guides.
+  \end{itemize}
+\section{Phase 4: MVP Launch}
+  \begin{itemize}
+    \item Production Infrastructure Hardening: Finalize configurations for databases, Kafka, Nginx, monitoring, logging, and alerting. Implement backup and basic disaster recovery plans.
+    \item Deployment Automation: Mature CI/CD pipelines for reliable and repeatable deployments to production.
+    \item Pre-Launch Activities: Final QA, security review, legal compliance checks (Privacy Policy, ToS), and marketing preparations.
+    \item Go-Live: Deploy the MVP to the production environment and closely monitor system performance and user activity.
+  \end{itemize}
+\section{Phase 5: Post-Launch Iteration & Full Feature Development}
+  Following the MVP launch, development will focus on expanding features for enterprise clients, implementing the full consultation booking system, and enhancing platform capabilities:
+  \begin{itemize}
+    \item Enterprise features (company admin dashboards, bulk user management, advanced reporting).
+    \item Full Consultation Booking Service implementation and integration with the custom Meeting Platform.
+    \item Development of advanced features (e.g., dedicated Search Service, comprehensive Analytics Service, community features).
+    \item Ongoing performance optimization, security enhancements, and scaling of infrastructure based on user growth and feedback.
+    \item Regular maintenance, support, and iterative addition of new features based on the evolving product roadmap.
+  \end{itemize}
+
+% --- CHAPTER 7: CONCLUSION ---
+\chapter{Conclusion}
+  The E-Learning \& Consultation Platform project, as outlined in this document, represents a strategic initiative to create a next-generation solution for professional development and expert engagement. The adoption of a microservices architecture, coupled with a carefully chosen polyglot technology stack (Go, Python/FastAPI, Node.js/Express, Next.js, PostgreSQL, Kafka, Nginx, Docker, and Supabase components), provides a robust foundation for building a scalable, resilient, and maintainable system.
+  The detailed breakdown of user actors and their comprehensive use cases ensures that the platform will be user-centric and cater to the diverse needs of its target audience, from individual learners to large enterprises. The phased development approach, starting with a focused MVP, will allow for iterative refinement and risk mitigation, ensuring that core value is delivered early and consistently.
+  While ambitious, the clear architectural vision, defined service boundaries, and strategic technology choices position this project for success. The platform is poised to offer a unique and compelling value proposition by seamlessly integrating high-quality e-learning content with accessible, personalized expert consultation, thereby addressing a significant need in the modern learning and professional services landscape. Continued diligence in design, development, and testing will be key to realizing the full potential of this innovative platform.
+
+% --- APPENDIX (Optional) ---
+
+\end{document}
+% ==============================================================================

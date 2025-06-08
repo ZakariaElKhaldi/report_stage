@@ -62,12 +62,13 @@ La plateforme e-learning conçue repose sur les fonctionnalités essentielles su
 \subsection{Les diagrammes de cas d'utilisation}
 Les diagrammes de cas d'utilisation ont permis de représenter visuellement les interactions entre les acteurs et le système.
 
-\begin{figure}[h!]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.9\textwidth,keepaspectratio]{class_diagrame.png}
+  \includegraphics[width=0.52\textwidth,keepaspectratio]{images/usecase_diagram.png}
   \caption{\textbf{Diagramme de cas d'utilisation} montrant les principales fonctionnalités accessibles par les acteurs.}
   \label{fig:usecase_diagram}
 \end{figure}
+\clearpage
 
 \subsection{Les diagrammes de séquence}
 Les diagrammes de séquence ont permis d'illustrer les interactions temporelles entre les différents composants du système pour des scénarios clés.
@@ -83,24 +84,26 @@ Pour illustrer le fonctionnement de l'architecture, voici un exemple de flux de 
   \item \textbf{Service IAM} (Consomme, met à jour le statut utilisateur) \& \textbf{Service de Notification} (Consomme, envoie une confirmation)
 \end{enumerate}
 
-\begin{figure}[h!]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.9\textwidth,keepaspectratio]{archetecture_diagrame.png}
-  \caption{\textbf{Diagramme de séquence} illustrant le processus d'inscription et d'abonnement.}
+  \includegraphics[width=0.9\textwidth,keepaspectratio]{images/sequence_diagram.png}
+  \caption{\textbf{Diagramme de séquence} illustrant le processus d'authentification et de notification.}
   \label{fig:sequence_diagram}
 \end{figure}
+\clearpage
 
 \subsection{Le diagramme de classes}
 Le diagramme de classes a été élaboré pour représenter les principales entités du système et leurs relations.
 
-\begin{figure}[h!]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.9\textwidth,keepaspectratio]{class_diagrame.png}
+  \includegraphics[width=0.9\textwidth,keepaspectratio]{week_1_img/class_diagrame.png}
   \caption{\textbf{Diagramme de classes} de la plateforme e-learning montrant les principales entités et leurs relations.}
   \label{fig:class_diagram}
 \end{figure}
 
 Ce diagramme illustre les relations entre les différentes entités du système, comme les utilisateurs, les cours, les modules, les leçons, les abonnements et les services de consultation. Les cardinalités et les types de relations (composition, agrégation, héritage) ont été définies pour refléter précisément la structure du modèle de données.
+\clearpage
 
 \section{Architecture Adoptée}
 
@@ -136,15 +139,15 @@ La pile technologique définie pour le développement comprend :
 \subsection{Modèles de Données des Services}
 Dans le cadre de cette première phase, des modèles de données préliminaires ont été conçus pour chacun des services identifiés. Voici quelques exemples des structures de données principales :
 
-\newpage
 \subsubsection{Service IAM (Identity and Access Management)}
-\begin{figure}[h!]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_Service.pdf.png}
-  \caption{\textbf{Modèle de données du service IAM} pour la gestion des utilisateurs et des accès.}
+  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_Service.pdf.png}
+  \caption{\textbf{Modèle de données du service IAM} pour la gestion des utilisateurs et des autorisations.}
   \label{fig:iam_service}
 \end{figure}
-\vspace{-10pt}
+
+\vspace{5pt}
 \small
 \paragraph{Points clés du modèle IAM :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
@@ -155,16 +158,17 @@ Dans le cadre de cette première phase, des modèles de données préliminaires 
   \item \textbf{Jetons d'authentification} permettant une gestion sécurisée des sessions
 \end{itemize}
 \normalsize
-\newpage
+\clearpage
 
 \subsubsection{Service de Contenu}
-\begin{figure}[h!]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Content_Service.pdf.png}
-  \caption{\textbf{Modèle de données du service de contenu} pour la gestion des cours et du matériel pédagogique.}
+  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Content_Service.pdf.png}
+  \caption{\textbf{Modèle de données du service de contenu} pour la gestion des cours et ressources pédagogiques.}
   \label{fig:content_service}
 \end{figure}
-\vspace{-10pt}
+
+\vspace{5pt}
 \small
 \paragraph{Points clés du service de Contenu :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
@@ -175,16 +179,17 @@ Dans le cadre de cette première phase, des modèles de données préliminaires 
   \item \textbf{Support multilingue} pour internationaliser le contenu pédagogique
 \end{itemize}
 \normalsize
-\newpage
+\clearpage
 
 \subsubsection{Service de Facturation et d'Abonnement}
-\begin{figure}[h!]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 Billing_and_Subscription_Service.pdf.png}
+  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 Billing_and_Subscription_Service.pdf.png}
   \caption{\textbf{Modèle de données du service de facturation} pour la gestion des abonnements et des paiements.}
   \label{fig:billing_service}
 \end{figure}
-\vspace{-10pt}
+
+\vspace{5pt}
 \small
 \paragraph{Points clés du service de Facturation :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
@@ -195,16 +200,17 @@ Dans le cadre de cette première phase, des modèles de données préliminaires 
   \item \textbf{Intégration} avec les passerelles de paiement externes
 \end{itemize}
 \normalsize
-\newpage
+\clearpage
 
 \subsubsection{Service de Certification}
-\begin{figure}[h!]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 Certification_Service.pdf.png}
+  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 Certification_Service.pdf.png}
   \caption{\textbf{Modèle de données du service de certification} pour la délivrance et la validation des certificats.}
   \label{fig:certification_service}
 \end{figure}
-\vspace{-10pt}
+
+\vspace{5pt}
 \small
 \paragraph{Points clés du service de Certification :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
@@ -215,16 +221,17 @@ Dans le cadre de cette première phase, des modèles de données préliminaires 
   \item \textbf{Historique des certifications} pour chaque utilisateur
 \end{itemize}
 \normalsize
-\newpage
+\clearpage
 
 \subsubsection{Service d'Analytique et Reporting}
-\begin{figure}[h!]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 Analytics_and_Reporting_Service.pdf.png}
+  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 Analytics_and_Reporting_Service.pdf.png}
   \caption{\textbf{Modèle de données du service d'analytique} pour le suivi des performances et la génération de rapports.}
   \label{fig:analytics_service}
 \end{figure}
-\vspace{-10pt}
+
+\vspace{5pt}
 \small
 \paragraph{Points clés du service d'Analytique :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
@@ -235,16 +242,17 @@ Dans le cadre de cette première phase, des modèles de données préliminaires 
   \item \textbf{Système d'alerte} pour identifier les anomalies ou opportunités
 \end{itemize}
 \normalsize
-\newpage
+\clearpage
 
 \subsubsection{Service de Feedback}
-\begin{figure}[h!]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Feedback_Service.pdf.png}
+  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Feedback_Service.pdf.png}
   \caption{\textbf{Modèle de données du service de feedback} pour la collecte et la gestion des retours utilisateurs.}
   \label{fig:feedback_service}
 \end{figure}
-\vspace{-10pt}
+
+\vspace{5pt}
 \small
 \paragraph{Points clés du service de Feedback :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
@@ -252,88 +260,94 @@ Dans le cadre de cette première phase, des modèles de données préliminaires 
   \item \textbf{Système de notation} permettant une évaluation quantitative
   \item \textbf{Commentaires et suggestions} pour améliorer le contenu
   \item \textbf{Analyse de sentiment} sur les retours textuels
-  \item \textbf{Boucle de rétroaction} pour les créateurs de contenu
+  \item \textbf{Gestion des signalements} pour modérer les contenus inappropriés
 \end{itemize}
 \normalsize
-\newpage
+\clearpage
 
 \subsubsection{Service de Notification}
-\begin{figure}[h!]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 Notification_Service.pdf.png}
-  \caption{\textbf{Modèle de données du service de notification} pour l'envoi et la gestion des notifications.}
+  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 Notification_Service.pdf.png}
+  \caption{\textbf{Modèle de données du service de notification} pour la gestion des alertes et communications.}
   \label{fig:notification_service}
 \end{figure}
-\vspace{-10pt}
+
+\vspace{5pt}
 \small
 \paragraph{Points clés du service de Notification :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
-  \item \textbf{Notifications temps réel} pour les événements importants
-  \item \textbf{Préférences de notification} configurables par utilisateur
-  \item \textbf{Support multi-canal} : email, push, in-app, SMS
-  \item \textbf{Modèles de messages} personnalisables
-  \item \textbf{Planification et automatisation} des campagnes de notification
+  \item \textbf{Types de notifications} variés (email, in-app, SMS, push)
+  \item \textbf{Modèles personnalisables} pour chaque type de message
+  \item \textbf{Suivi de statut} (envoyé, livré, lu)
+  \item \textbf{Planification} et envoi différé
+  \item \textbf{Préférences utilisateurs} pour le contrôle des communications reçues
 \end{itemize}
 \normalsize
-\newpage
+\clearpage
 
 \subsubsection{Service de Gestion des Médias}
-\begin{figure}[h!]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 Media_Management_Service.pdf.png}
-  \caption{\textbf{Modèle de données du service de gestion des médias} pour le stockage et l'accès aux ressources multimédias.}
+  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 Media_Management_Service.pdf.png}
+  \caption{\textbf{Modèle de données du service de gestion des médias} pour le stockage et la manipulation des ressources multimédia.}
   \label{fig:media_service}
 \end{figure}
-\vspace{-10pt}
+
+\vspace{5pt}
 \small
-\paragraph{Points clés du service de Médias :}
+\paragraph{Points clés du service de Gestion des Médias :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
-  \item \textbf{Gestion centralisée} des ressources audio, vidéo et images
-  \item \textbf{Métadonnées enrichies} pour faciliter la recherche et l'organisation
-  \item \textbf{Support de multiples formats} et résolutions
-  \item \textbf{Optimisation automatique} pour différents appareils
-  \item \textbf{Contrôle des droits d'accès} pour les ressources protégées
+  \item \textbf{Organisation hiérarchique} des ressources multimédia
+  \item \textbf{Métadonnées détaillées} pour faciliter la recherche et l'indexation
+  \item \textbf{Versionnement} des fichiers pour garder l'historique des modifications
+  \item \textbf{Gestion des transformations} (redimensionnement, compression, conversion)
+  \item \textbf{Contrôles d'accès} pour sécuriser les ressources sensibles
 \end{itemize}
 \normalsize
-\newpage
+\clearpage
 
 \subsubsection{Service de Configuration de la Plateforme}
-\begin{figure}[h!]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 Platform_Configuration_Service.pdf.png}
-  \caption{\textbf{Modèle de données du service de configuration} pour la gestion des paramètres globaux de la plateforme.}
-  \label{fig:platform_config_service}
+  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 Platform_Configuration_Service.pdf.png}
+  \caption{\textbf{Modèle de données du service de configuration} pour la personnalisation et la gestion des paramètres de la plateforme.}
+  \label{fig:config_service}
 \end{figure}
-\vspace{-10pt}
+
+\vspace{5pt}
 \small
 \paragraph{Points clés du service de Configuration :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
-  \item \textbf{Paramètres système} centralisés et accessibles à tous les services
-  \item \textbf{Gestion des drapeaux de fonctionnalités} (feature flags)
-  \item \textbf{Configuration par environnement} (développement, test, production)
-  \item \textbf{Personnalisation de l'interface} selon les besoins spécifiques
-  \item \textbf{Paramètres multilingues} pour localisation de la plateforme
+  \item \textbf{Paramètres système} pour contrôler le comportement de la plateforme
+  \item \textbf{Personnalisation visuelle} (thèmes, couleurs, polices)
+  \item \textbf{Fonctionnalités modulaires} activables/désactivables
+  \item \textbf{Configuration multi-environnement} (dev, staging, production)
+  \item \textbf{Historique des modifications} pour le suivi des changements
 \end{itemize}
 \normalsize
-\newpage
+\clearpage
 
 \subsubsection{Service de Recherche}
-\begin{figure}[h!]
+\begin{figure}[p]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 Search_Service.pdf.png}
+  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 Search_Service.pdf.png}
   \caption{\textbf{Modèle de données du service de recherche} pour l'indexation et la recherche de contenu.}
   \label{fig:search_service}
 \end{figure}
-\vspace{-10pt}
+
+\vspace{5pt}
 \small
 \paragraph{Points clés du service de Recherche :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
-  \item \textbf{Indexation intelligente} du contenu des cours et ressources
-  \item \textbf{Recherche full-text} avec prise en charge des synonymes
-  \item \textbf{Système de tags} pour améliorer la pertinence des résultats
-  \item \textbf{Historique des recherches} pour l'analyse des tendances
-  \item \textbf{Algorithme de recommandation} basé sur les comportements de recherche
+  \item \textbf{Indexation avancée} du contenu pour des recherches rapides
+  \item \textbf{Filtres et facettes} pour affiner les résultats
+  \item \textbf{Recherche full-text} avec correction orthographique
+  \item \textbf{Optimisation sémantique} pour comprendre l'intention de recherche
+  \item \textbf{Historique et suggestions} pour améliorer l'expérience utilisateur
 \end{itemize}
+\normalsize
+\clearpage
 
 \begin{table}[h!]
 \centering
@@ -363,6 +377,8 @@ Recherche & Python/Elasticsearch & Index & Élevée \\
 
 La conception et la modélisation de la plateforme LearnExpert ont été réalisées en adoptant une approche méthodique et structurée. Les différents diagrammes UML (cas d'utilisation, séquence, classes) ont permis de représenter visuellement les interactions, flux et relations qui forment l'ossature du système, fournissant ainsi une base solide pour les phases de développement ultérieures.
 
+Cette phase conceptuelle a été complétée par une planification détaillée du projet à travers les diagrammes de Gantt et PERT, permettant de structurer temporellement le développement et d'identifier les dépendances critiques entre les tâches.
+
 L'architecture microservices retenue offre plusieurs avantages stratégiques pour ce projet :
 \begin{itemize}
   \item Une meilleure modularité, permettant l'évolution indépendante de chaque composant
@@ -376,4 +392,71 @@ La modélisation détaillée des données pour chaque service constitue un élé
 
 Cette étape de conception a également permis d'anticiper les défis techniques potentiels et de prévoir des solutions adaptées, notamment concernant la communication inter-services, la gestion des transactions distribuées et la sécurité des données. L'approche événementielle choisie, avec l'utilisation de Kafka comme broker de messages, offre un modèle de communication asynchrone particulièrement adapté à une architecture distribuée.
 
-En conclusion, cette phase de conception a posé les fondations architecturales et conceptuelles nécessaires au développement d'une plateforme e-learning moderne, évolutive et performante, alignée avec les objectifs définis dans le cahier des charges. 
+En conclusion, cette phase de conception et de planification a posé les fondations architecturales, conceptuelles et organisationnelles nécessaires au développement d'une plateforme e-learning moderne, évolutive et performante, alignée avec les objectifs définis dans le cahier des charges. La visualisation claire du planning et des dépendances entre tâches via les diagrammes PERT et Gantt constitue un atout majeur pour la bonne exécution du projet dans les délais impartis.
+
+\section{Planification et Gestion du Projet}
+
+La planification du projet LearnExpert a été réalisée selon une approche méthodique, permettant de visualiser les différentes phases, les tâches associées, leurs durées et leurs interdépendances. Deux outils de visualisation complémentaires ont été utilisés pour représenter le planning du projet : le diagramme de Gantt et le diagramme PERT.
+
+\subsection{Diagramme de Gantt}
+
+Le diagramme de Gantt offre une représentation chronologique des tâches, permettant de visualiser :
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+  \item La durée de chaque tâche
+  \item Les dates de début et de fin
+  \item Le chevauchement entre les différentes tâches
+  \item La répartition des tâches par phase du projet
+\end{itemize}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=0.9\textwidth,keepaspectratio]{images/gestion_projet/gantt_diagram.png}
+  \caption{\textbf{Diagramme de Gantt} montrant la planification et la progression du projet.}
+  \label{fig:gantt_diagram}
+\end{figure}
+
+Ce diagramme permet d'identifier clairement la durée totale du projet (du 10 mai au 8 juin 2025) ainsi que les périodes d'activité intense où plusieurs tâches se déroulent en parallèle. On peut notamment constater que les phases 1 à 3 (Conception, Frontend initial, Données et MongoDB) se déroulent principalement durant la première moitié du projet, tandis que les phases 4 à 6 (UX et Authentification, Backend, Design Landing Page) occupent la seconde moitié.
+
+\clearpage
+
+\subsection{Diagramme PERT}
+Le diagramme PERT (Program Evaluation and Review Technique) complète le diagramme de Gantt en illustrant les dépendances entre les tâches et le chemin critique du projet.
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=0.9\textwidth,keepaspectratio]{images/gestion_projet/pert_diagram.png}
+  \caption{\textbf{Diagramme PERT} montrant les relations et dépendances entre les tâches du projet.}
+  \label{fig:pert_diagram}
+\end{figure}
+
+L'analyse du diagramme PERT permet de dégager plusieurs observations importantes :
+
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+  \item \textbf{Organisation modulaire} : Les tâches sont regroupées en six phases distinctes, chacune avec ses propres objectifs et livrables.
+  
+  \item \textbf{Dépendances inter-phases} : Certaines tâches de phases ultérieures dépendent de l'achèvement de tâches de phases antérieures, ce qui souligne l'importance de respecter les jalons intermédiaires.
+  
+  \item \textbf{Chemin critique} : Représenté en rouge, le chemin critique identifie les tâches dont tout retard impacterait directement la date de fin du projet. Il traverse notamment les phases de conception, de développement frontend, de pages secondaires, et s'étend jusqu'aux services backend.
+  
+  \item \textbf{Parallélisation des tâches} : Plusieurs activités peuvent être menées en parallèle, comme le développement des composants UI et la mise en place du système de routage, optimisant ainsi l'utilisation des ressources.
+\end{itemize}
+
+\clearpage
+
+\subsection{Avantages de la Planification Visuelle}
+
+L'utilisation combinée des diagrammes de Gantt et PERT présente plusieurs avantages significatifs pour la gestion du projet :
+
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+  \item \textbf{Communication claire} : Facilite la compréhension du planning par toutes les parties prenantes, techniques et non techniques.
+  
+  \item \textbf{Identification des risques} : Permet de repérer les zones de tension potentielles dans le planning, notamment les tâches sur le chemin critique.
+  
+  \item \textbf{Suivi de l'avancement} : Offre un référentiel visuel pour mesurer la progression réelle par rapport au planning initial.
+  
+  \item \textbf{Allocation des ressources} : Aide à l'optimisation de l'attribution des ressources humaines et techniques sur les différentes tâches.
+  
+  \item \textbf{Anticipation des dépendances} : Met en évidence les relations entre les tâches, permettant de préparer à l'avance les transitions entre phases.
+\end{itemize}
+
+La planification détaillée réalisée pour le projet LearnExpert constitue un élément essentiel pour assurer une exécution maîtrisée et respecter les délais fixés. Elle servira de référence tout au long du développement pour suivre l'avancement et ajuster les priorités si nécessaire. 

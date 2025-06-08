@@ -1,0 +1,196 @@
+\documentclass[12pt, a4paper]{article}
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx} % Make sure this is here for images
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{listings} % Added for code/JSON display
+\usepackage[scaled=0.85]{beramono} % Added for a nicer monospaced font
+
+% --- Font Configuration ---
+% --- Color Definitions ---
+\definecolor{primary}{RGB}{0,51,102}
+\definecolor{secondary}{RGB}{102,102,153}
+\definecolor{accent}{RGB}{204,0,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{codeblue}{rgb}{0,0,0.9}
+\definecolor{codegreen}{rgb}{0.1,0.6,0.1} % Darker green for comments
+
+% --- Page Geometry ---
+\geometry{
+  a4paper,
+  left=2.5cm,
+  right=2.5cm,
+  top=2.5cm,
+  bottom=2.5cm,
+  headheight=15pt
+}
+% --- Header/Footer Setup ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Rapport de Stage - Semaine 3 - Jour 4} % Updated
+\fancyhead[R]{\small Zakaria el Khaldi}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+% --- Title Formatting ---
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{primary}}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{secondary}}
+  {\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{accent}}
+  {\thesubsubsection}{1em}{}
+% --- List Formatting ---
+\setlist[itemize]{leftmargin=*, nosep}
+\setlist[enumerate]{leftmargin=*, nosep}
+% --- Hyperlink Setup ---
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=secondary,
+  citecolor=accent
+}
+
+% --- Listings Setup for JSON ---
+\lstdefinestyle{json}{
+    language=json,
+    basicstyle=\ttfamily\footnotesize,
+    numbers=left,
+    numberstyle=\tiny\color{codegray},
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{white!95!black}, % Very light gray background
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=tb, % Top and bottom frame
+    framextopmargin=3pt,
+    framexbottommargin=3pt,
+    rulecolor=\color{black!30!white},
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    stringstyle=\color{codepurple},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{codeblue}, % For true, false, null
+    morestring=[b]",
+    literate=
+     *{0}{{{\color{codeblue}0}}}{1}
+      {1}{{{\color{codeblue}1}}}{1}
+      {2}{{{\color{codeblue}2}}}{1}
+      {3}{{{\color{codeblue}3}}}{1}
+      {4}{{{\color{codeblue}4}}}{1}
+      {5}{{{\color{codeblue}5}}}{1}
+      {6}{{{\color{codeblue}6}}}{1}
+      {7}{{{\color{codeblue}7}}}{1}
+      {8}{{{\color{codeblue}8}}}{1}
+      {9}{{{\color{codeblue}9}}}{1}
+      {:}{{{\color{black}:}}}{1}
+      {\{}{{{\color{black}{\{}}}}{1}
+      {\}}{{{\color{black}{\}}}}}{1}
+      {[}{{{\color{black}{[}}}}{1}
+      {]}{{{\color{black}{]}}}}{1}
+      {,}{{{\color{black}{,}}}}{1},
+}
+
+
+% --- Title Page Information ---
+\title{\Huge\bfseries\color{primary} Rapport de Stage \\ 
+      \Large Semaine 3 - Jour 4 : Nettoyage des Données et Expérimentation d'un Agent IA} % Updated title
+\author{\Large Zakaria el Khaldi}
+\date{\large Le 23 mai 2025} % Updated date for Day 4
+
+% --- Document Start ---
+\begin{document}
+% --- Cover Page ---
+\begin{titlepage}
+  \centering
+  \vspace*{\stretch{0.5}}
+  {\Huge\bfseries\color{primary} Rapport de Stage \par}
+  \vspace{1cm}
+  {\Large\itshape Semaine 3 - Jour 4 : Nettoyage des Données et Expérimentation d'un Agent IA pour la Séparation de Contenu\par} % Updated title
+  \vspace{2cm}
+  
+  \vspace{2cm}
+  {\Large Zakaria el Khaldi\par}
+  \vfill
+  {\large Le 22 mai 2025\par} % Date of activity day
+  \vspace*{\stretch{1}}
+\end{titlepage}
+
+% --- Table of Contents ---
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+% --- Introduction ---
+\section{Introduction}
+\thispagestyle{fancy}
+Ce rapport quotidien fait le point sur les activités du quatrième jour de la troisième semaine de stage. Faisant suite à la migration réussie vers une gestion des données basée sur des fichiers JSON locaux, l'accent a été mis aujourd'hui sur le raffinement et le nettoyage de ces données, en particulier celles issues du scraping initial. Un défi majeur a émergé concernant la séparation du contenu textuel explicatif et des extraits de code dans les sections détaillées des cours. Cette journée a donc été consacrée à l'exploration de solutions, aboutissant à une approche innovante impliquant l'utilisation de Modèles de Langage Larges (LLM).
+
+% --- Day's Accomplishments ---
+\section{Activités du Jour (Jeudi 22 Mai 2025)} % Updated day and date
+
+\subsection{Identification et Correction des Cas Limites (Edge Cases)}
+La journée a débuté par l'identification et la correction des cas limites présents dans les données scrapées et structurées en JSON. 
+\begin{itemize}
+    \item La majorité de ces anomalies étaient relativement simples à corriger par des ajustements directs dans les données ou par de petites modifications dans les scripts de traitement préliminaire.
+    \item Cependant, la section "détails" de chaque cours s'est avérée particulièrement problématique.
+\end{itemize}
+
+\subsection{Défi Principal : Séparation du Contenu Explicatif et des Extraits de Code}
+Le principal obstacle rencontré a été la difficulté de distinguer et de séparer de manière programmatique et fiable le texte explicatif des extraits de code (snippets) au sein du contenu détaillé des cours.
+\begin{itemize}
+    \item Plusieurs approches algorithmiques et basées sur des expressions régulières ont été testées pour automatiser cette séparation.
+    \item Malgré des efforts soutenus pendant près de six heures, la précision maximale atteinte par ces méthodes traditionnelles n'a pas dépassé 80\%.
+    \item La nature hétérogène du contenu, la multiplicité des cours et la diversité des syntaxes de code rendent la création d'un script de nettoyage unique et universel extrêmement complexe.
+    \item La perspective de développer plus de 70 scripts spécifiques pour chaque cours a été jugée illogique et non viable en termes de temps et de maintenance.
+\end{itemize}
+
+\subsection{Exploration d'une Solution Basée sur les LLM : Développement d'un Agent IA}
+Face à l'inefficacité des approches conventionnelles pour ce problème spécifique, une solution plus avancée a été envisagée : tirer parti de la puissance des Modèles de Langage Larges (LLM).
+\begin{itemize}
+    \item L'objectif est de créer un agent IA capable d'analyser le contenu mixte et d'effectuer intelligemment la distinction entre les paragraphes d'explication et les blocs de code.
+    \item Des expérimentations initiales ont été menées pour concevoir et prototyper cet agent.
+    \item Bien que cette approche soit prometteuse en termes de qualité de séparation, elle présente un inconvénient majeur : le temps d'exécution.
+\end{itemize}
+
+\subsection{Tests Préliminaires et Lancement du Traitement Complet}
+Avant de lancer le traitement sur l'ensemble des données, l'agent IA a été testé sur un sous-ensemble plus petit.
+\begin{itemize}
+    \item Les résultats de ces tests à petite échelle se sont avérés encourageants, indiquant une bonne capacité de l'agent à effectuer la tâche de séparation souhaitée.
+    \item Fort de ces observations positives, le script de l'agent IA a été lancé pour traiter l'intégralité des données des cours.
+    \item Le temps d'exécution estimé pour ce processus complet est d'environ 15 heures. Le script a été configuré pour s'exécuter pendant la nuit.
+\end{itemize}
+Il est important de noter que le succès final de cette approche ne pourra être évalué qu'après la fin du traitement et l'analyse des résultats.
+
+\subsection{Planification pour Demain (Vendredi 23 Mai 2025)} % Updated day and date
+La journée de demain sera cruciale et dépendra fortement des résultats du traitement par l'agent IA :
+\begin{itemize}
+  \item \textbf{Analyse des résultats :} Évaluation de la qualité et de la précision de la séparation effectuée par l'agent IA sur l'ensemble des données.
+  \item \textbf{Intégration des données nettoyées :} Si les résultats sont satisfaisants, les données affinées seront intégrées à l'application.
+  \item \textbf{Ajustements ou alternatives :} Si les résultats ne sont pas optimaux, il faudra envisager des raffinements de l'agent IA, des post-traitements manuels ciblés, ou potentiellement explorer des stratégies alternatives pour les cas problématiques persistants.
+  \item \textbf{Poursuite du développement front-end :} Si la question des données est résolue, reprise du travail sur le style de la section des détails des cours et sur l'intégration de l'éditeur de code.
+  \item \textbf{Optimisations :} Continuer l'analyse et l'implémentation du lazy loading pour les images et autres composants.
+\end{itemize}
+
+\section{Conclusion}
+Cette quatrième journée a été intensive, marquée par une phase de résolution de problèmes complexes concernant la qualité et la structure des données. L'identification des limites des méthodes traditionnelles pour la séparation du texte et du code a conduit à l'exploration et à l'expérimentation d'une solution innovante basée sur un agent IA. Bien que le temps d'exécution soit considérable, les tests préliminaires sont prometteurs. L'issue de ce traitement nocturne déterminera en grande partie les orientations des prochains jours. Cette démarche souligne l'importance de l'adaptabilité et de la recherche de solutions créatives face à des défis techniques.
+
+\end{document}
