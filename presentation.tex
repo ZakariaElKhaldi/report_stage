@@ -7,7 +7,7 @@
 % Required packages
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[french]{babel}
+\usepackage[english]{babel}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{amsmath}
@@ -46,14 +46,14 @@
 }
 
 % Image path configuration
-\graphicspath{{week_1_img/}{week_2_img/}{week_3_img/}{week_4_img/}{images/}{./}}
+\graphicspath{{week_1_img/}{week_2_img/}{week_3_img/}{week_4_img/}{images/}{./}{/home/ziko/Documents/web_presentation/images/}}
 
 % Title information
-\title[Plateforme LearnExpert]{Conception et Développement d'une Plateforme E-learning}
-\subtitle{Rapport de Stage - IAAI Academy}
+\title[LearnExpert Platform]{Design and Development of an E-learning Platform}
+\subtitle{Internship Report - IAAI Academy}
 \author[Zakaria el Khaldi]{Zakaria el Khaldi}
-\institute[BTS Al-Kendi]{Centre BTS Al-Kendi de Casablanca}
-\date{Juin 2025}
+\institute[BTS Al-Kendi]{Al-Kendi BTS Center, Casablanca}
+\date{June 2025}
 \logo{\includegraphics[height=1cm]{LOGO_IAAI.png}}
 
 \begin{document}
@@ -61,7 +61,7 @@
 \frame{\titlepage}
 
 \begin{frame}
-\frametitle{Plan de la Présentation}
+\frametitle{Presentation Outline}
 \tableofcontents
 \end{frame}
 
@@ -69,11 +69,11 @@
 \section{Introduction}
 
 \begin{frame}
-\frametitle{Présentation du Projet}
+\frametitle{Project Overview}
 \begin{itemize}
-    \item \textbf{Contexte} : Stage de fin d'études de 4 semaines à IAAI Academy
-    \item \textbf{Projet} : Plateforme e-learning LearnExpert
-    \item \textbf{Objectif} : Développement d'une solution d'apprentissage interactive pour la programmation et les technologies web
+    \item \textbf{Context}: 4-week internship at IAAI Academy
+    \item \textbf{Project}: LearnExpert e-learning platform
+    \item \textbf{Objective}: Development of an interactive learning solution for programming and web technologies
 \end{itemize}
 \begin{center}
     \includegraphics[width=0.5\textwidth]{images/mession.png}
@@ -81,113 +81,119 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Problématique et Objectifs}
+\frametitle{Challenges and Objectives}
 \begin{columns}
 \column{0.5\textwidth}
-\textbf{Problématiques identifiées :}
+\textbf{Identified challenges:}
 \begin{itemize}
-    \item Contenu générique des plateformes actuelles
-    \item Manque d'interactivité pour l'apprentissage de la programmation
-    \item Fragmentation des ressources éducatives
-    \item Absence de personnalisation
+    \item Generic content in existing platforms
+    \item Lack of interactivity for programming learning
+    \item Fragmentation of educational resources
+    \item Absence of personalization
 \end{itemize}
 
 \column{0.5\textwidth}
-\textbf{Objectifs du projet :}
+\textbf{Project objectives:}
 \begin{itemize}
-    \item Approche centrée sur la pratique
-    \item Personnalisation via l'IA
-    \item Intégration de contenus structurés
-    \item Architecture évolutive
-    \item Expérience utilisateur engageante
+    \item Practice-centered approach
+    \item AI-powered personalization
+    \item Structured content integration
+    \item Scalable architecture
+    \item Engaging user experience
 \end{itemize}
 \end{columns}
 \end{frame}
 
 % 2. Methodology (2 min)
-\section{Méthodologie}
+\section{Methodology}
 
 \begin{frame}
-\frametitle{Approche de Développement}
+\frametitle{Development Approach}
 \begin{columns}
 \column{0.5\textwidth}
-\textbf{Méthodologie adoptée :}
+\textbf{Adopted methodology:}
 \begin{itemize}
-    \item Approche en cascade adaptée
-    \item Phases structurées
-    \item Revues itératives
-    \item Développement incrémental
+    \item Adapted waterfall approach
+    \item Structured phases
+    \item Iterative reviews
+    \item Incremental development
 \end{itemize}
 
 \column{0.5\textwidth}
-\textbf{Outils de modélisation :}
+\textbf{Modeling tools:}
 \begin{itemize}
     \item UML (Unified Modeling Language)
-    \item Diagrammes de cas d'utilisation
-    \item Diagrammes de séquence
-    \item Diagrammes de classes
-    \item Modèles de données
+    \item Use case diagrams
+    \item Sequence diagrams
+    \item Class diagrams
+    \item Data models
 \end{itemize}
 \end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{Planification du Projet}
+\frametitle{Project Planning}
 \begin{itemize}
-    \item \textbf{Diagramme PERT} : Visualisation des dépendances entre tâches
-    \item \textbf{Diagramme de Gantt} : Organisation temporelle
-    \item \textbf{Chemin critique} : Identification des tâches prioritaires
+    \item \textbf{Project timeline}: Four-week development period
+    \item \textbf{Phase organization}:
+    \begin{itemize}
+        \item Week 1: Design and architecture
+        \item Week 2: Frontend foundation and landing page
+        \item Week 3: Learning interface and dashboard
+        \item Week 4: Interactive features and refinements
+    \end{itemize}
+    \item \textbf{Critical path management}: Focus on essential components first
 \end{itemize}
 \begin{center}
-    \includegraphics[width=0.8\textwidth,height=4.5cm,keepaspectratio]{images/gestion_projet/pert_diagram.png}
+    \includegraphics[width=0.95\textwidth,height=5cm,keepaspectratio]{Screenshot 2025-06-08 at 20-35-06 Planning du Projet LearnExpert - Diagramme de Gantt.png}
 \end{center}
 \end{frame}
 
 % 3. System Architecture (4 min)
-\section{Architecture du Système}
+\section{System Architecture}
 
 \begin{frame}
-\frametitle{Vue d'Ensemble de l'Architecture}
+\frametitle{Architecture Overview}
 \begin{center}
-    \includegraphics[width=0.9\textwidth,height=6cm,keepaspectratio]{Editor _ Mermaid Chart-2025-06-06-214630.png}
+    \includegraphics[width=0.9\textwidth,height=6cm,keepaspectratio]{architecture_diagram.png}
 \end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Architecture Microservices}
+\frametitle{Microservices Architecture}
 \begin{columns}
 \column{0.5\textwidth}
-\textbf{Avantages de l'approche microservices :}
+\textbf{Benefits of microservices:}
 \begin{itemize}
-    \item Scalabilité indépendante des services
-    \item Maintenabilité facilitée
-    \item Résilience accrue
-    \item Flexibilité technologique
+    \item Independent service scalability
+    \item Improved maintainability
+    \item Enhanced resilience
+    \item Technological flexibility
 \end{itemize}
 
 \column{0.5\textwidth}
-\textbf{Services principaux :}
+\textbf{Core services:}
 \begin{itemize}
-    \item Service IAM
-    \item Service de Contenu
-    \item Service de Facturation
-    \item Service de Certification
-    \item Service d'Analytique
-    \item Service de Notification
+    \item IAM Service
+    \item Content Service
+    \item Billing Service
+    \item Certification Service
+    \item Analytics Service
+    \item Notification Service
 \end{itemize}
 \end{columns}
 
 \vspace{0.3cm}
 \begin{center}
-    \includegraphics[width=0.8\textwidth,height=3.5cm,keepaspectratio]{images/sequence_diagram.png}
+    \includegraphics[width=0.8\textwidth,height=3.5cm,keepaspectratio]{Editor _ Mermaid Chart-2025-06-06-214630.png}
 \end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Technologies Frontend}
+\frametitle{Frontend Technologies}
 \begin{columns}
 \column{0.5\textwidth}
-\textbf{Framework et langages :}
+\textbf{Framework and languages:}
 \begin{itemize}
     \item Next.js (React)
     \item TypeScript
@@ -196,11 +202,11 @@
 \end{itemize}
 
 \column{0.5\textwidth}
-\textbf{Outils spécialisés :}
+\textbf{Specialized tools:}
 \begin{itemize}
-    \item Monaco Editor (éditeur de code)
-    \item React Hook Form (gestion des formulaires)
-    \item Radix UI (composants accessibles)
+    \item Monaco Editor (code editor)
+    \item React Hook Form (form management)
+    \item Radix UI (accessible components)
 \end{itemize}
 \end{columns}
 \begin{center}
@@ -209,39 +215,39 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Technologies Backend}
+\frametitle{Backend Technologies}
 \begin{columns}
 \column{0.5\textwidth}
-\textbf{Langages et frameworks :}
+\textbf{Languages and frameworks:}
 \begin{itemize}
-    \item Node.js avec Express
-    \item Python avec FastAPI
-    \item Go (pour services critiques)
+    \item Node.js with Express
+    \item Python with FastAPI
+    \item Go (for critical services)
 \end{itemize}
 
 \column{0.5\textwidth}
-\textbf{Infrastructure :}
+\textbf{Infrastructure:}
 \begin{itemize}
     \item Nginx (API Gateway)
-    \item MongoDB (données non-structurées)
-    \item PostgreSQL/Supabase (données relationnelles)
-    \item Docker (conteneurisation)
-    \item Apache Kafka (communication event-driven)
+    \item MongoDB (unstructured data)
+    \item PostgreSQL/Supabase (relational data)
+    \item Docker (containerization)
+    \item Apache Kafka (event-driven communication)
 \end{itemize}
 \end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{Conception des Bases de Données}
+\frametitle{Database Design}
 \begin{columns}
 \column{0.48\textwidth}
-\textbf{Modèle IAM :}
+\textbf{IAM Model:}
 \begin{center}
     \includegraphics[width=\textwidth,height=5cm,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_Service.pdf.png}
 \end{center}
 
 \column{0.48\textwidth}
-\textbf{Modèle de Contenu :}
+\textbf{Content Model:}
 \begin{center}
     \includegraphics[width=\textwidth,height=5cm,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Content_Service.pdf.png}
 \end{center}
@@ -249,51 +255,51 @@
 \end{frame}
 
 % 4. Key Features & Functionality (4 min)
-\section{Fonctionnalités Principales}
+\section{Key Features \& Functionality}
 
 \begin{frame}
-\frametitle{Système de Gestion des Utilisateurs}
+\frametitle{User Management System}
 \begin{itemize}
-    \item \textbf{Authentification multi-niveaux}
+    \item \textbf{Multi-level authentication}
     \begin{itemize}
-        \item Inscription et connexion sécurisées
-        \item Vérification par email
-        \item Récupération de mot de passe
+        \item Secure registration and login
+        \item Email verification
+        \item Password recovery
     \end{itemize}
-    \item \textbf{Gestion des rôles}
+    \item \textbf{Role management}
     \begin{itemize}
-        \item Apprenant individuel
-        \item Employé d'entreprise
-        \item Administrateur d'entreprise
-        \item Créateur de cours
+        \item Individual learner
+        \item Company employee
+        \item Company administrator
+        \item Content creator
         \item Consultant
-        \item Agent de support
-        \item Administrateur de plateforme
+        \item Support agent
+        \item Platform administrator
     \end{itemize}
-    \item \textbf{Personnalisation du profil}
-    \item \textbf{Paramètres de confidentialité et de notification}
+    \item \textbf{Profile customization}
+    \item \textbf{Privacy and notification settings}
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Gestion des Cours}
+\frametitle{Course Management}
 \begin{columns}
 \column{0.48\textwidth}
-\textbf{Organisation du contenu :}
+\textbf{Content organization:}
 \begin{itemize}
-    \item Structure hiérarchique
-    \item Multi-formats (texte, code, vidéo)
-    \item Métadonnées avancées
-    \item Versionnement
+    \item Hierarchical structure
+    \item Multi-format support (text, code, video)
+    \item Advanced metadata
+    \item Versioning
 \end{itemize}
 
 \column{0.48\textwidth}
-\textbf{Interface d'apprentissage :}
+\textbf{Learning interface:}
 \begin{itemize}
-    \item Contenu théorique structuré
-    \item Exercices pratiques intégrés
-    \item Navigation intuitive
-    \item Mode sombre/clair
+    \item Structured theoretical content
+    \item Integrated practical exercises
+    \item Intuitive navigation
+    \item Dark/light mode
 \end{itemize}
 \end{columns}
 
@@ -304,21 +310,21 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Parcours d'Apprentissage}
+\frametitle{Learning Paths}
 \begin{columns}
 \column{0.55\textwidth}
-\textbf{Parcours thématiques spécialisés :}
+\textbf{Specialized thematic paths:}
 \begin{itemize}
-    \item Intelligence Artificielle
-    \item Cybersécurité
-    \item Compétences IT
-    \item Préparation aux entretiens
+    \item Artificial Intelligence
+    \item Cybersecurity
+    \item IT Skills
+    \item Technical interview preparation
 \end{itemize}
-\textbf{Caractéristiques :}
+\textbf{Features:}
 \begin{itemize}
-    \item Personnalisation intelligente
-    \item Progression structurée
-    \item Tableau de bord adaptatif
+    \item Intelligent personalization
+    \item Structured progression
+    \item Adaptive dashboard
 \end{itemize}
 
 \column{0.42\textwidth}
@@ -329,15 +335,15 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Évaluation et Certification}
+\frametitle{Assessment and Certification}
 \begin{columns}
 \column{0.5\textwidth}
-\textbf{Systèmes d'évaluation :}
+\textbf{Evaluation systems:}
 \begin{itemize}
-    \item Quiz interactifs
-    \item Exercices de code avec vérification
-    \item Retour personnalisé
-    \item Projets pratiques
+    \item Interactive quizzes
+    \item Code exercises with verification
+    \item Personalized feedback
+    \item Practical projects
 \end{itemize}
 
 \column{0.46\textwidth}
@@ -347,62 +353,62 @@
 \end{columns}
 
 \vspace{0.3cm}
-\textbf{Certification :}
+\textbf{Certification:}
 \begin{itemize}
-    \item Badges et récompenses pour motiver les apprenants
-    \item Certificats d'achèvement vérifiables
-    \item Intégration avec les réseaux professionnels
+    \item Badges and rewards to motivate learners
+    \item Verifiable completion certificates
+    \item Integration with professional networks
 \end{itemize}
 \end{frame}
 
 % 5. Implementation Highlights (3 min)
-\section{Points Forts de l'Implémentation}
+\section{Implementation Highlights}
 
 \begin{frame}
-\frametitle{Défis Techniques}
+\frametitle{Technical Challenges}
 \begin{itemize}
-    \item \textbf{Traitement des données de contenu}
+    \item \textbf{Content data processing}
     \begin{itemize}
-        \item Difficulté à séparer automatiquement le contenu explicatif du code
-        \item Approches conventionnelles limitées à 80\% de précision
-        \item Volume important de données à traiter (70+ cours)
+        \item Difficulty automatically separating explanatory content from code
+        \item Conventional approaches limited to 80\% accuracy
+        \item Large volume of data to process (70+ courses)
     \end{itemize}
-    \item \textbf{Performance de l'éditeur de code}
+    \item \textbf{Code editor performance}
     \begin{itemize}
-        \item Intégration complexe de Monaco Editor
-        \item Exécution sécurisée du code utilisateur
-        \item Optimisation pour appareils mobiles
+        \item Complex integration of Monaco Editor
+        \item Secure execution of user code
+        \item Optimization for mobile devices
     \end{itemize}
-    \item \textbf{Interfaces riches et complexes}
+    \item \textbf{Rich and complex interfaces}
     \begin{itemize}
-        \item Animations fluides sans impact sur les performances
-        \item Gestion des composants UI dynamiques
-        \item Optimisation du chargement
+        \item Smooth animations without performance impact
+        \item Dynamic UI component management
+        \item Loading optimization
     \end{itemize}
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Solutions Implémentées}
+\frametitle{Implemented Solutions}
 \begin{columns}
 \column{0.48\textwidth}
-\textbf{Pipeline de traitement LLM :}
+\textbf{LLM processing pipeline:}
 \begin{itemize}
-    \item Modèles LLM en parallèle
-    \item Traitement asynchrone
-    \item Segmentation intelligente
-    \item Réduction temps: 15h → 7-8h
-    \item Précision proche de 100\%
+    \item Parallel LLM models
+    \item Asynchronous processing
+    \item Intelligent segmentation
+    \item Processing time reduction: 15h → 7-8h
+    \item Accuracy near 100\%
 \end{itemize}
 
 \column{0.48\textwidth}
-\textbf{Éditeur de code interactif :}
+\textbf{Interactive code editor:}
 \begin{itemize}
-    \item Coloration syntaxique (6+ langages)
-    \item Exécution en temps réel
-    \item Dispositions personnalisables
-    \item Thèmes adaptables
-    \item Mode plein écran
+    \item Syntax highlighting (6+ languages)
+    \item Real-time execution
+    \item Customizable layouts
+    \item Adaptable themes
+    \item Full-screen mode
 \end{itemize}
 \end{columns}
 
@@ -413,120 +419,120 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Optimisations de Performance}
+\frametitle{Performance Optimizations}
 \begin{itemize}
     \item \textbf{Frontend}
     \begin{itemize}
-        \item Code splitting et lazy loading des composants
-        \item Optimisation automatique des images
-        \item Préchargement intelligent des ressources
-        \item Mise en cache sélective
+        \item Code splitting and lazy loading of components
+        \item Automatic image optimization
+        \item Intelligent resource preloading
+        \item Selective caching
     \end{itemize}
     \item \textbf{Backend}
     \begin{itemize}
-        \item Indexation optimisée des bases de données
-        \item Mise en cache des requêtes fréquentes
-        \item API Gateway avec distribution de charge
-        \item Compression des réponses
+        \item Optimized database indexing
+        \item Caching of frequent queries
+        \item Load-balancing API Gateway
+        \item Response compression
     \end{itemize}
     \item \textbf{Infrastructure}
     \begin{itemize}
-        \item Déploiement sur Vercel pour le frontend
-        \item Containerisation Docker pour les services backend
-        \item Configuration optimisée de Nginx
+        \item Vercel deployment for frontend
+        \item Docker containerization for backend services
+        \item Optimized Nginx configuration
     \end{itemize}
 \end{itemize}
 \end{frame}
 
 % 6. Project Timeline (2 min)
-\section{Calendrier du Projet}
+\section{Project Timeline}
 
 \begin{frame}
-\frametitle{Diagramme de Gantt}
+\frametitle{Development Timeline}
 \begin{center}
     \includegraphics[width=0.95\textwidth,height=7cm,keepaspectratio]{Screenshot 2025-06-08 at 20-35-06 Planning du Projet LearnExpert - Diagramme de Gantt.png}
 \end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Analyse du Chemin Critique}
+\frametitle{Critical Path Analysis}
 \begin{itemize}
-    \item \textbf{Phases critiques identifiées :}
+    \item \textbf{Identified critical phases:}
     \begin{itemize}
-        \item Conception initiale
-        \item Développement du frontend principal
-        \item Implémentation des pages secondaires
-        \item Services backend essentiels
+        \item Initial design
+        \item Main frontend development
+        \item Secondary page implementation
+        \item Essential backend services
     \end{itemize}
-    \item \textbf{Parallélisation effective :}
+    \item \textbf{Effective parallelization:}
     \begin{itemize}
-        \item Développement UI et système de routage
-        \item Backend et traitement des données
-        \item Design et intégration frontend
+        \item UI development and routing system
+        \item Backend and data processing
+        \item Frontend design and integration
     \end{itemize}
-    \item \textbf{Répartition équilibrée :} 4 semaines divisées en phases logiques
+    \item \textbf{Balanced distribution:} 4 weeks divided into logical phases
 \end{itemize}
 \end{frame}
 
 % 7. Conclusion & Future Work (2 min)
-\section{Conclusion et Perspectives}
+\section{Conclusion and Future Work}
 
 \begin{frame}
-\frametitle{Résultats du Projet}
+\frametitle{Project Results}
 \begin{columns}
 \column{0.5\textwidth}
-\textbf{Réalisations principales :}
+\textbf{Main achievements:}
 \begin{itemize}
-    \item Architecture microservices fonctionnelle
-    \item Interface utilisateur intuitive et responsive
-    \item Éditeur de code interactif
-    \item Pipeline de traitement de données optimisé
-    \item Système d'authentification sécurisé
+    \item Functional microservices architecture
+    \item Intuitive and responsive user interface
+    \item Interactive code editor
+    \item Optimized data processing pipeline
+    \item Secure authentication system
 \end{itemize}
 
 \column{0.5\textwidth}
-\textbf{Compétences acquises :}
+\textbf{Skills acquired:}
 \begin{itemize}
-    \item Maîtrise de Next.js et React
-    \item Expérience avec l'architecture microservices
-    \item Utilisation avancée de MongoDB et Supabase
-    \item Intégration de modèles LLM
-    \item Développement agile en contexte réel
+    \item Next.js and React mastery
+    \item Microservices architecture experience
+    \item Advanced use of MongoDB and Supabase
+    \item LLM model integration
+    \item Agile development in real context
 \end{itemize}
 \end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{Perspectives et Améliorations Futures}
+\frametitle{Future Perspectives}
 \begin{itemize}
-    \item \textbf{Pour IAAI :}
+    \item \textbf{For IAAI:}
     \begin{itemize}
-        \item Enrichissement des fonctionnalités d'IA pour personnaliser les parcours
-        \item Analyse avancée des performances des apprenants
-        \item Génération de contenu adaptatif
+        \item Enhanced AI features for learning path personalization
+        \item Advanced learner performance analytics
+        \item Adaptive content generation
     \end{itemize}
-    \item \textbf{Développements techniques envisagés :}
+    \item \textbf{Planned technical developments:}
     \begin{itemize}
-        \item Application mobile native
-        \item Intégration avec des plateformes tierces
-        \item Expansion multilingue
-        \item Fonctionnalités collaboratives
+        \item Native mobile application
+        \item Third-party platform integration
+        \item Multilingual expansion
+        \item Collaborative features
     \end{itemize}
-    \item \textbf{Prochaines étapes :}
+    \item \textbf{Next steps:}
     \begin{itemize}
-        \item Lancement de la version bêta
-        \item Tests utilisateurs à grande échelle
-        \item Optimisation continue basée sur les retours
+        \item Beta version launch
+        \item Large-scale user testing
+        \item Continuous optimization based on feedback
     \end{itemize}
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Questions ?}
+\frametitle{Questions?}
 \begin{center}
-    \LARGE Merci pour votre attention !\\
+    \LARGE Thank you for your attention!\\
     \vspace{1cm}
-    Questions ?
+    Questions?
 \end{center}
 \end{frame}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.6.6)  9 JUN 2025 01:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.6.6)  9 JUN 2025 01:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -725,89 +725,61 @@ Package: babel 2023/02/13 3.86 The Babel package
 LaTeX Info: Redefining \textlatin on input line 4088.
 \bbl@dirlevel=\count335
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
-Language: french 2023/03/08 v3.5q French support from the babel system
-Package babel Info: Hyphen rules for 'french' set to \l@nohyphenation
-(babel)             (\language2). Reported on input line 87.
-
-
-Package babel Warning: No hyphenation patterns were preloaded for
-(babel)                the language 'French' into the format.
-(babel)                Please, configure your TeX system to add them and
-(babel)                rebuild the format. Now I will use the patterns
-(babel)                preloaded for \language=nohyphenation instead on input l
-ine 87.
-
-Package babel Info: Hyphen rules for 'acadian' set to \l@nohyphenation
-(babel)             (\language2). Reported on input line 91.
-Package babel Info: Hyphen rules for 'canadien' set to \l@nohyphenation
-(babel)             (\language2). Reported on input line 92.
-\FB@nonchar=\count336
-Package babel Info: Making : an active character on input line 395.
-Package babel Info: Making ; an active character on input line 396.
-Package babel Info: Making ! an active character on input line 397.
-Package babel Info: Making ? an active character on input line 398.
-\FBguill@level=\count337
-\FBold@everypar=\toks47
-\FB@Mht=\dimen295
-\mc@charclass=\count338
-\mc@charfam=\count339
-\mc@charslot=\count340
-\std@mcc=\count341
-\dec@mcc=\count342
-\FB@parskip=\dimen296
-\listindentFB=\dimen297
-\descindentFB=\dimen298
-\labelindentFB=\dimen299
-\labelwidthFB=\dimen300
-\leftmarginFB=\dimen301
-\parindentFFN=\dimen302
-\FBfnindent=\dimen303
-)) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex
-Package babel Info: Importing font and identification data for french
-(babel)             from babel-fr.ini. Reported on input line 11.
-) (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
-Package french.ldf Info: No list customisation for the beamer class,
-(french.ldf)             reported on input line 11.
-
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
+))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen304
-\lightrulewidth=\dimen305
-\cmidrulewidth=\dimen306
-\belowrulesep=\dimen307
-\belowbottomsep=\dimen308
-\aboverulesep=\dimen309
-\abovetopsep=\dimen310
-\cmidrulesep=\dimen311
-\cmidrulekern=\dimen312
-\defaultaddspace=\dimen313
-\@cmidla=\count343
-\@cmidlb=\count344
-\@aboverulesep=\dimen314
-\@belowrulesep=\dimen315
-\@thisruleclass=\count345
-\@lastruleclass=\count346
-\@thisrulewidth=\dimen316
+\heavyrulewidth=\dimen295
+\lightrulewidth=\dimen296
+\cmidrulewidth=\dimen297
+\belowrulesep=\dimen298
+\belowbottomsep=\dimen299
+\aboverulesep=\dimen300
+\abovetopsep=\dimen301
+\cmidrulesep=\dimen302
+\cmidrulekern=\dimen303
+\defaultaddspace=\dimen304
+\@cmidla=\count336
+\@cmidlb=\count337
+\@aboverulesep=\dimen305
+\@belowrulesep=\dimen306
+\@thisruleclass=\count338
+\@lastruleclass=\count339
+\@thisrulewidth=\dimen307
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count347
+\lst@mode=\count340
 \lst@gtempboxa=\box76
-\lst@token=\toks48
-\lst@length=\count348
-\lst@currlwidth=\dimen317
-\lst@column=\count349
-\lst@pos=\count350
-\lst@lostspace=\dimen318
-\lst@width=\dimen319
-\lst@newlines=\count351
-\lst@lineno=\count352
-\lst@maxwidth=\dimen320
+\lst@token=\toks47
+\lst@length=\count341
+\lst@currlwidth=\dimen308
+\lst@column=\count342
+\lst@pos=\count343
+\lst@lostspace=\dimen309
+\lst@width=\dimen310
+\lst@newlines=\count344
+\lst@lineno=\count345
+\lst@maxwidth=\dimen311
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count353
-\lst@skipnumbers=\count354
+\c@lstnumber=\count346
+\lst@skipnumbers=\count347
 \lst@framebox=\box77
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -817,7 +789,7 @@ Package: listings 2023/02/27 1.9 (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count355
+\l__color_backend_stack_int=\count348
 \l__pdf_internal_box=\box78
 )
 (./presentation.aux)
@@ -878,17 +850,17 @@ LaTeX Font Info:    ... okay on input line 59.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count356
-\scratchdimen=\dimen321
+\scratchcounter=\count349
+\scratchdimen=\dimen312
 \scratchbox=\box79
-\nofMPsegments=\count357
-\nofMParguments=\count358
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count359
-\MPscratchDim=\dimen322
-\MPnumerator=\count360
-\makeMPintoPDFobject=\count361
-\everyMPtoPDFconversion=\toks50
+\nofMPsegments=\count350
+\nofMParguments=\count351
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count352
+\MPscratchDim=\dimen313
+\MPnumerator=\count353
+\makeMPintoPDFobject=\count354
+\everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -986,9 +958,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \degres on input line 59.
-LaTeX Info: Redefining \up on input line 59.
-\c@lstlisting=\count362
+\c@lstlisting=\count355
  (./presentation.nav)
 <LOGO_IAAI.png, id=42, 1167.15117pt x 868.17372pt>
 File: LOGO_IAAI.png Graphic file (type png)
@@ -1053,85 +1023,96 @@ Package pdftex.def Info: LOGO_IAAI.png  used on input line 132.
  [5
 
 ]
-<images/gestion_projet/pert_diagram.png, id=202, 1867.97874pt x 1391.1975pt>
-File: images/gestion_projet/pert_diagram.png Graphic file (type png)
-<use images/gestion_projet/pert_diagram.png>
-Package pdftex.def Info: images/gestion_projet/pert_diagram.png  used on input 
-line 144.
-(pdftex.def)             Requested size: 171.90173pt x 128.02568pt.
+<Screenshot 2025-06-08 at 20-35-06 Planning du Projet LearnExpert - Diagramme d
+e Gantt.png, id=204, 1867.97874pt x 1234.6125pt>
+File: Screenshot 2025-06-08 at 20-35-06 Planning du Projet LearnExpert - Diagra
+mme de Gantt.png Graphic file (type png)
+<use Screenshot 2025-06-08 at 20-35-06 Planning du Projet LearnExpert - Diagram
+me de Gantt.png>
+Package pdftex.def Info: Screenshot 2025-06-08 at 20-35-06 Planning du Projet L
+earnExpert - Diagramme de Gantt.png  used on input line 150.
+(pdftex.def)             Requested size: 215.22633pt x 142.25061pt.
+
+Overfull \vbox (3.77942pt too high) detected at line 150
+ []
+
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 144.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 150.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
- [6
+[6
 
- <./images/gestion_projet/pert_diagram.png>]
-<Editor _ Mermaid Chart-2025-06-06-214630.png, id=229, 3854.4pt x 2572.61125pt>
+ <./Screenshot 2025-06-08 at 20-35-06 Planning du Projet LearnExpert - Diagramm
+e de Gantt.png>]
+</home/ziko/Documents/web_presentation/images//architecture_diagram.png, id=232
+, 3854.4pt x 1555.8125pt>
+File: /home/ziko/Documents/web_presentation/images//architecture_diagram.png Gr
+aphic file (type png)
+<use /home/ziko/Documents/web_presentation/images//architecture_diagram.png>
+Package pdftex.def Info: /home/ziko/Documents/web_presentation/images//architec
+ture_diagram.png  used on input line 160.
+(pdftex.def)             Requested size: 308.06424pt x 124.34885pt.
+File: LOGO_IAAI.png Graphic file (type png)
+<use LOGO_IAAI.png>
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 160.
+(pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
+ [7
+
+ </home/ziko/Documents/web_presentation/images//architecture_diagram.png>]
+<Editor _ Mermaid Chart-2025-06-06-214630.png, id=263, 3854.4pt x 2572.61125pt>
 
 File: Editor _ Mermaid Chart-2025-06-06-214630.png Graphic file (type png)
 <use Editor _ Mermaid Chart-2025-06-06-214630.png>
 Package pdftex.def Info: Editor _ Mermaid Chart-2025-06-06-214630.png  used on 
-input line 154.
-(pdftex.def)             Requested size: 255.72037pt x 170.68002pt.
-File: LOGO_IAAI.png Graphic file (type png)
-<use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 154.
-(pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
- [7
-
- <./Editor _ Mermaid Chart-2025-06-06-214630.png>]
-<images/sequence_diagram.png, id=260, 3854.4pt x 2572.61125pt>
-File: images/sequence_diagram.png Graphic file (type png)
-<use images/sequence_diagram.png>
-Package pdftex.def Info: images/sequence_diagram.png  used on input line 184.
+input line 190.
 (pdftex.def)             Requested size: 149.1506pt x 99.55026pt.
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 184.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 190.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
  [8
 
- <./images/sequence_diagram.png>]
-<week_3_img/accueil.png, id=288, 1573.88pt x 932.48375pt>
+ <./Editor _ Mermaid Chart-2025-06-06-214630.png>]
+<week_3_img/accueil.png, id=291, 1573.88pt x 932.48375pt>
 File: week_3_img/accueil.png Graphic file (type png)
 <use week_3_img/accueil.png>
-Package pdftex.def Info: week_3_img/accueil.png  used on input line 209.
+Package pdftex.def Info: week_3_img/accueil.png  used on input line 215.
 (pdftex.def)             Requested size: 171.14764pt x 101.39255pt.
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 209.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 215.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
  [9
 
  <./week_3_img/accueil.png>]
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 232.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 238.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
  [10
 
 ]
 <week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_Servi
-ce.pdf.png, id=341, 1778.645pt x 1000.73875pt>
+ce.pdf.png, id=344, 1778.645pt x 1000.73875pt>
 File: week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_
 Service.pdf.png Graphic file (type png)
 <use week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_S
 ervice.pdf.png>
 Package pdftex.def Info: week_1_img/services_db_screanshots/Screenshot 2025-06-
-06 at 15-08-36 IAM_Service.pdf.png  used on input line 249.
+06 at 15-08-36 IAM_Service.pdf.png  used on input line 255.
 (pdftex.def)             Requested size: 164.27782pt x 92.42944pt.
 <week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Content_S
-ervice.pdf.png, id=342, 861.2175pt x 887.315pt>
+ervice.pdf.png, id=345, 861.2175pt x 887.315pt>
 File: week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Cont
 ent_Service.pdf.png Graphic file (type png)
 <use week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Conte
 nt_Service.pdf.png>
 Package pdftex.def Info: week_1_img/services_db_screanshots/Screenshot 2025-06-
-06 at 15-07-51 Content_Service.pdf.png  used on input line 249.
+06 at 15-07-51 Content_Service.pdf.png  used on input line 255.
 (pdftex.def)             Requested size: 138.07358pt x 142.25761pt.
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 249.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 255.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
  [11
 
@@ -1140,7 +1121,7 @@ rvice.pdf.png> <./week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 1
 5-07-51 Content_Service.pdf.png>]
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 276.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 282.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
  [12
 
@@ -1148,11 +1129,11 @@ Package pdftex.def Info: LOGO_IAAI.png  used on input line 276.
 <week_3_img/part1.png, id=401, 1096.095pt x 490.83376pt>
 File: week_3_img/part1.png Graphic file (type png)
 <use week_3_img/part1.png>
-Package pdftex.def Info: week_3_img/part1.png  used on input line 304.
+Package pdftex.def Info: week_3_img/part1.png  used on input line 310.
 (pdftex.def)             Requested size: 222.4765pt x 99.62546pt.
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 304.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 310.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
  [13
 
@@ -1161,11 +1142,11 @@ Package pdftex.def Info: LOGO_IAAI.png  used on input line 304.
 File: old-reports/week_4_img/learnpath.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/learnpath.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/learnpath.jpeg  used on input l
-ine 329.
+ine 335.
 (pdftex.def)             Requested size: 124.91745pt x 142.25475pt.
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 329.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 335.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
  [14
 
@@ -1173,24 +1154,24 @@ Package pdftex.def Info: LOGO_IAAI.png  used on input line 329.
 <week_3_img/part2.png, id=456, 1067.99pt x 886.31125pt>
 File: week_3_img/part2.png Graphic file (type png)
 <use week_3_img/part2.png>
-Package pdftex.def Info: week_3_img/part2.png  used on input line 356.
+Package pdftex.def Info: week_3_img/part2.png  used on input line 362.
 (pdftex.def)             Requested size: 154.27606pt x 128.03174pt.
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 356.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 362.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
  [15
 
  <./week_3_img/part2.png>]
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 383.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 389.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
  [16
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-413.
+419.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
@@ -1199,68 +1180,64 @@ File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 File: week_3_img/Screenshot 2025-05-20 164411.png Graphic file (type png)
 <use week_3_img/Screenshot 2025-05-20 164411.png>
 Package pdftex.def Info: week_3_img/Screenshot 2025-05-20 164411.png  used on i
-nput line 413.
+nput line 419.
 (pdftex.def)             Requested size: 163.74544pt x 93.89073pt.
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 413.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 419.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
-
-[17
+ [17
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./we
 ek_3_img/Screenshot 2025-05-20 164411.png>]
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 439.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 445.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
  [18
 
 ]
-<Screenshot 2025-06-08 at 20-35-06 Planning du Projet LearnExpert - Diagramme d
-e Gantt.png, id=564, 1867.97874pt x 1234.6125pt>
 File: Screenshot 2025-06-08 at 20-35-06 Planning du Projet LearnExpert - Diagra
 mme de Gantt.png Graphic file (type png)
 <use Screenshot 2025-06-08 at 20-35-06 Planning du Projet LearnExpert - Diagram
 me de Gantt.png>
 Package pdftex.def Info: Screenshot 2025-06-08 at 20-35-06 Planning du Projet L
-earnExpert - Diagramme de Gantt.png  used on input line 449.
+earnExpert - Diagramme de Gantt.png  used on input line 455.
 (pdftex.def)             Requested size: 301.33397pt x 199.16216pt.
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 449.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 455.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
  [19
-
- <./Screenshot 2025-06-08 at 20-35-06 Planning du Projet LearnExpert - Diagramm
-e de Gantt.png>]
-File: LOGO_IAAI.png Graphic file (type png)
-<use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 469.
-(pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
-
-[20
 
 ]
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 497.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 475.
+(pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
+ [20
+
+]
+File: LOGO_IAAI.png Graphic file (type png)
+<use LOGO_IAAI.png>
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 503.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
  [21
 
 ]
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 522.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 528.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
  [22
 
 ]
 File: LOGO_IAAI.png Graphic file (type png)
 <use LOGO_IAAI.png>
-Package pdftex.def Info: LOGO_IAAI.png  used on input line 531.
+Package pdftex.def Info: LOGO_IAAI.png  used on input line 537.
 (pdftex.def)             Requested size: 38.2365pt x 28.45274pt.
- [23
+
+[23
 
 ]
 \tf@nav=\write6
@@ -1274,16 +1251,16 @@ Package pdftex.def Info: LOGO_IAAI.png  used on input line 531.
 
  (./presentation.aux)
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: F608128D4F2FE494B2609211869D87F5;1103.
+(rerunfilecheck)             Checksum: 45801C922C5936EBD38B4B06BDF5889F;1016.
  ) 
 Here is how much of TeX's memory you used:
- 25512 strings out of 477985
- 489642 string characters out of 5839381
+ 24740 strings out of 477985
+ 477692 string characters out of 5839381
  1864388 words of memory out of 6000000
- 45123 multiletter control sequences out of 15000+600000
+ 44356 multiletter control sequences out of 15000+600000
  524928 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 128i,15n,122p,387b,789s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,122p,387b,680s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texlive
@@ -1291,10 +1268,10 @@ texlive/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texlive
 dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/cm-super/sfss1728.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/cm-super/sfsx1095.pfb>
-Output written on presentation.pdf (23 pages, 32175720 bytes).
+Output written on presentation.pdf (23 pages, 32038830 bytes).
 PDF statistics:
- 746 PDF objects out of 1000 (max. 8388607)
+ 744 PDF objects out of 1000 (max. 8388607)
  664 compressed objects within 7 object streams
  54 named destinations out of 1000 (max. 500000)
- 182 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 

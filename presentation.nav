@@ -11,14 +11,14 @@
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\beamer@sectionpages {3}{4}}
 \headcommand {\beamer@subsectionpages {3}{4}}
-\headcommand {\sectionentry {2}{Méthodologie}{5}{Méthodologie}{0}}
+\headcommand {\sectionentry {2}{Methodology}{5}{Methodology}{0}}
 \headcommand {\slideentry {2}{0}{1}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
 \headcommand {\slideentry {2}{0}{2}{6/6}{}{0}}
 \headcommand {\beamer@framepages {6}{6}}
 \headcommand {\beamer@sectionpages {5}{6}}
 \headcommand {\beamer@subsectionpages {5}{6}}
-\headcommand {\sectionentry {3}{Architecture du Système}{7}{Architecture du Système}{0}}
+\headcommand {\sectionentry {3}{System Architecture}{7}{System Architecture}{0}}
 \headcommand {\slideentry {3}{0}{1}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
 \headcommand {\slideentry {3}{0}{2}{8/8}{}{0}}
@@ -31,7 +31,7 @@
 \headcommand {\beamer@framepages {11}{11}}
 \headcommand {\beamer@sectionpages {7}{11}}
 \headcommand {\beamer@subsectionpages {7}{11}}
-\headcommand {\sectionentry {4}{Fonctionnalités Principales}{12}{Fonctionnalités Principales}{0}}
+\headcommand {\sectionentry {4}{Key Features \& Functionality}{12}{Key Features \& Functionality}{0}}
 \headcommand {\slideentry {4}{0}{1}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
 \headcommand {\slideentry {4}{0}{2}{13/13}{}{0}}
@@ -42,7 +42,7 @@
 \headcommand {\beamer@framepages {15}{15}}
 \headcommand {\beamer@sectionpages {12}{15}}
 \headcommand {\beamer@subsectionpages {12}{15}}
-\headcommand {\sectionentry {5}{Points Forts de l'Implémentation}{16}{Points Forts de l'Implémentation}{0}}
+\headcommand {\sectionentry {5}{Implementation Highlights}{16}{Implementation Highlights}{0}}
 \headcommand {\slideentry {5}{0}{1}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
 \headcommand {\slideentry {5}{0}{2}{17/17}{}{0}}
@@ -51,14 +51,14 @@
 \headcommand {\beamer@framepages {18}{18}}
 \headcommand {\beamer@sectionpages {16}{18}}
 \headcommand {\beamer@subsectionpages {16}{18}}
-\headcommand {\sectionentry {6}{Calendrier du Projet}{19}{Calendrier du Projet}{0}}
+\headcommand {\sectionentry {6}{Project Timeline}{19}{Project Timeline}{0}}
 \headcommand {\slideentry {6}{0}{1}{19/19}{}{0}}
 \headcommand {\beamer@framepages {19}{19}}
 \headcommand {\slideentry {6}{0}{2}{20/20}{}{0}}
 \headcommand {\beamer@framepages {20}{20}}
 \headcommand {\beamer@sectionpages {19}{20}}
 \headcommand {\beamer@subsectionpages {19}{20}}
-\headcommand {\sectionentry {7}{Conclusion et Perspectives}{21}{Conclusion et Perspectives}{0}}
+\headcommand {\sectionentry {7}{Conclusion and Future Work}{21}{Conclusion and Future Work}{0}}
 \headcommand {\slideentry {7}{0}{1}{21/21}{}{0}}
 \headcommand {\beamer@framepages {21}{21}}
 \headcommand {\slideentry {7}{0}{2}{22/22}{}{0}}
