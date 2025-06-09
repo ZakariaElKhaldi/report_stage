@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning du Projet LearnExpert - Diagramme de Gantt</title>
+    <style>
+        :root {
+            --phase1-color: #4a86e8;
+            --phase2-color: #6aa84f;
+            --phase3-color: #e69138;
+            --phase4-color: #8e7cc3;
+            --phase5-color: #cc0000;
+            --phase6-color: #f1c232;
+            --completed-opacity: 0.8;
+            --active-opacity: 1;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            color: #333;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .gantt-container {
+            overflow-x: auto;
+            margin-bottom: 30px;
+        }
+        
+        .gantt {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 1000px;
+        }
+        
+        .gantt th, .gantt td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .gantt th {
+            background-color: #f2f2f2;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .gantt tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .gantt-timeline {
+            position: relative;
+            height: 30px;
+        }
+        
+        .gantt-bar {
+            position: absolute;
+            height: 20px;
+            border-radius: 3px;
+            top: 5px;
+        }
+        
+        .phase-header {
+            font-weight: bold;
+            background-color: #e6e6e6;
+        }
+        
+        .done {
+            opacity: var(--completed-opacity);
+        }
+        
+        .active {
+            opacity: var(--active-opacity);
+            border: 2px solid #333;
+        }
+        
+        .phase1 {
+            background-color: var(--phase1-color);
+        }
+        
+        .phase2 {
+            background-color: var(--phase2-color);
+        }
+        
+        .phase3 {
+            background-color: var(--phase3-color);
+        }
+        
+        .phase4 {
+            background-color: var(--phase4-color);
+        }
+        
+        .phase5 {
+            background-color: var(--phase5-color);
+        }
+        
+        .phase6 {
+            background-color: var(--phase6-color);
+        }
+        
+        .legend {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 0 15px 10px 0;
+        }
+        
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        
+        .date-info {
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Planning et Réalisation du Projet LearnExpert</h1>
+    <div class="date-info">Période: 10 Mai 2025 - 8 Juin 2025</div>
+    
+    <div class="gantt-container">
+        <table class="gantt">
+            <thead>
+                <tr>
+                    <th style="width: 300px;">Tâche</th>
+                    <th style="width: 100px;">Début</th>
+                    <th style="width: 100px;">Fin</th>
+                    <th style="width: 80px;">Durée</th>
+                    <th>Chronologie (10 Mai - 8 Juin 2025)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Phase 1 -->
+                <tr class="phase-header">
+                    <td colspan="5">Phase 1: Conception</td>
+                </tr>
+                <tr>
+                    <td>Analyse des besoins</td>
+                    <td>10/05/2025</td>
+                    <td>12/05/2025</td>
+                    <td>3j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase1 done" style="left: 0%; width: 10%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Définition vision et acteurs</td>
+                    <td>10/05/2025</td>
+                    <td>11/05/2025</td>
+                    <td>2j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase1 done" style="left: 0%; width: 7%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Architecture microservices</td>
+                    <td>11/05/2025</td>
+                    <td>13/05/2025</td>
+                    <td>3j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase1 done" style="left: 3%; width: 10%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Choix technologies (Next.js/Go/Python/Node.js)</td>
+                    <td>12/05/2025</td>
+                    <td>13/05/2025</td>
+                    <td>2j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase1 done" style="left: 7%; width: 7%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Diagrammes UML</td>
+                    <td>12/05/2025</td>
+                    <td>14/05/2025</td>
+                    <td>3j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase1 done" style="left: 7%; width: 10%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                
+                <!-- Phase 2 -->
+                <tr class="phase-header">
+                    <td colspan="5">Phase 2: Frontend Initial</td>
+                </tr>
+                <tr>
+                    <td>Configuration projet Next.js</td>
+                    <td>13/05/2025</td>
+                    <td>14/05/2025</td>
+                    <td>2j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase2 done" style="left: 10%; width: 7%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mise en place système de routage</td>
+                    <td>14/05/2025</td>
+                    <td>15/05/2025</td>
+                    <td>2j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase2 done" style="left: 13%; width: 7%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Développement page d'accueil</td>
+                    <td>15/05/2025</td>
+                    <td>17/05/2025</td>
+                    <td>3j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase2 done" style="left: 17%; width: 10%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Composants UI réutilisables</td>
+                    <td>16/05/2025</td>
+                    <td>18/05/2025</td>
+                    <td>3j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase2 done" style="left: 20%; width: 10%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pages secondaires (FAQ, Contact)</td>
+                    <td>17/05/2025</td>
+                    <td>18/05/2025</td>
+                    <td>2j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase2 done" style="left: 23%; width: 7%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                
+                <!-- Phase 3 -->
+                <tr class="phase-header">
+                    <td colspan="5">Phase 3: Données et MongoDB</td>
+                </tr>
+                <tr>
+                    <td>Scraping et nettoyage données</td>
+                    <td>19/05/2025</td>
+                    <td>22/05/2025</td>
+                    <td>4j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase3 done" style="left: 30%; width: 13%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Intégration MongoDB Atlas</td>
+                    <td>19/05/2025</td>
+                    <td>20/05/2025</td>
+                    <td>2j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase3 done" style="left: 30%; width: 7%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pipeline de traitement LLM</td>
+                    <td>22/05/2025</td>
+                    <td>23/05/2025</td>
+                    <td>2j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase3 done" style="left: 40%; width: 7%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Finalisation traitement JSON</td>
+                    <td>24/05/2025</td>
+                    <td>24/05/2025</td>
+                    <td>1j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase3 done" style="left: 47%; width: 3%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Déploiement sur Vercel</td>
+                    <td>24/05/2025</td>
+                    <td>24/05/2025</td>
+                    <td>1j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase3 done" style="left: 47%; width: 3%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                
+                <!-- Phase 4 -->
+                <tr class="phase-header">
+                    <td colspan="5">Phase 4: UX et Authentication</td>
+                </tr>
+                <tr>
+                    <td>Amélioration expérience code</td>
+                    <td>26/05/2025</td>
+                    <td>27/05/2025</td>
+                    <td>2j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase4 done" style="left: 53%; width: 7%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Implémentation Plan du Cours</td>
+                    <td>26/05/2025</td>
+                    <td>26/05/2025</td>
+                    <td>1j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase4 done" style="left: 53%; width: 3%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Optimisation barre latérale</td>
+                    <td>27/05/2025</td>
+                    <td>27/05/2025</td>
+                    <td>1j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase4 done" style="left: 57%; width: 3%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Recherche SEO</td>
+                    <td>28/05/2025</td>
+                    <td>30/05/2025</td>
+                    <td>3j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase4 done" style="left: 60%; width: 10%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Interfaces d'authentification</td>
+                    <td>29/05/2025</td>
+                    <td>31/05/2025</td>
+                    <td>3j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase4 done" style="left: 63%; width: 10%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Test Nginx comme API Gateway</td>
+                    <td>31/05/2025</td>
+                    <td>31/05/2025</td>
+                    <td>1j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase4 done" style="left: 70%; width: 3%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                
+                <!-- Phase 5 -->
+                <tr class="phase-header">
+                    <td colspan="5">Phase 5: Backend</td>
+                </tr>
+                <tr>
+                    <td>Configuration Nginx</td>
+                    <td>02/06/2025</td>
+                    <td>03/06/2025</td>
+                    <td>2j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase5 done" style="left: 77%; width: 7%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Développement service IAM</td>
+                    <td>02/06/2025</td>
+                    <td>04/06/2025</td>
+                    <td>3j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase5 done" style="left: 77%; width: 10%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Intégration API avec frontend</td>
+                    <td>04/06/2025</td>
+                    <td>05/06/2025</td>
+                    <td>2j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase5 done" style="left: 83%; width: 7%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Microservices initiales</td>
+                    <td>05/06/2025</td>
+                    <td>06/06/2025</td>
+                    <td>2j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase5 done" style="left: 87%; width: 7%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                
+                <!-- Phase 6 -->
+                <tr class="phase-header">
+                    <td colspan="5">Phase 6: Design Landing Page IAAI</td>
+                </tr>
+                <tr>
+                    <td>Prototype section Hero</td>
+                    <td>03/06/2025</td>
+                    <td>03/06/2025</td>
+                    <td>1j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase6 done" style="left: 80%; width: 3%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Exploration effets visuels</td>
+                    <td>03/06/2025</td>
+                    <td>03/06/2025</td>
+                    <td>1j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase6 done" style="left: 80%; width: 3%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Intégration branding IAAI</td>
+                    <td>04/06/2025</td>
+                    <td>05/06/2025</td>
+                    <td>2j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase6 active" style="left: 83%; width: 7%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Finalisation page d'accueil</td>
+                    <td>05/06/2025</td>
+                    <td>07/06/2025</td>
+                    <td>3j</td>
+                    <td>
+                        <div class="gantt-timeline">
+                            <div class="gantt-bar phase6 active" style="left: 87%; width: 10%;"></div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color phase1"></div>
+            <span>Phase 1: Conception</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color phase2"></div>
+            <span>Phase 2: Frontend Initial</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color phase3"></div>
+            <span>Phase 3: Données et MongoDB</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color phase4"></div>
+            <span>Phase 4: UX et Authentication</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color phase5"></div>
+            <span>Phase 5: Backend</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color phase6"></div>
+            <span>Phase 6: Design Landing Page IAAI</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="opacity: var(--completed-opacity);"></div>
+            <span>Terminé</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="border: 2px solid #333; width: 16px; height: 16px;"></div>
+            <span>En cours</span>
+        </div>
+    </div>
+</body>
+</html> 

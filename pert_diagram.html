@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramme PERT du Projet LearnExpert</title>
+    <style>
+        :root {
+            --phase1-color: #add8e6;
+            --phase1-border: #4a86e8;
+            --phase2-color: #d4edda;
+            --phase2-border: #6aa84f;
+            --phase3-color: #fff3cd;
+            --phase3-border: #e69138;
+            --phase4-color: #e8e5f5;
+            --phase4-border: #8e7cc3;
+            --phase5-color: #f8d7da;
+            --phase5-border: #cc0000;
+            --phase6-color: #fff2cc;
+            --phase6-border: #f1c232;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fafafa;
+            color: #333;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .diagram-container {
+            width: 100%;
+            overflow-x: auto;
+            padding-bottom: 20px;
+            border: 1px solid #eee;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .pert-diagram {
+            width: 2400px;
+            height: 1800px;
+            position: relative;
+            margin: 20px;
+        }
+        
+        .node {
+            position: absolute;
+            width: 180px;
+            border-radius: 6px;
+            padding: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            text-align: center;
+            z-index: 10;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .node:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 20;
+        }
+        
+        .node-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .node-duration {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        
+        .node-dates {
+            font-size: 11px;
+            color: #666;
+        }
+        
+        .phase1 {
+            background-color: var(--phase1-color);
+            border: 2px solid var(--phase1-border);
+        }
+        
+        .phase2 {
+            background-color: var(--phase2-color);
+            border: 2px solid var(--phase2-border);
+        }
+        
+        .phase3 {
+            background-color: var(--phase3-color);
+            border: 2px solid var(--phase3-border);
+        }
+        
+        .phase4 {
+            background-color: var(--phase4-color);
+            border: 2px solid var(--phase4-border);
+        }
+        
+        .phase5 {
+            background-color: var(--phase5-color);
+            border: 2px solid var(--phase5-border);
+        }
+        
+        .phase6 {
+            background-color: var(--phase6-color);
+            border: 2px solid var(--phase6-border);
+        }
+        
+        .active {
+            box-shadow: 0 0 12px 3px rgba(255, 140, 0, 0.7);
+        }
+        
+        /* Legend styles */
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 20px;
+        }
+        
+        .legend-color {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+        
+        .phase1-legend {
+            background-color: var(--phase1-color);
+            border: 2px solid var(--phase1-border);
+        }
+        
+        .phase2-legend {
+            background-color: var(--phase2-color);
+            border: 2px solid var(--phase2-border);
+        }
+        
+        .phase3-legend {
+            background-color: var(--phase3-color);
+            border: 2px solid var(--phase3-border);
+        }
+        
+        .phase4-legend {
+            background-color: var(--phase4-color);
+            border: 2px solid var(--phase4-border);
+        }
+        
+        .phase5-legend {
+            background-color: var(--phase5-color);
+            border: 2px solid var(--phase5-border);
+        }
+        
+        .phase6-legend {
+            background-color: var(--phase6-color);
+            border: 2px solid var(--phase6-border);
+        }
+
+        /* Style for phase headers */
+        .phase-header {
+            position: absolute;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8px 15px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            z-index: 5;
+        }
+        
+        /* Path styles */
+        .connector-path {
+            fill: none;
+            stroke: #666;
+            stroke-width: 2px;
+        }
+        
+        .critical-path {
+            stroke: #ff5733;
+            stroke-width: 2.5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Diagramme PERT du Projet LearnExpert</h1>
+    
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color phase1-legend"></div>
+            <span>Phase 1: Conception</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color phase2-legend"></div>
+            <span>Phase 2: Frontend Initial</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color phase3-legend"></div>
+            <span>Phase 3: Données et MongoDB</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color phase4-legend"></div>
+            <span>Phase 4: UX et Authentication</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color phase5-legend"></div>
+            <span>Phase 5: Backend</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color phase6-legend"></div>
+            <span>Phase 6: Design Landing Page IAAI</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="box-shadow: 0 0 12px 3px rgba(255, 140, 0, 0.7); background: white;"></div>
+            <span>En cours</span>
+        </div>
+        <div class="legend-item">
+            <div style="height: 3px; width: 30px; background-color: #ff5733; margin-right: 8px;"></div>
+            <span>Chemin critique</span>
+        </div>
+    </div>
+    
+    <div class="diagram-container">
+        <div class="pert-diagram" id="pert-diagram">
+            <!-- Phase headers and nodes will be added by JavaScript -->
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const diagram = document.getElementById('pert-diagram');
+            
+            // Create phase headers
+            const phaseHeaders = [
+                { name: "Phase 1: Conception", x: 50, y: 20 },
+                { name: "Phase 2: Frontend Initial", x: 650, y: 20 },
+                { name: "Phase 3: Données et MongoDB", x: 1550, y: 20 },
+                { name: "Phase 4: UX et Authentication", x: 50, y: 500 },
+                { name: "Phase 5: Backend", x: 1150, y: 500 },
+                { name: "Phase 6: Design Landing Page IAAI", x: 600, y: 980 }
+            ];
+            
+            phaseHeaders.forEach(header => {
+                const headerEl = document.createElement('div');
+                headerEl.className = 'phase-header';
+                headerEl.textContent = header.name;
+                headerEl.style.left = `${header.x}px`;
+                headerEl.style.top = `${header.y}px`;
+                diagram.appendChild(headerEl);
+            });
+            
+            // Task definitions with more spacing between nodes
+            const tasks = [
+                // Phase 1: Conception - Row 1
+                { id: 'a1', name: 'Analyse des besoins', duration: '3j', start: '10/05', end: '12/05', 
+                  x: 50, y: 80, phase: 'phase1', dependencies: [] },
+                { id: 'a3', name: 'Architecture microservices', duration: '3j', start: '11/05', end: '13/05', 
+                  x: 350, y: 80, phase: 'phase1', dependencies: ['a1'] },
+                
+                // Phase 1: Conception - Row 2
+                { id: 'a2', name: 'Définition vision et acteurs', duration: '2j', start: '10/05', end: '11/05', 
+                  x: 50, y: 200, phase: 'phase1', dependencies: [] },
+                { id: 'a4', name: 'Choix technologies', duration: '2j', start: '12/05', end: '13/05', 
+                  x: 350, y: 200, phase: 'phase1', dependencies: ['a2'] },
+                
+                // Phase 1: Conception - Row 3
+                { id: 'a5', name: 'Diagrammes UML', duration: '3j', start: '12/05', end: '14/05', 
+                  x: 350, y: 320, phase: 'phase1', dependencies: ['a2'] },
+                
+                // Phase 2: Frontend Initial
+                { id: 'b1', name: 'Configuration projet Next.js', duration: '2j', start: '13/05', end: '14/05', 
+                  x: 650, y: 140, phase: 'phase2', dependencies: ['a3', 'a4'] },
+                { id: 'b2', name: 'Mise en place système de routage', duration: '2j', start: '14/05', end: '15/05', 
+                  x: 950, y: 140, phase: 'phase2', dependencies: ['b1'] },
+                
+                // Phase 2: Frontend Initial - Spread out vertically and horizontally
+                { id: 'b3', name: 'Développement page d\'accueil', duration: '3j', start: '15/05', end: '17/05', 
+                  x: 1250, y: 80, phase: 'phase2', dependencies: ['b2'] },
+                { id: 'b4', name: 'Composants UI réutilisables', duration: '3j', start: '16/05', end: '18/05', 
+                  x: 1250, y: 200, phase: 'phase2', dependencies: ['b2'] },
+                { id: 'b5', name: 'Pages secondaires', duration: '2j', start: '17/05', end: '18/05', 
+                  x: 1250, y: 320, phase: 'phase2', dependencies: ['b3'] },
+                
+                // Phase 3: Données et MongoDB
+                { id: 'c1', name: 'Scraping et nettoyage données', duration: '4j', start: '19/05', end: '22/05', 
+                  x: 1550, y: 80, phase: 'phase3', dependencies: ['b3', 'b4', 'b5'] },
+                { id: 'c2', name: 'Intégration MongoDB Atlas', duration: '2j', start: '19/05', end: '20/05', 
+                  x: 1550, y: 200, phase: 'phase3', dependencies: ['b3', 'b4', 'b5'] },
+                
+                { id: 'c3', name: 'Pipeline de traitement LLM', duration: '2j', start: '22/05', end: '23/05', 
+                  x: 1850, y: 80, phase: 'phase3', dependencies: ['c1'] },
+                { id: 'c4', name: 'Finalisation traitement JSON', duration: '1j', start: '24/05', end: '24/05', 
+                  x: 2150, y: 80, phase: 'phase3', dependencies: ['c3'] },
+                { id: 'c5', name: 'Déploiement sur Vercel', duration: '1j', start: '24/05', end: '24/05', 
+                  x: 2150, y: 200, phase: 'phase3', dependencies: ['c4'] },
+                
+                // Phase 4: UX et Authentication 
+                { id: 'd1', name: 'Amélioration expérience code', duration: '2j', start: '26/05', end: '27/05', 
+                  x: 50, y: 560, phase: 'phase4', dependencies: ['c5'] },
+                { id: 'd2', name: 'Implémentation Plan du Cours', duration: '1j', start: '26/05', end: '26/05', 
+                  x: 50, y: 680, phase: 'phase4', dependencies: ['c5'] },
+                
+                { id: 'd3', name: 'Optimisation barre latérale', duration: '1j', start: '27/05', end: '27/05', 
+                  x: 350, y: 620, phase: 'phase4', dependencies: ['d1', 'd2'] },
+                
+                { id: 'd4', name: 'Recherche SEO', duration: '3j', start: '28/05', end: '30/05', 
+                  x: 650, y: 560, phase: 'phase4', dependencies: ['d3'] },
+                { id: 'd5', name: 'Interfaces d\'authentification', duration: '3j', start: '29/05', end: '31/05', 
+                  x: 650, y: 680, phase: 'phase4', dependencies: ['d3'] },
+                
+                { id: 'd6', name: 'Test Nginx comme API Gateway', duration: '1j', start: '31/05', end: '31/05', 
+                  x: 950, y: 620, phase: 'phase4', dependencies: ['d4', 'd5'] },
+                
+                // Phase 5: Backend
+                { id: 'e1', name: 'Configuration Nginx', duration: '2j', start: '02/06', end: '03/06', 
+                  x: 1250, y: 560, phase: 'phase5', dependencies: ['d6'] },
+                { id: 'e2', name: 'Développement service IAM', duration: '3j', start: '02/06', end: '04/06', 
+                  x: 1250, y: 680, phase: 'phase5', dependencies: ['d6'] },
+                
+                { id: 'e3', name: 'Intégration API avec frontend', duration: '2j', start: '04/06', end: '05/06', 
+                  x: 1550, y: 620, phase: 'phase5', dependencies: ['e1', 'e2'] },
+                
+                { id: 'e4', name: 'Microservices initiales', duration: '2j', start: '05/06', end: '06/06', 
+                  x: 1850, y: 620, phase: 'phase5', dependencies: ['e3'] },
+                
+                // Phase 6: Design Landing Page IAAI
+                { id: 'f1', name: 'Prototype section Hero', duration: '1j', start: '03/06', end: '03/06', 
+                  x: 650, y: 1040, phase: 'phase6', dependencies: ['e1'] },
+                
+                { id: 'f2', name: 'Exploration effets visuels', duration: '1j', start: '03/06', end: '03/06', 
+                  x: 950, y: 1040, phase: 'phase6', dependencies: ['f1'] },
+                
+                { id: 'f3', name: 'Intégration branding IAAI', duration: '2j', start: '04/06', end: '05/06', 
+                  x: 1250, y: 1040, phase: 'phase6', dependencies: ['f2'], active: true },
+                
+                { id: 'f4', name: 'Finalisation page d\'accueil', duration: '3j', start: '05/06', end: '07/06', 
+                  x: 1550, y: 1040, phase: 'phase6', dependencies: ['f3'], active: true }
+            ];
+            
+            // Store node positions for path routing
+            const nodePositions = {};
+            
+            // Create nodes
+            tasks.forEach(task => {
+                const node = document.createElement('div');
+                node.id = task.id;
+                node.className = `node ${task.phase}${task.active ? ' active' : ''}`;
+                node.style.left = `${task.x}px`;
+                node.style.top = `${task.y}px`;
+                
+                node.innerHTML = `
+                    <div class="node-title">${task.name}</div>
+                    <div class="node-duration">Durée: ${task.duration}</div>
+                    <div class="node-dates">${task.start} - ${task.end}</div>
+                `;
+                
+                diagram.appendChild(node);
+                
+                // Store node position for path routing
+                nodePositions[task.id] = {
+                    left: task.x,
+                    top: task.y,
+                    right: task.x + 180,
+                    bottom: task.y + 60,
+                    centerX: task.x + 90,
+                    centerY: task.y + 30
+                };
+            });
+            
+            // Critical path tasks
+            const criticalTasks = ['a1', 'a3', 'b1', 'b2', 'b3', 'c1', 'c3', 'c4', 'c5', 'd1', 'd3', 'd4', 'd6', 'e1', 'e3', 'e4'];
+            
+            // Create SVG for paths
+            const svgContainer = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            svgContainer.setAttribute("width", "100%");
+            svgContainer.setAttribute("height", "100%");
+            svgContainer.style.position = "absolute";
+            svgContainer.style.top = "0";
+            svgContainer.style.left = "0";
+            svgContainer.style.zIndex = "1";
+            svgContainer.style.pointerEvents = "none";
+            diagram.appendChild(svgContainer);
+            
+            // Create arrow marker definition
+            const defs = document.createElementNS("http://www.w3.org/2000/svg", "defs");
+            svgContainer.appendChild(defs);
+            
+            // Arrow for regular paths
+            const marker = document.createElementNS("http://www.w3.org/2000/svg", "marker");
+            marker.setAttribute("id", "arrowhead");
+            marker.setAttribute("markerWidth", "10");
+            marker.setAttribute("markerHeight", "7");
+            marker.setAttribute("refX", "10");
+            marker.setAttribute("refY", "3.5");
+            marker.setAttribute("orient", "auto");
+            defs.appendChild(marker);
+            
+            const polygon = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
+            polygon.setAttribute("points", "0 0, 10 3.5, 0 7");
+            polygon.setAttribute("fill", "#666");
+            marker.appendChild(polygon);
+            
+            // Arrow for critical paths
+            const criticalMarker = document.createElementNS("http://www.w3.org/2000/svg", "marker");
+            criticalMarker.setAttribute("id", "critical-arrowhead");
+            criticalMarker.setAttribute("markerWidth", "10");
+            criticalMarker.setAttribute("markerHeight", "7");
+            criticalMarker.setAttribute("refX", "10");
+            criticalMarker.setAttribute("refY", "3.5");
+            criticalMarker.setAttribute("orient", "auto");
+            defs.appendChild(criticalMarker);
+            
+            const criticalPolygon = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
+            criticalPolygon.setAttribute("points", "0 0, 10 3.5, 0 7");
+            criticalPolygon.setAttribute("fill", "#ff5733");
+            criticalMarker.appendChild(criticalPolygon);
+            
+            // Process dependencies and draw paths
+            setTimeout(() => {
+                // First, collect all nodes that need to be avoided
+                const obstacles = tasks.map(task => {
+                    return {
+                        id: task.id,
+                        left: task.x - 10,
+                        right: task.x + 190,
+                        top: task.y - 10,
+                        bottom: task.y + 70
+                    };
+                });
+                
+                // Process all connections
+                tasks.forEach(task => {
+                    if (!task.dependencies || task.dependencies.length === 0) return;
+                    
+                    task.dependencies.forEach(depId => {
+                        // Find source task
+                        const sourceTask = tasks.find(t => t.id === depId);
+                        if (!sourceTask) return;
+                        
+                        // Determine if this is part of the critical path
+                        const isCriticalPath = criticalTasks.includes(sourceTask.id) && criticalTasks.includes(task.id);
+                        
+                        // Calculate start and end points
+                        const startX = sourceTask.x + 180; // Right side of source
+                        const startY = sourceTask.y + 35; // Middle height
+                        const endX = task.x; // Left side of target
+                        const endY = task.y + 35; // Middle height
+                        
+                        // Generate a path that avoids obstacles
+                        const pathData = generatePathAvoidingObstacles(
+                            startX, startY, endX, endY, 
+                            obstacles.filter(o => o.id !== sourceTask.id && o.id !== task.id)
+                        );
+                        
+                        // Create the path
+                        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                        path.setAttribute("d", pathData);
+                        path.setAttribute("class", `connector-path${isCriticalPath ? ' critical-path' : ''}`);
+                        path.setAttribute("marker-end", isCriticalPath ? "url(#critical-arrowhead)" : "url(#arrowhead)");
+                        
+                        svgContainer.appendChild(path);
+                    });
+                });
+                
+                // Function to generate a path that avoids obstacles
+                function generatePathAvoidingObstacles(startX, startY, endX, endY, obstacles) {
+                    // Basic straight line path
+                    if (obstacles.length === 0) {
+                        return `M ${startX} ${startY} L ${endX} ${endY}`;
+                    }
+                    
+                    // First check if we can draw a direct horizontal then vertical path
+                    let pathBlocked = false;
+                    
+                    // Horizontal segment check
+                    const midX = startX + (endX - startX) / 2;
+                    
+                    // Determine if we need a more complex path
+                    const horizontalDist = Math.abs(endX - startX);
+                    const verticalDist = Math.abs(endY - startY);
+                    const needComplexRouting = verticalDist > 80 || horizontalDist < 100;
+                    
+                    // For nodes on different vertical levels, use a smoother S-curve
+                    if (needComplexRouting) {
+                        // Use cubic bezier for S-curve
+                        const ctrlPointDist = Math.min(150, horizontalDist / 3);
+                        return `M ${startX} ${startY} C ${startX + ctrlPointDist} ${startY}, ${endX - ctrlPointDist} ${endY}, ${endX} ${endY}`;
+                    } else {
+                        // For nodes on similar vertical levels, use a simpler horizontal then vertical route
+                        // Check if there are obstacles in the way
+                        for (const obstacle of obstacles) {
+                            if (horizontalPathIntersectsObstacle(startX, startY, endX, obstacle) ||
+                                verticalPathIntersectsObstacle(endX, startY, endY, obstacle)) {
+                                pathBlocked = true;
+                                break;
+                            }
+                        }
+                        
+                        if (!pathBlocked) {
+                            // Can use a simple path
+                            return `M ${startX} ${startY} L ${midX} ${startY} L ${midX} ${endY} L ${endX} ${endY}`;
+                        } else {
+                            // Need a more complex path with offset
+                            const offsetY = Math.sign(endY - startY) * 40; // 40px offset in the right direction
+                            
+                            // Try different offset positions until we find one that doesn't hit obstacles
+                            for (let multiplier = 1; multiplier <= 5; multiplier++) {
+                                const testOffsetY = offsetY * multiplier;
+                                const waypoint1Y = startY + testOffsetY;
+                                const waypoint2Y = endY - testOffsetY;
+                                
+                                let waypointBlocked = false;
+                                for (const obstacle of obstacles) {
+                                    if (horizontalPathIntersectsObstacle(startX, startY, startX + 40, obstacle) ||
+                                        verticalPathIntersectsObstacle(startX + 40, startY, waypoint1Y, obstacle) ||
+                                        horizontalPathIntersectsObstacle(startX + 40, waypoint1Y, endX - 40, obstacle) ||
+                                        verticalPathIntersectsObstacle(endX - 40, waypoint1Y, waypoint2Y, obstacle) ||
+                                        horizontalPathIntersectsObstacle(endX - 40, waypoint2Y, endX, obstacle) ||
+                                        verticalPathIntersectsObstacle(endX, waypoint2Y, endY, obstacle)) {
+                                        waypointBlocked = true;
+                                        break;
+                                    }
+                                }
+                                
+                                if (!waypointBlocked) {
+                                    // Found a clear path
+                                    return `M ${startX} ${startY} 
+                                            L ${startX + 40} ${startY} 
+                                            L ${startX + 40} ${waypoint1Y} 
+                                            L ${endX - 40} ${waypoint1Y} 
+                                            L ${endX - 40} ${waypoint2Y} 
+                                            L ${endX} ${waypoint2Y} 
+                                            L ${endX} ${endY}`;
+                                }
+                            }
+                            
+                            // If all else fails, use a curved path
+                            return `M ${startX} ${startY} Q ${startX + horizontalDist/3} ${startY}, ${startX + horizontalDist/2} ${startY + (endY-startY)/2} Q ${endX - horizontalDist/3} ${endY}, ${endX} ${endY}`;
+                        }
+                    }
+                }
+                
+                // Helper functions to check if a path segment intersects an obstacle
+                function horizontalPathIntersectsObstacle(x1, y, x2, obstacle) {
+                    const minX = Math.min(x1, x2);
+                    const maxX = Math.max(x1, x2);
+                    
+                    return y > obstacle.top && y < obstacle.bottom && 
+                           maxX > obstacle.left && minX < obstacle.right;
+                }
+                
+                function verticalPathIntersectsObstacle(x, y1, y2, obstacle) {
+                    const minY = Math.min(y1, y2);
+                    const maxY = Math.max(y1, y2);
+                    
+                    return x > obstacle.left && x < obstacle.right && 
+                           maxY > obstacle.top && minY < obstacle.bottom;
+                }
+                
+            }, 100);
+        });
+    </script>
+</body>
+</html> 
