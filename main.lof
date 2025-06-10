@@ -3,52 +3,54 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces \textbf {Organigramme et structure de gouvernance de l'IAAI Academy}}}{14}{figure.0.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces \textbf {Panorama des formations et domaines d'expertise de l'IAAI Academy}}}{15}{figure.0.3}%
 \contentsline {figure}{\numberline {4}{\ignorespaces \textbf {Approche pédagogique innovante de l'IAAI Academy}}}{16}{figure.0.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces \textbf {Diagramme de cas d'utilisation} montrant les principales fonctionnalités accessibles par les acteurs.}}{23}{figure.0.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces \textbf {Diagramme de séquence} illustrant le processus d'inscription et d'abonnement.}}{24}{figure.0.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces \textbf {Diagramme de classes} de la plateforme e-learning montrant les principales entités et leurs relations.}}{25}{figure.0.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces \textbf {Modèle de données du service IAM} pour la gestion des utilisateurs et des accès.}}{26}{figure.0.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces \textbf {Modèle de données du service de contenu} pour la gestion des cours et du matériel pédagogique.}}{27}{figure.0.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces \textbf {Modèle de données du service de facturation} pour la gestion des abonnements et des paiements.}}{28}{figure.0.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces \textbf {Modèle de données du service de certification} pour la délivrance et la validation des certificats.}}{29}{figure.0.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces \textbf {Modèle de données du service d'analytique} pour le suivi des performances et la génération de rapports.}}{30}{figure.0.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces \textbf {Modèle de données du service de feedback} pour la collecte et la gestion des retours utilisateurs.}}{31}{figure.0.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces \textbf {Modèle de données du service de notification} pour l'envoi et la gestion des notifications.}}{32}{figure.0.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces \textbf {Modèle de données du service de gestion des médias} pour le stockage et l'accès aux ressources multimédias.}}{33}{figure.0.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces \textbf {Modèle de données du service de configuration} pour la gestion des paramètres globaux de la plateforme.}}{34}{figure.0.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces \textbf {Modèle de données du service de recherche} pour l'indexation et la recherche de contenu.}}{35}{figure.0.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces \textbf {Hero Section} de la page d'accueil avec effets 3D et animations interactives.}}{39}{figure.0.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces \textbf {Section de fonctionnalités} présentant les différentes offres de la plateforme.}}{40}{figure.0.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces \textbf {Interface d'accueil personnalisée} pour les utilisateurs connectés.}}{40}{figure.0.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces \textbf {Barre latérale de navigation} avec accès aux principales fonctionnalités.}}{42}{figure.0.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces \textbf {Interface de consultation des cours} - Partie théorique.}}{43}{figure.0.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces \textbf {Interface de consultation des cours} - Partie pratique avec exercices interactifs.}}{43}{figure.0.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces \textbf {Éditeur de code interactif} avec options d'édition et coloration syntaxique.}}{44}{figure.0.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces \textbf {Mode plein écran} de l'éditeur de code avec thème personnalisé.}}{44}{figure.0.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces \textbf {Plan du cours et barre latérale améliorée} avec focus sur la section active.}}{45}{figure.0.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces \textbf {Tableau de bord premium} avec statistiques détaillées et recommandations personnalisées.}}{46}{figure.0.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces \textbf {Page des paramètres utilisateur} avec options de personnalisation avancées.}}{47}{figure.0.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces \textbf {Page d'exploration des cours} avec filtres avancés et suggestions personnalisées.}}{48}{figure.0.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces \textbf {Forums de discussion} pour l'échange entre apprenants et formateurs.}}{49}{figure.0.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces \textbf {Parcours d'apprentissage personnalisé} avec progression structurée.}}{50}{figure.0.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces \textbf {Tableau de bord administrateur} avec vue d'ensemble des métriques de la plateforme.}}{51}{figure.0.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces \textbf {Interface de gestion des utilisateurs} pour l'administration des comptes.}}{51}{figure.0.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces \textbf {Interface de gestion des cours} permettant l'organisation du contenu éducatif.}}{51}{figure.0.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces \textbf {Interface de modération de contenu} pour maintenir la qualité des ressources.}}{52}{figure.0.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces \textbf {Tableaux de bord analytiques} pour suivre les performances de la plateforme.}}{52}{figure.0.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces \textbf {Gestion des abonnements} pour administrer les plans et paiements.}}{52}{figure.0.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces \textbf {Interfaces de connexion et de réinitialisation de mot de passe} sécurisées.}}{53}{figure.0.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces \textbf {Interface d'audit et de journalisation} pour la surveillance des activités.}}{53}{figure.0.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces \textbf {Étapes du processus d'inscription} - Informations de base et configuration du mot de passe.}}{54}{figure.0.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces \textbf {Email de confirmation} envoyé lors de l'inscription avec lien de vérification.}}{54}{figure.0.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces \textbf {Centre de notifications} avec options de filtrage et de gestion.}}{55}{figure.0.42}%
-\contentsline {figure}{\numberline {43}{\ignorespaces \textbf {Interface des paramètres administrateur} pour la configuration de la plateforme.}}{56}{figure.0.43}%
-\contentsline {figure}{\numberline {44}{\ignorespaces \textbf {Parcours d'apprentissage en Intelligence Artificielle} avec progression structurée.}}{56}{figure.0.44}%
-\contentsline {figure}{\numberline {45}{\ignorespaces \textbf {Parcours en Cybersécurité et Compétences IT} adaptés aux besoins du marché.}}{57}{figure.0.45}%
-\contentsline {figure}{\numberline {46}{\ignorespaces \textbf {Interface d'entraînement aux entretiens techniques} inspirée de LeetCode.}}{57}{figure.0.46}%
-\contentsline {figure}{\numberline {47}{\ignorespaces \textbf {Tableau de bord créateur} avec statistiques d'engagement et de performance.}}{58}{figure.0.47}%
-\contentsline {figure}{\numberline {48}{\ignorespaces \textbf {Interface de création de cours} avec éditeur de contenu intuitif.}}{58}{figure.0.48}%
-\contentsline {figure}{\numberline {49}{\ignorespaces \textbf {Gestion des cours publiés} avec options d'édition et de suivi.}}{58}{figure.0.49}%
-\contentsline {figure}{\numberline {50}{\ignorespaces \textbf {Interface de gestion des consultations} pour les mentors et experts.}}{59}{figure.0.50}%
-\contentsline {figure}{\numberline {51}{\ignorespaces \textbf {Organisation des données dans MongoDB Atlas} avec les différentes collections.}}{59}{figure.0.51}%
-\contentsline {figure}{\numberline {52}{\ignorespaces \textbf {Interface d'administration du pipeline LLM} avec statistiques de traitement.}}{61}{figure.0.52}%
+\contentsline {figure}{\numberline {5}{\ignorespaces \textbf {Diagramme de cas d'utilisation} montrant les principales fonctionnalités accessibles par les acteurs.}}{24}{figure.0.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces \textbf {Diagramme de séquence} illustrant le processus d'authentification et de notification.}}{26}{figure.0.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces \textbf {Diagramme de classes} de la plateforme e-learning montrant les principales entités et leurs relations.}}{28}{figure.0.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces \textbf {Modèle de données du service IAM} pour la gestion des utilisateurs et des autorisations.}}{30}{figure.0.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces \textbf {Modèle de données du service de contenu} pour la gestion des cours et ressources pédagogiques.}}{32}{figure.0.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces \textbf {Modèle de données du service de facturation} pour la gestion des abonnements et des paiements.}}{34}{figure.0.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces \textbf {Modèle de données du service de certification} pour la délivrance et la validation des certificats.}}{36}{figure.0.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces \textbf {Modèle de données du service d'analytique} pour le suivi des performances et la génération de rapports.}}{38}{figure.0.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces \textbf {Modèle de données du service de feedback} pour la collecte et la gestion des retours utilisateurs.}}{40}{figure.0.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces \textbf {Modèle de données du service de notification} pour la gestion des alertes et communications.}}{42}{figure.0.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces \textbf {Modèle de données du service de gestion des médias} pour le stockage et la manipulation des ressources multimédia.}}{44}{figure.0.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces \textbf {Modèle de données du service de configuration} pour la personnalisation et la gestion des paramètres de la plateforme.}}{46}{figure.0.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces \textbf {Modèle de données du service de recherche} pour l'indexation et la recherche de contenu.}}{48}{figure.0.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces \textbf {Diagramme de Gantt} montrant la planification et la progression du projet.}}{51}{figure.0.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces \textbf {Diagramme PERT} montrant les relations et dépendances entre les tâches du projet.}}{53}{figure.0.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces \textbf {Hero Section} de la page d'accueil avec effets 3D et animations interactives.}}{57}{figure.0.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces \textbf {Section de fonctionnalités} présentant les différentes offres de la plateforme.}}{58}{figure.0.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces \textbf {Interface d'accueil personnalisée} pour les utilisateurs connectés.}}{58}{figure.0.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces \textbf {Barre latérale de navigation} avec accès aux principales fonctionnalités.}}{60}{figure.0.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces \textbf {Interface de consultation des cours} - Partie théorique.}}{61}{figure.0.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces \textbf {Interface de consultation des cours} - Partie pratique avec exercices interactifs.}}{61}{figure.0.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces \textbf {Éditeur de code interactif} avec options d'édition et coloration syntaxique.}}{62}{figure.0.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces \textbf {Mode plein écran} de l'éditeur de code avec thème personnalisé.}}{62}{figure.0.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces \textbf {Plan du cours et barre latérale améliorée} avec focus sur la section active.}}{63}{figure.0.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces \textbf {Tableau de bord premium} avec statistiques détaillées et recommandations personnalisées.}}{64}{figure.0.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces \textbf {Page des paramètres utilisateur} avec options de personnalisation avancées.}}{65}{figure.0.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces \textbf {Page d'exploration des cours} avec filtres avancés et suggestions personnalisées.}}{66}{figure.0.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces \textbf {Forums de discussion} pour l'échange entre apprenants et formateurs.}}{67}{figure.0.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces \textbf {Parcours d'apprentissage personnalisé} avec progression structurée.}}{68}{figure.0.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces \textbf {Tableau de bord administrateur} avec vue d'ensemble des métriques de la plateforme.}}{69}{figure.0.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces \textbf {Interface de gestion des utilisateurs} pour l'administration des comptes.}}{69}{figure.0.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces \textbf {Interface de gestion des cours} permettant l'organisation du contenu éducatif.}}{69}{figure.0.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces \textbf {Interface de modération de contenu} pour maintenir la qualité des ressources.}}{70}{figure.0.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces \textbf {Tableaux de bord analytiques} pour suivre les performances de la plateforme.}}{70}{figure.0.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces \textbf {Gestion des abonnements} pour administrer les plans et paiements.}}{70}{figure.0.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces \textbf {Interfaces de connexion et de réinitialisation de mot de passe} sécurisées.}}{71}{figure.0.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces \textbf {Interface d'audit et de journalisation} pour la surveillance des activités.}}{71}{figure.0.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces \textbf {Étapes du processus d'inscription} - Informations de base et configuration du mot de passe.}}{72}{figure.0.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces \textbf {Email de confirmation} envoyé lors de l'inscription avec lien de vérification.}}{72}{figure.0.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces \textbf {Centre de notifications} avec options de filtrage et de gestion.}}{73}{figure.0.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces \textbf {Interface des paramètres administrateur} pour la configuration de la plateforme.}}{74}{figure.0.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces \textbf {Parcours d'apprentissage en Intelligence Artificielle} avec progression structurée.}}{74}{figure.0.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces \textbf {Parcours en Cybersécurité et Compétences IT} adaptés aux besoins du marché.}}{75}{figure.0.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces \textbf {Interface d'entraînement aux entretiens techniques} inspirée de LeetCode.}}{75}{figure.0.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces \textbf {Tableau de bord créateur} avec statistiques d'engagement et de performance.}}{76}{figure.0.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces \textbf {Interface de création de cours} avec éditeur de contenu intuitif.}}{76}{figure.0.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces \textbf {Gestion des cours publiés} avec options d'édition et de suivi.}}{76}{figure.0.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces \textbf {Interface de gestion des consultations} pour les mentors et experts.}}{77}{figure.0.52}%
+\contentsline {figure}{\numberline {53}{\ignorespaces \textbf {Organisation des données dans MongoDB Atlas} avec les différentes collections.}}{77}{figure.0.53}%
+\contentsline {figure}{\numberline {54}{\ignorespaces \textbf {Interface d'administration du pipeline LLM} avec statistiques de traitement.}}{80}{figure.0.54}%
 \contentsfinish 
