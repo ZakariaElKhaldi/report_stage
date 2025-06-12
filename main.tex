@@ -365,11 +365,24 @@ Ce rapport détaille l'ensemble des travaux réalisés durant les différentes s
 % Chapter 6: Assessment and Future Perspectives
 % \include{chapter_6}
 
-\chapter*{Conclusion et Perspectives}
+% Custom command for Conclusion with reduced vertical space
+\makeatletter
+\def\@makeconclusionhead#1{%
+  \vspace*{-10pt}%
+  {\parindent \z@ \raggedright
+    \normalfont
+    \interlinepenalty\@M
+    \Huge \bfseries \color{primary} #1\par\nobreak
+    \vskip 40\p@
+  }
+}
+
+% Use the custom heading
+{\let\@makeschapterhead\@makeconclusionhead
+\chapter*{Conclusion et Perspectives}}
 \addcontentsline{toc}{chapter}{Conclusion et Perspectives}
 \thispagestyle{fancy}
 \setcounter{section}{0}
-\newpage
 
 Ce stage de quatre semaines au sein d'IAAI m'a permis de participer activement au développement de la plateforme e-learning LearnExpert. Cette expérience professionnelle a été particulièrement enrichissante, tant sur le plan technique que personnel.
 
