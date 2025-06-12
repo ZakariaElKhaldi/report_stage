@@ -14,17 +14,7 @@ Cette phase de développement a nécessité l'application de compétences varié
 L'objectif de ce chapitre est de présenter de manière structurée le processus de transformation des spécifications en un produit concret, en mettant en lumière les choix techniques effectués et leur impact sur la qualité finale de la plateforme.
 
 \section{Outils et technologies de développement}
-Pour le développement du projet LearnExpert d'IAAI, plusieurs outils et technologies modernes ont été utilisés afin d'assurer la qualité, la performance et la maintenabilité du code.
-
-\subsection{Environnement de développement}
-L'environnement de développement a été configuré avec les outils suivants :
-\begin{itemize}
-  \item \textbf{Visual Studio Code et Neovim :} Comme éditeurs de code principaux avec des extensions pour React, TypeScript et ESLint
-  \item \textbf{GitHub :} Pour la gestion de versions et la collaboration
-  \item \textbf{Docker :} Pour la conteneurisation des services backend
-  \item \textbf{Postman :} Pour tester les API
-  \item \textbf{Chrome DevTools :} Pour le debugging et l'optimisation des performances frontend
-\end{itemize}
+Pour le développement du projet LearnExpert d'IAAI, plusieurs outils et technologies modernes ont été utilisés afin d'assurer la qualité, la performance et la maintenabilité du code. L'environnement de développement complet est détaillé dans le chapitre 2, section 4.2.
 
 \subsection{Technologies frontend}
 Pour le développement frontend de la plateforme, les technologies suivantes ont été utilisées :
@@ -47,6 +37,36 @@ Pour le développement backend, l'architecture microservices a été implément�
   \item \textbf{Supabase :} Plateforme Backend-as-a-Service pour l'authentification, le stockage et la gestion des bases de données relationnelles
   \item \textbf{Docker Compose :} Pour orchestrer les différents services et faciliter le déploiement
   \item \textbf{Nginx :} Serveur web utilisé comme reverse proxy et API gateway pour le routage des requêtes
+\end{itemize}
+
+\section{Mise en œuvre technique}
+
+La mise en œuvre technique du projet s'est appuyée sur la stack technologique définie dans le chapitre 2 (section 4.1). Cette section se concentre sur les aspects d'implémentation spécifiques et les choix techniques réalisés durant le développement.
+
+\subsection{Implémentation frontend}
+
+En complément des technologies mentionnées dans le chapitre 2, l'implémentation frontend a intégré plusieurs bibliothèques et approches spécifiques :
+
+\begin{itemize}
+  \item \textbf{Architecture basée sur les composants :} Organisation du code en composants réutilisables avec séparation claire des responsabilités
+  \item \textbf{React Context API :} Utilisé pour la gestion d'état globale légère, en complément de Redux pour les états plus complexes
+  \item \textbf{SWR (Stale-While-Revalidate) :} Bibliothèque pour la récupération de données avec mise en cache, revalidation et expérience utilisateur optimisée
+  \item \textbf{CSS Modules :} Pour l'encapsulation des styles spécifiques aux composants, en complément de Tailwind
+  \item \textbf{Next.js API Routes :} Exploitation des routes API serverless pour les fonctionnalités backend légères
+  \item \textbf{Optimisations de performance :} Utilisation du chargement différé (lazy loading), de l'optimisation automatique des images et du code splitting
+\end{itemize}
+
+\subsection{Implémentation backend}
+
+L'architecture microservices mentionnée dans le chapitre 2 a été mise en œuvre avec plusieurs caractéristiques spécifiques :
+
+\begin{itemize}
+  \item \textbf{Isolation des services :} Chaque microservice a été développé dans son propre conteneur Docker avec sa propre base de données
+  \item \textbf{Communication inter-services :} Implémentation de patterns de communication synchrone (REST) et asynchrone (événements)
+  \item \textbf{Gestion des erreurs :} Mise en place de mécanismes de résilience comme les circuit breakers et les retries
+  \item \textbf{Journalisation centralisée :} Configuration d'un système de logs unifié pour faciliter le debugging et le monitoring
+  \item \textbf{Sécurité API :} Implémentation de JWT (JSON Web Tokens) pour l'authentification et l'autorisation entre services
+  \item \textbf{Validation des données :} Utilisation de bibliothèques comme Joi et Zod pour la validation des entrées API
 \end{itemize}
 
 \section{Développement de l'interface utilisateur}

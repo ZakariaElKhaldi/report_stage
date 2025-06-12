@@ -152,14 +152,70 @@ Après analyse des besoins et des contraintes du projet, les technologies suivan
 \end{itemize}
 
 \subsection{Environnement de Développement}
-L'environnement de développement a été configuré pour optimiser la productivité et la collaboration :
+L'environnement de développement a été soigneusement configuré pour maximiser la productivité, la collaboration et la qualité du code :
 
 \begin{itemize}
-  \item Visual Studio Code comme IDE principal
-  \item ESLint et Prettier pour le linting et le formatage du code
-  \item Git et GitHub pour le contrôle de version et la collaboration
-  \item Postman pour le test des API
-  \item Figma pour la conception et le prototypage de l'interface utilisateur
+  \item \textbf{Système d'exploitation :} 
+  \begin{itemize}
+    \item \textbf{Arch Linux :} Comme système principal, offrant une personnalisation poussée et des packages à jour
+    \item \textbf{Hyprland :} Compositeur Wayland moderne et hautement configurable pour une interface fluide et efficace
+    \item \textbf{Pacman :} Gestionnaire de paquets principal, complété par AUR (Arch User Repository) pour les applications tierces
+  \end{itemize}
+  
+  \item \textbf{Éditeurs de code :} 
+  \begin{itemize}
+    \item \textbf{Neovim :} Éditeur principal avec une configuration personnalisée pour le développement web et React
+    \item \textbf{Visual Studio Code :} IDE secondaire avec des extensions pour React, TypeScript, ESLint et Tailwind
+  \end{itemize}
+  
+  \item \textbf{Terminal et multiplexeur :} 
+  \begin{itemize}
+    \item \textbf{Alacritty :} Émulateur de terminal GPU-accelerated pour des performances optimales
+    \item \textbf{Tmux :} Pour la gestion de multiples sessions de travail et la persistance des environnements
+    \item \textbf{Zsh :} Shell avec Oh-My-Zsh pour une productivité accrue et une expérience personnalisée
+  \end{itemize}
+  
+  \item \textbf{Outils de développement :}
+  \begin{itemize}
+    \item \textbf{ESLint et Prettier :} Configuration personnalisée pour le linting et le formatage automatique du code
+    \item \textbf{Chrome DevTools :} Pour le debugging et l'optimisation des performances frontend
+    \item \textbf{React Developer Tools :} Extension pour l'analyse des composants React
+    \item \textbf{Redux DevTools :} Pour le debugging de l'état global de l'application
+  \end{itemize}
+  
+  \item \textbf{Gestion de versions et documentation :}
+  \begin{itemize}
+    \item \textbf{Git :} Avec une configuration avancée incluant des hooks personnalisés
+    \item \textbf{GitHub :} Pour l'hébergement du code, la revue de code et la gestion des problèmes
+    \item \textbf{GitHub Actions :} Pour l'intégration continue et le déploiement automatisé
+    \item \textbf{Obsidian :} Pour la documentation, les notes de développement et la gestion des connaissances
+  \end{itemize}
+  
+  \item \textbf{Outils de test et API :}
+  \begin{itemize}
+    \item \textbf{Postman :} Pour le test et la documentation des API
+    \item \textbf{Jest et React Testing Library :} Pour les tests unitaires et d'intégration
+    \item \textbf{Cypress :} Pour les tests end-to-end
+  \end{itemize}
+  
+  \item \textbf{Design et UX :}
+  \begin{itemize}
+    \item \textbf{Figma :} Pour la conception et le prototypage de l'interface utilisateur
+  \end{itemize}
+  
+  \item \textbf{Gestion de projet :}
+  \begin{itemize}
+    \item \textbf{GitHub Projects :} Pour la gestion agile du développement
+    \item \textbf{Obsidian :} Pour la documentation structurée et le suivi des tâches
+  \end{itemize}
+  
+  \item \textbf{Environnements virtualisés :}
+  \begin{itemize}
+    \item \textbf{Docker et Docker Compose :} Pour la conteneurisation des services et la cohérence des environnements
+    \item \textbf{GNOME Boxes :} Pour la création de machines virtuelles isolées et le test dans différents environnements
+    \item \textbf{nvm (Node Version Manager) :} Pour la gestion des versions de Node.js
+    \item \textbf{pyenv :} Pour la gestion des environnements Python
+  \end{itemize}
 \end{itemize}
 
 Cette stack technologique a été choisie pour sa modernité, sa flexibilité et sa capacité à répondre aux besoins spécifiques du projet, tout en garantissant des performances optimales et une bonne expérience utilisateur. 
@@ -178,7 +234,7 @@ Le diagramme de Gantt offre une représentation chronologique des tâches, perme
   \item La répartition des tâches par phase du projet
 \end{itemize}
 
-\begin{figure}[p]
+\begin{figure}[htb]
   \centering
   \includegraphics[width=0.9\textwidth,keepaspectratio]{images/gestion_projet/gantt_diagram.png}
   \caption{\textbf{Diagramme de Gantt} montrant la planification et la progression du projet.}
@@ -187,12 +243,10 @@ Le diagramme de Gantt offre une représentation chronologique des tâches, perme
 
 Ce diagramme permet d'identifier clairement la durée totale du projet (du 10 mai au 8 juin 2025) ainsi que les périodes d'activité intense où plusieurs tâches se déroulent en parallèle. On peut notamment constater que les phases 1 à 3 (Conception, Frontend initial, Données et MongoDB) se déroulent principalement durant la première moitié du projet, tandis que les phases 4 à 6 (UX et Authentification, Backend, Design Landing Page) occupent la seconde moitié.
 
-\clearpage
-
 \subsection{Diagramme PERT}
 Le diagramme PERT (Program Evaluation and Review Technique) complète le diagramme de Gantt en illustrant les dépendances entre les tâches et le chemin critique du projet.
 
-\begin{figure}[p]
+\begin{figure}[htb]
   \centering
   \includegraphics[width=0.9\textwidth,keepaspectratio]{images/gestion_projet/pert_diagram.png}
   \caption{\textbf{Diagramme PERT} montrant les relations et dépendances entre les tâches du projet.}
@@ -210,8 +264,6 @@ L'analyse du diagramme PERT permet de dégager plusieurs observations importante
   
   \item \textbf{Parallélisation des tâches} : Plusieurs activités peuvent être menées en parallèle, comme le développement des composants UI et la mise en place du système de routage, optimisant ainsi l'utilisation des ressources.
 \end{itemize}
-
-\clearpage
 
 \subsection{Avantages de la Planification Visuelle}
 

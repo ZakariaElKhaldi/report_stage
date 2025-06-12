@@ -62,13 +62,12 @@ La plateforme e-learning conçue repose sur les fonctionnalités essentielles su
 \subsection{Les diagrammes de cas d'utilisation}
 Les diagrammes de cas d'utilisation ont permis de représenter visuellement les interactions entre les acteurs et le système.
 
-\begin{figure}[p]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.52\textwidth,keepaspectratio]{images/usecase_diagram.png}
   \caption{\textbf{Diagramme de cas d'utilisation} montrant les principales fonctionnalités accessibles par les acteurs.}
   \label{fig:usecase_diagram}
 \end{figure}
-\clearpage
 
 \subsection{Les diagrammes de séquence}
 Les diagrammes de séquence ont permis d'illustrer les interactions temporelles entre les différents composants du système pour des scénarios clés.
@@ -84,18 +83,17 @@ Pour illustrer le fonctionnement de l'architecture, voici un exemple de flux de 
   \item \textbf{Service IAM} (Consomme, met à jour le statut utilisateur) \& \textbf{Service de Notification} (Consomme, envoie une confirmation)
 \end{enumerate}
 
-\begin{figure}[p]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.9\textwidth,keepaspectratio]{images/sequence_diagram.png}
   \caption{\textbf{Diagramme de séquence} illustrant le processus d'authentification et de notification.}
   \label{fig:sequence_diagram}
 \end{figure}
-\clearpage
 
 \subsection{Le diagramme de classes}
 Le diagramme de classes a été élaboré pour représenter les principales entités du système et leurs relations.
 
-\begin{figure}[p]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.9\textwidth,keepaspectratio]{week_1_img/class_diagrame.png}
   \caption{\textbf{Diagramme de classes} de la plateforme e-learning montrant les principales entités et leurs relations.}
@@ -103,7 +101,6 @@ Le diagramme de classes a été élaboré pour représenter les principales enti
 \end{figure}
 
 Ce diagramme illustre les relations entre les différentes entités du système, comme les utilisateurs, les cours, les modules, les leçons, les abonnements et les services de consultation. Les cardinalités et les types de relations (composition, agrégation, héritage) ont été définies pour refléter précisément la structure du modèle de données.
-\clearpage
 
 \section{Architecture Adoptée}
 
@@ -139,57 +136,52 @@ La pile technologique définie pour le développement comprend :
 \subsection{Modèles de Données des Services}
 Dans le cadre de cette première phase, des modèles de données préliminaires ont été conçus pour chacun des services identifiés. Voici quelques exemples des structures de données principales :
 
-\subsubsection{Service IAM (Identity and Access Management)}
-\begin{figure}[p]
+\subsubsection{Service d'Authentification et Gestion des Identités (IAM)}
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_Service.pdf.png}
-  \caption{\textbf{Modèle de données du service IAM} pour la gestion des utilisateurs et des autorisations.}
+  \includegraphics[width=0.75\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_Service.pdf.png}
+  \caption{\textbf{Modèle de données du service IAM} pour la gestion des utilisateurs et des permissions.}
   \label{fig:iam_service}
 \end{figure}
 
-\vspace{5pt}
 \small
-\paragraph{Points clés du modèle IAM :}
+\paragraph{Points clés du service IAM :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
-  \item \textbf{Gestion centralisée des utilisateurs} avec tables dédiées aux utilisateurs, rôles et permissions
-  \item \textbf{Support multi-tenant} via la table des entreprises (companies)
-  \item \textbf{Système de référence} permettant le suivi des recommandations et affiliations
-  \item \textbf{Paramètres utilisateurs} stockés de manière structurée pour personnaliser l'expérience
-  \item \textbf{Jetons d'authentification} permettant une gestion sécurisée des sessions
+  \item \textbf{Gestion des utilisateurs} avec profils détaillés et préférences
+  \item \textbf{Système de rôles et permissions} granulaire pour l'accès aux fonctionnalités
+  \item \textbf{Authentification multi-facteurs} pour une sécurité renforcée
+  \item \textbf{Gestion des sessions} avec suivi des appareils connectés
+  \item \textbf{Intégration OAuth} pour connexion via réseaux sociaux et services tiers
 \end{itemize}
 \normalsize
-\clearpage
 
-\subsubsection{Service de Contenu}
-\begin{figure}[p]
+\subsubsection{Service de Gestion de Contenu}
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Content_Service.pdf.png}
+  \includegraphics[width=0.75\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Content_Service.pdf.png}
   \caption{\textbf{Modèle de données du service de contenu} pour la gestion des cours et ressources pédagogiques.}
   \label{fig:content_service}
 \end{figure}
 
-\vspace{5pt}
 \small
 \paragraph{Points clés du service de Contenu :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
-  \item \textbf{Structure hiérarchique} des cours, modules et leçons
-  \item \textbf{Support multimédia} avec gestion des vidéos, documents et quizz
-  \item \textbf{Métadonnées riches} pour faciliter la recherche et la catégorisation
-  \item \textbf{Gestion des versions} permettant la mise à jour du contenu sans perte d'historique
-  \item \textbf{Support multilingue} pour internationaliser le contenu pédagogique
+  \item \textbf{Organisation hiérarchique} des contenus (cours, modules, leçons)
+  \item \textbf{Métadonnées riches} pour la catégorisation et la recherche
+  \item \textbf{Gestion des versions} pour le suivi des modifications
+  \item \textbf{Support multimédia} intégré (texte, code, vidéo, quiz)
+  \item \textbf{Système de prérequis} pour guider la progression des apprenants
 \end{itemize}
 \normalsize
-\clearpage
 
-\subsubsection{Service de Facturation et d'Abonnement}
-\begin{figure}[p]
+\subsubsection{Service de Facturation}
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 Billing_and_Subscription_Service.pdf.png}
-  \caption{\textbf{Modèle de données du service de facturation} pour la gestion des abonnements et des paiements.}
+  \includegraphics[width=0.75\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 Billing_and_Subscription_Service.pdf.png}
+  \caption{\textbf{Modèle de données du service de facturation} pour la gestion des abonnements et paiements.}
   \label{fig:billing_service}
 \end{figure}
 
-\vspace{5pt}
 \small
 \paragraph{Points clés du service de Facturation :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
@@ -200,17 +192,15 @@ Dans le cadre de cette première phase, des modèles de données préliminaires 
   \item \textbf{Intégration} avec les passerelles de paiement externes
 \end{itemize}
 \normalsize
-\clearpage
 
 \subsubsection{Service de Certification}
-\begin{figure}[p]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 Certification_Service.pdf.png}
+  \includegraphics[width=0.75\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 Certification_Service.pdf.png}
   \caption{\textbf{Modèle de données du service de certification} pour la délivrance et la validation des certificats.}
   \label{fig:certification_service}
 \end{figure}
 
-\vspace{5pt}
 \small
 \paragraph{Points clés du service de Certification :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
@@ -221,17 +211,15 @@ Dans le cadre de cette première phase, des modèles de données préliminaires 
   \item \textbf{Historique des certifications} pour chaque utilisateur
 \end{itemize}
 \normalsize
-\clearpage
 
 \subsubsection{Service d'Analytique et Reporting}
-\begin{figure}[p]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 Analytics_and_Reporting_Service.pdf.png}
+  \includegraphics[width=0.75\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 Analytics_and_Reporting_Service.pdf.png}
   \caption{\textbf{Modèle de données du service d'analytique} pour le suivi des performances et la génération de rapports.}
   \label{fig:analytics_service}
 \end{figure}
 
-\vspace{5pt}
 \small
 \paragraph{Points clés du service d'Analytique :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
@@ -242,17 +230,15 @@ Dans le cadre de cette première phase, des modèles de données préliminaires 
   \item \textbf{Système d'alerte} pour identifier les anomalies ou opportunités
 \end{itemize}
 \normalsize
-\clearpage
 
 \subsubsection{Service de Feedback}
-\begin{figure}[p]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Feedback_Service.pdf.png}
+  \includegraphics[width=0.75\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Feedback_Service.pdf.png}
   \caption{\textbf{Modèle de données du service de feedback} pour la collecte et la gestion des retours utilisateurs.}
   \label{fig:feedback_service}
 \end{figure}
 
-\vspace{5pt}
 \small
 \paragraph{Points clés du service de Feedback :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
@@ -263,17 +249,15 @@ Dans le cadre de cette première phase, des modèles de données préliminaires 
   \item \textbf{Gestion des signalements} pour modérer les contenus inappropriés
 \end{itemize}
 \normalsize
-\clearpage
 
 \subsubsection{Service de Notification}
-\begin{figure}[p]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 Notification_Service.pdf.png}
+  \includegraphics[width=0.75\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 Notification_Service.pdf.png}
   \caption{\textbf{Modèle de données du service de notification} pour la gestion des alertes et communications.}
   \label{fig:notification_service}
 \end{figure}
 
-\vspace{5pt}
 \small
 \paragraph{Points clés du service de Notification :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
@@ -284,17 +268,15 @@ Dans le cadre de cette première phase, des modèles de données préliminaires 
   \item \textbf{Préférences utilisateurs} pour le contrôle des communications reçues
 \end{itemize}
 \normalsize
-\clearpage
 
 \subsubsection{Service de Gestion des Médias}
-\begin{figure}[p]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 Media_Management_Service.pdf.png}
+  \includegraphics[width=0.75\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 Media_Management_Service.pdf.png}
   \caption{\textbf{Modèle de données du service de gestion des médias} pour le stockage et la manipulation des ressources multimédia.}
   \label{fig:media_service}
 \end{figure}
 
-\vspace{5pt}
 \small
 \paragraph{Points clés du service de Gestion des Médias :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
@@ -305,17 +287,15 @@ Dans le cadre de cette première phase, des modèles de données préliminaires 
   \item \textbf{Contrôles d'accès} pour sécuriser les ressources sensibles
 \end{itemize}
 \normalsize
-\clearpage
 
 \subsubsection{Service de Configuration de la Plateforme}
-\begin{figure}[p]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 Platform_Configuration_Service.pdf.png}
+  \includegraphics[width=0.75\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 Platform_Configuration_Service.pdf.png}
   \caption{\textbf{Modèle de données du service de configuration} pour la personnalisation et la gestion des paramètres de la plateforme.}
   \label{fig:config_service}
 \end{figure}
 
-\vspace{5pt}
 \small
 \paragraph{Points clés du service de Configuration :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
@@ -326,17 +306,15 @@ Dans le cadre de cette première phase, des modèles de données préliminaires 
   \item \textbf{Historique des modifications} pour le suivi des changements
 \end{itemize}
 \normalsize
-\clearpage
 
 \subsubsection{Service de Recherche}
-\begin{figure}[p]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 Search_Service.pdf.png}
+  \includegraphics[width=0.75\textwidth,keepaspectratio]{week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 Search_Service.pdf.png}
   \caption{\textbf{Modèle de données du service de recherche} pour l'indexation et la recherche de contenu.}
   \label{fig:search_service}
 \end{figure}
 
-\vspace{5pt}
 \small
 \paragraph{Points clés du service de Recherche :}
 \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
@@ -347,9 +325,8 @@ Dans le cadre de cette première phase, des modèles de données préliminaires 
   \item \textbf{Historique et suggestions} pour améliorer l'expérience utilisateur
 \end{itemize}
 \normalsize
-\clearpage
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \small
 \caption{Comparaison des caractéristiques techniques des services}
@@ -371,7 +348,7 @@ Recherche & Python/Elasticsearch & Index & Élevée \\
 \hline
 \end{tabular}
 \end{table}
-\normalsize 
+\normalsize
 
 \section{Conclusion}
 
