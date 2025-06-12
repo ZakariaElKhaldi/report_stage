@@ -1,0 +1,193 @@
+\documentclass[a4paper,12pt]{report}
+
+% Encodage et fontes (XeLaTeX)
+\usepackage{fontspec}
+  \setmainfont{TeX Gyre Termes}           % Police principale (sérif)
+  \setsansfont{TeX Gyre Adventor}         % Police secondaire (sans)
+\renewcommand{\familydefault}{\sfdefault} % Définit la police par défaut au sans
+
+\usepackage{polyglossia}
+  \setmainlanguage{french}
+
+\usepackage{xcolor,graphicx}
+\usepackage[top=2cm,bottom=2cm,left=1.3cm,right=1.3cm]{geometry}
+\usepackage{tikz}
+  \usetikzlibrary{calc,decorations.pathmorphing}
+\usepackage[many]{tcolorbox}
+
+% Couleurs
+\definecolor{gold}{RGB}{184,134,11}
+\definecolor{navy}{RGB}{0,33,71}
+\definecolor{lightnavy}{RGB}{245,248,255}
+\definecolor{sepgray}{RGB}{160,160,160}
+
+
+% Taille du titre
+\newcommand{\HUGEtitle}{\fontsize{36}{44}\selectfont}
+
+% Définition de la commande shadowtext manquante
+\newcommand{\shadowtext}[1]{%
+  \begingroup
+  \setbox0=\hbox{#1}%
+  \leavevmode\rlap{\raisebox{1.5pt}{\makebox[\wd0]{\textcolor{black!40}{#1}}}}%
+  #1%
+  \endgroup
+}
+
+% Avant \begin{document}, ajoutez :
+\usepackage{tikz}
+\usepackage{transparent}
+\newcommand{\fadetext}[3][]{%
+  % #1 : options TikZ, #2 : fade color, #3 : texte
+  \begin{tikzpicture}[baseline=(T.base),#1]
+    \node[inner sep=0pt] (T) {\bfseries #3};
+    \begin{scope}[on behind layer]
+      \node[opacity=0.2,scale=1.2,text=black] at (T) {#3};
+    \end{scope}
+    \fill[top color=#2!80,bottom color=white!20,opacity=0.5]
+      ($(T.south west)-(0.1em,0.1em)$) rectangle ($(T.north east)+(0.1em,0.1em)$);
+  \end{tikzpicture}%
+}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{titlepage}
+  % Bandeaux supérieurs « premium » avec dégradé et courbes
+  \begin{tikzpicture}[remember picture,overlay]
+    % Dégradé de bleu marine du haut vers le centre
+    \shade[top color=navy!90!black, bottom color=navy!60!black]
+      (current page.north west) rectangle ++(\paperwidth,-2cm);
+    % Bande dorée légèrement arrondie en dessous
+    \fill[gold]
+      ($(current page.north west)+(0,-2cm)$) 
+      rectangle ++(\paperwidth,-0.5cm);
+    % Courbe douce pour marquer la transition
+    \draw[white, line width=1.5pt]
+      plot[smooth, tension=0.7]
+        coordinates {
+          ($(current page.north west)+(0,-2cm)$)
+          ($(current page.north west)+(0.2\paperwidth,-2.2cm)$)
+          ($(current page.north east)+(-0.2\paperwidth,-2.2cm)$)
+          ($(current page.north east)+(0,-2cm)$)
+        };
+  \end{tikzpicture}
+
+
+  % Logos (ajustés et abaissés)
+  \vspace*{0.7cm}  % espace avant logos
+  \begin{minipage}[t]{0.48\textwidth}
+    \includegraphics[height=2cm]{ministere.jpg}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \flushright
+    \includegraphics[height=2cm]{bts_logo.png}
+  \end{minipage}
+
+  % Titre principal
+  \vspace*{2cm}
+  \begin{center}
+    % Ligne 1 : Gros titre avec ombre légère
+    {\HUGEtitle\bfseries\textcolor{navy}{\shadowtext{STAGE de FIN d'ÉTUDES}}}\\[16pt]
+    % Ligne 2 : BTS en petites capitales, encadré
+    \tikz[baseline]\node[draw=gold,thick,rounded corners=2pt,inner xsep=6pt,inner ysep=2pt]
+      {\Large\scshape Brevet de Technicien Supérieur (BTS)};\\[12pt]
+    % Ligne 3 : Filière en italique clair
+    {\normalsize\itshape Filière~: \textcolor{sepgray}{Développement des Systèmes d'Information}}
+  \end{center}
+
+
+  % Séparateur décoratif
+  \vspace*{1.5cm}
+  \begin{center}
+    \begin{tikzpicture}
+      % Trait principal gris
+      \draw[line width=1pt, color=sepgray] (0,0) -- (8,0);
+      % Trait secondaire doré, légèrement en dessous
+      \draw[line width=2pt, color=gold] (0,-2pt) -- (8,-2pt);
+    \end{tikzpicture}
+  \end{center}
+
+
+  % Sous-titre encadré « premium » et texte centré
+  \vspace*{1cm}
+  \begin{center}
+    \begin{tcolorbox}[
+      enhanced,
+      frame hidden,                             % pas de contour superflu
+      borderline west={4pt}{0pt}{gold},         % bord gauche épais doré
+      interior style={                          % dégradé vertical subtil
+        top color=lightnavy!70!white,
+        bottom color=lightnavy!30!white
+      },
+      boxrule=0pt,                              % contour principal désactivé
+      arc=8pt,                                  % coins arrondis
+      drop fuzzy shadow={black!20},             % ombre portée simplifiée
+      width=0.8\textwidth,                      % largeur du cadre
+      enlarge left by=3mm,                      % légers débordements pour l'élégance
+      enlarge right by=3mm,
+      leftrule=1pt,                             % fine ligne or à gauche
+      colback=lightnavy!25!white,               % fond clair nuancé
+      fontupper=\bfseries\Large\centering,      % texte en gras, plus grand et centré
+      before upper=\vspace*{6pt},               % marges internes haut
+      after upper=\vspace*{6pt}                 % marges internes bas
+    ]
+      Conception et Développement\\
+      d'une Plateforme E-Learning
+    \end{tcolorbox}
+  \end{center}
+
+
+  % Auteur et encadrant (sans erreurs d'affichage)
+  \vspace*{2.5cm}
+  \begin{center}
+    \begin{minipage}[t]{0.45\textwidth}
+      \raggedright
+      {\large\bfseries Réalisé par}\\[4pt]
+      {\Large\scshape Zakaria El Khaldi}\\[6pt]
+      {\color{sepgray}\rule{0.6\linewidth}{0.5pt}}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.45\textwidth}
+      \raggedleft
+      {\large\bfseries Encadré par}\\[4pt]
+      {\Large\scshape Pr. Ayman Naim}\\[6pt]
+      {\color{sepgray}\rule{0.6\linewidth}{0.5pt}}
+    \end{minipage}
+  \end{center}
+
+
+  % Pied de page amélioré « premium »
+  \vfill
+  \begin{center}
+  \vspace*{1.7cm}
+    % Double ligne décorative
+    {\color{sepgray}\rule{0.3\linewidth}{1pt}}\\[-1pt]
+    {\color{gold}\rule{0.15\linewidth}{2pt}}\\[8pt]
+    
+    % Texte centré et hiérarchisé
+    {\large\bfseries Année académique : 2024/2025}\\[4pt]
+    {\small\itshape Centre BTS Al-Kendi \textbullet{} Casablanca, Maroc}
+  \end{center}
+
+
+  % Filet bas « premium » avec vague décorative
+  \begin{tikzpicture}[remember picture,overlay]
+    % Bande principale dorée
+    \fill[gold!90!black]
+      (current page.south west) rectangle ++(\paperwidth,0.4cm);
+    % Bande secondaire plus fine bleu marine
+    \fill[navy]
+      (current page.south west) ++(0,0.4cm) rectangle ++(\paperwidth,0.1cm);
+    % Vague légère au-dessus du filet
+    \draw[
+      decorate,
+      decoration={snake, amplitude=1pt, segment length=8pt},
+      line width=0.6pt,
+      color=navy!70
+    ]
+      (current page.south west) ++(0,0.5cm) -- ++(\paperwidth,0);
+  \end{tikzpicture}
+
+\end{titlepage}
+
+\end{document} 

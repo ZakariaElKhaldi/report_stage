@@ -4,6 +4,13 @@
 \setcounter{section}{0}
 \newpage
 
+\section{Introduction}
+\addcontentsline{toc}{section}{Introduction}
+
+Ce chapitre présente le cahier des charges et les spécifications du projet LearnExpert, une plateforme e-learning innovante développée au sein d'IAAI. Il détaille le contexte du projet, les objectifs visés, ainsi que l'analyse approfondie des besoins fonctionnels et non fonctionnels. Cette étape préliminaire est essentielle pour établir une vision claire du système à développer et pour guider efficacement les phases ultérieures de conception et d'implémentation.
+
+Nous aborderons également les choix technologiques effectués pour répondre aux exigences du projet, en justifiant la sélection de chaque composant de la stack technique. Cette analyse des besoins et des technologies constitue le socle sur lequel reposera l'ensemble du développement de la plateforme LearnExpert.
+
 \section{Présentation du Projet LearnExpert}
 
 \subsection{Contexte et Problématique}
@@ -157,6 +164,73 @@ L'environnement de développement a été configuré pour optimiser la productiv
 
 Cette stack technologique a été choisie pour sa modernité, sa flexibilité et sa capacité à répondre aux besoins spécifiques du projet, tout en garantissant des performances optimales et une bonne expérience utilisateur. 
 
+\section{Planification et Gestion du Projet}
+
+La planification du projet LearnExpert a été réalisée selon une approche méthodique, permettant de visualiser les différentes phases, les tâches associées, leurs durées et leurs interdépendances. Deux outils de visualisation complémentaires ont été utilisés pour représenter le planning du projet : le diagramme de Gantt et le diagramme PERT.
+
+\subsection{Diagramme de Gantt}
+
+Le diagramme de Gantt offre une représentation chronologique des tâches, permettant de visualiser :
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+  \item La durée de chaque tâche
+  \item Les dates de début et de fin
+  \item Le chevauchement entre les différentes tâches
+  \item La répartition des tâches par phase du projet
+\end{itemize}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=0.9\textwidth,keepaspectratio]{images/gestion_projet/gantt_diagram.png}
+  \caption{\textbf{Diagramme de Gantt} montrant la planification et la progression du projet.}
+  \label{fig:gantt_diagram}
+\end{figure}
+
+Ce diagramme permet d'identifier clairement la durée totale du projet (du 10 mai au 8 juin 2025) ainsi que les périodes d'activité intense où plusieurs tâches se déroulent en parallèle. On peut notamment constater que les phases 1 à 3 (Conception, Frontend initial, Données et MongoDB) se déroulent principalement durant la première moitié du projet, tandis que les phases 4 à 6 (UX et Authentification, Backend, Design Landing Page) occupent la seconde moitié.
+
+\clearpage
+
+\subsection{Diagramme PERT}
+Le diagramme PERT (Program Evaluation and Review Technique) complète le diagramme de Gantt en illustrant les dépendances entre les tâches et le chemin critique du projet.
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=0.9\textwidth,keepaspectratio]{images/gestion_projet/pert_diagram.png}
+  \caption{\textbf{Diagramme PERT} montrant les relations et dépendances entre les tâches du projet.}
+  \label{fig:pert_diagram}
+\end{figure}
+
+L'analyse du diagramme PERT permet de dégager plusieurs observations importantes :
+
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+  \item \textbf{Organisation modulaire} : Les tâches sont regroupées en six phases distinctes, chacune avec ses propres objectifs et livrables.
+  
+  \item \textbf{Dépendances inter-phases} : Certaines tâches de phases ultérieures dépendent de l'achèvement de tâches de phases antérieures, ce qui souligne l'importance de respecter les jalons intermédiaires.
+  
+  \item \textbf{Chemin critique} : Représenté en rouge, le chemin critique identifie les tâches dont tout retard impacterait directement la date de fin du projet. Il traverse notamment les phases de conception, de développement frontend, de pages secondaires, et s'étend jusqu'aux services backend.
+  
+  \item \textbf{Parallélisation des tâches} : Plusieurs activités peuvent être menées en parallèle, comme le développement des composants UI et la mise en place du système de routage, optimisant ainsi l'utilisation des ressources.
+\end{itemize}
+
+\clearpage
+
+\subsection{Avantages de la Planification Visuelle}
+
+L'utilisation combinée des diagrammes de Gantt et PERT présente plusieurs avantages significatifs pour la gestion du projet :
+
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+  \item \textbf{Communication claire} : Facilite la compréhension du planning par toutes les parties prenantes, techniques et non techniques.
+  
+  \item \textbf{Identification des risques} : Permet de repérer les zones de tension potentielles dans le planning, notamment les tâches sur le chemin critique.
+  
+  \item \textbf{Suivi de l'avancement} : Offre un référentiel visuel pour mesurer la progression réelle par rapport au planning initial.
+  
+  \item \textbf{Allocation des ressources} : Aide à l'optimisation de l'attribution des ressources humaines et techniques sur les différentes tâches.
+  
+  \item \textbf{Anticipation des dépendances} : Met en évidence les relations entre les tâches, permettant de préparer à l'avance les transitions entre phases.
+\end{itemize}
+
+La planification détaillée réalisée pour le projet LearnExpert constitue un élément essentiel pour assurer une exécution maîtrisée et respecter les délais fixés. Elle servira de référence tout au long du développement pour suivre l'avancement et ajuster les priorités si nécessaire.
+
 \section{Conclusion}
 
 Le cahier des charges présenté dans ce chapitre définit les fondements du projet LearnExpert, établissant clairement le contexte, les objectifs et les spécifications techniques nécessaires à sa réalisation. Face aux défis identifiés dans le secteur de l'éducation en ligne, la plateforme ambitionne d'apporter une solution innovante centrée sur l'apprentissage interactif de la programmation et des technologies web.
@@ -164,5 +238,7 @@ Le cahier des charges présenté dans ce chapitre définit les fondements du pro
 L'analyse approfondie des besoins fonctionnels et non fonctionnels a permis d'établir un cadre précis pour le développement, avec un accent particulier sur l'expérience utilisateur, la performance et la sécurité. La structure modulaire envisagée pour la plateforme favorisera son évolutivité et sa maintenance sur le long terme.
 
 Le choix des technologies, notamment Next.js pour le frontend, une architecture microservices pour le backend, et l'utilisation de modèles de langage large pour le traitement des données, témoigne d'une approche moderne et adaptée aux exigences du projet. Cette sélection technique offre un équilibre optimal entre performance, flexibilité et facilité de développement, posant ainsi les bases solides pour la phase de conception et d'implémentation qui suivra.
+
+Une planification rigoureuse du projet a été établie à l'aide des diagrammes de Gantt et PERT, permettant une visualisation claire des phases, des tâches et de leurs interdépendances. Cette organisation méthodique constitue un atout majeur pour le bon déroulement du projet dans les délais impartis.
 
 Cette phase préparatoire constitue une étape cruciale dans le cycle de vie du projet, fournissant une vision claire et des directives précises pour guider efficacement les phases ultérieures de développement. 

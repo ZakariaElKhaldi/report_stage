@@ -239,11 +239,14 @@
 \begin{document}
 
 % --- Cover Page ---
-\includepdf[pages=1]{page_de_garde_memoire.pdf}
+\includepdf[pages=1]{page_de_garde.pdf}
+
+% --- Preliminary Pages ---
+% Add a part for preliminary pages in TOC
+\addcontentsline{toc}{part}{Parties préliminaires}
 
 % --- Dédicace ---
 \chapter*{Dédicace}
-\addcontentsline{toc}{chapter}{Dédicace}
 \thispagestyle{fancy}
 
 \begin{center}
@@ -267,7 +270,6 @@
 
 % --- Remerciements ---
 \chapter*{Remerciements}
-\addcontentsline{toc}{chapter}{Remerciements}
 \thispagestyle{fancy}
 
 \begin{center}
@@ -290,7 +292,6 @@ Enfin, je tiens à exprimer ma gratitude envers ma famille et mes amis pour leur
 
 % --- Résumé ---
 \chapter*{Résumé}
-\addcontentsline{toc}{chapter}{Résumé}
 \thispagestyle{fancy}
 
 Ce rapport présente les travaux réalisés durant mon stage de quatre semaines au sein de l'entreprise IAAI (Intelligence Artificielle et Apprentissage Interactif), spécialisée dans le développement de solutions éducatives numériques basées sur l'intelligence artificielle.
@@ -307,7 +308,6 @@ Ce stage a été une expérience formatrice qui m'a permis d'approfondir mes con
 
 % --- Abstract ---
 \chapter*{Abstract}
-\addcontentsline{toc}{chapter}{Abstract}
 \thispagestyle{fancy}
 
 This report presents the work carried out during my four-week internship at IAAI (Artificial Intelligence and Interactive Learning), a company specializing in the development of digital educational solutions based on artificial intelligence.
@@ -336,7 +336,7 @@ This internship was a formative experience that allowed me to deepen my technica
 % --- Include Chapter Files ---
 % Each chapter.s content is in a separate file for better organization
 
-% Create unnumbered introduction
+% --- Introduction ---
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 \thispagestyle{fancy}

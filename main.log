@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.6.10)  10 JUN 2025 22:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.6.10)  12 JUN 2025 03:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -997,45 +997,40 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-<page_de_garde_memoire.pdf, id=339, 597.73312pt x 845.40843pt>
-File: page_de_garde_memoire.pdf Graphic file (type pdf)
-<use page_de_garde_memoire.pdf>
-Package pdftex.def Info: page_de_garde_memoire.pdf  used on input line 242.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: page_de_garde_memoire.pdf Graphic file (type pdf)
-<use page_de_garde_memoire.pdf>
-Package pdftex.def Info: page_de_garde_memoire.pdf  used on input line 242.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-<page_de_garde_memoire.pdf, id=342, page=1, 597.73312pt x 845.40843pt>
-File: page_de_garde_memoire.pdf Graphic file (type pdf)
-<use page_de_garde_memoire.pdf, page 1>
-Package pdftex.def Info: page_de_garde_memoire.pdf , page1 used on input line 2
-42.
-(pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-File: page_de_garde_memoire.pdf Graphic file (type pdf)
-<use page_de_garde_memoire.pdf, page 1>
-Package pdftex.def Info: page_de_garde_memoire.pdf , page1 used on input line 2
-42.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: page_de_garde_memoire.pdf Graphic file (type pdf)
-<use page_de_garde_memoire.pdf, page 1>
-Package pdftex.def Info: page_de_garde_memoire.pdf , page1 used on input line 2
-42.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: page_de_garde_memoire.pdf Graphic file (type pdf)
-<use page_de_garde_memoire.pdf, page 1>
-Package pdftex.def Info: page_de_garde_memoire.pdf , page1 used on input line 2
-42.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
-File: page_de_garde_memoire.pdf Graphic file (type pdf)
-<use page_de_garde_memoire.pdf, page 1>
-Package pdftex.def Info: page_de_garde_memoire.pdf , page1 used on input line 2
-42.
-(pdftex.def)             Requested size: 597.75902pt x 845.44505pt.
+<page_de_garde.pdf, id=341, 597.51233pt x 845.0471pt>
+File: page_de_garde.pdf Graphic file (type pdf)
+<use page_de_garde.pdf>
+Package pdftex.def Info: page_de_garde.pdf  used on input line 242.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: page_de_garde.pdf Graphic file (type pdf)
+<use page_de_garde.pdf>
+Package pdftex.def Info: page_de_garde.pdf  used on input line 242.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+<page_de_garde.pdf, id=344, page=1, 597.51233pt x 845.0471pt>
+File: page_de_garde.pdf Graphic file (type pdf)
+<use page_de_garde.pdf, page 1>
+Package pdftex.def Info: page_de_garde.pdf , page1 used on input line 242.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: page_de_garde.pdf Graphic file (type pdf)
+<use page_de_garde.pdf, page 1>
+Package pdftex.def Info: page_de_garde.pdf , page1 used on input line 242.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+File: page_de_garde.pdf Graphic file (type pdf)
+<use page_de_garde.pdf, page 1>
+Package pdftex.def Info: page_de_garde.pdf , page1 used on input line 242.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+File: page_de_garde.pdf Graphic file (type pdf)
+<use page_de_garde.pdf, page 1>
+Package pdftex.def Info: page_de_garde.pdf , page1 used on input line 242.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+File: page_de_garde.pdf Graphic file (type pdf)
+<use page_de_garde.pdf, page 1>
+Package pdftex.def Info: page_de_garde.pdf , page1 used on input line 242.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
  [1
 
- <./page_de_garde_memoire.pdf>] [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdfte
-x.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}
+ <./page_de_garde.pdf>] [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/
+usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}
 
 ] [3
 
@@ -1043,10 +1038,10 @@ x.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}
 
 ] [5
 
-] (./main.toc
-[6
+] (./main.toc [6
 
-] [7])
+]
+[7])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -1058,6 +1053,7 @@ File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
 .
+
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1095,7 +1091,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ]
-<images/mession.png, id=808, 401.427pt x 254.916pt>
+<images/mession.png, id=766, 401.427pt x 254.916pt>
 File: images/mession.png Graphic file (type png)
 <use images/mession.png>
 Package pdftex.def Info: images/mession.png  used on input line 35.
@@ -1110,13 +1106,13 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.42 
       <./images/mession.png>]
-<images/Structure_Organisationnelle.png, id=818, 454.644pt x 356.751pt>
+<images/Structure_Organisationnelle.png, id=776, 454.644pt x 356.751pt>
 File: images/Structure_Organisationnelle.png Graphic file (type png)
 <use images/Structure_Organisationnelle.png>
 Package pdftex.def Info: images/Structure_Organisationnelle.png  used on input 
 line 58.
 (pdftex.def)             Requested size: 409.71692pt x 321.50842pt.
-<images/Offres_de_Formation.png, id=819, 454.3155pt x 329.814pt>
+<images/Offres_de_Formation.png, id=777, 454.3155pt x 329.814pt>
 File: images/Offres_de_Formation.png Graphic file (type png)
 <use images/Offres_de_Formation.png>
 Package pdftex.def Info: images/Offres_de_Formation.png  used on input line 69.
@@ -1129,7 +1125,7 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.73 
       <./images/Structure_Organisationnelle.png>]
-<images/Pedagogie.png, id=825, 453.987pt x 230.2785pt>
+<images/Pedagogie.png, id=783, 453.987pt x 230.2785pt>
 File: images/Pedagogie.png Graphic file (type png)
 <use images/Pedagogie.png>
 Package pdftex.def Info: images/Pedagogie.png  used on input line 110.
@@ -1159,29 +1155,67 @@ pdfTeX warning (ext4): destination with the same identifier (name{section.0.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.7 \section{Présentation du Projet LearnExpert}
-                                                 
+l.7 \section{Introduction}
+                          
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 \section{Analyse des Besoins}
-                                   [18]
+l.14 \section{Présentation du Projet LearnExpert}
+                                                  
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.3})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.109 \section{Technologies et Outils}
-                                       [19]
+l.41 \section{Analyse des Besoins}
+                                   [18]
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.4})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.160 \section{Conclusion}
-                          ) [20]
+l.116 \section{Technologies et Outils}
+                                       [19]
+pdfTeX warning (ext4): destination with the same identifier (name{section.0.5})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.167 \section{Planification et Gestion du Projet}
+                                                   [20]
+<images/gestion_projet/gantt_diagram.png, id=811, 1867.97874pt x 1234.6125pt>
+File: images/gestion_projet/gantt_diagram.png Graphic file (type png)
+<use images/gestion_projet/gantt_diagram.png>
+Package pdftex.def Info: images/gestion_projet/gantt_diagram.png  used on input
+ line 183.
+(pdftex.def)             Requested size: 409.71692pt x 270.78668pt.
+<images/gestion_projet/pert_diagram.png, id=812, 1867.97874pt x 1391.1975pt>
+File: images/gestion_projet/pert_diagram.png Graphic file (type png)
+<use images/gestion_projet/pert_diagram.png>
+Package pdftex.def Info: images/gestion_projet/pert_diagram.png  used on input 
+line 195.
+(pdftex.def)             Requested size: 409.71692pt x 305.13037pt.
+ [21
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.210 \end{itemize}
+                    <./images/gestion_projet/gantt_diagram.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{section.0.6})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.230 \section{Conclusion}
+                           [22
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.6}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.233 
+       <./images/gestion_projet/pert_diagram.png>]) [23]
 \openout2 = `chapter_3.aux'.
 
- (./chapter_3.tex [21
+ (./chapter_3.tex
+[24
 
 
 
@@ -1228,43 +1262,43 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 <to be read again> 
                    \relax 
 l.33 \subsection{Identification des messages}
-                                              [22]
-<images/usecase_diagram.png, id=862, 435.6275pt x 1160.335pt>
+                                              [25]
+<images/usecase_diagram.png, id=836, 435.6275pt x 1160.335pt>
 File: images/usecase_diagram.png Graphic file (type png)
 <use images/usecase_diagram.png>
 Package pdftex.def Info: images/usecase_diagram.png  used on input line 67.
 (pdftex.def)             Requested size: 236.72888pt x 630.53755pt.
- [23] [24
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.5}) 
+ [26] [27
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.7}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.71 \clearpage
                 <./images/usecase_diagram.png (PNG copy)>]
-<images/sequence_diagram.png, id=871, 3854.4pt x 2572.61125pt>
+<images/sequence_diagram.png, id=846, 3854.4pt x 2572.61125pt>
 File: images/sequence_diagram.png Graphic file (type png)
 <use images/sequence_diagram.png>
 Package pdftex.def Info: images/sequence_diagram.png  used on input line 89.
 (pdftex.def)             Requested size: 409.71692pt x 273.44919pt.
- [25
+ [28
 
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [26
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.6}) 
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [29
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.8}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.93 \clearpage
                 <./images/sequence_diagram.png>]
-<week_1_img/class_diagrame.png, id=890, 3854.4pt x 2206.2425pt>
+<week_1_img/class_diagrame.png, id=864, 3854.4pt x 2206.2425pt>
 File: week_1_img/class_diagrame.png Graphic file (type png)
 <use week_1_img/class_diagrame.png>
 Package pdftex.def Info: week_1_img/class_diagrame.png  used on input line 100.
 
 (pdftex.def)             Requested size: 409.71692pt x 234.50694pt.
- [27
+ [30
 
-] [28
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.7}) 
+] [31
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.9}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1276,255 +1310,237 @@ pdfTeX warning (ext4): destination with the same identifier (name{section.0.4})
                    \relax 
 l.108 \section{Architecture Adoptée}
                                      
-<week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_Servi
-ce.pdf.png, id=900, 1778.645pt x 1000.73875pt>
-File: week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_
-Service.pdf.png Graphic file (type png)
-<use week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-36 IAM_S
-ervice.pdf.png>
-Package pdftex.def Info: week_1_img/services_db_screanshots/Screenshot 2025-06-
-06 at 15-08-36 IAM_Service.pdf.png  used on input line 145.
-(pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
- [29
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.119 \subsection{Pile Technologique}
+                                     
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+4.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.139 ...ection{Modèles de Données des Services}
+                                                  
 
-] [30
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.8}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.161 \clearpage
-                 <./week_1_img/services_db_screanshots/Screenshot 2025-06-06 at
- 15-08-36 IAM_Service.pdf.png>]
-<week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Content_S
-ervice.pdf.png, id=911, 861.2175pt x 887.315pt>
-File: week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Cont
-ent_Service.pdf.png Graphic file (type png)
-<use week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-07-51 Conte
-nt_Service.pdf.png>
-Package pdftex.def Info: week_1_img/services_db_screanshots/Screenshot 2025-06-
-06 at 15-07-51 Content_Service.pdf.png  used on input line 166.
-(pdftex.def)             Requested size: 364.19667pt x 375.24223pt.
- [31
+LaTeX Warning: File `week_1_img/services_db_screanshots/Screenshot 2025-06-06 a
+t 15-04-38 Identity_and_Access_Management_Service.pdf.png' not found on input l
+ine 145.
 
-] [32
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.9}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.182 \clearpage
-                 <./week_1_img/services_db_screanshots/Screenshot 2025-06-06 at
- 15-07-51 Content_Service.pdf.png>]
-<week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 Billing_a
-nd_Subscription_Service.pdf.png, id=922, 1778.645pt x 1000.73875pt>
-File: week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 Bill
-ing_and_Subscription_Service.pdf.png Graphic file (type png)
-<use week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-05-28 Billi
-ng_and_Subscription_Service.pdf.png>
-Package pdftex.def Info: week_1_img/services_db_screanshots/Screenshot 2025-06-
-06 at 15-05-28 Billing_and_Subscription_Service.pdf.png  used on input line 187
+
+! Package pdftex.def Error: File `week_1_img/services_db_screanshots/Screenshot
+ 2025-06-06 at 15-04-38 Identity_and_Access_Management_Service.pdf.png' not fou
+nd: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 ...ty_and_Access_Management_Service.pdf.png}
+                                                  
+? 
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 14
+5.
+(/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 10.20007pt on input line 145.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fvm' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+LaTeX Warning: File `week_1_img/services_db_screanshots/Screenshot 2025-06-06 a
+t 15-04-45 Content_Management_Service.pdf.png' not found on input line 164.
+
+
+! Package pdftex.def Error: File `week_1_img/services_db_screanshots/Screenshot
+ 2025-06-06 at 15-04-45 Content_Management_Service.pdf.png' not found: using dr
+aft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164 ...04-45 Content_Management_Service.pdf.png}
+                                                  
+? 
+[32
+
+]
+
+LaTeX Warning: File `week_1_img/services_db_screanshots/Screenshot 2025-06-06 a
+t 15-05-45 Billing_Service.pdf.png' not found on input line 183.
+
+
+! Package pdftex.def Error: File `week_1_img/services_db_screanshots/Screenshot
+ 2025-06-06 at 15-05-45 Billing_Service.pdf.png' not found: using draft setting
 .
-(pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
- [33
 
-] [34
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.10})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.203 \clearpage
-                 <./week_1_img/services_db_screanshots/Screenshot 2025-06-06 at
- 15-05-28 Billing_and_Subscription_Service.pdf.png>]
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 ...6-06 at 15-05-45 Billing_Service.pdf.png}
+                                                  
+? 
 <week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 Certifica
-tion_Service.pdf.png, id=932, 1778.645pt x 1000.73875pt>
+tion_Service.pdf.png, id=880, 1778.645pt x 1000.73875pt>
 File: week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 Cert
 ification_Service.pdf.png Graphic file (type png)
 <use week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 Certi
 fication_Service.pdf.png>
 Package pdftex.def Info: week_1_img/services_db_screanshots/Screenshot 2025-06-
-06 at 15-05-53 Certification_Service.pdf.png  used on input line 208.
-(pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
- [35
-
-] [36
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.11})
+06 at 15-05-53 Certification_Service.pdf.png  used on input line 202.
+(pdftex.def)             Requested size: 341.43307pt x 192.09691pt.
+[33{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.10})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.224 \clearpage
-                 <./week_1_img/services_db_screanshots/Screenshot 2025-06-06 at
- 15-05-53 Certification_Service.pdf.png>]
+l.213   \item \textbf
+                     {Système de validation externe} permettant aux entrepr...
+]
 <week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 Analytics
-_and_Reporting_Service.pdf.png, id=942, 1778.645pt x 995.72pt>
+_and_Reporting_Service.pdf.png, id=886, 1778.645pt x 995.72pt>
 File: week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 Anal
 ytics_and_Reporting_Service.pdf.png Graphic file (type png)
 <use week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-04-59 Analy
 tics_and_Reporting_Service.pdf.png>
 Package pdftex.def Info: week_1_img/services_db_screanshots/Screenshot 2025-06-
-06 at 15-04-59 Analytics_and_Reporting_Service.pdf.png  used on input line 229.
+06 at 15-04-59 Analytics_and_Reporting_Service.pdf.png  used on input line 221.
 
-(pdftex.def)             Requested size: 364.19667pt x 203.88083pt.
- [37
-
-] [38
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.12})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.245 \clearpage
-                 <./week_1_img/services_db_screanshots/Screenshot 2025-06-06 at
- 15-04-59 Analytics_and_Reporting_Service.pdf.png>]
+(pdftex.def)             Requested size: 341.43307pt x 191.13353pt.
 <week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Feedback_
-Service.pdf.png, id=953, 1778.645pt x 1000.73875pt>
+Service.pdf.png, id=887, 1778.645pt x 1000.73875pt>
 File: week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Feed
 back_Service.pdf.png Graphic file (type png)
 <use week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-00 Feedb
 ack_Service.pdf.png>
 Package pdftex.def Info: week_1_img/services_db_screanshots/Screenshot 2025-06-
-06 at 15-08-00 Feedback_Service.pdf.png  used on input line 250.
-(pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
- [39
-
-] [40
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.13})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.266 \clearpage
-                 <./week_1_img/services_db_screanshots/Screenshot 2025-06-06 at
- 15-08-00 Feedback_Service.pdf.png>]
+06 at 15-08-00 Feedback_Service.pdf.png  used on input line 240.
+(pdftex.def)             Requested size: 341.43307pt x 192.09691pt.
 <week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 Notificat
-ion_Service.pdf.png, id=963, 1778.645pt x 1000.73875pt>
+ion_Service.pdf.png, id=888, 1778.645pt x 1000.73875pt>
 File: week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 Noti
 fication_Service.pdf.png Graphic file (type png)
 <use week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-13 Notif
 ication_Service.pdf.png>
 Package pdftex.def Info: week_1_img/services_db_screanshots/Screenshot 2025-06-
-06 at 15-08-13 Notification_Service.pdf.png  used on input line 271.
-(pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
- [41
-
-] [42
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.14})
+06 at 15-08-13 Notification_Service.pdf.png  used on input line 259.
+(pdftex.def)             Requested size: 341.43307pt x 192.09691pt.
+ [34
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.11})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.287 \clearpage
-                 <./week_1_img/services_db_screanshots/Screenshot 2025-06-06 at
- 15-08-13 Notification_Service.pdf.png>]
+l.262 \end{figure}
+                  ]
 <week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 Media_Man
-agement_Service.pdf.png, id=973, 1778.645pt x 1000.73875pt>
+agement_Service.pdf.png, id=893, 1778.645pt x 1000.73875pt>
 File: week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 Medi
 a_Management_Service.pdf.png Graphic file (type png)
 <use week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-27 Media
 _Management_Service.pdf.png>
 Package pdftex.def Info: week_1_img/services_db_screanshots/Screenshot 2025-06-
-06 at 15-08-27 Media_Management_Service.pdf.png  used on input line 292.
-(pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
- [43
-
-] [44
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.15})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.308 \clearpage
-                 <./week_1_img/services_db_screanshots/Screenshot 2025-06-06 at
- 15-08-27 Media_Management_Service.pdf.png>]
+06 at 15-08-27 Media_Management_Service.pdf.png  used on input line 278.
+(pdftex.def)             Requested size: 341.43307pt x 192.09691pt.
 <week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 Platform_
-Configuration_Service.pdf.png, id=984, 1778.645pt x 1000.73875pt>
+Configuration_Service.pdf.png, id=894, 1778.645pt x 1000.73875pt>
 File: week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 Plat
 form_Configuration_Service.pdf.png Graphic file (type png)
 <use week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-44 Platf
 orm_Configuration_Service.pdf.png>
 Package pdftex.def Info: week_1_img/services_db_screanshots/Screenshot 2025-06-
-06 at 15-08-44 Platform_Configuration_Service.pdf.png  used on input line 313.
-(pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
- [45
-
-] [46
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.16})
+06 at 15-08-44 Platform_Configuration_Service.pdf.png  used on input line 297.
+(pdftex.def)             Requested size: 341.43307pt x 192.09691pt.
+ [35
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.12})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.329 \clearpage
-                 <./week_1_img/services_db_screanshots/Screenshot 2025-06-06 at
- 15-08-44 Platform_Configuration_Service.pdf.png>]
+l.308   \item \textbf
+                     {Configuration multi-environnement} (dev, staging, prod...
+]
 <week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 Search_Se
-rvice.pdf.png, id=995, 1778.645pt x 1000.73875pt>
+rvice.pdf.png, id=899, 1778.645pt x 1000.73875pt>
 File: week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 Sear
 ch_Service.pdf.png Graphic file (type png)
 <use week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-08-52 Searc
 h_Service.pdf.png>
 Package pdftex.def Info: week_1_img/services_db_screanshots/Screenshot 2025-06-
-06 at 15-08-52 Search_Service.pdf.png  used on input line 334.
-(pdftex.def)             Requested size: 364.19667pt x 204.90845pt.
- [47
-
-] [48
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.17})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.350 \clearpage
-                 <./week_1_img/services_db_screanshots/Screenshot 2025-06-06 at
- 15-08-52 Search_Service.pdf.png>]
+06 at 15-08-52 Search_Service.pdf.png  used on input line 316.
+(pdftex.def)             Requested size: 341.43307pt x 192.09691pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 357.
+(Font)              <10.95> on input line 337.
 
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.5})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.376 \section{Conclusion}
-                          
-pdfTeX warning (ext4): destination with the same identifier (name{section.0.6})
+l.356 \section{Conclusion}
+                           [36
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.13})
  has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.397 \section{Planification et Gestion du Projet}
-                                                   [49
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{table.0.1}) h
-as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.397 \section{Planification et Gestion du Projet}
-                                                  ]
-<images/gestion_projet/gantt_diagram.png, id=1011, 1867.97874pt x 1234.6125pt>
-File: images/gestion_projet/gantt_diagram.png Graphic file (type png)
-<use images/gestion_projet/gantt_diagram.png>
-Package pdftex.def Info: images/gestion_projet/gantt_diagram.png  used on input
- line 413.
-(pdftex.def)             Requested size: 409.71692pt x 270.78668pt.
- [50] [51
+l.359 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.14})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.359 
+       <./week_1_img/services_db_screanshots/Screenshot 2025-06-06 at 15-05-53 
+Certification_Service.pdf.png> <./week_1_img/services_db_screanshots/Screenshot
+ 2025-06-06 at 15-04-59 Analytics_and_Reporting_Service.pdf.png>] [37
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.15})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.367 \end{itemize}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.16})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.367 \end{itemize}
+                    <./week_1_img/services_db_screanshots/Screenshot 2025-06-06
+ at 15-08-00 Feedback_Service.pdf.png> <./week_1_img/services_db_screanshots/Sc
+reenshot 2025-06-06 at 15-08-13 Notification_Service.pdf.png>]) [38
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.17})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.357 \include{chapter_3}
+                         
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.18})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.420 \clearpage
-                 <./images/gestion_projet/gantt_diagram.png>]
-<images/gestion_projet/pert_diagram.png, id=1021, 1867.97874pt x 1391.1975pt>
-File: images/gestion_projet/pert_diagram.png Graphic file (type png)
-<use images/gestion_projet/pert_diagram.png>
-Package pdftex.def Info: images/gestion_projet/pert_diagram.png  used on input 
-line 427.
-(pdftex.def)             Requested size: 409.71692pt x 305.13037pt.
- [52
-
-] [53
+l.357 \include{chapter_3}
+                          <./week_1_img/services_db_screanshots/Screenshot 2025
+-06-06 at 15-08-27 Media_Management_Service.pdf.png> <./week_1_img/services_db_
+screanshots/Screenshot 2025-06-06 at 15-08-44 Platform_Configuration_Service.pd
+f.png>] [39
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.19})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.444 \clearpage
-                 <./images/gestion_projet/pert_diagram.png>]) [54
-
-]
+l.357 \include{chapter_3}
+                         
+pdfTeX warning (ext4): destination with the same identifier (name{table.0.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.357 \include{chapter_3}
+                          <./week_1_img/services_db_screanshots/Screenshot 2025
+-06-06 at 15-08-52 Search_Service.pdf.png>]
 \openout2 = `chapter_4.aux'.
 
-
-(./chapter_4.tex [55
+ (./chapter_4.tex [40
 
 
 
@@ -1534,627 +1550,627 @@ pdfTeX warning (ext4): destination with the same identifier (name{section.0.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.7 ...n{Outils et technologies de développement}
-                                                  
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
-1.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.10 \subsection{Environnement de développement}
-                                                 
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
-1.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.20 \subsection{Technologies frontend}
-                                       
+l.7 \section{Introduction}
+                          
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.43 ...Développement de l'interface utilisateur}
-                                                   [56]
+l.16 ...{Outils et technologies de développement}
+                                                  
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.47 \subsection{Site vitrine et page d'accueil}
-                                                
-<week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png, id=1044, 1
-911.14pt x 1041.8925pt>
-File: week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png Graphi
-c file (type png)
-<use week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png>
-Package pdftex.def Info: week_2_img/last_and_improved_hero_section_withe_3d_eff
-ects_etc.png  used on input line 53.
-(pdftex.def)             Requested size: 409.71692pt x 223.35071pt.
-<week_2_img/fetchersection_2.png, id=1045, 1314.9125pt x 724.7075pt>
-File: week_2_img/fetchersection_2.png Graphic file (type png)
-<use week_2_img/fetchersection_2.png>
-Package pdftex.def Info: week_2_img/fetchersection_2.png  used on input line 70
-.
-(pdftex.def)             Requested size: 409.71692pt x 225.80705pt.
- [57
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.20})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.74 
-      <./week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png>]
+l.19 \subsection{Environnement de développement}
+                                                 
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 \subsection{Tableau de bord apprenant}
+l.29 \subsection{Technologies frontend}
+                                        [41]
+pdfTeX warning (ext4): destination with the same identifier (name{section.0.3})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52 ...Développement de l'interface utilisateur}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.56 \subsection{Site vitrine et page d'accueil}
+                                                
+<week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png, id=933, 19
+11.14pt x 1041.8925pt>
+File: week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png Graphi
+c file (type png)
+<use week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png>
+Package pdftex.def Info: week_2_img/last_and_improved_hero_section_withe_3d_eff
+ects_etc.png  used on input line 62.
+(pdftex.def)             Requested size: 409.71692pt x 223.35071pt.
+ [42
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.20})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.70   \item \textbf
+                    {Sections de fonctionnalités :} Présentation des princ...
+ <./week_2_img/last_and_improved_hero_section_withe_3d_effects_etc.png>]
+<week_2_img/fetchersection_2.png, id=939, 1314.9125pt x 724.7075pt>
+File: week_2_img/fetchersection_2.png Graphic file (type png)
+<use week_2_img/fetchersection_2.png>
+Package pdftex.def Info: week_2_img/fetchersection_2.png  used on input line 79
+.
+(pdftex.def)             Requested size: 409.71692pt x 225.80705pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+3.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.92 \subsection{Tableau de bord apprenant}
                                            
-<week_3_img/accueil.png, id=1051, 1573.88pt x 932.48375pt>
+<week_3_img/accueil.png, id=940, 1573.88pt x 932.48375pt>
 File: week_3_img/accueil.png Graphic file (type png)
 <use week_3_img/accueil.png>
-Package pdftex.def Info: week_3_img/accueil.png  used on input line 89.
+Package pdftex.def Info: week_3_img/accueil.png  used on input line 98.
 (pdftex.def)             Requested size: 409.71692pt x 242.73885pt.
- [58
+ [43
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.21})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.96   \item \textbf
-                    {Vue d'ensemble des cours en cours :} Affichage des cour...
-
+l.102 
+       <./week_2_img/fetchersection_2.png>]
+<week_3_img/sidebare.png, id=947, 279.0425pt x 893.3375pt>
+File: week_3_img/sidebare.png Graphic file (type png)
+<use week_3_img/sidebare.png>
+Package pdftex.def Info: week_3_img/sidebare.png  used on input line 115.
+(pdftex.def)             Requested size: 182.09486pt x 582.9798pt.
+ [44
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.22})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.96   \item \textbf
-                    {Vue d'ensemble des cours en cours :} Affichage des cour...
- <./week_2_img/fetchersection_2.png> <./week_3_img/accueil.png>]
-<week_3_img/sidebare.png, id=1058, 279.0425pt x 893.3375pt>
-File: week_3_img/sidebare.png Graphic file (type png)
-<use week_3_img/sidebare.png>
-Package pdftex.def Info: week_3_img/sidebare.png  used on input line 106.
-(pdftex.def)             Requested size: 182.09486pt x 582.9798pt.
- [59]
-<week_3_img/part1.png, id=1063, 1096.095pt x 490.83376pt>
+l.119 
+       <./week_3_img/accueil.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+3.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.120 ...tion{Interface de consultation des cours}
+                                                  
+<week_3_img/part1.png, id=953, 1096.095pt x 490.83376pt>
 File: week_3_img/part1.png Graphic file (type png)
 <use week_3_img/part1.png>
-Package pdftex.def Info: week_3_img/part1.png  used on input line 117.
+Package pdftex.def Info: week_3_img/part1.png  used on input line 126.
 (pdftex.def)             Requested size: 409.71692pt x 183.47052pt.
- [60
+ [45
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.23})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.121 
+l.130 
        <./week_3_img/sidebare.png>]
-<week_3_img/part2.png, id=1069, 1067.99pt x 886.31125pt>
+<week_3_img/part2.png, id=959, 1067.99pt x 886.31125pt>
 File: week_3_img/part2.png Graphic file (type png)
 <use week_3_img/part2.png>
-Package pdftex.def Info: week_3_img/part2.png  used on input line 124.
+Package pdftex.def Info: week_3_img/part2.png  used on input line 133.
 (pdftex.def)             Requested size: 409.71692pt x 340.02048pt.
- [61
+ [46
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.24})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.135   \item \textbf
+l.144   \item \textbf
                      {Mode sombre/clair :} Adaptation de l'interface aux pr�...
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.25})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.135   \item \textbf
+l.144   \item \textbf
                      {Mode sombre/clair :} Adaptation de l'interface aux pr�...
  <./week_3_img/part1.png> <./week_3_img/part2.png>]
-<old-reports/week_4_img/pre_edit.jpeg, id=1077, 808.01875pt x 274.02374pt>
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+3.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.148 \subsection{Améliorations UI/UX avancées}
+                                                 
+<old-reports/week_4_img/pre_edit.jpeg, id=966, 808.01875pt x 274.02374pt>
 File: old-reports/week_4_img/pre_edit.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/pre_edit.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/pre_edit.jpeg  used on input li
-ne 157.
+ne 166.
 (pdftex.def)             Requested size: 182.09486pt x 61.75302pt.
-<old-reports/week_4_img/editmode.jpeg, id=1078, 808.01875pt x 580.1675pt>
+<old-reports/week_4_img/editmode.jpeg, id=967, 808.01875pt x 580.1675pt>
 File: old-reports/week_4_img/editmode.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/editmode.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/editmode.jpeg  used on input li
-ne 158.
+ne 167.
 (pdftex.def)             Requested size: 182.09486pt x 130.7445pt.
-<old-reports/week_4_img/expended.jpeg, id=1079, 1606.0pt x 711.65875pt>
+<old-reports/week_4_img/expended.jpeg, id=968, 1606.0pt x 711.65875pt>
 File: old-reports/week_4_img/expended.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/expended.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/expended.jpeg  used on input li
-ne 165.
+ne 174.
 (pdftex.def)             Requested size: 227.62206pt x 100.85861pt.
- [62
+ [47
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.26})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.174     \item \textbf
+l.183     \item \textbf
                        {Plan du cours interactif :} Implémentation d'une st...
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.27})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.174     \item \textbf
+l.183     \item \textbf
                        {Plan du cours interactif :} Implémentation d'une st...
  <./old-reports/week_4_img/pre_edit.jpeg> <./old-reports/week_4_img/editmode.jp
 eg> <./old-reports/week_4_img/expended.jpeg>]
-<old-reports/week_4_img/outline.jpeg, id=1084, 421.575pt x 869.2475pt>
+<old-reports/week_4_img/outline.jpeg, id=973, 421.575pt x 869.2475pt>
 File: old-reports/week_4_img/outline.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/outline.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/outline.jpeg  used on input lin
-e 181.
+e 190.
 (pdftex.def)             Requested size: 182.09486pt x 375.46689pt.
-<old-reports/week_4_img/sidebare2.jpeg, id=1085, 330.23375pt x 899.36pt>
+<old-reports/week_4_img/sidebare2.jpeg, id=974, 330.23375pt x 899.36pt>
 File: old-reports/week_4_img/sidebare2.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/sidebare2.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/sidebare2.jpeg  used on input l
-ine 182.
+ine 191.
 (pdftex.def)             Requested size: 182.09486pt x 495.92578pt.
- [63
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+3.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.196 \subsection{Interfaces utilisateur premium}
+                                                  [48
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.28})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.192     \item \textbf
+l.201     \item \textbf
                        {Tableau de bord premium :} Vue d'ensemble personnali...
  <./old-reports/week_4_img/outline.jpeg> <./old-reports/week_4_img/sidebare2.jp
 eg>]
-<old-reports/week_4_img/dashboard.jpeg, id=1090, 1606.0pt x 1374.13374pt>
+<old-reports/week_4_img/dashboard.jpeg, id=980, 1606.0pt x 1374.13374pt>
 File: old-reports/week_4_img/dashboard.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/dashboard.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/dashboard.jpeg  used on input l
-ine 201.
+ine 210.
 (pdftex.def)             Requested size: 386.96027pt x 331.07787pt.
-<old-reports/week_4_img/settings.jpeg, id=1091, 1606.0pt x 932.48375pt>
+<old-reports/week_4_img/settings.jpeg, id=981, 1606.0pt x 932.48375pt>
 File: old-reports/week_4_img/settings.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/settings.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/settings.jpeg  used on input li
-ne 208.
+ne 217.
 (pdftex.def)             Requested size: 386.96027pt x 224.66861pt.
- [64
+ [49
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.29})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.212 
+l.221 
        <./old-reports/week_4_img/dashboard.jpeg>]
-<old-reports/week_4_img/explor.jpeg, id=1096, 1101.11375pt x 1606.0pt>
+<old-reports/week_4_img/explor.jpeg, id=987, 1101.11375pt x 1606.0pt>
 File: old-reports/week_4_img/explor.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/explor.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/explor.jpeg  used on input line
- 215.
+ 224.
 (pdftex.def)             Requested size: 386.96027pt x 564.38745pt.
- [65
+ [50
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.30})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.219 
+l.228 
        <./old-reports/week_4_img/settings.jpeg>]
-<old-reports/week_4_img/froms.jpeg, id=1101, 1326.9575pt x 1606.0pt>
+<old-reports/week_4_img/froms.jpeg, id=992, 1326.9575pt x 1606.0pt>
 File: old-reports/week_4_img/froms.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/froms.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/froms.jpeg  used on input line 
-222.
+231.
 (pdftex.def)             Requested size: 386.96027pt x 468.32567pt.
- [66
+ [51
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.31})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.226 
+l.235 
        <./old-reports/week_4_img/explor.jpeg>]
-<old-reports/week_4_img/learnpath.jpeg, id=1106, 1410.26875pt x 1606.0pt>
+<old-reports/week_4_img/learnpath.jpeg, id=997, 1410.26875pt x 1606.0pt>
 File: old-reports/week_4_img/learnpath.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/learnpath.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/learnpath.jpeg  used on input l
-ine 229.
+ine 238.
 (pdftex.def)             Requested size: 386.96027pt x 440.6589pt.
- [67
+ [52
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.32})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.233 
+l.242 
        <./old-reports/week_4_img/froms.jpeg>]
-<old-reports/week_4_img/admin.jpeg, id=1112, 1606.0pt x 709.65125pt>
+<old-reports/week_4_img/admin.jpeg, id=1002, 1606.0pt x 709.65125pt>
 File: old-reports/week_4_img/admin.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/admin.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/admin.jpeg  used on input line 
-249.
+258.
 (pdftex.def)             Requested size: 386.96027pt x 170.9803pt.
- [68
+ [53
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.33})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.253 
+l.262 
        <./old-reports/week_4_img/learnpath.jpeg>]
-<old-reports/week_4_img/usrmana.jpeg, id=1117, 1606.0pt x 712.6625pt>
+<old-reports/week_4_img/usrmana.jpeg, id=1007, 1606.0pt x 712.6625pt>
 File: old-reports/week_4_img/usrmana.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/usrmana.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/usrmana.jpeg  used on input lin
-e 256.
+e 265.
 (pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
-<old-reports/week_4_img/coursmanagement.jpeg, id=1118, 1606.0pt x 712.6625pt>
+<old-reports/week_4_img/coursmanagement.jpeg, id=1008, 1606.0pt x 712.6625pt>
 File: old-reports/week_4_img/coursmanagement.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/coursmanagement.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/coursmanagement.jpeg  used on i
-nput line 263.
+nput line 272.
 (pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
-<old-reports/week_4_img/contentmod.jpeg, id=1119, 1606.0pt x 712.6625pt>
+<old-reports/week_4_img/contentmod.jpeg, id=1009, 1606.0pt x 712.6625pt>
 File: old-reports/week_4_img/contentmod.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/contentmod.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/contentmod.jpeg  used on input 
-line 270.
+line 279.
 (pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
- [69
+ [54
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.34})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.274 
+l.283 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.35})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.274 
+l.283 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.36})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.274 
+l.283 
        <./old-reports/week_4_img/admin.jpeg> <./old-reports/week_4_img/usrmana.
 jpeg> <./old-reports/week_4_img/coursmanagement.jpeg>]
-<old-reports/week_4_img/analytics.jpeg, id=1125, 1606.0pt x 709.65125pt>
+<old-reports/week_4_img/analytics.jpeg, id=1014, 1606.0pt x 709.65125pt>
 File: old-reports/week_4_img/analytics.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/analytics.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/analytics.jpeg  used on input l
-ine 277.
+ine 286.
 (pdftex.def)             Requested size: 386.96027pt x 170.9803pt.
-<old-reports/week_4_img/sub.jpeg, id=1126, 1606.0pt x 712.6625pt>
+<old-reports/week_4_img/sub.jpeg, id=1015, 1606.0pt x 712.6625pt>
 File: old-reports/week_4_img/sub.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/sub.jpeg>
-Package pdftex.def Info: old-reports/week_4_img/sub.jpeg  used on input line 28
-4.
+Package pdftex.def Info: old-reports/week_4_img/sub.jpeg  used on input line 29
+3.
 (pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
- [70
+ [55
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.37})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.294   \item \textbf
+l.303   \item \textbf
                      {Inscription et connexion sécurisées :} Formulaires a...
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.38})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.294   \item \textbf
+l.303   \item \textbf
                      {Inscription et connexion sécurisées :} Formulaires a...
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.39})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.294   \item \textbf
+l.303   \item \textbf
                      {Inscription et connexion sécurisées :} Formulaires a...
  <./old-reports/week_4_img/contentmod.jpeg> <./old-reports/week_4_img/analytics
 .jpeg> <./old-reports/week_4_img/sub.jpeg>]
-<old-reports/week_4_img/login.jpeg, id=1131, 961.5925pt x 853.1875pt>
+<old-reports/week_4_img/login.jpeg, id=1021, 961.5925pt x 853.1875pt>
 File: old-reports/week_4_img/login.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/login.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/login.jpeg  used on input line 
-302.
+311.
 (pdftex.def)             Requested size: 182.09486pt x 161.56053pt.
-<old-reports/week_4_img/reset.jpeg, id=1132, 961.5925pt x 853.1875pt>
+<old-reports/week_4_img/reset.jpeg, id=1022, 961.5925pt x 853.1875pt>
 File: old-reports/week_4_img/reset.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/reset.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/reset.jpeg  used on input line 
-303.
+312.
 (pdftex.def)             Requested size: 182.09486pt x 161.56053pt.
-<old-reports/week_4_img/audit.jpeg, id=1133, 1606.0pt x 712.6625pt>
+<old-reports/week_4_img/audit.jpeg, id=1023, 1606.0pt x 712.6625pt>
 File: old-reports/week_4_img/audit.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/audit.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/audit.jpeg  used on input line 
-310.
+319.
 (pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
- [71
+ [56
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.40})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.323   \item \textbf
+l.332   \item \textbf
                      {Étape 4 - Personnalisation :} Choix des centres d'int...
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.41})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.323   \item \textbf
+l.332   \item \textbf
                      {Étape 4 - Personnalisation :} Choix des centres d'int...
  <./old-reports/week_4_img/login.jpeg> <./old-reports/week_4_img/reset.jpeg> <.
 /old-reports/week_4_img/audit.jpeg>]
-<old-reports/week_4_img/etap1.jpeg, id=1138, 961.5925pt x 853.1875pt>
+<old-reports/week_4_img/etap1.jpeg, id=1028, 961.5925pt x 853.1875pt>
 File: old-reports/week_4_img/etap1.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/etap1.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/etap1.jpeg  used on input line 
-328.
+337.
 (pdftex.def)             Requested size: 182.09486pt x 161.56053pt.
-<old-reports/week_4_img/etap2.jpeg, id=1139, 961.5925pt x 853.1875pt>
+<old-reports/week_4_img/etap2.jpeg, id=1029, 961.5925pt x 853.1875pt>
 File: old-reports/week_4_img/etap2.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/etap2.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/etap2.jpeg  used on input line 
-329.
+338.
 (pdftex.def)             Requested size: 182.09486pt x 161.56053pt.
-<old-reports/week_4_img/sended.jpeg, id=1140, 961.5925pt x 853.1875pt>
+<old-reports/week_4_img/sended.jpeg, id=1030, 961.5925pt x 853.1875pt>
 File: old-reports/week_4_img/sended.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/sended.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/sended.jpeg  used on input line
- 336.
+ 345.
 (pdftex.def)             Requested size: 386.96027pt x 343.33891pt.
- [72
+ [57
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.42})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.345   \item \textbf
+l.354   \item \textbf
                      {Suivi des statuts :} Monitoring des emails envoyés et...
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.43})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.345   \item \textbf
+l.354   \item \textbf
                      {Suivi des statuts :} Monitoring des emails envoyés et...
  <./old-reports/week_4_img/etap1.jpeg> <./old-reports/week_4_img/etap2.jpeg> <.
 /old-reports/week_4_img/sended.jpeg>]
-<old-reports/week_4_img/notifi.jpeg, id=1145, 1606.0pt x 712.6625pt>
+<old-reports/week_4_img/notifi.jpeg, id=1035, 1606.0pt x 712.6625pt>
 File: old-reports/week_4_img/notifi.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/notifi.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/notifi.jpeg  used on input line
- 363.
+ 372.
 (pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
-<old-reports/week_4_img/settings_admin.jpeg, id=1146, 1606.0pt x 712.6625pt>
+<old-reports/week_4_img/settings_admin.jpeg, id=1036, 1606.0pt x 712.6625pt>
 File: old-reports/week_4_img/settings_admin.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/settings_admin.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/settings_admin.jpeg  used on in
-put line 381.
+put line 390.
 (pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
- [73
+ [58
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.44})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.385 
+l.394 
        <./old-reports/week_4_img/notifi.jpeg>]
-<old-reports/week_4_img/ai_1.jpeg, id=1152, 1606.0pt x 709.65125pt>
+<old-reports/week_4_img/ai_1.jpeg, id=1041, 1606.0pt x 709.65125pt>
 File: old-reports/week_4_img/ai_1.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/ai_1.jpeg>
-Package pdftex.def Info: old-reports/week_4_img/ai_1.jpeg  used on input line 3
-99.
+Package pdftex.def Info: old-reports/week_4_img/ai_1.jpeg  used on input line 4
+08.
 (pdftex.def)             Requested size: 182.09486pt x 80.45494pt.
-<old-reports/week_4_img/ai_2.jpeg, id=1153, 1197.47375pt x 917.4275pt>
+<old-reports/week_4_img/ai_2.jpeg, id=1042, 1197.47375pt x 917.4275pt>
 File: old-reports/week_4_img/ai_2.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/ai_2.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/ai_2.jpeg  used on input line 4
-00.
+09.
 (pdftex.def)             Requested size: 182.09486pt x 139.49802pt.
-<old-reports/week_4_img/syber.jpeg, id=1154, 1606.0pt x 890.32625pt>
+<old-reports/week_4_img/syber.jpeg, id=1043, 1606.0pt x 890.32625pt>
 File: old-reports/week_4_img/syber.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/syber.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/syber.jpeg  used on input line 
-407.
+416.
 (pdftex.def)             Requested size: 182.09486pt x 100.93852pt.
-<old-reports/week_4_img/it.jpeg, id=1155, 1541.76pt x 911.405pt>
+<old-reports/week_4_img/it.jpeg, id=1044, 1541.76pt x 911.405pt>
 File: old-reports/week_4_img/it.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/it.jpeg>
-Package pdftex.def Info: old-reports/week_4_img/it.jpeg  used on input line 408
+Package pdftex.def Info: old-reports/week_4_img/it.jpeg  used on input line 417
 .
 (pdftex.def)             Requested size: 182.09486pt x 107.63942pt.
- [74
+ [59
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.45})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.412 
+l.421 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.46})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.412 
+l.421 
        <./old-reports/week_4_img/settings_admin.jpeg> <./old-reports/week_4_img
 /ai_1.jpeg> <./old-reports/week_4_img/ai_2.jpeg>]
-<old-reports/week_4_img/leetcode.jpeg, id=1160, 1606.0pt x 892.33376pt>
+<old-reports/week_4_img/leetcode.jpeg, id=1049, 1606.0pt x 892.33376pt>
 File: old-reports/week_4_img/leetcode.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/leetcode.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/leetcode.jpeg  used on input li
-ne 415.
+ne 424.
 (pdftex.def)             Requested size: 386.96027pt x 214.99504pt.
-<old-reports/week_4_img/cdash.jpeg, id=1161, 1606.0pt x 710.655pt>
+<old-reports/week_4_img/cdash.jpeg, id=1050, 1606.0pt x 710.655pt>
 File: old-reports/week_4_img/cdash.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/cdash.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/cdash.jpeg  used on input line 
-433.
+442.
 (pdftex.def)             Requested size: 386.96027pt x 171.22214pt.
- [75
+ [60
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.47})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.437 
+l.446 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.48})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.437 
+l.446 
        <./old-reports/week_4_img/syber.jpeg> <./old-reports/week_4_img/it.jpeg>
  <./old-reports/week_4_img/leetcode.jpeg>]
-<old-reports/week_4_img/create_course.jpeg, id=1166, 1606.0pt x 710.655pt>
+<old-reports/week_4_img/create_course.jpeg, id=1055, 1606.0pt x 710.655pt>
 File: old-reports/week_4_img/create_course.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/create_course.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/create_course.jpeg  used on inp
-ut line 440.
+ut line 449.
 (pdftex.def)             Requested size: 386.96027pt x 171.22214pt.
-<old-reports/week_4_img/your_courses.jpeg, id=1167, 1606.0pt x 709.65125pt>
+<old-reports/week_4_img/your_courses.jpeg, id=1056, 1606.0pt x 709.65125pt>
 File: old-reports/week_4_img/your_courses.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/your_courses.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/your_courses.jpeg  used on inpu
-t line 447.
+t line 456.
 (pdftex.def)             Requested size: 386.96027pt x 170.9803pt.
-<old-reports/week_4_img/consultingmana.jpeg, id=1168, 1606.0pt x 712.6625pt>
+<old-reports/week_4_img/consultingmana.jpeg, id=1057, 1606.0pt x 712.6625pt>
 File: old-reports/week_4_img/consultingmana.jpeg Graphic file (type jpg)
 <use old-reports/week_4_img/consultingmana.jpeg>
 Package pdftex.def Info: old-reports/week_4_img/consultingmana.jpeg  used on in
-put line 454.
+put line 463.
 (pdftex.def)             Requested size: 386.96027pt x 171.70583pt.
- [76
+ [61
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.49})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.458 
+l.467 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.50})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.458 
+l.467 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.51})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.458 
+l.467 
        <./old-reports/week_4_img/cdash.jpeg> <./old-reports/week_4_img/create_c
 ourse.jpeg> <./old-reports/week_4_img/your_courses.jpeg>]
-pdfTeX warning (ext4): destination with the same identifier (name{section.0.3})
+pdfTeX warning (ext4): destination with the same identifier (name{section.0.4})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.459 ...on du backend et traitement des données}
+l.468 ...on du backend et traitement des données}
                                                   
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
-3.1}) has been already used, duplicate ignored
+4.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.463 \subsection{Architecture microservices}
+l.472 \subsection{Architecture microservices}
                                              
-<week_3_img/Screenshot 2025-05-19 234047.png, id=1173, 178.16562pt x 63.23625pt
+<week_3_img/Screenshot 2025-05-19 234047.png, id=1063, 178.16562pt x 63.23625pt
 >
 File: week_3_img/Screenshot 2025-05-19 234047.png Graphic file (type png)
 <use week_3_img/Screenshot 2025-05-19 234047.png>
 Package pdftex.def Info: week_3_img/Screenshot 2025-05-19 234047.png  used on i
-nput line 476.
+nput line 485.
 (pdftex.def)             Requested size: 409.71692pt x 145.42773pt.
- [77
+ [62
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.52})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.486   \item \textbf
+l.495   \item \textbf
                      {Routage intelligent :} Redirection des requêtes vers ...
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.53})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.486   \item \textbf
+l.495   \item \textbf
                      {Routage intelligent :} Redirection des requêtes vers ...
  <./old-reports/week_4_img/consultingmana.jpeg> <./week_3_img/Screenshot 2025-0
-5-19 234047.png>] [78]
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
-3.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.537 ...ction{Traitement des données de contenu}
-                                                  
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
-3.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.559 \subsection{Pipeline de traitement LLM}
-                                             
-<week_3_img/Screenshot 2025-05-20 164411.png, id=1183, 765.86125pt x 439.14063p
-t>
-File: week_3_img/Screenshot 2025-05-20 164411.png Graphic file (type png)
-<use week_3_img/Screenshot 2025-05-20 164411.png>
-Package pdftex.def Info: week_3_img/Screenshot 2025-05-20 164411.png  used on i
-nput line 565.
-(pdftex.def)             Requested size: 409.71692pt x 234.92786pt.
- [79]
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
-3.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.594 \subsection{Intégration frontend-backend}
-                                                 [80
-pdfTeX warning (ext4): destination with the same identifier (name{figure.0.54})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.599   \item \textbf
-                     {Développement de routes d'API :} Création d'endpoint...
- <./week_3_img/Screenshot 2025-05-20 164411.png>]
-pdfTeX warning (ext4): destination with the same identifier (name{section.0.4})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.605 ...ionnalités interactives d'apprentissage}
-                                                  
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
-4.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.609 \subsection{Éditeur de code interactif}
-                                              
+5-19 234047.png>] [63]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 4.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.625 \subsection{Système de quiz et exercices}
-                                                 [81]
+l.546 ...ction{Traitement des données de contenu}
+                                                  
+<week_3_img/Screenshot 2025-05-20 164411.png, id=1073, 765.86125pt x 439.14063p
+t>
+File: week_3_img/Screenshot 2025-05-20 164411.png Graphic file (type png)
+<use week_3_img/Screenshot 2025-05-20 164411.png>
+Package pdftex.def Info: week_3_img/Screenshot 2025-05-20 164411.png  used on i
+nput line 574.
+(pdftex.def)             Requested size: 409.71692pt x 234.92786pt.
+ [64] [65
+pdfTeX warning (ext4): destination with the same identifier (name{figure.0.54})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.608   \item \textbf
+                     {Développement de routes d'API :} Création d'endpoint...
+ <./week_3_img/Screenshot 2025-05-20 164411.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.5})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.647 \section{Infrastructure et déploiement}
+l.614 ...ionnalités interactives d'apprentissage}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+5.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.618 \subsection{Éditeur de code interactif}
                                               
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+5.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.634 \subsection{Système de quiz et exercices}
+                                                
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
+5.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.645 \subsection{Suivi de progression interactif}
+                                                   [66]
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.6})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.673 \section{Tests et assurance qualité}
-                                           
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
-6.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.677 ...ection{Tests unitaires et d'intégration}
-                                                  
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
-6.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.687 \subsection{Tests d'interface utilisateur}
-                                                 [82]
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
-6.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.698 \subsection{Tests de performance}
-                                       
+l.656 \section{Infrastructure et déploiement}
+                                              
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.7})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.709 \section{Conclusion}
-                          ) [83] [84
+l.682 \section{Tests et assurance qualité}
+                                            [67]
+pdfTeX warning (ext4): destination with the same identifier (name{section.0.8})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.718 \section{Conclusion}
+                          ) [68] [69
 
 
 
@@ -2176,7 +2192,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{section.0.3})
 <to be read again> 
                    \relax 
 l.421 ...�fis Rencontrés et Solutions Apportées}
-                                                   [85]
+                                                   [70]
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.4})
  has been already used, duplicate ignored
 <to be read again> 
@@ -2188,46 +2204,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{section.0.5})
 <to be read again> 
                    \relax 
 l.445 \section{Mot de Fin}
-                           [86]
+                           [71]
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.460 \section{Technologies et Frameworks}
-                                          
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
-1.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.462 \subsection{Frontend}
-                           
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 46
-4.
+                                           [72
 
-(/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 10.20007pt on input line 464.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `fvm' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
-1.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.472 \subsection{Backend}
-                          
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
-1.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.482 \subsection{Base de Données et Stockage}
-                                                [87
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+]
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.2})
  has been already used, duplicate ignored
 <to be read again> 
@@ -2257,7 +2242,7 @@ Overfull \hbox (42.8353pt too wide) in paragraph at lines 525--527
 ervices-[]with-[]nodejs / 9781788620215$[][] 
  []
 
-[88]
+[73]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.
 3.3}) has been already used, duplicate ignored
 <to be read again> 
@@ -2275,19 +2260,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{section.0.4})
 <to be read again> 
                    \relax 
 l.543 ...Outils d'IA et de Traitement de Données}
-                                                   [89] (./main.aux
+                                                   [74] (./main.aux
 (./chapter_1.aux) (./chapter_2.aux) (./chapter_3.aux) (./chapter_4.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1E909DCCB6CE5157C065895E816D1B54;18496.
+(rerunfilecheck)             Checksum: 57AF99CB48EDB903B76149DBEF45CD06;18816.
  ) 
 Here is how much of TeX's memory you used:
- 30943 strings out of 476034
- 584415 string characters out of 5792864
- 1875388 words of memory out of 6000000
- 50359 multiletter control sequences out of 15000+600000
- 580376 words of font info for 186 fonts, out of 8000000 for 9000
+ 31017 strings out of 476034
+ 593081 string characters out of 5792864
+ 1874388 words of memory out of 6000000
+ 50430 multiletter control sequences out of 15000+600000
+ 580199 words of font info for 184 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 84i,17n,80p,1001b,737s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,17n,80p,1001b,727s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -2296,10 +2284,10 @@ r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/lm/lmsy10.pfb>
-Output written on main.pdf (89 pages, 7737779 bytes).
+Output written on main.pdf (74 pages, 7371205 bytes).
 PDF statistics:
- 1366 PDF objects out of 1440 (max. 8388607)
- 1023 compressed objects within 11 object streams
- 200 named destinations out of 1000 (max. 500000)
- 36421 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1253 PDF objects out of 1440 (max. 8388607)
+ 956 compressed objects within 10 object streams
+ 187 named destinations out of 1000 (max. 500000)
+ 36414 words of extra memory for PDF output out of 42996 (max. 10000000)
 

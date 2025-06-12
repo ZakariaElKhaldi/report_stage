@@ -377,8 +377,6 @@ Recherche & Python/Elasticsearch & Index & Élevée \\
 
 La conception et la modélisation de la plateforme LearnExpert ont été réalisées en adoptant une approche méthodique et structurée. Les différents diagrammes UML (cas d'utilisation, séquence, classes) ont permis de représenter visuellement les interactions, flux et relations qui forment l'ossature du système, fournissant ainsi une base solide pour les phases de développement ultérieures.
 
-Cette phase conceptuelle a été complétée par une planification détaillée du projet à travers les diagrammes de Gantt et PERT, permettant de structurer temporellement le développement et d'identifier les dépendances critiques entre les tâches.
-
 L'architecture microservices retenue offre plusieurs avantages stratégiques pour ce projet :
 \begin{itemize}
   \item Une meilleure modularité, permettant l'évolution indépendante de chaque composant
@@ -392,71 +390,4 @@ La modélisation détaillée des données pour chaque service constitue un élé
 
 Cette étape de conception a également permis d'anticiper les défis techniques potentiels et de prévoir des solutions adaptées, notamment concernant la communication inter-services, la gestion des transactions distribuées et la sécurité des données. L'approche événementielle choisie, avec l'utilisation de Kafka comme broker de messages, offre un modèle de communication asynchrone particulièrement adapté à une architecture distribuée.
 
-En conclusion, cette phase de conception et de planification a posé les fondations architecturales, conceptuelles et organisationnelles nécessaires au développement d'une plateforme e-learning moderne, évolutive et performante, alignée avec les objectifs définis dans le cahier des charges. La visualisation claire du planning et des dépendances entre tâches via les diagrammes PERT et Gantt constitue un atout majeur pour la bonne exécution du projet dans les délais impartis.
-
-\section{Planification et Gestion du Projet}
-
-La planification du projet LearnExpert a été réalisée selon une approche méthodique, permettant de visualiser les différentes phases, les tâches associées, leurs durées et leurs interdépendances. Deux outils de visualisation complémentaires ont été utilisés pour représenter le planning du projet : le diagramme de Gantt et le diagramme PERT.
-
-\subsection{Diagramme de Gantt}
-
-Le diagramme de Gantt offre une représentation chronologique des tâches, permettant de visualiser :
-\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
-  \item La durée de chaque tâche
-  \item Les dates de début et de fin
-  \item Le chevauchement entre les différentes tâches
-  \item La répartition des tâches par phase du projet
-\end{itemize}
-
-\begin{figure}[p]
-  \centering
-  \includegraphics[width=0.9\textwidth,keepaspectratio]{images/gestion_projet/gantt_diagram.png}
-  \caption{\textbf{Diagramme de Gantt} montrant la planification et la progression du projet.}
-  \label{fig:gantt_diagram}
-\end{figure}
-
-Ce diagramme permet d'identifier clairement la durée totale du projet (du 10 mai au 8 juin 2025) ainsi que les périodes d'activité intense où plusieurs tâches se déroulent en parallèle. On peut notamment constater que les phases 1 à 3 (Conception, Frontend initial, Données et MongoDB) se déroulent principalement durant la première moitié du projet, tandis que les phases 4 à 6 (UX et Authentification, Backend, Design Landing Page) occupent la seconde moitié.
-
-\clearpage
-
-\subsection{Diagramme PERT}
-Le diagramme PERT (Program Evaluation and Review Technique) complète le diagramme de Gantt en illustrant les dépendances entre les tâches et le chemin critique du projet.
-
-\begin{figure}[p]
-  \centering
-  \includegraphics[width=0.9\textwidth,keepaspectratio]{images/gestion_projet/pert_diagram.png}
-  \caption{\textbf{Diagramme PERT} montrant les relations et dépendances entre les tâches du projet.}
-  \label{fig:pert_diagram}
-\end{figure}
-
-L'analyse du diagramme PERT permet de dégager plusieurs observations importantes :
-
-\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
-  \item \textbf{Organisation modulaire} : Les tâches sont regroupées en six phases distinctes, chacune avec ses propres objectifs et livrables.
-  
-  \item \textbf{Dépendances inter-phases} : Certaines tâches de phases ultérieures dépendent de l'achèvement de tâches de phases antérieures, ce qui souligne l'importance de respecter les jalons intermédiaires.
-  
-  \item \textbf{Chemin critique} : Représenté en rouge, le chemin critique identifie les tâches dont tout retard impacterait directement la date de fin du projet. Il traverse notamment les phases de conception, de développement frontend, de pages secondaires, et s'étend jusqu'aux services backend.
-  
-  \item \textbf{Parallélisation des tâches} : Plusieurs activités peuvent être menées en parallèle, comme le développement des composants UI et la mise en place du système de routage, optimisant ainsi l'utilisation des ressources.
-\end{itemize}
-
-\clearpage
-
-\subsection{Avantages de la Planification Visuelle}
-
-L'utilisation combinée des diagrammes de Gantt et PERT présente plusieurs avantages significatifs pour la gestion du projet :
-
-\begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
-  \item \textbf{Communication claire} : Facilite la compréhension du planning par toutes les parties prenantes, techniques et non techniques.
-  
-  \item \textbf{Identification des risques} : Permet de repérer les zones de tension potentielles dans le planning, notamment les tâches sur le chemin critique.
-  
-  \item \textbf{Suivi de l'avancement} : Offre un référentiel visuel pour mesurer la progression réelle par rapport au planning initial.
-  
-  \item \textbf{Allocation des ressources} : Aide à l'optimisation de l'attribution des ressources humaines et techniques sur les différentes tâches.
-  
-  \item \textbf{Anticipation des dépendances} : Met en évidence les relations entre les tâches, permettant de préparer à l'avance les transitions entre phases.
-\end{itemize}
-
-La planification détaillée réalisée pour le projet LearnExpert constitue un élément essentiel pour assurer une exécution maîtrisée et respecter les délais fixés. Elle servira de référence tout au long du développement pour suivre l'avancement et ajuster les priorités si nécessaire. 
+En conclusion, cette phase de conception a posé les fondations architecturales, conceptuelles et organisationnelles nécessaires au développement d'une plateforme e-learning moderne, évolutive et performante, alignée avec les objectifs définis dans le cahier des charges. 
